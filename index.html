@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nightly Charting — Mag 7 + SPY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0b0d;--bg2:#111318;--bg3:#181c23;--bg4:#1e2330;--border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.12);--text:#e8eaf0;--text2:#8a90a0;--text3:#545968;--bull:#1fd98a;--bull-bg:rgba(31,217,138,0.08);--bull-border:rgba(31,217,138,0.2);--bear:#f05252;--bear-bg:rgba(240,82,82,0.08);--bear-border:rgba(240,82,82,0.2);--caut:#f5a623;--caut-bg:rgba(245,166,35,0.08);--caut-border:rgba(245,166,35,0.2);--chop:#5a6078;--chop-bg:rgba(90,96,120,0.12);--swing:#6c8ef5;--swing-bg:rgba(108,142,245,0.1);--accent:#6c8ef5;--mono:'DM Mono',monospace;--sans:'Syne',sans-serif;--radius:10px;--radius-sm:6px}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:100vh}
+.app{max-width:1100px;margin:0 auto;padding:0 20px 80px}
+header{border-bottom:1px solid var(--border);padding:22px 0 18px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;background:var(--bg);margin-bottom:32px}
+.logo-main{font-size:15px;font-weight:600;letter-spacing:.03em}
+.logo-sub{font-size:11px;color:var(--text3);letter-spacing:.06em;text-transform:uppercase;font-family:var(--mono);margin-left:10px}
+.view{display:none}.view.active{display:block}
+.session-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:12px;overflow:hidden;cursor:pointer;transition:border-color .15s}
+.session-card:hover{border-color:var(--border2)}
+.session-card-header{padding:16px 20px 14px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
+.session-date{font-size:13px;font-weight:600;font-family:var(--mono);color:var(--accent)}
+.session-title{font-size:15px;font-weight:600;margin-top:4px}
+.session-card-body{padding:14px 20px;display:flex;gap:8px;flex-wrap:wrap}
+.name-chip{display:flex;align-items:center;gap:5px;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:500;font-family:var(--mono);border:1px solid transparent}
+.chip-bull{background:var(--bull-bg);border-color:var(--bull-border);color:var(--bull)}
+.chip-bear{background:var(--bear-bg);border-color:var(--bear-border);color:var(--bear)}
+.chip-caut{background:var(--caut-bg);border-color:var(--caut-border);color:var(--caut)}
+.chip-chop{background:var(--chop-bg);color:var(--chop)}
+.chip-dot{width:6px;height:6px;border-radius:50%}
+.chip-bull .chip-dot{background:var(--bull)}.chip-bear .chip-dot{background:var(--bear)}.chip-caut .chip-dot{background:var(--caut)}.chip-chop .chip-dot{background:var(--chop)}
+.badge-sm{font-size:10px;font-weight:600;padding:2px 7px;border-radius:20px;letter-spacing:.04em;text-transform:uppercase;font-family:var(--mono)}
+.badge-bull{background:var(--bull-bg);color:var(--bull)}.badge-bear{background:var(--bear-bg);color:var(--bear)}.badge-caut{background:var(--caut-bg);color:var(--caut)}.badge-chop{background:var(--chop-bg);color:var(--chop)}.badge-swing{background:var(--swing-bg);color:var(--swing)}
+.detail-back{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text3);margin-bottom:24px;cursor:pointer;width:fit-content}
+.detail-back:hover{color:var(--text2)}
+.detail-date{font-size:12px;font-family:var(--mono);color:var(--accent);letter-spacing:.06em;margin-bottom:6px}
+.detail-title{font-size:28px;font-weight:700;margin-bottom:6px}
+.macro-card{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 14px}
+.macro-label{font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.macro-val{font-size:16px;font-weight:600}
+.macro-sub{font-size:11px;color:var(--text3);margin-top:2px}
+.name-tabs{display:flex;gap:4px;flex-wrap:wrap;border-bottom:1px solid var(--border);margin-bottom:24px}
+.name-tab-btn{padding:8px 14px;border-radius:var(--radius-sm) var(--radius-sm) 0 0;font-size:12px;font-weight:600;font-family:var(--mono);color:var(--text3);transition:all .12s;border:1px solid transparent;border-bottom:none;margin-bottom:-1px;cursor:pointer;background:none}
+.name-tab-btn.active{background:var(--bg2);border-color:var(--border);border-bottom-color:var(--bg2);color:var(--text)}
+.name-tab-btn.status-bull.active{color:var(--bull)}.name-tab-btn.status-bear.active{color:var(--bear)}.name-tab-btn.status-caut.active{color:var(--caut)}.name-tab-btn.status-chop.active{color:var(--chop)}
+.name-panel{display:none}.name-panel.active{display:block}
+.panel-header{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+.section-label{font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
+.smi-tbl{width:100%;border-collapse:collapse;font-size:12.5px}
+.smi-tbl th{font-size:10px;font-family:var(--mono);color:var(--text3);text-align:left;padding:6px 10px;border-bottom:1px solid var(--border);letter-spacing:.05em;text-transform:uppercase}
+.smi-tbl td{padding:7px 10px;border-bottom:1px solid var(--border);font-family:var(--mono)}
+.smi-tbl tr:last-child td{border-bottom:none}
+.bull-txt{color:var(--bull)}.bear-txt{color:var(--bear)}.caut-txt{color:var(--caut)}.dim{color:var(--text3)}
+.levels-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin-bottom:20px}
+.level-pill{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 12px}
+.level-key{font-size:10px;font-family:var(--mono);color:var(--text3);margin-bottom:3px}
+.level-val{font-size:13px;font-weight:600;font-family:var(--mono);color:var(--text)}
+.thesis-box{background:var(--bg3);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:12px 14px;font-size:13px;line-height:1.7;color:var(--text2);margin-bottom:20px}
+.hunt-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px}
+.hunt-card{border-radius:var(--radius-sm);padding:12px 14px;font-size:12.5px;line-height:1.6}
+.hunt-up{background:rgba(31,217,138,0.06);border:1px solid var(--bull-border);color:#a8f0d0}
+.hunt-dn{background:rgba(240,82,82,0.06);border:1px solid var(--bear-border);color:#f5b8b8}
+.hunt-label{font-size:9px;font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px;opacity:.6}
+.plan-rows{border:1px solid var(--border);border-radius:var(--radius-sm);overflow:hidden;margin-bottom:20px}
+.plan-row{display:flex;justify-content:space-between;align-items:baseline;padding:8px 14px;border-bottom:1px solid var(--border);font-size:13px}
+.plan-row:last-child{border-bottom:none}
+.plan-key{color:var(--text3);font-family:var(--mono);font-size:11px}
+.plan-val{font-weight:600;color:var(--text);text-align:right;font-family:var(--mono);font-size:12px}
+.swing-flag{display:flex;align-items:center;gap:8px;background:var(--swing-bg);border:1px solid rgba(108,142,245,0.2);border-radius:var(--radius-sm);padding:8px 12px;font-size:12px;color:var(--swing);margin-bottom:20px}
+.open-item-row{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--text2);padding:7px 0;border-bottom:1px solid var(--border);line-height:1.5}
+.open-item-row:last-child{border-bottom:none}
+.open-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);margin-top:5px;flex-shrink:0}
+.empty-state{text-align:center;padding:80px 20px;color:var(--text3)}
+.empty-title{font-size:18px;font-weight:600;color:var(--text2);margin-bottom:8px}
+::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:3px}
+@media(max-width:600px){.hunt-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="app">
+<header>
+  <div>
+    <span class="logo-main">Nightly Charting</span>
+    <span class="logo-sub">Mag 7 + SPY</span>
+  </div>
+</header>
+
+<div id="view-dash" class="view active">
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
+    <div>
+      <div style="font-size:22px;font-weight:700">Session Log</div>
+      <div id="count-label" style="font-size:13px;color:var(--text3);font-family:var(--mono);margin-top:3px"></div>
+    </div>
+  </div>
+  <div id="session-list"></div>
+</div>
+
+<div id="view-detail" class="view">
+  <div class="detail-back" onclick="showDash()">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 12L6 8l4-4"/></svg>
+    Back to sessions
+  </div>
+  <div id="detail-content"></div>
+</div>
+</div>
+
+<script>
+let SESSIONS = [];
+
+async function loadSessions() {
+  try {
+    const r = await fetch('sessions/index.json?t=' + Date.now());
+    const index = await r.json();
+    const all = await Promise.all(index.map(f => fetch('sessions/' + f + '?t=' + Date.now()).then(r => r.json())));
+    SESSIONS = all.sort((a,b) => b.date.localeCompare(a.date));
+  } catch(e) { SESSIONS = []; }
+  renderDash();
+}
+
+function formatDate(d) {
+  if (!d) return '—';
+  const p = d.split('-');
+  const dt = new Date(parseInt(p[0]), parseInt(p[1])-1, parseInt(p[2]));
+  return dt.toLocaleDateString('en-US', {weekday:'short',month:'short',day:'numeric',year:'numeric'});
+}
+
+function showDash() {
+  document.getElementById('view-dash').classList.add('active');
+  document.getElementById('view-detail').classList.remove('active');
+}
+
+function showDetail(id) {
+  document.getElementById('view-dash').classList.remove('active');
+  document.getElementById('view-detail').classList.add('active');
+  renderDetail(id);
+  window.scrollTo(0,0);
+}
+
+function renderDash() {
+  const label = document.getElementById('count-label');
+  const list = document.getElementById('session-list');
+  label.textContent = SESSIONS.length + ' session' + (SESSIONS.length !== 1 ? 's' : '') + ' logged';
+  if (!SESSIONS.length) {
+    list.innerHTML = '<div class="empty-state"><div class="empty-title">No sessions yet</div><p style="font-size:14px;margin-top:8px">Sessions will appear here after each nightly charting session.</p></div>';
+    return;
+  }
+  list.innerHTML = SESSIONS.map(s => {
+    const chips = (s.names||[]).filter(n=>n.status!=='skip').map(n=>`<div class="name-chip chip-${n.status||'chop'}"><span class="chip-dot"></span>${n.name}</div>`).join('');
+    const swings = (s.names||[]).filter(n=>n.swing).length;
+    const toneMap = {bull:'badge-bull',bear:'badge-bear',caut:'badge-caut',chop:'badge-chop'};
+    const toneLbl = {bull:'Risk On',bear:'Risk Off',caut:'Mixed',chop:'Chop'}[s.marketTone]||'';
+    return `<div class="session-card" onclick="showDetail('${s.id}')">
+      <div class="session-card-header">
+        <div><div class="session-date">${formatDate(s.date)}</div><div class="session-title">${s.title||'Nightly Chart Session'}</div></div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px">
+          ${toneLbl?`<span class="badge-sm ${toneMap[s.marketTone]||''}">${toneLbl}</span>`:''}
+          ${swings?`<span class="badge-sm badge-swing">${swings} swing${swings>1?'s':''}</span>`:''}
+        </div>
+      </div>
+      <div class="session-card-body">${chips}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderDetail(id) {
+  const s = SESSIONS.find(x=>x.id===id);
+  if (!s) return;
+  const el = document.getElementById('detail-content');
+  const activeNames = (s.names||[]).filter(n=>n.status!=='skip');
+
+  const macroBlock = (s.macro||s.spyClose) ? `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-bottom:28px">
+    ${s.spyClose?`<div class="macro-card"><div class="macro-label">S&P 500</div><div class="macro-val">${s.spyClose}</div></div>`:''}
+    ${s.macro?`<div class="macro-card" style="grid-column:span 2"><div class="macro-label">Macro notes</div><div style="font-size:13px;color:var(--text2);line-height:1.6;margin-top:4px">${s.macro}</div></div>`:''}
+  </div>` : '';
+
+  const openBlock = s.openItems ? `<div style="background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 16px;margin-bottom:24px">
+    <div class="section-label" style="margin-bottom:10px">Open items</div>
+    ${s.openItems.map(item=>`<div class="open-item-row"><span class="open-dot"></span>${item}</div>`).join('')}
+  </div>` : '';
+
+  const tabs = activeNames.map((n,i)=>`<button class="name-tab-btn status-${n.status||'chop'} ${i===0?'active':''}" onclick="switchTab(this,'dp-${s.id}-${n.name}')">${n.name}</button>`).join('');
+
+  const panels = activeNames.map((n,i)=>{
+    const statusLabel = {bull:'Bullish',caut:'Caution',bear:'Bearish',chop:'No trade'}[n.status]||n.status;
+    const statusBadge = {bull:'badge-bull',caut:'badge-caut',bear:'badge-bear',chop:'badge-chop'}[n.status]||'';
+    const smiRows = (n.smi||[]).filter(r=>r.blue||r.orange||r.signal).map(r=>{
+      const sig = r.signal==='bull'?'<span class="bull-txt">▲ Bullish</span>':r.signal==='bear'?'<span class="bear-txt">▼ Bearish</span>':r.signal==='caut'?'<span class="caut-txt">~ Stalling</span>':'<span class="dim">—</span>';
+      return `<tr><td class="dim">${r.tf}</td><td>${r.blue||'—'}</td><td>${r.orange||'—'}</td><td>${sig}</td><td class="dim" style="font-size:12px">${r.dir||'—'}</td></tr>`;
+    }).join('');
+    const levelPills = (n.levels||[]).filter(l=>l.k&&l.v).map(l=>`<div class="level-pill"><div class="level-key">${l.k}</div><div class="level-val">${l.v}</div></div>`).join('');
+    const planItems = (n.plan||[]);
+    return `<div class="name-panel ${i===0?'active':''}" id="dp-${s.id}-${n.name}">
+      <div class="panel-header">
+        <span class="badge-sm ${statusBadge}">${statusLabel}</span>
+        ${n.swing?'<span class="badge-sm badge-swing">Swing</span>':''}
+        ${n.close?`<span style="font-size:12px;font-family:var(--mono);color:var(--text3)">Close: ${n.close}</span>`:''}
+      </div>
+      ${smiRows?`<div class="section-label">SMI readings</div><div style="overflow-x:auto;margin-bottom:20px"><table class="smi-tbl"><thead><tr><th>TF</th><th>Blue</th><th>Orange</th><th>Signal</th><th>Direction</th></tr></thead><tbody>${smiRows}</tbody></table></div>`:''}
+      ${levelPills?`<div class="section-label">Key levels</div><div class="levels-grid">${levelPills}</div>`:''}
+      ${n.thesis?`<div class="section-label">Thesis</div><div class="thesis-box">${n.thesis}</div>`:''}
+      ${n.swing&&n.swingNote?`<div class="swing-flag">⚡ ${n.swingNote}</div>`:''}
+      ${(n.huntUp||n.huntDn)?`<div class="section-label">Stop hunt map</div><div class="hunt-grid"><div class="hunt-card hunt-up"><div class="hunt-label">▲ Upside</div>${n.huntUp||'—'}</div><div class="hunt-card hunt-dn"><div class="hunt-label">▼ Downside</div>${n.huntDn||'—'}</div></div>`:''}
+      ${planItems.length?`<div class="section-label">Plan</div><div class="plan-rows">${planItems.map(p=>`<div class="plan-row"><span class="plan-key">${p.k}</span><span class="plan-val">${p.v}</span></div>`).join('')}</div>`:''}
+    </div>`;
+  }).join('');
+
+  el.innerHTML = `
+    <div class="detail-header" style="margin-bottom:28px">
+      <div class="detail-date">${formatDate(s.date)}</div>
+      <div class="detail-title">${s.title||'Nightly Chart Session'}</div>
+    </div>
+    ${macroBlock}${openBlock}
+    ${activeNames.length?`<div class="name-tabs">${tabs}</div><div>${panels}</div>`:'<div style="color:var(--text3)">No name data recorded.</div>'}
+  `;
+}
+
+function switchTab(btn, panelId) {
+  const wrap = btn.closest('#detail-content');
+  wrap.querySelectorAll('.name-tab-btn').forEach(b=>b.classList.remove('active'));
+  wrap.querySelectorAll('.name-panel').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(panelId).classList.add('active');
+}
+
+loadSessions();
+</script>
+</body>
+</html>

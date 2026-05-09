@@ -1,0 +1,164 @@
+{
+  "id": "2026-05-09",
+  "date": "2026-05-09",
+  "title": "End of Week — May 5–9",
+  "spyClose": "7,398.93",
+  "marketTone": "bull",
+  "macro": "NFP actual 115K vs est 55-65K — goldilocks. Unemployment 4.3% steady. Wage growth cooling to 3.4%. Fed held 3.5-3.75%. Warsh first press conference June 17 FOMC. Tariff ruling: Court struck down Trump 10% global tariff — appeal possible. CPI Tuesday May 12. NVDA earnings May 20. Iran ceasefire holding after Qeshm Port strike — Trump called it a love tap. Trump-Xi Beijing summit May 14-15.",
+  "openItems": [
+    "Complete EOD charts: AMZN, GOOGL, META, MSFT, NVDA, TSLA, SPY",
+    "Set new WORBH / WORBL for week of 5/12–5/16",
+    "Finalize swing trade parameters for AAPL, NVDA, TSLA",
+    "Check weekend Iran news before Monday open",
+    "CPI Tuesday May 12 — factor into Monday positioning"
+  ],
+  "names": [
+    {
+      "name": "AAPL", "status": "bull", "close": "$293.23", "swing": true,
+      "swingNote": "Entry pullback $290–291 / ORB L. Expiry June 20+. Target $300+. Stop: daily close below $287.48.",
+      "smi": [
+        {"tf":"15m","blue":"78.65","orange":"71.74","signal":"bull","dir":"Rising — weekend reset"},
+        {"tf":"1H","blue":"36.50","orange":"35.94","signal":"bull","dir":"Declining — weekend reset"},
+        {"tf":"4H","blue":"66.00","orange":"63.23","signal":"bull","dir":"Rising — overbought"},
+        {"tf":"DTF","blue":"71.45","orange":"61.82","signal":"bull","dir":"Accelerating above +60"},
+        {"tf":"WTF","blue":"56.84","orange":"33.45","signal":"bull","dir":"Near vertical from -52 April lows"}
+      ],
+      "levels": [
+        {"k":"PDH","v":"$294.76"},{"k":"PDL","v":"$287.48"},
+        {"k":"ORB H / AHH","v":"$293.85"},{"k":"ORB L","v":"$290.01"},{"k":"FVG","v":"$288.74"}
+      ],
+      "thesis": "D/W cross confirmed and accelerating. Weekly has room to +60 and beyond. All-time high territory. Every pullback is a buy.",
+      "huntUp": "Probe above $294.76 (PDH/AHH) to flush put holders. Snapback below $294 = call entry.",
+      "huntDn": "Probe below $290.01 (ORB L) to flush call holders. Snapback above $290 + FVG $288.74 hold = call entry.",
+      "plan": [
+        {"k":"Trigger","v":"2-min SMI cross above zero"},
+        {"k":"Primary target","v":"$300+"},
+        {"k":"Stop reference","v":"Daily close below $287.48"},
+        {"k":"ORB wait","v":"No — high conviction"},
+        {"k":"Swing entry","v":"Pullback to $290–291"},
+        {"k":"Swing expiry","v":"June 20+"}
+      ]
+    },
+    {
+      "name": "NVDA", "status": "bull", "close": "$216.80–$217.70", "swing": true,
+      "swingNote": "Size down — earnings May 20. Target $220–$225. Stop: daily close below $209.21.",
+      "smi": [
+        {"tf":"4H","blue":"82.69","orange":"79.14","signal":"bull","dir":"Deeply overbought — still rising"},
+        {"tf":"DTF","blue":"","orange":"","signal":"bull","dir":"Curling up strongly"}
+      ],
+      "levels": [
+        {"k":"ATH close","v":"$216.80–$217.70"},{"k":"Stop (swing)","v":"$209.21"},
+        {"k":"Earnings","v":"May 20"},{"k":"Catalyst","v":"IREN partnership"}
+      ],
+      "thesis": "Strongest momentum name. Fresh ATH confirmed Friday. IREN AI infrastructure partnership confirmed. Earnings May 20 = premium building daily. Personal net loser — OCO no exceptions.",
+      "huntUp": "Probe above ATH $217.70 to flush put holders. Snapback = call add.",
+      "huntDn": "Probe below $209 support to flush call holders. Snapback above $210 = entry if 4H holds.",
+      "plan": [
+        {"k":"Trigger","v":"2-min SMI cross — immediate"},
+        {"k":"Primary target","v":"$220–$225"},
+        {"k":"Stop reference","v":"Daily close below $209.21"},
+        {"k":"ORB wait","v":"No — Slot 1"},
+        {"k":"⚠️ OCO","v":"No exceptions"},
+        {"k":"Swing expiry","v":"Before May 20 or after earnings"}
+      ]
+    },
+    {
+      "name": "TSLA", "status": "bull", "close": "Strong close", "swing": true,
+      "swingNote": "DTF 200 EMA cross confirmed — multi-week signal. Entry $406–$408. Expiry June. Target $424 FVG.",
+      "smi": [
+        {"tf":"1H","blue":"72.88","orange":"64.88","signal":"bull","dir":"Overbought — strong"},
+        {"tf":"4H","blue":"78.50","orange":"70.77","signal":"bull","dir":"Overbought — accelerating"}
+      ],
+      "levels": [
+        {"k":"FVG / target","v":"$424"},{"k":"Structural support","v":"$400"},
+        {"k":"Signal","v":"DTF 200 EMA cross"}
+      ],
+      "thesis": "DTF 200 EMA cross — major structural event. $400 structural support. FVG $424 is the magnet. Multi-week signal.",
+      "huntUp": "Probe above $424 FVG. If holds above = continuation.",
+      "huntDn": "Probe below $400 support to flush call holders. Snapback above $400 = high conviction call entry.",
+      "plan": [
+        {"k":"Trigger","v":"2-min SMI cross"},
+        {"k":"Primary target","v":"$424 FVG"},
+        {"k":"Stop reference","v":"Break below $400"},
+        {"k":"ORB wait","v":"No — high conviction"},
+        {"k":"Swing entry","v":"Pullback to $406–$408"},
+        {"k":"Swing expiry","v":"June"}
+      ]
+    },
+    {
+      "name": "MSFT", "status": "caut", "close": "~$420–421", "swing": false,
+      "swingNote": "Only if $421.22 Weekly 21 EMA breaks and holds.",
+      "smi": [
+        {"tf":"4H","blue":"","orange":"","signal":"bear","dir":"Lost bullish cross Friday — declining"},
+        {"tf":"DTF","blue":"5.37","orange":"1.77","signal":"bull","dir":"Fresh cross — very early"}
+      ],
+      "levels": [{"k":"Weekly 21 EMA","v":"$421.22 — ceiling"},{"k":"Close","v":"~$420–421"}],
+      "thesis": "DTF fresh bullish cross is the positive signal. Weekly 21 EMA at $421.22 is the hard ceiling until broken. 4H lost cross Friday — mixed signal.",
+      "huntUp": "Probe above $421.22 Weekly EMA. If holds above = breakout. Snapback below = no trade.",
+      "huntDn": "Probe below $418 support. Snapback above $419 = potential call if DTF holds.",
+      "plan": [
+        {"k":"Trigger","v":"ORB confirmation — standard entry"},
+        {"k":"Key level","v":"$421.22 Weekly 21 EMA"},
+        {"k":"Bias","v":"Calls only above $421.22"},
+        {"k":"ORB wait","v":"Yes — mixed signals"}
+      ]
+    },
+    {
+      "name": "META", "status": "caut", "close": "—", "swing": false,
+      "swingNote": "Not yet — need 4H to clear $627.",
+      "smi": [{"tf":"4H","blue":"45","orange":"","signal":"caut","dir":"Stalling — rolling over"}],
+      "levels": [{"k":"4H 200 SMA","v":"$627 — ceiling"},{"k":"Context","v":"Post-earnings choppy recovery"}],
+      "thesis": "4H stalling at +45. 4H 200 SMA at $627 = hard ceiling. Recovery from post-earnings capex dump continuing but choppy.",
+      "huntUp": "Probe above $627 — if fails confirms ceiling.",
+      "huntDn": "Not a priority trade — no strong thesis.",
+      "plan": [{"k":"Verdict","v":"No trade unless clear setup"},{"k":"Key level","v":"$627 — 4H 200 SMA"},{"k":"ORB wait","v":"Yes — may pass entirely"}]
+    },
+    {
+      "name": "GOOGL", "status": "chop", "close": "—", "swing": false, "swingNote": "No.",
+      "smi": [
+        {"tf":"4H","blue":"20","orange":"","signal":"bear","dir":"Declined from 77 to 20 in two sessions"},
+        {"tf":"DTF","blue":"90.31","orange":"","signal":"bull","dir":"Overextended"},
+        {"tf":"WTF","blue":"83","orange":"","signal":"bull","dir":"Overextended"}
+      ],
+      "levels": [{"k":"Resistance","v":"$400 confirmed"},{"k":"Chop box","v":"$394–$400"}],
+      "thesis": "DTF 90.31, Weekly 83 — overextended. 4H fading fast. $400 confirmed resistance. $394–$400 chop box. No trade.",
+      "huntUp": "Probe above $400 — likely fails. Confirms no-trade.",
+      "huntDn": "Probe below $394 — chop, no edge.",
+      "plan": [{"k":"Verdict","v":"No trade"},{"k":"Reason","v":"Chop box + overextended DTF/WTF + 4H fading"}]
+    },
+    {
+      "name": "AMZN", "status": "bear", "close": "—", "swing": false, "swingNote": "No.",
+      "smi": [
+        {"tf":"15m","blue":"","orange":"","signal":"bear","dir":"Bearish"},
+        {"tf":"1H","blue":"","orange":"","signal":"bear","dir":"Bearish"},
+        {"tf":"4H","blue":"-41.79","orange":"","signal":"bear","dir":"Oversold — still declining"}
+      ],
+      "levels": [{"k":"4H SMI","v":"-41.79 — still falling"},{"k":"Note","v":"AWS outage Friday"}],
+      "thesis": "Full bearish alignment all three timeframes. 4H at -41.79 and still declining. No trade.",
+      "huntUp": "Bounce probe to flush put holders. If 4H can't recover = bounce is a sell.",
+      "huntDn": "Puts only on confirmed snapback entries — no chasing.",
+      "plan": [{"k":"Verdict","v":"No trade"},{"k":"Reason","v":"Full bearish alignment"}]
+    },
+    {
+      "name": "SPY", "status": "bull", "close": "7,398.93", "swing": false,
+      "swingNote": "Context only — not traded.",
+      "smi": [
+        {"tf":"4H","blue":"","orange":"","signal":"bull","dir":"Overbought — holding"},
+        {"tf":"1H","blue":"","orange":"","signal":"bull","dir":"Reset from -56 oversold Friday"}
+      ],
+      "levels": [
+        {"k":"S&P 500","v":"7,398.93 ATH"},{"k":"Nasdaq","v":"26,247 — first time ever"},
+        {"k":"Streak","v":"Six straight winning weeks"}
+      ],
+      "thesis": "All-time highs. Nasdaq 26K for first time. Six straight winning weeks. 1H reset from -56 Friday = potential early call setups Monday.",
+      "huntUp": "Gap up at open: do NOT chase. Wait for first pullback.",
+      "huntDn": "Gap down flush: do NOT panic. Wait for snapback. First 2-min candle is the tell.",
+      "plan": [
+        {"k":"Role","v":"Macro bias confirmation only"},
+        {"k":"1H signal","v":"Reset from oversold — call bias early"},
+        {"k":"#1 override","v":"Iran headline at open"},
+        {"k":"CPI Tuesday","v":"May 12 — potential volatility"}
+      ]
+    }
+  ]
+}
