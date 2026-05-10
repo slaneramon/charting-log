@@ -4,219 +4,293 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nightly Charting — Mag 7 + SPY</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,400&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0a0b0d;--bg2:#111318;--bg3:#181c23;--bg4:#1e2330;--border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.12);--text:#e8eaf0;--text2:#8a90a0;--text3:#545968;--bull:#1fd98a;--bull-bg:rgba(31,217,138,0.08);--bull-border:rgba(31,217,138,0.2);--bear:#f05252;--bear-bg:rgba(240,82,82,0.08);--bear-border:rgba(240,82,82,0.2);--caut:#f5a623;--caut-bg:rgba(245,166,35,0.08);--caut-border:rgba(245,166,35,0.2);--chop:#5a6078;--chop-bg:rgba(90,96,120,0.12);--swing:#6c8ef5;--swing-bg:rgba(108,142,245,0.1);--accent:#6c8ef5;--mono:'DM Mono',monospace;--sans:'Syne',sans-serif;--radius:10px;--radius-sm:6px}
+:root{--bg:#0a0b0d;--bg2:#111318;--bg3:#181c23;--bg4:#1e2330;--border:rgba(255,255,255,0.07);--border2:rgba(255,255,255,0.13);--text:#e8eaf0;--text2:#8a90a0;--text3:#545968;--bull:#1fd98a;--bull-bg:rgba(31,217,138,0.08);--bull-bd:rgba(31,217,138,0.22);--bear:#f05252;--bear-bg:rgba(240,82,82,0.08);--bear-bd:rgba(240,82,82,0.22);--caut:#f5a623;--caut-bg:rgba(245,166,35,0.08);--caut-bd:rgba(245,166,35,0.22);--chop:#5a6078;--chop-bg:rgba(90,96,120,0.12);--swing:#6c8ef5;--swing-bg:rgba(108,142,245,0.1);--swing-bd:rgba(108,142,245,0.25);--accent:#6c8ef5;--mono:'DM Mono',monospace;--sans:'Syne',sans-serif;--r:10px;--rs:6px}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:100vh}
+button{font-family:var(--sans);cursor:pointer;border:none;background:none}
 .app{max-width:1100px;margin:0 auto;padding:0 20px 80px}
-header{border-bottom:1px solid var(--border);padding:22px 0 18px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;background:var(--bg);margin-bottom:32px}
+header{border-bottom:1px solid var(--border);padding:20px 0 16px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;background:var(--bg);margin-bottom:28px}
 .logo-main{font-size:15px;font-weight:600;letter-spacing:.03em}
 .logo-sub{font-size:11px;color:var(--text3);letter-spacing:.06em;text-transform:uppercase;font-family:var(--mono);margin-left:10px}
 .view{display:none}.view.active{display:block}
-.session-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);margin-bottom:12px;overflow:hidden;cursor:pointer;transition:border-color .15s}
+.badge{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;letter-spacing:.04em;text-transform:uppercase;font-family:var(--mono)}
+.b-bull{background:var(--bull-bg);color:var(--bull)}.b-bear{background:var(--bear-bg);color:var(--bear)}.b-caut{background:var(--caut-bg);color:var(--caut)}.b-chop{background:var(--chop-bg);color:var(--chop)}.b-swing{background:var(--swing-bg);color:var(--swing);border:1px solid var(--swing-bd)}.b-note{background:rgba(255,255,255,.05);color:var(--text3)}
+.session-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);margin-bottom:12px;overflow:hidden;cursor:pointer;transition:border-color .15s}
 .session-card:hover{border-color:var(--border2)}
-.session-card-header{padding:16px 20px 14px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
-.session-date{font-size:13px;font-weight:600;font-family:var(--mono);color:var(--accent)}
-.session-title{font-size:15px;font-weight:600;margin-top:4px}
-.session-card-body{padding:14px 20px;display:flex;gap:8px;flex-wrap:wrap}
-.name-chip{display:flex;align-items:center;gap:5px;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:500;font-family:var(--mono);border:1px solid transparent}
-.chip-bull{background:var(--bull-bg);border-color:var(--bull-border);color:var(--bull)}
-.chip-bear{background:var(--bear-bg);border-color:var(--bear-border);color:var(--bear)}
-.chip-caut{background:var(--caut-bg);border-color:var(--caut-border);color:var(--caut)}
-.chip-chop{background:var(--chop-bg);color:var(--chop)}
-.chip-dot{width:6px;height:6px;border-radius:50%}
+.sc-header{padding:16px 20px 12px;display:flex;align-items:flex-start;justify-content:space-between;border-bottom:1px solid var(--border)}
+.sc-date{font-size:12px;font-weight:600;font-family:var(--mono);color:var(--accent);margin-bottom:3px}
+.sc-title{font-size:15px;font-weight:600}
+.sc-meta{display:flex;flex-direction:column;align-items:flex-end;gap:5px}
+.sc-body{padding:14px 20px}
+.row-lbl{font-size:9px;font-family:var(--mono);color:var(--text3);letter-spacing:.07em;text-transform:uppercase;margin-bottom:7px}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.name-chip{display:flex;align-items:center;gap:4px;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:500;font-family:var(--mono);border:1px solid transparent}
+.chip-bull{background:var(--bull-bg);border-color:var(--bull-bd);color:var(--bull)}.chip-bear{background:var(--bear-bg);border-color:var(--bear-bd);color:var(--bear)}.chip-caut{background:var(--caut-bg);border-color:var(--caut-bd);color:var(--caut)}.chip-chop{background:var(--chop-bg);color:var(--chop)}
+.chip-dot{width:5px;height:5px;border-radius:50%}
 .chip-bull .chip-dot{background:var(--bull)}.chip-bear .chip-dot{background:var(--bear)}.chip-caut .chip-dot{background:var(--caut)}.chip-chop .chip-dot{background:var(--chop)}
-.badge-sm{font-size:10px;font-weight:600;padding:2px 7px;border-radius:20px;letter-spacing:.04em;text-transform:uppercase;font-family:var(--mono)}
-.badge-bull{background:var(--bull-bg);color:var(--bull)}.badge-bear{background:var(--bear-bg);color:var(--bear)}.badge-caut{background:var(--caut-bg);color:var(--caut)}.badge-chop{background:var(--chop-bg);color:var(--chop)}.badge-swing{background:var(--swing-bg);color:var(--swing)}
-.detail-back{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text3);margin-bottom:24px;cursor:pointer;width:fit-content}
-.detail-back:hover{color:var(--text2)}
-.detail-date{font-size:12px;font-family:var(--mono);color:var(--accent);letter-spacing:.06em;margin-bottom:6px}
-.detail-title{font-size:28px;font-weight:700;margin-bottom:6px}
-.macro-card{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px 14px}
-.macro-label{font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
-.macro-val{font-size:16px;font-weight:600}
-.macro-sub{font-size:11px;color:var(--text3);margin-top:2px}
-.name-tabs{display:flex;gap:4px;flex-wrap:wrap;border-bottom:1px solid var(--border);margin-bottom:24px}
-.name-tab-btn{padding:8px 14px;border-radius:var(--radius-sm) var(--radius-sm) 0 0;font-size:12px;font-weight:600;font-family:var(--mono);color:var(--text3);transition:all .12s;border:1px solid transparent;border-bottom:none;margin-bottom:-1px;cursor:pointer;background:none}
-.name-tab-btn.active{background:var(--bg2);border-color:var(--border);border-bottom-color:var(--bg2);color:var(--text)}
-.name-tab-btn.status-bull.active{color:var(--bull)}.name-tab-btn.status-bear.active{color:var(--bear)}.name-tab-btn.status-caut.active{color:var(--caut)}.name-tab-btn.status-chop.active{color:var(--chop)}
-.name-panel{display:none}.name-panel.active{display:block}
-.panel-header{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:20px}
-.section-label{font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px}
-.smi-tbl{width:100%;border-collapse:collapse;font-size:12.5px}
-.smi-tbl th{font-size:10px;font-family:var(--mono);color:var(--text3);text-align:left;padding:6px 10px;border-bottom:1px solid var(--border);letter-spacing:.05em;text-transform:uppercase}
-.smi-tbl td{padding:7px 10px;border-bottom:1px solid var(--border);font-family:var(--mono)}
-.smi-tbl tr:last-child td{border-bottom:none}
-.bull-txt{color:var(--bull)}.bear-txt{color:var(--bear)}.caut-txt{color:var(--caut)}.dim{color:var(--text3)}
-.levels-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin-bottom:20px}
-.level-pill{background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:8px 12px}
-.level-key{font-size:10px;font-family:var(--mono);color:var(--text3);margin-bottom:3px}
+.swing-section{background:var(--swing-bg);border:1px solid var(--swing-bd);border-radius:var(--rs);padding:11px 14px}
+.swing-section-lbl{font-size:9px;font-family:var(--mono);color:var(--swing);letter-spacing:.07em;text-transform:uppercase;margin-bottom:8px;opacity:.8}
+.swing-chips{display:flex;gap:10px;flex-wrap:wrap}
+.swing-chip-card{background:rgba(108,142,245,0.08);border:1px solid var(--swing-bd);border-radius:var(--rs);padding:7px 12px}
+.swing-chip-name{font-size:13px;font-weight:600;color:var(--swing);font-family:var(--mono)}
+.swing-chip-note{font-size:11px;color:rgba(108,142,245,0.65);font-family:var(--mono);margin-top:2px;line-height:1.4}
+.back-btn{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--text3);margin-bottom:24px;cursor:pointer;width:fit-content}
+.back-btn:hover{color:var(--text2)}
+.d-date{font-size:12px;font-family:var(--mono);color:var(--accent);letter-spacing:.06em;margin-bottom:5px}
+.d-title{font-size:26px;font-weight:700;margin-bottom:22px}
+.section-label{font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:1rem 1.25rem;margin-bottom:12px}
+.swing-banner{background:linear-gradient(135deg,rgba(108,142,245,0.1),rgba(108,142,245,0.05));border:1px solid var(--swing-bd);border-left:4px solid var(--swing);border-radius:0 var(--r) var(--r) 0;padding:1rem 1.25rem;margin-bottom:10px}
+.swing-banner-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;flex-wrap:wrap;gap:6px}
+.swing-banner-title{font-size:14px;font-weight:600;color:var(--swing)}
+.swing-banner-sub{font-size:11px;color:rgba(108,142,245,0.55);font-family:var(--mono)}
+.swing-pills{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:7px}
+.swing-pill{background:rgba(108,142,245,0.07);border:1px solid var(--swing-bd);border-radius:var(--rs);padding:7px 10px}
+.swing-pill-k{font-size:10px;font-family:var(--mono);color:rgba(108,142,245,0.55);margin-bottom:2px}
+.swing-pill-v{font-size:12px;font-weight:600;font-family:var(--mono);color:var(--swing)}
+.name-tabs{display:flex;gap:4px;flex-wrap:wrap;border-bottom:1px solid var(--border);margin-bottom:22px}
+.ntab{padding:7px 13px;border-radius:var(--rs) var(--rs) 0 0;font-size:12px;font-weight:600;font-family:var(--mono);color:var(--text3);border:1px solid transparent;border-bottom:none;margin-bottom:-1px;transition:all .12s}
+.ntab:hover{color:var(--text2)}
+.ntab.active{background:var(--bg2);border-color:var(--border);border-bottom-color:var(--bg2);color:var(--text)}
+.ntab.s-bull.active{color:var(--bull)}.ntab.s-bear.active{color:var(--bear)}.ntab.s-caut.active{color:var(--caut)}.ntab.s-chop.active{color:var(--chop)}
+.swing-dot{width:5px;height:5px;border-radius:50%;background:var(--swing);display:inline-block;margin-left:4px;vertical-align:middle}
+.npanel{display:none}.npanel.active{display:block}
+.levels-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-bottom:14px}
+.level-pill{background:var(--bg3);border:1px solid var(--border);border-radius:var(--rs);padding:7px 11px}
+.level-key{font-size:10px;color:var(--text3);font-family:var(--mono);margin-bottom:2px}
 .level-val{font-size:13px;font-weight:600;font-family:var(--mono);color:var(--text)}
-.thesis-box{background:var(--bg3);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:12px 14px;font-size:13px;line-height:1.7;color:var(--text2);margin-bottom:20px}
-.hunt-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px}
-.hunt-card{border-radius:var(--radius-sm);padding:12px 14px;font-size:12.5px;line-height:1.6}
-.hunt-up{background:rgba(31,217,138,0.06);border:1px solid var(--bull-border);color:#a8f0d0}
-.hunt-dn{background:rgba(240,82,82,0.06);border:1px solid var(--bear-border);color:#f5b8b8}
-.hunt-label{font-size:9px;font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px;opacity:.6}
-.plan-rows{border:1px solid var(--border);border-radius:var(--radius-sm);overflow:hidden;margin-bottom:20px}
-.plan-row{display:flex;justify-content:space-between;align-items:baseline;padding:8px 14px;border-bottom:1px solid var(--border);font-size:13px}
+.smi-wrap{overflow-x:auto;margin-bottom:14px}
+.smi-tbl{width:100%;border-collapse:collapse;font-size:12.5px}
+.smi-tbl th{font-size:10px;font-family:var(--mono);color:var(--text3);text-align:left;padding:5px 10px;border-bottom:1px solid var(--border);letter-spacing:.05em;text-transform:uppercase}
+.smi-tbl td{padding:6px 10px;border-bottom:1px solid var(--border);font-family:var(--mono)}
+.smi-tbl tr:last-child td{border-bottom:none}
+.bull-t{color:var(--bull)}.bear-t{color:var(--bear)}.caut-t{color:var(--caut)}.dim{color:var(--text3)}
+.thesis{background:var(--bg3);border-left:3px solid var(--accent);border-radius:0 var(--rs) var(--rs) 0;padding:11px 14px;font-size:13px;line-height:1.7;color:var(--text2);margin-bottom:14px}
+.thesis.bull-th{border-left-color:var(--bull)}.thesis.bear-th{border-left-color:var(--bear)}.thesis.caut-th{border-left-color:var(--caut)}
+.hunt-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.hunt-card{border-radius:var(--rs);padding:11px 13px;font-size:12.5px;line-height:1.6}
+.hunt-up{background:rgba(31,217,138,0.06);border:1px solid var(--bull-bd);color:#a8f0d0}
+.hunt-dn{background:rgba(240,82,82,0.06);border:1px solid var(--bear-bd);color:#f5b8b8}
+.hunt-lbl{font-size:9px;font-family:var(--mono);letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px;opacity:.6}
+.plan-box{border:1px solid var(--border);border-radius:var(--rs);overflow:hidden;margin-bottom:14px}
+.plan-hdr{padding:7px 13px;background:var(--bg3);border-bottom:1px solid var(--border);font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.07em;text-transform:uppercase}
+.plan-row{display:flex;justify-content:space-between;align-items:baseline;padding:7px 13px;border-bottom:1px solid var(--border);font-size:13px}
 .plan-row:last-child{border-bottom:none}
-.plan-key{color:var(--text3);font-family:var(--mono);font-size:11px}
-.plan-val{font-weight:600;color:var(--text);text-align:right;font-family:var(--mono);font-size:12px}
-.swing-flag{display:flex;align-items:center;gap:8px;background:var(--swing-bg);border:1px solid rgba(108,142,245,0.2);border-radius:var(--radius-sm);padding:8px 12px;font-size:12px;color:var(--swing);margin-bottom:20px}
-.open-item-row{display:flex;align-items:flex-start;gap:10px;font-size:13px;color:var(--text2);padding:7px 0;border-bottom:1px solid var(--border);line-height:1.5}
-.open-item-row:last-child{border-bottom:none}
-.open-dot{width:6px;height:6px;border-radius:50%;background:var(--accent);margin-top:5px;flex-shrink:0}
-.empty-state{text-align:center;padding:80px 20px;color:var(--text3)}
-.empty-title{font-size:18px;font-weight:600;color:var(--text2);margin-bottom:8px}
-::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:3px}
+.plan-k{color:var(--text3);font-family:var(--mono);font-size:11px}
+.plan-v{font-weight:600;font-family:var(--mono);font-size:12px;color:var(--text)}
+.open-item{display:flex;align-items:flex-start;gap:9px;font-size:13px;color:var(--text2);padding:7px 0;border-bottom:1px solid var(--border);line-height:1.5}
+.open-item:last-child{border-bottom:none}
+.open-dot{width:5px;height:5px;border-radius:50%;background:var(--accent);margin-top:5px;flex-shrink:0}
+.macro-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-bottom:20px}
+.macro-card{background:var(--bg3);border:1px solid var(--border);border-radius:var(--rs);padding:11px 14px}
+.macro-lbl{font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.06em;text-transform:uppercase;margin-bottom:3px}
+.macro-val{font-size:15px;font-weight:600}
+::-webkit-scrollbar{width:5px;height:5px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:3px}
 @media(max-width:600px){.hunt-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 <div class="app">
 <header>
-  <div>
-    <span class="logo-main">Nightly Charting</span>
-    <span class="logo-sub">Mag 7 + SPY</span>
-  </div>
+  <div><span class="logo-main">Nightly Charting</span><span class="logo-sub">Mag 7 + SPY</span></div>
 </header>
 
 <div id="view-dash" class="view active">
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
     <div>
       <div style="font-size:22px;font-weight:700">Session Log</div>
-      <div id="count-label" style="font-size:13px;color:var(--text3);font-family:var(--mono);margin-top:3px"></div>
+      <div id="count-lbl" style="font-size:12px;color:var(--text3);font-family:var(--mono);margin-top:3px"></div>
     </div>
   </div>
   <div id="session-list"></div>
 </div>
 
 <div id="view-detail" class="view">
-  <div class="detail-back" onclick="showDash()">
+  <div class="back-btn" onclick="showDash()">
     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 12L6 8l4-4"/></svg>
-    Back to sessions
+    All sessions
   </div>
   <div id="detail-content"></div>
 </div>
 </div>
 
 <script>
-let SESSIONS = [];
+let SESSIONS=[];
 
-async function loadSessions() {
-  try {
-    const r = await fetch('sessions/index.json?t=' + Date.now());
-    const index = await r.json();
-    const all = await Promise.all(index.map(f => fetch('sessions/' + f + '?t=' + Date.now()).then(r => r.json())));
-    SESSIONS = all.sort((a,b) => b.date.localeCompare(a.date));
-  } catch(e) { SESSIONS = []; }
+async function loadSessions(){
+  try{
+    const r=await fetch('sessions/index.json?t='+Date.now());
+    const idx=await r.json();
+    const all=await Promise.all(idx.map(f=>fetch('sessions/'+f+'?t='+Date.now()).then(r=>r.json())));
+    SESSIONS=all.sort((a,b)=>b.date.localeCompare(a.date));
+  }catch(e){SESSIONS=[];}
   renderDash();
 }
 
-function formatDate(d) {
-  if (!d) return '—';
-  const p = d.split('-');
-  const dt = new Date(parseInt(p[0]), parseInt(p[1])-1, parseInt(p[2]));
-  return dt.toLocaleDateString('en-US', {weekday:'short',month:'short',day:'numeric',year:'numeric'});
+function fmtDate(d){
+  if(!d)return'—';
+  const p=d.split('-');
+  return new Date(+p[0],+p[1]-1,+p[2]).toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',year:'numeric'});
 }
 
-function showDash() {
+function showDash(){
   document.getElementById('view-dash').classList.add('active');
   document.getElementById('view-detail').classList.remove('active');
+  window.scrollTo(0,0);
 }
 
-function showDetail(id) {
+function showDetail(id){
   document.getElementById('view-dash').classList.remove('active');
   document.getElementById('view-detail').classList.add('active');
   renderDetail(id);
   window.scrollTo(0,0);
 }
 
-function renderDash() {
-  const label = document.getElementById('count-label');
-  const list = document.getElementById('session-list');
-  label.textContent = SESSIONS.length + ' session' + (SESSIONS.length !== 1 ? 's' : '') + ' logged';
-  if (!SESSIONS.length) {
-    list.innerHTML = '<div class="empty-state"><div class="empty-title">No sessions yet</div><p style="font-size:14px;margin-top:8px">Sessions will appear here after each nightly charting session.</p></div>';
+function renderDash(){
+  const lbl=document.getElementById('count-lbl');
+  const list=document.getElementById('session-list');
+  lbl.textContent=SESSIONS.length+' session'+(SESSIONS.length!==1?'s':'')+' logged';
+  if(!SESSIONS.length){
+    list.innerHTML='<div style="text-align:center;padding:80px 20px;color:var(--text3)"><div style="font-size:18px;font-weight:600;color:var(--text2);margin-bottom:8px">No sessions yet</div><p style="font-size:14px;margin-top:8px">Sessions will appear here after each nightly charting session.</p></div>';
     return;
   }
-  list.innerHTML = SESSIONS.map(s => {
-    const chips = (s.names||[]).filter(n=>n.status!=='skip').map(n=>`<div class="name-chip chip-${n.status||'chop'}"><span class="chip-dot"></span>${n.name}</div>`).join('');
-    const swings = (s.names||[]).filter(n=>n.swing).length;
-    const toneMap = {bull:'badge-bull',bear:'badge-bear',caut:'badge-caut',chop:'badge-chop'};
-    const toneLbl = {bull:'Risk On',bear:'Risk Off',caut:'Mixed',chop:'Chop'}[s.marketTone]||'';
-    return `<div class="session-card" onclick="showDetail('${s.id}')">
-      <div class="session-card-header">
-        <div><div class="session-date">${formatDate(s.date)}</div><div class="session-title">${s.title||'Nightly Chart Session'}</div></div>
-        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px">
-          ${toneLbl?`<span class="badge-sm ${toneMap[s.marketTone]||''}">${toneLbl}</span>`:''}
-          ${swings?`<span class="badge-sm badge-swing">${swings} swing${swings>1?'s':''}</span>`:''}
+  const toneMap={bull:'b-bull',bear:'b-bear',caut:'b-caut',chop:'b-chop'};
+  const toneLbl={bull:'Risk On',bear:'Risk Off',caut:'Mixed',chop:'Chop'};
+  list.innerHTML=SESSIONS.map(s=>{
+    const active=(s.names||[]).filter(n=>n.status!=='skip');
+    const swings=active.filter(n=>n.swing);
+    const chips=active.map(n=>`<div class="name-chip chip-${n.status||'chop'}"><span class="chip-dot"></span>${n.name}</div>`).join('');
+    const swingBlock=swings.length?`
+      <div class="swing-section">
+        <div class="swing-section-lbl">⚡ Active swings — separate capital</div>
+        <div class="swing-chips">
+          ${swings.map(n=>`<div class="swing-chip-card"><div class="swing-chip-name">${n.name}</div><div class="swing-chip-note">${n.swingNote||''}</div></div>`).join('')}
+        </div>
+      </div>`:'';
+    return`<div class="session-card" onclick="showDetail('${s.id}')">
+      <div class="sc-header">
+        <div><div class="sc-date">${fmtDate(s.date)}</div><div class="sc-title">${s.title||'Nightly Chart Session'}</div></div>
+        <div class="sc-meta">
+          ${s.marketTone?`<span class="badge ${toneMap[s.marketTone]||'b-note'}">${toneLbl[s.marketTone]||''}</span>`:''}
+          ${swings.length?`<span class="badge b-swing">⚡ ${swings.length} swing${swings.length>1?'s':''}</span>`:''}
         </div>
       </div>
-      <div class="session-card-body">${chips}</div>
+      <div class="sc-body">
+        <div class="row-lbl">0DTE status</div>
+        <div class="chips">${chips}</div>
+        ${swingBlock}
+      </div>
     </div>`;
   }).join('');
 }
 
-function renderDetail(id) {
-  const s = SESSIONS.find(x=>x.id===id);
-  if (!s) return;
-  const el = document.getElementById('detail-content');
-  const activeNames = (s.names||[]).filter(n=>n.status!=='skip');
+function renderDetail(id){
+  const s=SESSIONS.find(x=>x.id===id);
+  if(!s)return;
+  const el=document.getElementById('detail-content');
+  const active=(s.names||[]).filter(n=>n.status!=='skip');
+  const swings=active.filter(n=>n.swing);
 
-  const macroBlock = (s.macro||s.spyClose) ? `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-bottom:28px">
-    ${s.spyClose?`<div class="macro-card"><div class="macro-label">S&P 500</div><div class="macro-val">${s.spyClose}</div></div>`:''}
-    ${s.macro?`<div class="macro-card" style="grid-column:span 2"><div class="macro-label">Macro notes</div><div style="font-size:13px;color:var(--text2);line-height:1.6;margin-top:4px">${s.macro}</div></div>`:''}
-  </div>` : '';
+  const macroBlock=(s.macro||s.spyClose)?`<div class="macro-grid">
+    ${s.spyClose?`<div class="macro-card"><div class="macro-lbl">S&P 500</div><div class="macro-val">${s.spyClose}</div></div>`:''}
+    ${s.macro?`<div class="macro-card" style="grid-column:span 2"><div class="macro-lbl">Macro notes</div><div style="font-size:13px;color:var(--text2);line-height:1.6;margin-top:4px">${s.macro}</div></div>`:''}
+  </div>`:'';
 
-  const openBlock = s.openItems ? `<div style="background:var(--bg3);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 16px;margin-bottom:24px">
-    <div class="section-label" style="margin-bottom:10px">Open items</div>
-    ${s.openItems.map(item=>`<div class="open-item-row"><span class="open-dot"></span>${item}</div>`).join('')}
-  </div>` : '';
+  const swingSummary=swings.length?`
+    <div style="margin-bottom:24px">
+      <div class="section-label" style="margin-bottom:10px">⚡ Active swing positions — separate capital, separate rules</div>
+      ${swings.map(n=>`
+        <div class="swing-banner">
+          <div class="swing-banner-hdr">
+            <span class="swing-banner-title">${n.name}</span>
+            <span class="swing-banner-sub">swing trade · not 0DTE · different capital</span>
+          </div>
+          <div class="swing-pills">${buildSwingPills(n.swingNote)}</div>
+        </div>`).join('')}
+    </div>`:'';
 
-  const tabs = activeNames.map((n,i)=>`<button class="name-tab-btn status-${n.status||'chop'} ${i===0?'active':''}" onclick="switchTab(this,'dp-${s.id}-${n.name}')">${n.name}</button>`).join('');
+  const openBlock=(s.openItems&&s.openItems.length)?`
+    <div class="card" style="margin-bottom:20px">
+      <div class="section-label" style="margin-bottom:10px">Open items</div>
+      ${s.openItems.map(i=>`<div class="open-item"><span class="open-dot"></span>${i}</div>`).join('')}
+    </div>`:'';
 
-  const panels = activeNames.map((n,i)=>{
-    const statusLabel = {bull:'Bullish',caut:'Caution',bear:'Bearish',chop:'No trade'}[n.status]||n.status;
-    const statusBadge = {bull:'badge-bull',caut:'badge-caut',bear:'badge-bear',chop:'badge-chop'}[n.status]||'';
-    const smiRows = (n.smi||[]).filter(r=>r.blue||r.orange||r.signal).map(r=>{
-      const sig = r.signal==='bull'?'<span class="bull-txt">▲ Bullish</span>':r.signal==='bear'?'<span class="bear-txt">▼ Bearish</span>':r.signal==='caut'?'<span class="caut-txt">~ Stalling</span>':'<span class="dim">—</span>';
-      return `<tr><td class="dim">${r.tf}</td><td>${r.blue||'—'}</td><td>${r.orange||'—'}</td><td>${sig}</td><td class="dim" style="font-size:12px">${r.dir||'—'}</td></tr>`;
+  const tabs=active.map((n,i)=>`<button class="ntab s-${n.status||'chop'} ${i===0?'active':''}" onclick="switchTab(this,'np-${s.id}-${n.name}')">${n.name}${n.swing?'<span class="swing-dot"></span>':''}</button>`).join('');
+
+  const panels=active.map((n,i)=>{
+    const slbl={bull:'Bullish',caut:'Caution',bear:'Bearish',chop:'No trade'}[n.status]||n.status;
+    const sbadge={bull:'b-bull',caut:'b-caut',bear:'b-bear',chop:'b-chop'}[n.status]||'b-note';
+    const tcls={bull:'bull-th',bear:'bear-th',caut:'caut-th'}[n.status]||'';
+    const smiRows=(n.smi||[]).filter(r=>r.blue||r.orange||r.signal).map(r=>{
+      const sig=r.signal==='bull'?`<span class="bull-t">▲ Bullish</span>`:r.signal==='bear'?`<span class="bear-t">▼ Bearish</span>`:r.signal==='caut'?`<span class="caut-t">~ Stalling</span>`:`<span class="dim">—</span>`;
+      return`<tr><td class="dim">${r.tf}</td><td>${r.blue||'—'}</td><td>${r.orange||'—'}</td><td>${sig}</td><td class="dim" style="font-size:11px">${r.dir||'—'}</td></tr>`;
     }).join('');
-    const levelPills = (n.levels||[]).filter(l=>l.k&&l.v).map(l=>`<div class="level-pill"><div class="level-key">${l.k}</div><div class="level-val">${l.v}</div></div>`).join('');
-    const planItems = (n.plan||[]);
-    return `<div class="name-panel ${i===0?'active':''}" id="dp-${s.id}-${n.name}">
-      <div class="panel-header">
-        <span class="badge-sm ${statusBadge}">${statusLabel}</span>
-        ${n.swing?'<span class="badge-sm badge-swing">Swing</span>':''}
+    const lvls=(n.levels||[]).filter(l=>l.k&&l.v).map(l=>`<div class="level-pill"><div class="level-key">${l.k}</div><div class="level-val">${l.v}</div></div>`).join('');
+    const planRows=(n.plan||[]).map(p=>`<div class="plan-row"><span class="plan-k">${p.k}</span><span class="plan-v">${p.v}</span></div>`).join('');
+
+    const swingInPanel=n.swing?`
+      <div class="swing-banner" style="margin-bottom:14px">
+        <div class="swing-banner-hdr">
+          <span class="swing-banner-title">⚡ Swing position</span>
+          <span class="swing-banner-sub">separate capital · separate rules · losing scalp never closes this</span>
+        </div>
+        <div class="swing-pills">${buildSwingPills(n.swingNote)}</div>
+      </div>`:'';
+
+    return`<div class="npanel ${i===0?'active':''}" id="np-${s.id}-${n.name}">
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:14px">
+        <span class="badge ${sbadge}">${slbl}</span>
+        ${n.swing?'<span class="badge b-swing">⚡ Swing</span>':''}
         ${n.close?`<span style="font-size:12px;font-family:var(--mono);color:var(--text3)">Close: ${n.close}</span>`:''}
       </div>
-      ${smiRows?`<div class="section-label">SMI readings</div><div style="overflow-x:auto;margin-bottom:20px"><table class="smi-tbl"><thead><tr><th>TF</th><th>Blue</th><th>Orange</th><th>Signal</th><th>Direction</th></tr></thead><tbody>${smiRows}</tbody></table></div>`:''}
-      ${levelPills?`<div class="section-label">Key levels</div><div class="levels-grid">${levelPills}</div>`:''}
-      ${n.thesis?`<div class="section-label">Thesis</div><div class="thesis-box">${n.thesis}</div>`:''}
-      ${n.swing&&n.swingNote?`<div class="swing-flag">⚡ ${n.swingNote}</div>`:''}
-      ${(n.huntUp||n.huntDn)?`<div class="section-label">Stop hunt map</div><div class="hunt-grid"><div class="hunt-card hunt-up"><div class="hunt-label">▲ Upside</div>${n.huntUp||'—'}</div><div class="hunt-card hunt-dn"><div class="hunt-label">▼ Downside</div>${n.huntDn||'—'}</div></div>`:''}
-      ${planItems.length?`<div class="section-label">Plan</div><div class="plan-rows">${planItems.map(p=>`<div class="plan-row"><span class="plan-key">${p.k}</span><span class="plan-val">${p.v}</span></div>`).join('')}</div>`:''}
+      ${swingInPanel}
+      ${smiRows?`<div class="section-label">SMI readings</div><div class="smi-wrap"><table class="smi-tbl"><thead><tr><th>TF</th><th>Blue</th><th>Orange</th><th>Signal</th><th>Direction</th></tr></thead><tbody>${smiRows}</tbody></table></div>`:''}
+      ${lvls?`<div class="section-label">Key levels</div><div class="levels-grid">${lvls}</div>`:''}
+      ${n.thesis?`<div class="section-label">Thesis</div><div class="thesis ${tcls}">${n.thesis}</div>`:''}
+      ${(n.huntUp||n.huntDn)?`<div class="section-label">Stop hunt map</div><div class="hunt-grid"><div class="hunt-card hunt-up"><div class="hunt-lbl">▲ Upside</div>${n.huntUp||'—'}</div><div class="hunt-card hunt-dn"><div class="hunt-lbl">▼ Downside</div>${n.huntDn||'—'}</div></div>`:''}
+      ${planRows?`<div class="plan-box"><div class="plan-hdr">0DTE scalp plan</div>${planRows}</div>`:''}
     </div>`;
   }).join('');
 
-  el.innerHTML = `
-    <div class="detail-header" style="margin-bottom:28px">
-      <div class="detail-date">${formatDate(s.date)}</div>
-      <div class="detail-title">${s.title||'Nightly Chart Session'}</div>
-    </div>
-    ${macroBlock}${openBlock}
-    ${activeNames.length?`<div class="name-tabs">${tabs}</div><div>${panels}</div>`:'<div style="color:var(--text3)">No name data recorded.</div>'}
+  el.innerHTML=`
+    <div class="d-date">${fmtDate(s.date)}</div>
+    <div class="d-title">${s.title||'Nightly Chart Session'}</div>
+    ${macroBlock}${swingSummary}${openBlock}
+    ${active.length?`<div class="name-tabs">${tabs}</div><div>${panels}</div>`:'<div style="color:var(--text3)">No name data recorded.</div>'}
   `;
 }
 
-function switchTab(btn, panelId) {
-  const wrap = btn.closest('#detail-content');
-  wrap.querySelectorAll('.name-tab-btn').forEach(b=>b.classList.remove('active'));
-  wrap.querySelectorAll('.name-panel').forEach(p=>p.classList.remove('active'));
+function buildSwingPills(note){
+  if(!note)return`<div class="swing-pill"><div class="swing-pill-k">Note</div><div class="swing-pill-v">—</div></div>`;
+  const map={
+    'Entry':'Entry zone','entry':'Entry zone',
+    'Expiry':'Expiry','expiry':'Expiry',
+    'Target':'Target','target':'Target',
+    'Stop':'Stop','stop':'Stop',
+    'Size':'Size','size':'Size'
+  };
+  // Try to extract key patterns from the note string
+  const pills=[];
+  const entryM=note.match(/entry[:\s]+([^.]+?)(?:[\.\,]|expiry|target|stop|size|$)/i);
+  const expiryM=note.match(/expir[y\w]+[:\s]+([^.]+?)(?:[\.\,]|entry|target|stop|size|$)/i);
+  const targetM=note.match(/target[:\s]+([^.]+?)(?:[\.\,]|entry|expiry|stop|size|$)/i);
+  const stopM=note.match(/stop[:\s]+([^.]+?)(?:[\.\,]|entry|expiry|target|size|$)/i);
+  const sizeM=note.match(/size[:\s]+([^.]+?)(?:[\.\,]|entry|expiry|target|stop|$)/i);
+  if(entryM)pills.push(['Entry zone',entryM[1].trim()]);
+  if(expiryM)pills.push(['Expiry',expiryM[1].trim()]);
+  if(targetM)pills.push(['Target',targetM[1].trim()]);
+  if(stopM)pills.push(['Stop',stopM[1].trim()]);
+  if(sizeM)pills.push(['Size',sizeM[1].trim()]);
+  if(pills.length)return pills.map(([k,v])=>`<div class="swing-pill"><div class="swing-pill-k">${k}</div><div class="swing-pill-v">${v}</div></div>`).join('');
+  return`<div class="swing-pill" style="grid-column:span 4"><div class="swing-pill-k">Parameters</div><div class="swing-pill-v" style="font-size:12px;line-height:1.5">${note}</div></div>`;
+}
+
+function switchTab(btn,panelId){
+  const wrap=btn.closest('#detail-content');
+  wrap.querySelectorAll('.ntab').forEach(b=>b.classList.remove('active'));
+  wrap.querySelectorAll('.npanel').forEach(p=>p.classList.remove('active'));
   btn.classList.add('active');
   document.getElementById(panelId).classList.add('active');
 }
