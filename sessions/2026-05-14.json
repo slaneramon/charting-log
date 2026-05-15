@@ -1,0 +1,251 @@
+{
+  "id": "2026-05-14",
+  "date": "2026-05-14",
+  "title": "May 14 EOD — Friday Theme: Second Tests. ATH week closes strong. China trip wraps, Dow 50K, S&P 7500.",
+  "spyClose": "748.07",
+  "marketTone": "bull",
+  "macro": "S&P crossed 7,500 first time. Dow retook 50,000. Nasdaq new record 26,635. Four consecutive ATH days. Trump-Xi summit: agreed Strait of Hormuz must reopen — no firm Iran commitments from China. Musk said talks were 'awesome'. Xi warned Taiwan mishandling could cause 'extremely dangerous situation'. NVDA +4% on H200 China approval — 10 firms cleared including Alibaba, Tencent, ByteDance. Cerebras IPO opened $350 — NVDA rival, OpenAI and Amazon customers. Powell last day as Fed Chair Friday — Warsh confirmation expected. VIX 17.87. Consumer Sentiment 10am Friday. Oil $105 area — Hormuz agreement constructive but no ceasefire yet.",
+  "openItems": [
+    "Consumer Sentiment 10am Friday — size for volatility",
+    "Powell last day / Warsh confirmation headlines",
+    "China summit Day 2 final announcements",
+    "TSLA swing — hold, stop daily close below WORBL $416.84",
+    "NVDA earnings May 20 — check if 15m reset overnight before assigning slot",
+    "Friday theme: Second Tests — META $623-625, TSLA WORBH $449.16, AAPL $300, GOOGL $400+"
+  ],
+  "tradeLesson": "Second test theme — names that broke key levels this week and held them are the Friday runners. Names rejected and unable to hold come off the list. AMZN FVG overhead plus conflicted DTF = pass. NVDA live catalyst day = PMH test with 2m/15m sync is valid entry. Swing and scalp completely separate capital.",
+  "names": [
+    {
+      "name": "AAPL", "status": "bull", "close": "$298.11", "swing": true,
+      "swingNote": "Active June 20+. Entry $290.23. Second test of $300 is the Friday setup. Stop daily close below WORBL $290.30.",
+      "smi": [
+        {"tf":"15m","blue":"21.30","orange":"35.93","signal":"bear","dir":"Mid range pulling back — reset loading"},
+        {"tf":"1H","blue":"19.01","orange":"12.52","signal":"bull","dir":"Bullish cross recovering — entry loading"},
+        {"tf":"4H","blue":"44.94","orange":"52.18","signal":"bear","dir":"Mid range rolling over — healthy reset"},
+        {"tf":"DTF","blue":"84.16","orange":"82.51","signal":"bull","dir":"Deeply overbought, extended"},
+        {"tf":"WTF","blue":"72.21","orange":"52.83","signal":"bull","dir":"Strong separation, running"}
+      ],
+      "levels": [
+        {"k":"WORBH","v":"$293.88"},{"k":"WORBL","v":"$290.30"},
+        {"k":"PDH/ORB H","v":"$300.50"},{"k":"PDL","v":"$295.39"},
+        {"k":"ORB L","v":"$297.16"},{"k":"AHH","v":"$298.50"},
+        {"k":"AHL","v":"$297.60"},{"k":"PMH","v":"$301.18"},
+        {"k":"PML","v":"$297.56"},{"k":"Close","v":"$298.11"}
+      ],
+      "thesis": "Hit $300 ATH Thursday — first test rejected as expected. Tim Cook still in China. 1H bullish cross recovering from reset. Second test of $300 is the Friday setup. Pullback to $297.50-$298 = clean call entry. Don't chase gap up. DTF/WTF strongly bullish — bigger picture intact.",
+      "huntUp": "Gap above PDH $300.50 — don't chase. Wait for pullback to $297.50-$298 area.",
+      "huntDn": "Flush to AHL $297.60 or ORB L $297.16 — SMI curl = call entry. Clean Bucket 3.",
+      "plan": [
+        {"k":"Slot","v":"Watchlist 1 — confirm at 8:45"},
+        {"k":"Trigger","v":"Pullback to $297.50-$298, 2m and 15m bullish cross"},
+        {"k":"Call target","v":"$300 → $303-$305"},
+        {"k":"Stop ref","v":"Daily close below WORBL $290.30"},
+        {"k":"ORB wait","v":"Yes — confirm reset first"},
+        {"k":"Theme","v":"Second test of $300 psychological level"}
+      ]
+    },
+    {
+      "name": "AMZN", "status": "bear", "close": "$267.27", "swing": false,
+      "swingNote": "No — DTF crossed bearish, lost WORBL.",
+      "smi": [
+        {"tf":"15m","blue":"13.02","orange":"25.07","signal":"bear","dir":"Mid range heading down"},
+        {"tf":"1H","blue":"-76.11","orange":"-71.10","signal":"bear","dir":"Deeply oversold — accelerating down"},
+        {"tf":"4H","blue":"25.56","orange":"30.09","signal":"bear","dir":"Fresh bull cross failed — rolling over"},
+        {"tf":"DTF","blue":"0.28","orange":"13.28","signal":"bear","dir":"Just crossed below zero — bearish"},
+        {"tf":"WTF","blue":"76.33","orange":"67.11","signal":"bull","dir":"Only bullish TF — not enough"}
+      ],
+      "levels": [
+        {"k":"WORBH","v":"$273.64"},{"k":"WORBL","v":"$268.48"},
+        {"k":"PDH","v":"$270.76"},{"k":"PDL","v":"$266.63"},
+        {"k":"ORB H","v":"$270.44"},{"k":"ORB L","v":"$268.40"},
+        {"k":"AHH","v":"$267.31"},{"k":"AHL","v":"$266.50"},
+        {"k":"Close","v":"$267.27"}
+      ],
+      "thesis": "Thesis failed. DTF crossed bearish, lost WORBL $268.48. 4H fresh cross failed. Bearish FVG at $271.23 was the tell — resistance held perfectly. Off primary slots. Needs time to rebuild DTF structure before re-engaging.",
+      "huntUp": "Reclaim WORBL $268.48 and hold — only then reassess.",
+      "huntDn": "Continuation puts below AHL $266.50 if DTF accelerates lower.",
+      "plan": [
+        {"k":"Slot","v":"Off list"},
+        {"k":"Reason","v":"DTF bearish cross, lost WORBL, 4H cross failed"},
+        {"k":"Lesson","v":"Bearish FVG directly overhead plus conflicted DTF = pass"}
+      ]
+    },
+    {
+      "name": "GOOGL", "status": "bull", "close": "$401.08", "swing": false,
+      "swingNote": "No — WTF too extended at 90.18. Wait for pullback.",
+      "smi": [
+        {"tf":"15m","blue":"1.93","orange":"17.10","signal":"bear","dir":"Just below zero — reset loading"},
+        {"tf":"1H","blue":"28.43","orange":"30.00","signal":"bear","dir":"Attempting bullish cross — not confirmed yet"},
+        {"tf":"4H","blue":"68.18","orange":"66.87","signal":"bull","dir":"Above +60 strong — running"},
+        {"tf":"DTF","blue":"69.09","orange":"71.02","signal":"bear","dir":"Just crossed bearish — monitor"},
+        {"tf":"WTF","blue":"90.18","orange":"75.85","signal":"bull","dir":"Deeply overbought — extended"}
+      ],
+      "levels": [
+        {"k":"WORBH","v":"$397.42"},{"k":"WORBL","v":"$388.50"},
+        {"k":"PDH","v":"$402.92"},{"k":"PDL","v":"$395.84"},
+        {"k":"ORB H","v":"$400.12"},{"k":"ORB L","v":"$396.21"},
+        {"k":"AHH","v":"$401.35"},{"k":"AHL","v":"$398.02"},
+        {"k":"FVG","v":"$397.39"},{"k":"Close","v":"$401.08"}
+      ],
+      "thesis": "Opened exactly at FVG $397.39 entry level and ran $3.80 to $401.08. System worked perfectly. 1H attempting bullish cross — needs to complete overnight. 4H strongly bullish above +60. DTF just crossed bearish — monitor flag. WTF deeply overbought. Don't chase gap up — pullback to $399-$400 is the clean entry.",
+      "huntUp": "Gap above PDH $402.92 — don't chase. WTF too extended.",
+      "huntDn": "Pullback to ORB H $400.12 or AHL $398.02 — 1H cross confirms = call entry.",
+      "plan": [
+        {"k":"Slot","v":"Slot 2"},
+        {"k":"Trigger","v":"1H cross confirms + pullback to $399-$400, 2m and 15m aligned"},
+        {"k":"Call target","v":"PDH $402.92 → $410+"},
+        {"k":"Stop ref","v":"Below WORBH $397.42"},
+        {"k":"ORB wait","v":"Yes — confirm 1H cross first"},
+        {"k":"Theme","v":"Continuation above $400 new level"}
+      ]
+    },
+    {
+      "name": "META", "status": "bull", "close": "$618.42", "swing": false,
+      "swingNote": "No — but multi-week run intact. Target $623-$625 second test.",
+      "smi": [
+        {"tf":"15m","blue":"32.66","orange":"48.38","signal":"bear","dir":"Mid range pulling back — reset loading"},
+        {"tf":"1H","blue":"-39.63","orange":"-31.24","signal":"bear","dir":"Deeply oversold — massive fuel loading"},
+        {"tf":"4H","blue":"67.29","orange":"67.23","signal":"bull","dir":"Barely bullish cross — above +60, holding"},
+        {"tf":"DTF","blue":"-27.75","orange":"-45.16","signal":"bull","dir":"Recovering from deeply oversold — enormous room"},
+        {"tf":"WTF","blue":"19.81","orange":"19.18","signal":"bull","dir":"Barely crossed — just getting started"}
+      ],
+      "levels": [
+        {"k":"WORBH","v":"$604.80"},{"k":"WORBL","v":"$598.07"},
+        {"k":"PDH","v":"$623.71"},{"k":"PDL","v":"$615.15"},
+        {"k":"ORB H/AHH","v":"$618.77"},{"k":"ORB L","v":"$615.15"},
+        {"k":"AHL","v":"$616.70"},{"k":"4H 200 SMA","v":"$623.00"},
+        {"k":"DTF 21 EMA","v":"$625.00"},{"k":"Close","v":"$618.42"}
+      ],
+      "thesis": "Hit PDH $623.71 exactly — first test of 4H 200 SMA rejected as predicted. Every timeframe in different stage of bullish cycle. DTF recovering from -45 toward zero = weeks of runway. WTF just crossed = fresh momentum. 1H deeply oversold at -39 = massive fuel for next leg. Second test of $623-$625 is the Friday setup.",
+      "huntUp": "Holds above AHL $616.70 — calls toward ORB H $618.77 then PDH $623.71.",
+      "huntDn": "Flush to AHL $616.70 or ORB L $615.15 — 2m curl = call entry. Better price same target.",
+      "plan": [
+        {"k":"Slot","v":"Slot 1"},
+        {"k":"Trigger","v":"1H curl from oversold + 2m and 15m bullish cross"},
+        {"k":"Call target","v":"ORB H $618.77 → PDH $623.71 → $625 DTF 21 EMA"},
+        {"k":"Stop ref","v":"Below ORB L $615.15"},
+        {"k":"ORB wait","v":"No — 1H oversold Bucket 3"},
+        {"k":"Theme","v":"Second test of 4H 200 SMA $623-$625"}
+      ]
+    },
+    {
+      "name": "MSFT", "status": "caut", "close": "$409.50", "swing": false,
+      "swingNote": "Suspended. DTF still bearish. 4H fresh cross building but needs DTF confirmation.",
+      "smi": [
+        {"tf":"15m","blue":"44.80","orange":"50.45","signal":"bear","dir":"Mid range pulling back — reset loading"},
+        {"tf":"1H","blue":"22.26","orange":"31.09","signal":"bear","dir":"Mid range rolling down — digesting big move"},
+        {"tf":"4H","blue":"6.17","orange":"-9.68","signal":"bull","dir":"Fresh cross above zero — building"},
+        {"tf":"DTF","blue":"-29.42","orange":"-19.59","signal":"bear","dir":"Bearish cross — headwind. Price rejected DTF 9 EMA today"},
+        {"tf":"WTF","blue":"38.45","orange":"26.48","signal":"bull","dir":"Bullish cross building"}
+      ],
+      "levels": [
+        {"k":"WORBH","v":"$413.06"},{"k":"WORBL","v":"$405.50"},
+        {"k":"PDH","v":"$411.84"},{"k":"PDL","v":"$400.88"},
+        {"k":"ORB H","v":"$405.54"},{"k":"ORB L","v":"$400.88"},
+        {"k":"AHH","v":"$409.27"},{"k":"AHL","v":"$407.45"},
+        {"k":"15m 200 SMA","v":"$408.00"},{"k":"1H 200 SMA","v":"$413.00"},
+        {"k":"Close","v":"$409.50"}
+      ],
+      "thesis": "Surprise move of the week — cleared 15m 200 SMA $408 and ran to $411.84. Price back in middle of WORB. 4H candles between 9 and 21 EMA — consolidation positioning. DTF 9 EMA rejected price today — bearish structure intact on daily. WORBH $413.06 and 1H 200 SMA $413 are the same ceiling. Expects grind toward $413, rejection, consolidation within WORB.",
+      "huntUp": "Holds above AHH $409.27 — quick scalp toward PDH $411.84 then $413 ceiling. Take profits before rejection.",
+      "huntDn": "Loses AHL $407.45 — no trade.",
+      "plan": [
+        {"k":"Slot","v":"Watchlist — quick scalp only"},
+        {"k":"Trigger","v":"Holds above AHH $409.27, 2m and 15m aligned"},
+        {"k":"Call target","v":"PDH $411.84 → $413 ceiling — EXIT before rejection"},
+        {"k":"Stop ref","v":"Below AHL $407.45"},
+        {"k":"ORB wait","v":"Yes"},
+        {"k":"Warning","v":"Do NOT hold through $413 rejection — take profits and leave"}
+      ]
+    },
+    {
+      "name": "NVDA", "status": "bull", "close": "$235.75", "swing": false,
+      "swingNote": "No swing — earnings May 20. Size down, tightest OCO.",
+      "smi": [
+        {"tf":"15m","blue":"93.31","orange":"90.98","signal":"bull","dir":"Deeply overbought +90 — needs significant reset"},
+        {"tf":"1H","blue":"85.65","orange":"81.18","signal":"bull","dir":"Deeply overbought +80 — extended"},
+        {"tf":"4H","blue":"88.96","orange":"84.49","signal":"bull","dir":"Deeply overbought +80 — running hard"},
+        {"tf":"DTF","blue":"81.47","orange":"68.13","signal":"bull","dir":"Strong separation, room remaining"},
+        {"tf":"WTF","blue":"75.80","orange":"61.69","signal":"bull","dir":"Above +60 strong separation — running"}
+      ],
+      "levels": [
+        {"k":"WORBH","v":"$222.30"},{"k":"WORBL","v":"$213.89"},
+        {"k":"PDH","v":"$236.54"},{"k":"PDL","v":"$229.24"},
+        {"k":"ORB H","v":"$233.26"},{"k":"ORB L","v":"$229.24"},
+        {"k":"AHH","v":"$237.92"},{"k":"AHL","v":"$234.70"},
+        {"k":"PMH","v":"$232.30"},{"k":"PML","v":"$229.14"},
+        {"k":"Close","v":"$235.75"}
+      ],
+      "thesis": "Historic week — H200 China approval, Jensen in Beijing, +4% day. Every timeframe deeply overbought simultaneously. Off primary slots Friday unless significant overnight reset. 15m at 93 needs to come to mid range before entry is clean. AHH $237.92 is next target. Earnings May 20 — 6 days away, premium expensive.",
+      "huntUp": "Only if 15m resets to mid range overnight. PMH test with 2m/15m sync on live catalyst day = valid entry.",
+      "huntDn": "Flush to PDH $236.54 or ORB H $233.26 with reset — call entry if alignment confirms.",
+      "plan": [
+        {"k":"Slot","v":"Off list — check at 8:45 for reset"},
+        {"k":"Trigger","v":"15m reset to mid range + 2m/15m sync at open"},
+        {"k":"Call target","v":"AHH $237.92 → $240+"},
+        {"k":"Stop ref","v":"Below ORB H $233.26"},
+        {"k":"ORB wait","v":"No — live catalyst rules apply"},
+        {"k":"⚠️ Earnings","v":"May 20 — size down, tightest OCO, no swing"}
+      ]
+    },
+    {
+      "name": "TSLA", "status": "bull", "close": "$443.30", "swing": true,
+      "swingNote": "Active — Jun26 $445 call, cost basis $27.90. Stop daily close below WORBL $416.84. Target $500 ATH. Hold through consolidation.",
+      "smi": [
+        {"tf":"15m","blue":"-12.09","orange":"-13.68","signal":"bull","dir":"Bullish cross just below zero — reset completing"},
+        {"tf":"1H","blue":"-69.42","orange":"-59.11","signal":"bear","dir":"Deeply oversold — massive fuel loading for next leg"},
+        {"tf":"4H","blue":"45.89","orange":"51.04","signal":"bear","dir":"Mid range rolling over — digesting big week"},
+        {"tf":"DTF","blue":"74.70","orange":"74.57","signal":"bull","dir":"Barely bullish cross — above +60, holding"},
+        {"tf":"WTF","blue":"49.03","orange":"23.18","signal":"bull","dir":"Massive separation — enormous room to run"}
+      ],
+      "levels": [
+        {"k":"WORBH","v":"$449.16"},{"k":"WORBL","v":"$416.84"},
+        {"k":"PDH","v":"$451.98"},{"k":"PDL","v":"$441.17"},
+        {"k":"ORB H","v":"$447.00"},{"k":"ORB L","v":"$442.02"},
+        {"k":"AHH","v":"$443.76"},{"k":"AHL","v":"$442.02"},
+        {"k":"PMH","v":"$452.07"},{"k":"PML","v":"$446.15"},
+        {"k":"Close","v":"$443.30"}
+      ],
+      "thesis": "Healthy pullback after testing WORBH $449.16. First candle red, flushed early buyers, bounced, tested ceiling, pulled back — classic consolidation. 1H deeply oversold at -69 = massive fuel for next leg. 15m bullish cross resetting. WTF 49/23 massive separation just below +60. Second test of WORBH $449.16 is the Friday setup. Swing completely intact.",
+      "huntUp": "Holds above AHH $443.76 at open with 2m/15m bullish — calls toward ORB H $447 then WORBH $449.16.",
+      "huntDn": "Flush to AHL $442.02 — Bucket 3 snap back entry. Also swing entry zone.",
+      "plan": [
+        {"k":"Slot","v":"Slot 3"},
+        {"k":"Trigger","v":"1H curl from oversold + 2m and 15m bullish cross"},
+        {"k":"Call target","v":"ORB H $447 → WORBH $449.16 → PDH $451.98"},
+        {"k":"Stop ref","v":"Below AHL $442.02 for scalp"},
+        {"k":"ORB wait","v":"No — 1H oversold Bucket 3"},
+        {"k":"Theme","v":"Second test of WORBH $449.16 breakout attempt"},
+        {"k":"Swing","v":"Hold Jun26 $445 call. Stop daily close below WORBL $416.84. Target $500."}
+      ]
+    },
+    {
+      "name": "SPY", "status": "bull", "close": "$748.07", "swing": false,
+      "swingNote": "Context only — not traded.",
+      "smi": [
+        {"tf":"15m","blue":"30.34","orange":"44.38","signal":"bear","dir":"Mid range pulling back — reset loading"},
+        {"tf":"1H","blue":"33.33","orange":"40.62","signal":"bear","dir":"Mid range rolling down — digesting"},
+        {"tf":"4H","blue":"84.66","orange":"84.03","signal":"bull","dir":"Deeply overbought — curling down, exhaustion signal"},
+        {"tf":"DTF","blue":"88.28","orange":"86.64","signal":"bull","dir":"Deeply overbought — extended"},
+        {"tf":"WTF","blue":"89.61","orange":"76.33","signal":"bull","dir":"Deeply overbought — momentum market"}
+      ],
+      "levels": [
+        {"k":"WORBH","v":"$740.79"},{"k":"WORBL","v":"$735.84"},
+        {"k":"PDH","v":"$749.52"},{"k":"PDL","v":"$743.56"},
+        {"k":"ORB H","v":"$745.62"},{"k":"ORB L","v":"$743.56"},
+        {"k":"AHH","v":"$748.55"},{"k":"AHL","v":"$746.63"},
+        {"k":"PMH","v":"$745.43"},{"k":"PML","v":"$743.12"},
+        {"k":"Close","v":"$748.07"}
+      ],
+      "thesis": "S&P crossed 7,500 first time. Dow 50,000. Four consecutive ATH days. 4H curling down while deeply overbought — short term exhaustion signal, not breakdown. Friday consolidation expected and healthy. ORB H $745.62 is the bull/bear line — holds = constructive, loses it = names reset harder giving better entries.",
+      "huntUp": "Gap above PDH $749.52 — don't chase. 4H exhaustion signal.",
+      "huntDn": "Loses ORB H $745.62 = reassess all names at open.",
+      "plan": [
+        {"k":"Role","v":"Context only"},
+        {"k":"Bull line","v":"ORB H $745.62"},
+        {"k":"Override","v":"Consumer Sentiment 10am — size for volatility"},
+        {"k":"Note","v":"Friday consolidation after 4 ATH days is healthy — don't panic on pullback"}
+      ]
+    }
+  ]
+}
