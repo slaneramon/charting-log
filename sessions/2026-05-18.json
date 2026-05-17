@@ -1,0 +1,352 @@
+{
+  "id": "2026-05-18",
+  "date": "2026-05-18",
+  "title": "Week of May 18 — Institutional MSFT, AAPL ATH, NVDA Earnings Week",
+  "spyClose": 739.08,
+  "marketTone": "bear",
+  "macro": {
+    "iran": "Ceasefire holding but fragile. Peace talks stalled — uranium enrichment deadlock. Pakistan mediating. Any escalation reopens Hormuz risk immediately.",
+    "bonds": "30Y yield spiked to 5.11% Friday — multi-year high. Jerome Powell's last day as Fed chair. New Fed chair unknown quantity. Yields are the primary macro headwind.",
+    "oil": "Above $109. Iran war floor holding. China crude deal adds upward pressure.",
+    "china": "Trump-Xi summit concluded. Trade stabilization not breakthrough. $30B tariff relief — less than 10% of bilateral trade. Tim Cook, Jensen Huang, Elon Musk in delegation. China narrative benefits AAPL most.",
+    "vix": "Elevated. Risk-off tone into weekend.",
+    "nvdaEarnings": "Wednesday May 20. IV expanding all week. No overnight holds Monday or Tuesday. 0DTE or same-day only.",
+    "ackman": "Bill Ackman Pershing Square disclosed new MSFT position Friday May 15. Called recent pullback a rare opportunity at 21x forward earnings — in line with market, well below historical average. Primary catalyst for MSFT relative strength on red day."
+  },
+  "openItems": [
+    "TSLA Jun26 445C stop $14.65 — accept at Monday open, do not watch",
+    "New WORBH/WORBL set after Monday full session close",
+    "NVDA earnings Wednesday — no overnight holds Tue night",
+    "New Fed chair — watch for any Monday morning announcement or commentary"
+  ],
+  "names": [
+    {
+      "name": "AAPL",
+      "status": "bull",
+      "close": 300.23,
+      "swing": true,
+      "swingNote": "ATH at 303.20. $300 psychological base. 4H 21 EMA reset complete. WTF bull cross with room. MTF approaching overbought with room to +80. China narrative tailwind from Tim Cook Beijing trip. June calls on Monday confirmation above 300.",
+      "smi": [
+        {"tf": "15m", "blue": -80.51, "orange": -73.47, "signal": "bear", "dir": "deeply oversold, flushed into close"},
+        {"tf": "1H", "blue": -45.41, "orange": -25.08, "signal": "bear", "dir": "oversold, dropping"},
+        {"tf": "4H", "blue": 29.01, "orange": 28.75, "signal": "bull", "dir": "reset from +90 complete, compressing, curling"},
+        {"tf": "DTF", "blue": 82.28, "orange": 82.40, "signal": "bear", "dir": "deeply overbought, flattening at top"},
+        {"tf": "WTF", "blue": 72.28, "orange": 52.86, "signal": "bull", "dir": "overbought, strong separation, room to run"},
+        {"tf": "MTF", "blue": 58.66, "orange": 55.75, "signal": "bull", "dir": "approaching overbought, room to +80"}
+      ],
+      "levels": [
+        {"k": "PDH", "v": 303.20},
+        {"k": "PDL", "v": "not labeled"},
+        {"k": "ORB H", "v": 293.88},
+        {"k": "ORB L", "v": 290.30},
+        {"k": "PMH", "v": 298.21},
+        {"k": "PML", "v": 293.90},
+        {"k": "WORBH", "v": 293.88},
+        {"k": "WORBL", "v": 290.30},
+        {"k": "4H 9 EMA", "v": "~299"},
+        {"k": "4H 21 EMA", "v": 295.82},
+        {"k": "DTF 9 EMA", "v": 263.13},
+        {"k": "DTF 21 EMA", "v": 283.13}
+      ],
+      "thesis": "Highest conviction bull setup. 4H SMI fully reset from deeply overbought — purge complete and curling. WTF bull cross with room. MTF approaching overbought with room. ATH at 303.20 with $300 psychological base. China deal narrative directly benefits AAPL. Swing candidate on Monday confirmation above 300.",
+      "huntUp": 303.20,
+      "huntDn": 295.82,
+      "plan": [
+        {"k": "bull trigger", "v": "Premarket holds above 298 PMH. 2m crosses up with 15m aligned. First candle call."},
+        {"k": "bull target 1", "v": "301 then 303.20 ATH"},
+        {"k": "bull target 2", "v": "Above 303.20 = new price discovery, no ceiling"},
+        {"k": "bear trigger", "v": "Premarket loses 295.82 4H 21 EMA"},
+        {"k": "bear target", "v": "293.88 WORBH / ORB H zone"},
+        {"k": "swing entry", "v": "Monday confirmation close above 300 — June calls"},
+        {"k": "stop hunt", "v": "Open will probe PMH 298.21 or 4H 21 EMA 295.82 before revealing direction"}
+      ]
+    },
+    {
+      "name": "AMZN",
+      "status": "bear",
+      "close": 262.53,
+      "swing": false,
+      "swingNote": "No swing. DTF bear cross confirmed. 4H trend broken. Monthly 9 EMA rejection. Watch only.",
+      "smi": [
+        {"tf": "15m", "blue": "n/a", "orange": "n/a", "signal": "n/a", "dir": "confirm at 8:45"},
+        {"tf": "1H", "blue": "n/a", "orange": "n/a", "signal": "n/a", "dir": "confirm at 8:45"},
+        {"tf": "4H", "blue": -47.62, "orange": -35.93, "signal": "bear", "dir": "approaching oversold, dropping"},
+        {"tf": "DTF", "blue": -19.18, "orange": -2.96, "signal": "bear", "dir": "bear cross confirmed, both heading lower"},
+        {"tf": "WTF", "blue": 74.19, "orange": 68.24, "signal": "bull", "dir": "overbought, first signs of rollover"},
+        {"tf": "MTF", "blue": 33.12, "orange": 26.63, "signal": "bull", "dir": "mid range, bull cross, room both directions"}
+      ],
+      "levels": [
+        {"k": "PDH", "v": 267.00},
+        {"k": "PDL", "v": "not labeled"},
+        {"k": "ORB H", "v": 273.64},
+        {"k": "ORB L", "v": 268.48},
+        {"k": "PMH", "v": 266.02},
+        {"k": "PML", "v": 262.06},
+        {"k": "WORBH", "v": 273.64},
+        {"k": "WORBL", "v": 268.48},
+        {"k": "DTF 9 EMA", "v": 263.13},
+        {"k": "DTF 21 EMA", "v": 261.03},
+        {"k": "Monthly 9 EMA", "v": 267.86}
+      ],
+      "thesis": "DTF bear cross confirmed. 4H trend broken. Monthly 9 EMA rejection. Three bearish signals stacked. WTF and MTF SMI still bullish — only structural support remaining. Watch only. Put setup on failed retest of DTF 9 EMA 263.13.",
+      "huntUp": 263.13,
+      "huntDn": 261.03,
+      "plan": [
+        {"k": "bull trigger", "v": "Reclaims DTF 9 EMA 263.13 AND monthly 9 EMA 267.86 — calls only on both reclaimed"},
+        {"k": "bear trigger", "v": "Failed retest of 263.13. 2m crosses down with 15m aligned."},
+        {"k": "bear target", "v": "DTF 21 EMA 261.03 then 258 area"},
+        {"k": "stance", "v": "Watch only. Lower ranked. Only trade if setup is clean and top names have already triggered."}
+      ]
+    },
+    {
+      "name": "GOOGL",
+      "status": "bull",
+      "close": 395.19,
+      "swing": true,
+      "swingNote": "4H SMI reset from +90 to +2.66 complete — curling up. WTF deeply overbought bull cross at +88. MTF overbought with room. ATH territory approaching. June calls on 400 break.",
+      "smi": [
+        {"tf": "15m", "blue": "n/a", "orange": "n/a", "signal": "n/a", "dir": "confirm at 8:45"},
+        {"tf": "1H", "blue": "n/a", "orange": "n/a", "signal": "n/a", "dir": "confirm at 8:45"},
+        {"tf": "4H", "blue": 2.66, "orange": 18.67, "signal": "bear", "dir": "reset complete, near zero, curling up"},
+        {"tf": "DTF", "blue": 63.68, "orange": 67.30, "signal": "bear", "dir": "overbought, tightening, not confirmed bear cross yet"},
+        {"tf": "WTF", "blue": 88.20, "orange": 74.86, "signal": "bull", "dir": "deeply overbought, strong separation, V-recovery"},
+        {"tf": "MTF", "blue": 78.88, "orange": 70.97, "signal": "bull", "dir": "overbought, room to +85-90 historical ceiling"}
+      ],
+      "levels": [
+        {"k": "PDH", "v": 400.00},
+        {"k": "PDL", "v": "not labeled"},
+        {"k": "ORB H", "v": 397.42},
+        {"k": "ORB L", "v": 388.50},
+        {"k": "PMH", "v": 397.48},
+        {"k": "PML", "v": 392.63},
+        {"k": "WORBH", "v": 397.42},
+        {"k": "WORBL", "v": 388.50},
+        {"k": "4H 9 EMA", "v": 396.38},
+        {"k": "4H 21 EMA", "v": 395.60},
+        {"k": "DTF 9 EMA", "v": 392.18},
+        {"k": "DTF 21 EMA", "v": 373.96}
+      ],
+      "thesis": "4H SMI fully reset from deeply overbought to near zero — purge complete and curling. Price closed below both 4H EMAs — needs reclaim. WTF deeply overbought bull cross with strong separation. MTF overbought with room. ATH territory approaching above 400. Slot 3 behind MSFT and AAPL. 4H 21 EMA 395.60 is the first hurdle.",
+      "huntUp": 400.00,
+      "huntDn": 392.63,
+      "plan": [
+        {"k": "bull trigger", "v": "Premarket reclaims 4H 21 EMA 395.60. 2m crosses up with 15m aligned. First candle call."},
+        {"k": "bull target 1", "v": "PMH 397.48 then 400 psychological"},
+        {"k": "bull target 2", "v": "Above 400 = new price discovery, swing entry triggered"},
+        {"k": "bear trigger", "v": "395.60 acts as resistance. 2m crosses down with 15m aligned."},
+        {"k": "bear target", "v": "PML 392.63 then DTF 9 EMA 392.18"},
+        {"k": "swing entry", "v": "Daily close above 400 — June calls"},
+        {"k": "stop hunt", "v": "Open will probe 395.60 4H 21 EMA. Wait for snapback confirmation."}
+      ]
+    },
+    {
+      "name": "META",
+      "status": "caut",
+      "close": 614.45,
+      "swing": false,
+      "swingNote": "Swing candidate only on daily close above 4H 200 SMA 621.67. That break after months of basing triggers a different move. June calls on confirmed break.",
+      "smi": [
+        {"tf": "15m", "blue": -80.51, "orange": -73.47, "signal": "bear", "dir": "deeply oversold, flushed into close"},
+        {"tf": "1H", "blue": -86.52, "orange": -84.20, "signal": "bear", "dir": "deeply oversold, maximum compression"},
+        {"tf": "4H", "blue": 7.11, "orange": 21.80, "signal": "bear", "dir": "mid range, violent rejection from +70, dropping"},
+        {"tf": "DTF", "blue": -6.82, "orange": -25.99, "signal": "bull", "dir": "recovering from deeply oversold, bull cross, curling hard"},
+        {"tf": "WTF", "blue": 18.59, "orange": 18.57, "signal": "bull", "dir": "dead flat at inflection — cross confirmation is the ignition"},
+        {"tf": "MTF", "blue": -27.79, "orange": -18.57, "signal": "bear", "dir": "mid range negative, bear cross, heading lower"}
+      ],
+      "levels": [
+        {"k": "PDH / 4H 200 SMA", "v": 621.67},
+        {"k": "PDL", "v": "not labeled"},
+        {"k": "ORB H", "v": 614.71},
+        {"k": "ORB L", "v": 609.38},
+        {"k": "PMH", "v": 615.34},
+        {"k": "PML", "v": 606.08},
+        {"k": "WORBH", "v": 604.80},
+        {"k": "WORBL", "v": 598.07},
+        {"k": "AHH", "v": 614.88},
+        {"k": "AHL", "v": 610.13},
+        {"k": "DTF 9 EMA", "v": 615.68},
+        {"k": "DTF 21 EMA", "v": 623.82},
+        {"k": "4H 200 SMA", "v": 621.67}
+      ],
+      "thesis": "Coiling for another attempt at 4H 200 SMA 621.67 — only 7 points from close. DTF SMI bull cross recovering hard from deeply oversold. 15m and 1H flushed to -80 maximum compression. WTF at dead flat inflection — cross confirmation is the ignition signal. Close held ORB H 614.71 through macro selloff. Higher risk lower probability but if 621.67 breaks the reward is substantially larger. Do not miss it when it goes.",
+      "huntUp": 621.67,
+      "huntDn": 606.08,
+      "plan": [
+        {"k": "bull trigger", "v": "Premarket holds above 614.71 ORB H. WTF SMI confirms bull cross. 2m crosses up with 15m aligned. First candle call."},
+        {"k": "bull target 1", "v": "DTF 9 EMA 615.68 then 621.67 4H 200 SMA"},
+        {"k": "bull target 2", "v": "Above 621.67 = DTF 21 EMA 623.82. Swing entry triggered on daily close above 621.67."},
+        {"k": "bear trigger", "v": "614.71 ORB H fails. Below 610.13 AHL."},
+        {"k": "bear target", "v": "606.08 PML then 600 psychological"},
+        {"k": "key number", "v": "621.67 — the only number that matters on META this week"},
+        {"k": "stop hunt", "v": "Open will probe ORB H 614.71. Wait for snapback."}
+      ]
+    },
+    {
+      "name": "MSFT",
+      "status": "bull",
+      "close": 422.07,
+      "swing": true,
+      "swingNote": "Highest conviction swing on board. Ackman Pershing Square new position disclosed Friday at 21x forward earnings. DTF and WTF 9 EMA reclaimed simultaneously after months of downtrend. MTF at historical oversold bottom. June calls targeting 431.89 monthly 9 EMA then 445+.",
+      "smi": [
+        {"tf": "15m", "blue": -67.21, "orange": -60.61, "signal": "bear", "dir": "deeply oversold, flushed into close"},
+        {"tf": "1H", "blue": 1.05, "orange": 18.65, "signal": "bear", "dir": "mid range, dropped from +70, crossing below zero"},
+        {"tf": "4H", "blue": 49.61, "orange": 45.37, "signal": "bull", "dir": "most powerful 4H SMI move on board — -55 to +49 in 48hrs"},
+        {"tf": "DTF", "blue": -11.48, "orange": -15.53, "signal": "bull", "dir": "bull cross, recovering, price reclaimed DTF 9 EMA"},
+        {"tf": "WTF", "blue": 46.46, "orange": 30.49, "signal": "bull", "dir": "bull cross, mid range, strong separation, V-recovery from -80"},
+        {"tf": "MTF", "blue": -47.25, "orange": -39.16, "signal": "bear", "dir": "oversold, historically at bottom levels that precede reversals"}
+      ],
+      "levels": [
+        {"k": "PDH", "v": 428.18},
+        {"k": "PDL / ORB L", "v": 412.91},
+        {"k": "ORB H", "v": 418.30},
+        {"k": "PMH", "v": 415.10},
+        {"k": "PML", "v": 405.35},
+        {"k": "WORBH", "v": 413.06},
+        {"k": "WORBL", "v": 405.50},
+        {"k": "AHH", "v": 422.08},
+        {"k": "AHL", "v": 419.52},
+        {"k": "4H 9 EMA", "v": 421.17},
+        {"k": "4H 21 EMA", "v": 418.66},
+        {"k": "DTF 9 EMA", "v": 421.00},
+        {"k": "Monthly 9 EMA", "v": 431.89}
+      ],
+      "thesis": "Top ranked name. Ackman Pershing Square disclosed new position Friday — institutional validation at 21x forward earnings. Relative strength on Dow-500-down day. DTF and WTF 9 EMA reclaimed simultaneously after months of downtrend. Most powerful 4H SMI move on board. MTF at historical oversold levels that precede reversals. Technical + fundamental + institutional confluence = highest conviction setup of the week.",
+      "huntUp": 431.89,
+      "huntDn": 418.66,
+      "plan": [
+        {"k": "bull trigger", "v": "Premarket holds above DTF 9 EMA 421.00. 2m crosses up with 15m aligned. First candle call."},
+        {"k": "bull target 1", "v": "428.18 PDH"},
+        {"k": "bull target 2", "v": "431.89 monthly 9 EMA — trend change confirmation"},
+        {"k": "bull target 3", "v": "445+ area above monthly 9 EMA reclaim"},
+        {"k": "bear trigger", "v": "421.00 DTF 9 EMA fails. Clean break below 418.66 4H 21 EMA with 15m aligned."},
+        {"k": "bear target", "v": "415.10 PMH then 412.91 PDL / ORB L"},
+        {"k": "swing entry", "v": "Monday open holds 421 — June calls. Ackman institutional support beneath this level."},
+        {"k": "stop hunt", "v": "Open will probe AHL 419.52 or DTF 9 EMA 421. Wait for snapback confirmation."}
+      ]
+    },
+    {
+      "name": "NVDA",
+      "status": "caut",
+      "close": 225.19,
+      "swing": false,
+      "swingNote": "No swing this week. Earnings Wednesday May 20. Reassess post-earnings for swing entry.",
+      "smi": [
+        {"tf": "15m", "blue": -69.26, "orange": -66.57, "signal": "bear", "dir": "deeply oversold, flushed"},
+        {"tf": "1H", "blue": -75.40, "orange": -63.52, "signal": "bear", "dir": "deeply oversold, accelerating"},
+        {"tf": "4H", "blue": -22.30, "orange": 7.21, "signal": "bear", "dir": "sharpest 4H SMI drop on board — +85 to -22 in one session"},
+        {"tf": "DTF", "blue": 72.95, "orange": 70.54, "signal": "bull", "dir": "deeply overbought, tightening, rollover risk"},
+        {"tf": "WTF", "blue": 66.07, "orange": 56.82, "signal": "bull", "dir": "overbought, bull cross, room to +80-90 historical ceiling"},
+        {"tf": "MTF", "blue": 38.18, "orange": 38.64, "signal": "bull", "dir": "approaching bull cross, mid range, massive room"}
+      ],
+      "levels": [
+        {"k": "PDH", "v": 231.50},
+        {"k": "PDL / AHL", "v": 224.23},
+        {"k": "ORB H", "v": 230.00},
+        {"k": "ORB L", "v": 225.06},
+        {"k": "PMH", "v": 233.77},
+        {"k": "PML", "v": 228.01},
+        {"k": "WORBH", "v": 222.30},
+        {"k": "WORBL", "v": 213.89},
+        {"k": "4H 9 EMA", "v": 224.39},
+        {"k": "4H 21 EMA", "v": 222.68},
+        {"k": "DTF 9 EMA", "v": 219.94},
+        {"k": "DTF 21 EMA", "v": 210.36}
+      ],
+      "thesis": "Earnings Wednesday May 20 — all positioning must account for this. 4H SMI freefall from +85 to -22 most violent drop on any name. Price sitting on 4H 9 EMA 224.39 with PDL 224.23 just below — that entire zone is the line. 15m and 1H deeply oversold. DTF overbought and tightening. WTF bull cross with room. MTF bull cross imminent. Oversold bounce candidate but earnings discipline is mandatory.",
+      "huntUp": 230.00,
+      "huntDn": 222.68,
+      "plan": [
+        {"k": "bull trigger", "v": "Premarket holds 224.23-224.39 zone. 2m crosses up with 15m aligned. First candle call."},
+        {"k": "bull target 1", "v": "228.01 PML then 230.00 ORB H"},
+        {"k": "bull target 2", "v": "231.50 PDH then 233.77 PMH"},
+        {"k": "bear trigger", "v": "224.23 PDL/AHL zone fails. 2m crosses down with 15m aligned."},
+        {"k": "bear target", "v": "219.94 DTF 9 EMA"},
+        {"k": "earnings rules", "v": "0DTE or same-day only Monday and Tuesday. No overnight holds. No pre-earnings position Tuesday night."},
+        {"k": "stop hunt", "v": "Open will probe 224.23 PDL. That is the trap. Wait for snapback confirmation."}
+      ]
+    },
+    {
+      "name": "TSLA",
+      "status": "caut",
+      "close": 422.32,
+      "swing": false,
+      "swingNote": "Swing stopped out Monday open — accept stop at $14.65, move on. No new swing until 4H trend repairs and WTF shooting star is absorbed.",
+      "smi": [
+        {"tf": "15m", "blue": -72.34, "orange": -71.14, "signal": "bear", "dir": "deeply oversold, compressing, slight flattening"},
+        {"tf": "1H", "blue": -86.52, "orange": -84.20, "signal": "bear", "dir": "deeply oversold, maximum compression"},
+        {"tf": "4H", "blue": -69.57, "orange": -45.08, "signal": "bear", "dir": "deeply oversold, no curl, separating"},
+        {"tf": "DTF", "blue": 58.56, "orange": 66.56, "signal": "bear", "dir": "rolling over from overbought, bear cross forming"},
+        {"tf": "WTF", "blue": 37.85, "orange": 17.59, "signal": "bull", "dir": "mid range, bull cross, shooting star candle warning"},
+        {"tf": "MTF", "blue": 8.65, "orange": 17.04, "signal": "bear", "dir": "mid range, bear cross forming"}
+      ],
+      "levels": [
+        {"k": "PDH / ORB H", "v": 434.66},
+        {"k": "PDL", "v": 422.00},
+        {"k": "ORB L", "v": 426.05},
+        {"k": "PMH", "v": 436.80},
+        {"k": "PML", "v": 430.33},
+        {"k": "WORBH", "v": 449.16},
+        {"k": "WORBL", "v": 416.84},
+        {"k": "AHH", "v": 428.82},
+        {"k": "AHL", "v": 417.80},
+        {"k": "4H 9 EMA", "v": 431.89},
+        {"k": "4H 21 EMA", "v": 424.12},
+        {"k": "DTF 9 EMA", "v": 426.30},
+        {"k": "DTF 21 EMA", "v": 407.10},
+        {"k": "Monthly 9 EMA", "v": 418.15},
+        {"k": "WTF 9 EMA", "v": 400.70}
+      ],
+      "thesis": "Three EMA levels lost Friday — 4H 9, 4H 21, DTF 9. WTF shooting star confirmed on high volume. Monthly 9 EMA 418.15 is the critical support — AH was sitting on it. 15m and 1H at maximum oversold compression. Violent snapback potential but no curl on 1H or 4H yet. 418.15 monthly 9 EMA is the only number that matters Monday morning.",
+      "huntUp": 423.12,
+      "huntDn": 416.84,
+      "plan": [
+        {"k": "swing stop", "v": "Jun26 445C stop $14.65 hits at Monday open — accept it"},
+        {"k": "bull trigger", "v": "Premarket holds monthly 9 EMA 418.15 and 15m curls above -60. First candle call."},
+        {"k": "bull target 1", "v": "421.31 FVG then 423.12 then DTF 21 EMA 407.10 from above"},
+        {"k": "bull target 2", "v": "Reclaim DTF 9 EMA 426.30 = recovery confirmed"},
+        {"k": "bear trigger", "v": "Monthly 9 EMA 418.15 fails premarket. 2m crosses down with 15m aligned."},
+        {"k": "bear target", "v": "WTF 9 EMA 400.70 area — significant move"},
+        {"k": "patience", "v": "Do not front-run. No curl on 1H or 4H = no early entry. Wait for the signal."}
+      ]
+    },
+    {
+      "name": "SPY",
+      "status": "bear",
+      "close": 739.08,
+      "swing": false,
+      "swingNote": "Context only. Not a trading name.",
+      "smi": [
+        {"tf": "15m", "blue": -58.11, "orange": -39.72, "signal": "bear", "dir": "approaching oversold, dropping"},
+        {"tf": "1H", "blue": -65.20, "orange": -53.90, "signal": "bear", "dir": "oversold, accelerating"},
+        {"tf": "4H", "blue": -32.56, "orange": -4.56, "signal": "bear", "dir": "mid range negative, accelerating down"},
+        {"tf": "DTF", "blue": 74.37, "orange": 80.50, "signal": "bear", "dir": "deeply overbought, rolling over, bear cross"},
+        {"tf": "WTF", "blue": 85.07, "orange": 74.06, "signal": "bull", "dir": "deeply overbought, bull cross, extended but intact"},
+        {"tf": "MTF", "blue": 76.33, "orange": 75.25, "signal": "bull", "dir": "overbought, room to +85-90, flattening"}
+      ],
+      "levels": [
+        {"k": "PDH", "v": 743.45},
+        {"k": "PDL", "v": 737.90},
+        {"k": "ORB H", "v": 741.93},
+        {"k": "ORB L / WORBH", "v": 740.82},
+        {"k": "WORBL", "v": 736.49},
+        {"k": "PMH", "v": 738.90},
+        {"k": "AHH", "v": 739.21},
+        {"k": "AHL", "v": 736.88},
+        {"k": "4H 9 EMA", "v": 741.15},
+        {"k": "4H 21 EMA", "v": 740.18},
+        {"k": "DTF 9 EMA", "v": 740.20},
+        {"k": "WTF 9 EMA", "v": 707.85},
+        {"k": "Monthly 9 EMA", "v": 734.56}
+      ],
+      "thesis": "4H and DTF both lost 9 EMAs Friday. WTF and MTF remain bullish — healthy pullback in larger bull trend, not a reversal. 740.20 DTF 9 EMA is the macro bull/bear line Monday. Below it = risk-off tone for all names. Above it = recovery, calls favored across board. 15m approaching oversold into Monday open — bounce attempt likely early.",
+      "huntUp": 741.93,
+      "huntDn": 736.49,
+      "plan": [
+        {"k": "macro bull line", "v": "740.20 DTF 9 EMA — reclaim = bullish tone for all names"},
+        {"k": "macro bear line", "v": "736.49 WORBL fail = bearish tone, puts favored on individual names"},
+        {"k": "bounce zone", "v": "15m approaching oversold — early Monday bounce attempt likely before direction reveals"},
+        {"k": "WORB note", "v": "New WORBH/WORBL set after Monday full session close — locked all week"}
+      ]
+    }
+  ]
+}
