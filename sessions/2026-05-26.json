@@ -1,0 +1,265 @@
+{
+  "date": "2026-05-26",
+  "generated": "2026-05-25",
+  "macro": {
+    "context": "Iran deal gap up expected — ES1 +0.91% over Memorial Day weekend. Formal MOU not yet signed. Kevin Warsh Fed chair, hawkish lean, rate hike odds 45%. 10Y easing toward 4.5%. Memorial Day week — lower volume, exaggerated moves. SPY WTF maximum overbought. Gap up does not mean chase — room left after gap is the trade.",
+    "spy_context": "4H bear cross rolling over. WTF maximum overbought. AHL $743.80 is the floor. ORB H $748.15 open above = macro green. AHL fail = macro drag, raises bar on all calls."
+  },
+  "worb_note": "WORBH and WORBL NOT YET SET. Set from Tuesday May 26 full session high and low. Lock for entire week until Monday June 2. Do not use prior week numbers.",
+  "names": [
+    {
+      "name": "AAPL",
+      "status": "active",
+      "close": 308.90,
+      "swing": "none",
+      "swingNote": "",
+      "smi": [
+        { "tf": "4H", "blue": 73.51, "orange": 68.07, "signal": "bull", "dir": "up" },
+        { "tf": "DTF", "blue": 75.48, "orange": 74.24, "signal": "bull", "dir": "flat" },
+        { "tf": "WTF", "blue": null, "orange": null, "signal": "bull", "dir": "up" }
+      ],
+      "levels": {
+        "PDH": 311.38,
+        "PDL": null,
+        "PMH": null,
+        "PML": null,
+        "AHH": null,
+        "AHL": null,
+        "ORB_H": null,
+        "ORB_L": null
+      },
+      "plan": {
+        "slot": 2,
+        "bull": "Opens above or clears PDH $311.38 first candle → call, new price discovery, $3+ room",
+        "bear": "PDH $311.38 rejection with upper wick → exit immediately, no hold",
+        "note": "Four consecutive green days. WTF strongest bull cross on board. Momentum with catalyst stays on board — overbought does not disqualify."
+      }
+    },
+    {
+      "name": "AMZN",
+      "status": "active",
+      "close": 266.30,
+      "swing": "none",
+      "swingNote": "",
+      "smi": [
+        { "tf": "4H", "blue": 49.82, "orange": 60.51, "signal": "bear", "dir": "down" },
+        { "tf": "DTF", "blue": 4.65, "orange": -9.15, "signal": "bull", "dir": "flat" },
+        { "tf": "WTF", "blue": null, "orange": null, "signal": "bull", "dir": "up" }
+      ],
+      "levels": {
+        "PDH": null,
+        "PDL": null,
+        "PMH": null,
+        "PML": null,
+        "AHH": 266.81,
+        "AHL": 265.20,
+        "ORB_H": null,
+        "ORB_L": null,
+        "WORBH": 268.85,
+        "WORBL": 262.27,
+        "FVG": 265.96
+      },
+      "plan": {
+        "slot": null,
+        "bull": "Iran gap up clears WORBH $268.85 → call valid, first candle confirmation required",
+        "bear": "Below WORBH $268.85 at open → no primary trade",
+        "note": "4H bear cross is structural headwind. WORBH $268.85 reclaim is the only call setup. Off primary list unless gap clears it."
+      }
+    },
+    {
+      "name": "GOOGL",
+      "status": "active",
+      "close": 383.05,
+      "swing": "none",
+      "swingNote": "",
+      "smi": [
+        { "tf": "4H", "blue": -48.23, "orange": -37.45, "signal": "bear", "dir": "down" },
+        { "tf": "DTF", "blue": -46.68, "orange": -27.15, "signal": "bear", "dir": "down" },
+        { "tf": "WTF", "blue": null, "orange": null, "signal": "bull", "dir": "flat" }
+      ],
+      "levels": {
+        "PDH": null,
+        "PDL": 381.77,
+        "PMH": null,
+        "PML": null,
+        "AHH": 383.86,
+        "AHL": null,
+        "ORB_H": null,
+        "ORB_L": null,
+        "FVG": 384.10
+      },
+      "plan": {
+        "slot": null,
+        "bull": "Iran gap up to FVG $384.10 holds and 15m curls → call, target ORB H. Requires dramatic gap.",
+        "bear": "Failed bounce to FVG $384.10 → put setup",
+        "note": "Both 4H and DTF bear cross confirmed. Worst performer of the week. Off primary list. Put setup only on failed bounces."
+      }
+    },
+    {
+      "name": "META",
+      "status": "active",
+      "close": 610.38,
+      "swing": "none",
+      "swingNote": "",
+      "smi": [
+        { "tf": "4H", "blue": 44.54, "orange": 43.06, "signal": "bull", "dir": "flat" },
+        { "tf": "DTF", "blue": -3.68, "orange": -5.87, "signal": "bear", "dir": "flat" },
+        { "tf": "WTF", "blue": 14.02, "orange": 16.30, "signal": "bear", "dir": "up" }
+      ],
+      "levels": {
+        "PDH": null,
+        "PDL": 609.45,
+        "PMH": 609.49,
+        "PML": 605.41,
+        "AHH": 610.81,
+        "AHL": 607.40,
+        "ORB_H": 614.80,
+        "ORB_L": null,
+        "FVG": 604.50
+      },
+      "plan": {
+        "slot": 4,
+        "bull": "Clears ORB H $614.80 first candle → call, target $617.60 then $621.18",
+        "bear": "AHL $607.40 fails → put, target PML $605.41",
+        "chop": "Between PDL $609.45 and ORB H $614.80 — no trade, wait for break",
+        "note": "WTF bear cross lowers conviction. 4H coiling. DTF bear cross at zero. ORB H $614.80 must clear cleanly."
+      }
+    },
+    {
+      "name": "MSFT",
+      "status": "active",
+      "close": 418.56,
+      "swing": "none",
+      "swingNote": "",
+      "smi": [
+        { "tf": "4H", "blue": -44.75, "orange": -37.02, "signal": "bear", "dir": "down" },
+        { "tf": "DTF", "blue": 16.97, "orange": 16.58, "signal": "bull", "dir": "flat" },
+        { "tf": "WTF", "blue": 58.16, "orange": 41.82, "signal": "bull", "dir": "up" }
+      ],
+      "levels": {
+        "PDH_ORB_H": 424.40,
+        "PDL": 416.32,
+        "PMH": 421.38,
+        "PML": 417.53,
+        "AHH": 419.39,
+        "AHL": 418.86,
+        "ORB_L": 419.25,
+        "LWORBL": 405.36
+      },
+      "plan": {
+        "slot": 3,
+        "bull": "Gap up clears PMH $421.38 first candle → call, target PDH/ORB H $424.40. $3 room.",
+        "bear": "AHL $418.86 fails → put, target PDL $416.32 then LWORBL $405.36",
+        "note": "WTF strongest separation on board. 4H Bucket 3 deeply oversold loading. DTF bull cross barely formed. PMH $421.38 is the trigger level."
+      }
+    },
+    {
+      "name": "NVDA",
+      "status": "active",
+      "close": 215.28,
+      "swing": "none",
+      "swingNote": "",
+      "smi": [
+        { "tf": "4H", "blue": -71.25, "orange": -57.06, "signal": "bear", "dir": "down" },
+        { "tf": "DTF", "blue": -19.79, "orange": 1.91, "signal": "bear", "dir": "down" },
+        { "tf": "WTF", "blue": 59.59, "orange": 58.20, "signal": "bull", "dir": "flat" }
+      ],
+      "levels": {
+        "PDH_ORB_H": 221.09,
+        "PDL": 214.82,
+        "PMH": 221.70,
+        "PML": 219.22,
+        "AHH": 215.33,
+        "AHL": 214.26,
+        "ORB_L": 218.28,
+        "LWORBL": 213.91,
+        "FVG_mid": 218.50
+      },
+      "plan": {
+        "slot": "second_window",
+        "bull": "PDL $214.82 reclaim + 15m curl from oversold + 2m cross above +40 → call, target FVG $218.50. $3+ room.",
+        "bear": "AHL $214.26 breaks → put, target LWORBL $213.91",
+        "note": "4H deeply oversold Bucket 3. DTF $1 from 21 EMA. Second window trade only — do not enter first candle. No trigger by 10:30 — pass."
+      }
+    },
+    {
+      "name": "TSLA",
+      "status": "active",
+      "close": 426.01,
+      "swing": "none",
+      "swingNote": "Prior Jun26 445C swing closed. No active swing.",
+      "smi": [
+        { "tf": "4H", "blue": 44.48, "orange": 46.57, "signal": "bear", "dir": "flat" },
+        { "tf": "DTF", "blue": -10.55, "orange": -6.41, "signal": "bear", "dir": "flat" },
+        { "tf": "WTF", "blue": 45.29, "orange": 31.41, "signal": "bull", "dir": "up" }
+      ],
+      "levels": {
+        "PDH": 431.51,
+        "PDL": 420.52,
+        "PMH": 422.61,
+        "PML": 415.83,
+        "AHH": 426.48,
+        "AHL": 423.44,
+        "ORB_H": 427.26,
+        "ORB_L": 421.36,
+        "FVG_1": 410.24,
+        "FVG_2": 405.77
+      },
+      "plan": {
+        "slot": 1,
+        "bull": "Clears ORB H $427.26 first candle → call, target PDH $431.51. $4+ room.",
+        "bear": "AHL $423.44 fails → put, target ORB L $421.36",
+        "note": "WTF bull cross intact. Price above PMH $422.61. 4H and DTF bear cross near zero — Iran gap up flips both. Slot 1 if DTF confirms on first candle."
+      }
+    },
+    {
+      "name": "SPY",
+      "status": "context_only",
+      "close": 745.64,
+      "swing": "none",
+      "swingNote": "",
+      "smi": [
+        { "tf": "4H", "blue": 54.39, "orange": 60.32, "signal": "bear", "dir": "down" },
+        { "tf": "DTF", "blue": 22.97, "orange": 22.03, "signal": "bull", "dir": "flat" },
+        { "tf": "WTF", "blue": 88.02, "orange": 81.04, "signal": "bull", "dir": "up" }
+      ],
+      "levels": {
+        "PDH": 749.52,
+        "PDL": 744.49,
+        "PMH": 747.25,
+        "PML": 743.60,
+        "AHH": 746.01,
+        "AHL": 743.80,
+        "ORB_H": 748.15,
+        "ORB_L": 745.65,
+        "FVG_mid": 740.00
+      },
+      "plan": {
+        "slot": null,
+        "bull": "Opens above ORB H $748.15 → macro green, tailwind for all names",
+        "bear": "AHL $743.80 fails → macro drag, raises bar on all calls",
+        "note": "Context only. WTF maximum overbought. 4H bear cross rolling over. Tape is extended."
+      }
+    }
+  ],
+  "rankings": {
+    "slot1": "TSLA",
+    "slot2": "AAPL",
+    "slot3": "MSFT",
+    "slot4": "META",
+    "second_window": "NVDA",
+    "off_list": ["AMZN", "GOOGL"]
+  },
+  "rules": {
+    "worb": "WORBH and WORBL set from Tuesday May 26 full session. Lock until Monday June 2.",
+    "position_size": "$3,000 primary. Add P2 only if P1 profitable + $3+ room + 2m above +40.",
+    "daily_loss_limit": "$800 — 2 stops = done",
+    "walk_away": "$1,000 profit",
+    "oco": "Set immediately after every fill — no exceptions",
+    "first_candle": "Take profit on the push. Long upper wick = exit immediately.",
+    "gap_rule": "Gap does not mean chase. Room left after gap is the trade.",
+    "overbought_rule": "Do not remove name from board for overbought alone. Catalyst + momentum + room = stays on board.",
+    "greed_pattern": "First 15m exit signal overrides overnight thesis. Every time.",
+    "second_window_trade": "Bucket 3 deeply oversold + catalyst. Do not enter first candle. Wait for 15m curl + key level reclaim + 2m cross above +40. No time restriction on Bucket 3 curl — but refine late-day SMI reliability after session."
+  }
+}
