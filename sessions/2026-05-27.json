@@ -1,0 +1,466 @@
+{
+  "id": "2026-05-27",
+  "date": "2026-05-27",
+  "title": "Week of May 26 — Distribution at Highs, GOOGL Reversal Lead",
+  "spyClose": 750.45,
+  "marketTone": "mixed-bullish",
+  "macro": {
+    "iran": "Deal progress softening on both sides, Strait of Hormuz reopening on table per Rubio, no signed deal yet",
+    "bonds": "10Y easing toward 4.5%, constructive for tech",
+    "oil": "Brent +3.4% on overnight strikes, WTI catching down to deal-progress drop, jittery not panicked",
+    "fed": "Warsh sworn in as Fed Chair, hawkish lean",
+    "catalyst": "Iran negotiations + Consumer Confidence Wed 10am"
+  },
+  "worb": {
+    "note": "Memorial Day exception week. WORBH/WORBL set from Tuesday May 26 full session only. Locked through Monday June 2. Nothing overrides them.",
+    "aapl": { "high": 311.82, "low": 307.67 },
+    "amzn": { "high": 269.27, "low": 262.07 },
+    "googl": { "high": 389.25, "low": 382.60 },
+    "meta": { "high": 614.45, "low": 605.38 },
+    "msft": { "high": 419.77, "low": 413.04 },
+    "nvda": { "high": 218.36, "low": 212.00 },
+    "tsla": { "high": 437.94, "low": 426.12 },
+    "spy": { "high": 752.12, "low": 748.37 }
+  },
+  "macroFilter": {
+    "rule": "Direction locked at 9:20 AM, not 8:45 AM",
+    "bullThreshold": 751.00,
+    "bearThreshold": 749.61,
+    "bullScenario": "SPY above 751.00 at 9:20 = BULL day, trade GOOGL/TSLA/MSFT only",
+    "mixedScenario": "SPY 749.61-751.00 = MIXED, smaller size, best single setup only",
+    "bearScenario": "SPY below 749.61 = BEAR day, trade AAPL only"
+  },
+  "sizing": {
+    "baseEntry": 1750,
+    "maxTrades": 3,
+    "dailyLossLimit": 700,
+    "walkAwayTarget": 800,
+    "maxSimultaneousPositions": 1,
+    "notes": "After 5/26 -$6k loss day. No averaging, no re-entries on same name, two-candle rule at entry."
+  },
+  "names": [
+    {
+      "name": "AAPL",
+      "status": "active",
+      "open": 309.59,
+      "high": 311.82,
+      "low": 307.67,
+      "close": 308.37,
+      "ahPrice": 308.80,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": -58.48, "orange": -56.10, "cross": "bear", "location": "oversold", "dir": "narrowing-curl-forming" },
+        { "tf": "4H", "blue": 50.34, "orange": 58.44, "cross": "bear", "location": "mid-overbought", "dir": "down-rolling" },
+        { "tf": "DTF", "blue": 72.24, "orange": 73.24, "cross": "bear", "location": "overbought", "dir": "fresh-rollover" }
+      ],
+      "levels": {
+        "pdh": 311.82,
+        "pdl": 307.67,
+        "orbH": 311.49,
+        "orbL": 309.38,
+        "ahh": 309.20,
+        "ahl": 308.40,
+        "pmh": 311.05,
+        "pml": 309.07,
+        "worbh": 311.82,
+        "worbl": 307.67,
+        "lworbh": 300.61,
+        "lworbl": 294.92,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plan": {
+        "setupType": "bear-continuation",
+        "entryZone": { "low": 307.80, "high": 308.40 },
+        "trigger": 307.67,
+        "invalidation": {
+          "preEntry": 307.00,
+          "postEntry": 308.09
+        },
+        "putSetup": {
+          "entryZone": { "low": 307.80, "high": 308.40 },
+          "trigger": 307.67,
+          "targets": [305.84, 304.72, 300.61],
+          "invalidation": {
+            "preEntry": 307.00,
+            "postEntry": 308.09
+          }
+        },
+        "qualityGates": {
+          "smiAlignment": true,
+          "levelIntegrity": true,
+          "roomAvailable": false,
+          "noRejectionWick": false
+        },
+        "qualityScore": 2.5,
+        "suggestedSize": 1500,
+        "bias": "bear",
+        "slot": 4,
+        "tier": "primary-bear-only",
+        "notes": "Three failed tests of PDH 311.82 today = confirmed distribution. 4H bear cross fresh. Bull-side dead. Bear side limited room to PDL 305.84 ($2.24) but room opens to LWORBH 300.61 if continuation. Only trade if macro = BEAR at 9:20."
+      }
+    },
+    {
+      "name": "AMZN",
+      "status": "off-list",
+      "open": 267.83,
+      "high": 269.27,
+      "low": 262.07,
+      "close": 265.32,
+      "ahPrice": 265.00,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": -15.08, "orange": -26.71, "cross": "bull", "location": "below-zero", "dir": "up-curling" },
+        { "tf": "4H", "blue": -6.48, "orange": 6.24, "cross": "bear", "location": "fresh-below-zero", "dir": "down-hard" },
+        { "tf": "DTF", "blue": 15.16, "orange": 3.01, "cross": "bull", "location": "mid", "dir": "up-accelerating" }
+      ],
+      "levels": {
+        "pdh": 269.27,
+        "pdl": 262.07,
+        "orbH": 269.27,
+        "orbL": 266.82,
+        "ahh": 265.33,
+        "ahl": 264.36,
+        "pmh": 269.08,
+        "pml": 266.35,
+        "worbh": 269.27,
+        "worbl": 262.07,
+        "lworbh": 268.85,
+        "lworbl": 262.55,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plan": {
+        "setupType": "no-trade",
+        "entryZone": { "low": 0, "high": 0 },
+        "trigger": 0,
+        "invalidation": { "preEntry": 0, "postEntry": 0 },
+        "qualityGates": {
+          "smiAlignment": false,
+          "levelIntegrity": true,
+          "roomAvailable": false,
+          "noRejectionWick": false
+        },
+        "qualityScore": 1,
+        "suggestedSize": 0,
+        "bias": "mixed",
+        "slot": null,
+        "tier": "off-list",
+        "notes": "4H bear cross / DTF bull cross conflict. Bull trap rejection at 269.27 today. Both directions fail room rule. Off primary watchlist, reaction trade only if structure clarifies later in session."
+      }
+    },
+    {
+      "name": "GOOGL",
+      "status": "active",
+      "open": 384.51,
+      "high": 389.25,
+      "low": 382.60,
+      "close": 388.95,
+      "ahPrice": 388.60,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": 58.96, "orange": 56.41, "cross": "bull", "location": "mid-overbought", "dir": "up-flattening" },
+        { "tf": "4H", "blue": -3.23, "orange": -20.28, "cross": "bull", "location": "fresh-below-zero", "dir": "up-hard" },
+        { "tf": "DTF", "blue": -53.55, "orange": -40.35, "cross": "bear", "location": "deeply-oversold", "dir": "decelerating" }
+      ],
+      "levels": {
+        "pdh": 389.25,
+        "pdl": 382.60,
+        "orbH": 386.97,
+        "orbL": 382.60,
+        "ahh": 388.96,
+        "ahl": 388.48,
+        "pmh": 387.06,
+        "pml": 383.00,
+        "worbh": 389.25,
+        "worbl": 382.60,
+        "lworbh": 408.72,
+        "lworbl": 394.62,
+        "dtf9ema": 389.06,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plan": {
+        "setupType": "bull-reversal",
+        "entryZone": { "low": 388.00, "high": 389.00 },
+        "trigger": 389.25,
+        "invalidation": {
+          "preEntry": 391.00,
+          "postEntry": 388.48
+        },
+        "targets": [392.13, 394.62, 395.84],
+        "qualityGates": {
+          "smiAlignment": true,
+          "levelIntegrity": true,
+          "roomAvailable": true,
+          "noRejectionWick": true
+        },
+        "qualityScore": 4,
+        "suggestedSize": 1750,
+        "bias": "bull",
+        "slot": 1,
+        "tier": "primary-bull",
+        "notes": "4H bull reversal -58 to -3 in 3 candles. DTF closed green at 9 EMA 389.06. PDH/AHH/DTF 9EMA all cluster at 389.06-389.25. Trigger is reclaim hold above $389.25. Premarket may already be at T1 $392.13 = T2 $394.62 in play. Strongest bull setup of the night."
+      }
+    },
+    {
+      "name": "META",
+      "status": "off-list",
+      "open": 609.11,
+      "high": 614.45,
+      "low": 605.38,
+      "close": 612.35,
+      "ahPrice": 610.35,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": 19.61, "orange": 14.39, "cross": "bull", "location": "mid", "dir": "up" },
+        { "tf": "4H", "blue": 41.53, "orange": 43.70, "cross": "bear", "location": "mid", "dir": "flattening" },
+        { "tf": "DTF", "blue": 3.47, "orange": -1.20, "cross": "bull", "location": "just-above-zero", "dir": "up" }
+      ],
+      "levels": {
+        "pdh": 614.45,
+        "pdl": 605.38,
+        "orbH": 614.45,
+        "orbL": 607.35,
+        "ahh": 612.18,
+        "ahl": 609.10,
+        "pmh": 613.00,
+        "pml": 607.58,
+        "worbh": 614.45,
+        "worbl": 605.38,
+        "lworbh": 615.60,
+        "lworbl": 603.77,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plan": {
+        "setupType": "no-trade-first-candle",
+        "entryZone": { "low": 0, "high": 0 },
+        "trigger": 0,
+        "invalidation": { "preEntry": 0, "postEntry": 0 },
+        "qualityGates": {
+          "smiAlignment": false,
+          "levelIntegrity": true,
+          "roomAvailable": true,
+          "noRejectionWick": false
+        },
+        "qualityScore": 2,
+        "suggestedSize": 0,
+        "bias": "bidirectional",
+        "slot": null,
+        "tier": "off-list",
+        "notes": "Bull trigger above 613.00 with targets 614.45/615.60 but 4H bear cross + recent PDH wick rejection today = caution. Bear setup lacks SMI alignment. Off primary watchlist after 5/26 losses on this name. Reaction trade only."
+      }
+    },
+    {
+      "name": "MSFT",
+      "status": "active",
+      "open": 416.72,
+      "high": 419.77,
+      "low": 413.04,
+      "close": 416.14,
+      "ahPrice": 415.29,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": -26.70, "orange": -32.39, "cross": "bull", "location": "below-zero", "dir": "up-curling" },
+        { "tf": "4H", "blue": -60.76, "orange": -58.71, "cross": "bear", "location": "deeply-oversold", "dir": "parked-flat" },
+        { "tf": "DTF", "blue": 10.93, "orange": 13.75, "cross": "bear", "location": "mid", "dir": "down-decelerating" }
+      ],
+      "levels": {
+        "pdh": 419.77,
+        "pdl": 413.04,
+        "orbH": 417.47,
+        "orbL": 413.20,
+        "ahh": 416.22,
+        "ahl": 414.78,
+        "pmh": 420.56,
+        "pml": 415.92,
+        "worbh": 419.77,
+        "worbl": 413.04,
+        "lworbh": 425.12,
+        "lworbl": 415.63,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plan": {
+        "setupType": "bull-reversal-bucket3",
+        "entryZone": { "low": 415.00, "high": 416.50 },
+        "trigger": 416.22,
+        "invalidation": {
+          "preEntry": 417.50,
+          "postEntry": 414.78
+        },
+        "targets": [417.47, 419.77],
+        "qualityGates": {
+          "smiAlignment": false,
+          "levelIntegrity": true,
+          "roomAvailable": true,
+          "noRejectionWick": false
+        },
+        "qualityScore": 2.5,
+        "suggestedSize": 1500,
+        "bias": "bull",
+        "slot": 3,
+        "tier": "primary-bull",
+        "notes": "4H parked at -60 for 3 candles (capitulation, not falling). 1H bull cross forming. DTF bear decelerating. Bucket 3 reversal play IF 4H starts curling tomorrow. Same setup type I miscalled this morning - difference now is 4H stopped falling. Reduced size due to needing confirmation."
+      }
+    },
+    {
+      "name": "NVDA",
+      "status": "off-list",
+      "open": 216.54,
+      "high": 218.36,
+      "low": 212.00,
+      "close": 214.86,
+      "ahPrice": 213.95,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": -26.06, "orange": -30.10, "cross": "bull", "location": "below-zero", "dir": "up-curling" },
+        { "tf": "4H", "blue": -65.86, "orange": -67.14, "cross": "bull-forming", "location": "deeply-oversold", "dir": "early-curl" },
+        { "tf": "DTF", "blue": -41.38, "orange": -19.74, "cross": "bear", "location": "oversold", "dir": "down-accelerating" }
+      ],
+      "levels": {
+        "pdh": 218.18,
+        "pdl": 212.00,
+        "orbH": 217.48,
+        "orbL": 214.80,
+        "ahh": 214.90,
+        "ahl": 213.80,
+        "pmh": 218.50,
+        "pml": 216.27,
+        "worbh": 218.36,
+        "worbl": 212.00,
+        "lworbh": 230.00,
+        "lworbl": 218.37,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plan": {
+        "setupType": "no-trade-first-candle",
+        "entryZone": { "low": 0, "high": 0 },
+        "trigger": 0,
+        "invalidation": { "preEntry": 0, "postEntry": 0 },
+        "qualityGates": {
+          "smiAlignment": false,
+          "levelIntegrity": true,
+          "roomAvailable": false,
+          "noRejectionWick": false
+        },
+        "qualityScore": 1.5,
+        "suggestedSize": 0,
+        "bias": "mixed",
+        "slot": null,
+        "tier": "off-list",
+        "notes": "DTF accelerating bear while 4H/1H starting to curl bull = conflict. Neither side has $3 room. Watch only for deeper flush to $210-211 with curl signature later in session. Not a first-candle trade."
+      }
+    },
+    {
+      "name": "TSLA",
+      "status": "active",
+      "open": 430.14,
+      "high": 437.94,
+      "low": 426.12,
+      "close": 433.55,
+      "ahPrice": 435.40,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": 52.32, "orange": 51.25, "cross": "bull", "location": "mid", "dir": "flattening" },
+        { "tf": "4H", "blue": 66.01, "orange": 60.58, "cross": "bull", "location": "just-crossed-60", "dir": "up" },
+        { "tf": "DTF", "blue": 1.31, "orange": -2.55, "cross": "bull", "location": "fresh-cross-zero", "dir": "up" }
+      ],
+      "levels": {
+        "pdh": 437.94,
+        "pdl": 426.12,
+        "orbH": 433.67,
+        "orbL": 427.85,
+        "ahh": 437.94,
+        "ahl": 432.95,
+        "pmh": 430.96,
+        "pml": 425.00,
+        "worbh": 437.94,
+        "worbl": 426.12,
+        "lworbh": 421.08,
+        "lworbl": 405.77,
+        "fvg1": 410.24,
+        "fvg2": null
+      },
+      "plan": {
+        "setupType": "bull-continuation",
+        "entryZone": { "low": 434.00, "high": 436.00 },
+        "trigger": 437.94,
+        "invalidation": {
+          "preEntry": 441.00,
+          "postEntry": 432.95
+        },
+        "targets": [440.00, 444.00, 448.00],
+        "qualityGates": {
+          "smiAlignment": true,
+          "levelIntegrity": true,
+          "roomAvailable": true,
+          "noRejectionWick": true
+        },
+        "qualityScore": 3.5,
+        "suggestedSize": 1750,
+        "bias": "bull",
+        "slot": 2,
+        "tier": "primary-bull",
+        "notes": "Bull continuation with active catalyst. 4H +66 NOT extended given DTF fresh at +1. Lesson from AAPL last week: overbought 4H in trend with catalyst = continuation, not exhaustion. Higher highs through session, AH continued making new highs to 437.94. Risk = gap chase. Skip if premarket above $441."
+      }
+    },
+    {
+      "name": "SPY",
+      "status": "context",
+      "open": 750.05,
+      "high": 752.12,
+      "low": 748.37,
+      "close": 750.45,
+      "ahPrice": 750.79,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": 0.97, "orange": -4.92, "cross": "bull", "location": "near-zero", "dir": "up-fresh-cross" },
+        { "tf": "4H", "blue": 66.93, "orange": 64.58, "cross": "bull", "location": "overbought", "dir": "up-flattening" },
+        { "tf": "DTF", "blue": 41.63, "orange": 32.28, "cross": "bull", "location": "just-crossed-40", "dir": "up-accelerating" }
+      ],
+      "levels": {
+        "pdh": 752.12,
+        "pdl": 748.37,
+        "orbH": 750.69,
+        "orbL": 749.13,
+        "ahh": 751.00,
+        "ahl": 749.61,
+        "pmh": 751.67,
+        "pml": 748.68,
+        "worbh": 752.12,
+        "worbl": 748.37,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plan": {
+        "setupType": "macro-context",
+        "entryZone": { "low": 0, "high": 0 },
+        "trigger": 0,
+        "invalidation": { "preEntry": 0, "postEntry": 0 },
+        "qualityGates": {
+          "smiAlignment": true,
+          "levelIntegrity": true,
+          "roomAvailable": false,
+          "noRejectionWick": false
+        },
+        "qualityScore": 2.5,
+        "suggestedSize": 0,
+        "bias": "mixed-bullish",
+        "slot": null,
+        "tier": "context-only",
+        "notes": "Context only - not tradeable. Macro decision levels: above 751.00 = bull day / between 749.61-751.00 = mixed / below 749.61 = bear day. Today was distribution at highs (1H cycled +42 to -13 to 0). DTF just crossed +40 = momentum accelerating but 4H overbought is the risk. Lock direction at 9:20."
+      }
+    }
+  ]
+}
