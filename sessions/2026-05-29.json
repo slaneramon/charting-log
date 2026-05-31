@@ -1,0 +1,459 @@
+{
+  "id": "2026-05-29",
+  "date": "2026-05-29",
+  "title": "Week of May 26 — EOM flush, bull structure intact",
+  "spyClose": 756.38,
+  "marketTone": "mixed-bullish",
+  "macro": {
+    "iran": "Middle East risk still live — check overnight for escalation",
+    "bonds": "No major bond market disruption",
+    "oil": "Monitor overnight",
+    "fed": "No scheduled releases",
+    "catalyst": "End of month rebalancing — EOM flush contained, dip buyers showed up. New WORB sets Monday June 2."
+  },
+  "worb": {
+    "note": "Memorial Day exception week. Set from Tuesday 5/26. LOCKED through Monday 6/2. Monday June 2 full session sets new WORB for week of June 2. Current WORBH/WORBL become LWORBH/LWORBL next week.",
+    "aapl": { "high": 311.82, "low": 307.67 },
+    "amzn": { "high": 269.27, "low": 262.07 },
+    "googl": { "high": 389.25, "low": 382.60 },
+    "meta": { "high": 614.45, "low": 605.38 },
+    "msft": { "high": 419.77, "low": 413.04 },
+    "nvda": { "high": 218.36, "low": 212.00 },
+    "tsla": { "high": 437.94, "low": 426.12 },
+    "spy": { "high": 752.12, "low": 748.37 }
+  },
+  "macroFilter": {
+    "rule": "Direction locked at 9:20 AM, not 8:45 AM. New WORB sets Monday June 2 — use Friday structural levels for 9:20 filter until new WORB confirmed.",
+    "bullThreshold": 754.71,
+    "bearThreshold": 752.12,
+    "bullScenario": "SPY holds above $754.71 at 9:20 = BULL day. Trade META Slot 1, MSFT Slot 1/2 on pullback to $443-445, TSLA Slot 1/2 on 21 EMA hold + WORBH reclaim.",
+    "mixedScenario": "SPY between $752.12 and $754.71 = MIXED. One trade max, smaller size, best single setup only.",
+    "bearScenario": "SPY below $752.12 = BEAR. GOOGL put on failed reclaim of $382.60. NVDA put on failed reclaim of $212.00. No MAG7 calls."
+  },
+  "sizing": {
+    "baseEntry": 1750,
+    "maxTrades": 3,
+    "dailyLossLimit": 700,
+    "walkAwayTarget": 800,
+    "maxSimultaneousPositions": 1,
+    "notes": "Position 2 only if P1 profitable + $3+ room + 2m above +40 + separate setup"
+  },
+  "names": [
+    {
+      "name": "AAPL",
+      "status": "active",
+      "open": 309.65,
+      "high": 315.00,
+      "low": 309.53,
+      "close": 312.04,
+      "ahPrice": 312.04,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": 0.00, "orange": 0.00, "cross": "bear", "location": "mid", "dir": "down" },
+        { "tf": "4H", "blue": 2.70, "orange": 13.13, "cross": "bear", "location": "mid", "dir": "down" },
+        { "tf": "DTF", "blue": 76.35, "orange": 75.50, "cross": "bull", "location": "overbought", "dir": "up" },
+        { "tf": "WTF", "blue": 86.39, "orange": 75.50, "cross": "bull", "location": "extreme-overbought", "dir": "up" }
+      ],
+      "levels": {
+        "pdh": 315.00,
+        "pdl": 309.53,
+        "orbH": 315.00,
+        "orbL": 309.53,
+        "ahh": 0.00,
+        "ahl": 0.00,
+        "pmh": 0.00,
+        "pml": 0.00,
+        "worbh": 311.82,
+        "worbl": 307.67,
+        "lworbh": 0.00,
+        "lworbl": 0.00,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plan": {
+        "setupType": "no-trade",
+        "entryZone": { "low": 0.00, "high": 0.00 },
+        "trigger": 0.00,
+        "invalidation": { "preEntry": 0.00, "postEntry": 0.00 },
+        "targets": [0.00, 0.00, 0.00],
+        "qualityGates": {
+          "smiAlignment": false,
+          "levelIntegrity": false,
+          "roomAvailable": false,
+          "noRejectionWick": false
+        },
+        "qualityScore": 0,
+        "suggestedSize": 0,
+        "bias": "mixed",
+        "slot": null,
+        "tier": "off-list",
+        "notes": "WTF SMI 86.39/75.50 bull cross extreme overbought. 4H SMI 2.70/13.13 fresh bear cross mid-range — reset in progress. DTF overbought at 76.35. Conflict across timeframes. No trade Monday. Wait for 4H to complete reset before re-engaging. Low priority."
+      }
+    },
+    {
+      "name": "AMZN",
+      "status": "active",
+      "open": 272.67,
+      "high": 274.74,
+      "low": 269.64,
+      "close": 270.61,
+      "ahPrice": 269.30,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": 0.00, "orange": 0.00, "cross": "bear", "location": "mid", "dir": "down" },
+        { "tf": "4H", "blue": 33.80, "orange": 46.53, "cross": "bear", "location": "mid", "dir": "down" },
+        { "tf": "DTF", "blue": 63.73, "orange": 51.73, "cross": "bull", "location": "overbought", "dir": "up" },
+        { "tf": "WTF", "blue": 74.08, "orange": 71.75, "cross": "bull", "location": "overbought", "dir": "up" }
+      ],
+      "levels": {
+        "pdh": 274.74,
+        "pdl": 269.64,
+        "orbH": 274.74,
+        "orbL": 269.64,
+        "ahh": 0.00,
+        "ahl": 0.00,
+        "pmh": 0.00,
+        "pml": 0.00,
+        "worbh": 269.27,
+        "worbl": 262.07,
+        "lworbh": 269.30,
+        "lworbl": 0.00,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plan": {
+        "setupType": "no-trade-first-candle",
+        "entryZone": { "low": 269.30, "high": 270.61 },
+        "trigger": 270.00,
+        "invalidation": { "preEntry": 268.00, "postEntry": 268.50 },
+        "targets": [274.74, 277.00, 280.00],
+        "qualityGates": {
+          "smiAlignment": false,
+          "levelIntegrity": true,
+          "roomAvailable": true,
+          "noRejectionWick": false
+        },
+        "qualityScore": 2,
+        "suggestedSize": 0,
+        "bias": "bull",
+        "slot": null,
+        "tier": "off-list",
+        "notes": "Mid-tier Monday. LWORBH $269.30 is the key level — AH tested and held. If price opens above $269.30 and holds = call valid on reclaim. 4H bear cross mid-range limits conviction. React-only. WTF bull cross overbought means weekly trend still up but needs 4H confirmation."
+      }
+    },
+    {
+      "name": "GOOGL",
+      "status": "active",
+      "open": 383.73,
+      "high": 385.23,
+      "low": 378.46,
+      "close": 380.34,
+      "ahPrice": 380.34,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": 0.00, "orange": 0.00, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "4H", "blue": -59.88, "orange": -48.16, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "DTF", "blue": -58.74, "orange": -53.37, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "WTF", "blue": 74.01, "orange": 76.15, "cross": "bear", "location": "overbought", "dir": "down" }
+      ],
+      "levels": {
+        "pdh": 385.23,
+        "pdl": 378.46,
+        "orbH": 385.23,
+        "orbL": 378.46,
+        "ahh": 0.00,
+        "ahl": 0.00,
+        "pmh": 0.00,
+        "pml": 0.00,
+        "worbh": 389.25,
+        "worbl": 382.60,
+        "lworbh": 0.00,
+        "lworbl": 0.00,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plan": {
+        "setupType": "bear-continuation",
+        "entryZone": { "low": 381.00, "high": 382.60 },
+        "trigger": 382.50,
+        "invalidation": { "preEntry": 383.50, "postEntry": 383.00 },
+        "targets": [378.46, 375.00, 370.00],
+        "qualityGates": {
+          "smiAlignment": true,
+          "levelIntegrity": true,
+          "roomAvailable": true,
+          "noRejectionWick": true
+        },
+        "qualityScore": 4,
+        "suggestedSize": 0,
+        "bias": "bear",
+        "slot": null,
+        "tier": "primary-bear-only",
+        "notes": "Closed BELOW WORBL $382.60 — structure broken. WTF 74.01/76.15 fresh bear cross overbought. 4H and DTF deeply oversold bear cross — bounce risk. No calls. PUT on failed reclaim of $382.60 only. Entry: price rallies to $382.60, fails to reclaim → put. Requires BEAR macro from SPY at 9:20. GOOGL chronic loser (avoid calls). DTF oversold means downside may be limited — react only, size conservatively."
+      }
+    },
+    {
+      "name": "META",
+      "status": "active",
+      "open": 624.21,
+      "high": 634.47,
+      "low": 623.35,
+      "close": 632.53,
+      "ahPrice": 632.53,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": 0.00, "orange": 0.00, "cross": "bear", "location": "mid", "dir": "down" },
+        { "tf": "4H", "blue": 25.34, "orange": 31.71, "cross": "bear", "location": "mid", "dir": "down" },
+        { "tf": "DTF", "blue": 54.35, "orange": 43.09, "cross": "bull", "location": "overbought", "dir": "up" },
+        { "tf": "WTF", "blue": 16.13, "orange": 16.21, "cross": "bear", "location": "mid-low", "dir": "up" }
+      ],
+      "levels": {
+        "pdh": 634.47,
+        "pdl": 623.35,
+        "orbH": 634.47,
+        "orbL": 623.35,
+        "ahh": 0.00,
+        "ahl": 0.00,
+        "pmh": 0.00,
+        "pml": 0.00,
+        "worbh": 614.45,
+        "worbl": 605.38,
+        "lworbh": 0.00,
+        "lworbl": 0.00,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plan": {
+        "setupType": "bull-continuation",
+        "entryZone": { "low": 630.00, "high": 634.47 },
+        "trigger": 632.00,
+        "invalidation": { "preEntry": 628.00, "postEntry": 629.00 },
+        "targets": [640.00, 648.00, 655.00],
+        "qualityGates": {
+          "smiAlignment": true,
+          "levelIntegrity": true,
+          "roomAvailable": true,
+          "noRejectionWick": true
+        },
+        "qualityScore": 4,
+        "suggestedSize": 1750,
+        "bias": "bull",
+        "slot": 1,
+        "tier": "primary-bull",
+        "notes": "Slot 1 Monday. Hammer candle, $630 held. WTF SMI 16.13/16.21 near zero — most weekly room of any name on the board. 4H bear cross mid-range but DTF rising. $630 must hold on open. Entry on hold above $630 + 2m confirmation. Do not enter if $630 breaks. Target PDH $634.47 then $640+. 25% WR history — follow the system, do not override with conviction."
+      }
+    },
+    {
+      "name": "MSFT",
+      "status": "active",
+      "open": 432.36,
+      "high": 450.33,
+      "low": 432.36,
+      "close": 450.28,
+      "ahPrice": 450.28,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": 0.00, "orange": 0.00, "cross": "bull", "location": "overbought", "dir": "up" },
+        { "tf": "4H", "blue": 92.00, "orange": 84.00, "cross": "bull", "location": "extreme-overbought", "dir": "up" },
+        { "tf": "DTF", "blue": 38.53, "orange": 22.80, "cross": "bull", "location": "mid", "dir": "up" },
+        { "tf": "WTF", "blue": 68.18, "orange": 55.00, "cross": "bull", "location": "overbought", "dir": "up" }
+      ],
+      "levels": {
+        "pdh": 450.33,
+        "pdl": 432.36,
+        "orbH": 450.33,
+        "orbL": 432.36,
+        "ahh": 0.00,
+        "ahl": 0.00,
+        "pmh": 0.00,
+        "pml": 0.00,
+        "worbh": 419.77,
+        "worbl": 413.04,
+        "lworbh": 0.00,
+        "lworbl": 0.00,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plan": {
+        "setupType": "bull-continuation",
+        "entryZone": { "low": 443.00, "high": 445.00 },
+        "trigger": 445.00,
+        "invalidation": { "preEntry": 441.00, "postEntry": 442.00 },
+        "targets": [450.33, 455.00, 460.00],
+        "qualityGates": {
+          "smiAlignment": true,
+          "levelIntegrity": true,
+          "roomAvailable": true,
+          "noRejectionWick": true
+        },
+        "qualityScore": 4,
+        "suggestedSize": 1750,
+        "bias": "bull",
+        "slot": 1,
+        "tier": "primary-bull",
+        "notes": "Slot 1/2 Monday — ONLY on pullback to $443-445. Do NOT chase open or gap up. $26.55 catalyst move on 5/29, 2.3x volume. 4H extreme overbought at ~92 — do not enter above $446. DTF at 38.53 mid-range = room remaining on daily. Entry requires pullback to $443-445 zone + 2m hold. If it opens at $450+, pass — move already happened."
+      }
+    },
+    {
+      "name": "NVDA",
+      "status": "active",
+      "open": 214.55,
+      "high": 217.81,
+      "low": 211.14,
+      "close": 211.17,
+      "ahPrice": 212.49,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": -51.02, "orange": -43.47, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "4H", "blue": -4.73, "orange": 3.46, "cross": "bear", "location": "mid", "dir": "down" },
+        { "tf": "DTF", "blue": -63.20, "orange": -55.52, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "WTF", "blue": 49.92, "orange": 54.06, "cross": "bear", "location": "mid", "dir": "down" }
+      ],
+      "levels": {
+        "pdh": 217.61,
+        "pdl": 211.14,
+        "orbH": 216.17,
+        "orbL": 212.82,
+        "ahh": 212.99,
+        "ahl": 211.19,
+        "pmh": 215.90,
+        "pml": 214.43,
+        "worbh": 218.36,
+        "worbl": 212.00,
+        "lworbh": 230.00,
+        "lworbl": 218.20,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plan": {
+        "setupType": "no-trade-first-candle",
+        "entryZone": { "low": 211.00, "high": 212.00 },
+        "trigger": 211.80,
+        "invalidation": { "preEntry": 213.50, "postEntry": 212.50 },
+        "targets": [215.90, 217.61, 218.36],
+        "qualityGates": {
+          "smiAlignment": true,
+          "levelIntegrity": true,
+          "roomAvailable": false,
+          "noRejectionWick": false
+        },
+        "qualityScore": 2,
+        "suggestedSize": 0,
+        "bias": "bear",
+        "slot": null,
+        "tier": "off-list",
+        "notes": "RTH closed $211.17 below WORBL $212.00 — structure broken. AH bounced to $212.49 (above WORBL) — does not override RTH close. All 4 timeframes bear cross. DTF deeply oversold at -63.20 — bounce risk, downside limited. WTF fresh bear cross mid-range rolling over. 4H fresh bear cross mid-range — room to fall but DTF oversold caps conviction. PUT only on failed reclaim of WORBL $212.00. No call unless strong gap above $214+. 40% WR — use selectively. Behavioral flag: freeze pattern on NVDA losers (held 5+ hrs on 5/29). One-and-done only."
+      }
+    },
+    {
+      "name": "TSLA",
+      "status": "active",
+      "open": 439.96,
+      "high": 441.06,
+      "low": 428.16,
+      "close": 435.57,
+      "ahPrice": 434.36,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": -5.75, "orange": 0.36, "cross": "bear", "location": "mid", "dir": "down" },
+        { "tf": "4H", "blue": -2.30, "orange": 7.99, "cross": "bear", "location": "mid", "dir": "down" },
+        { "tf": "DTF", "blue": 49.34, "orange": 36.30, "cross": "bull", "location": "overbought", "dir": "up" },
+        { "tf": "WTF", "blue": 53.48, "orange": 42.45, "cross": "bull", "location": "overbought", "dir": "up" }
+      ],
+      "levels": {
+        "pdh": 441.08,
+        "pdl": 428.16,
+        "orbH": 440.70,
+        "orbL": 436.67,
+        "ahh": 435.64,
+        "ahl": 0.00,
+        "pmh": 441.91,
+        "pml": 438.36,
+        "worbh": 437.94,
+        "worbl": 426.12,
+        "lworbh": 422.00,
+        "lworbl": 405.77,
+        "fvg1": 438.66,
+        "fvg2": 410.24
+      },
+      "plan": {
+        "setupType": "bull-continuation",
+        "entryZone": { "low": 433.00, "high": 437.94 },
+        "trigger": 437.94,
+        "invalidation": { "preEntry": 431.00, "postEntry": 432.00 },
+        "targets": [441.08, 445.00, 450.00],
+        "qualityGates": {
+          "smiAlignment": true,
+          "levelIntegrity": true,
+          "roomAvailable": true,
+          "noRejectionWick": true
+        },
+        "qualityScore": 4,
+        "suggestedSize": 1750,
+        "bias": "bull",
+        "slot": 1,
+        "tier": "primary-bull",
+        "notes": "Slot 1/2 Monday. Closed $435.57 sitting on 4H 21 EMA — natural support. DTF 49.34/36.30 bull cross rising. WTF 53.48/42.45 bull cross rising. 4H fresh bear cross resets overnight with futures — not a Monday morning disqualifier. EOM flush was intraday stop hunt ($428.16 low), not a trend break. Primary thesis: 21 EMA holds, WORBH $437.94 reclaim on first 2m candle = call. Entry zone $433-437.94, trigger on 2m hold above WORBH. Invalidation: $432 loses 21 EMA cleanly. T1 PDH $441.08, T2 $445+. Secondary thesis (gap down): WORBL $426.12 holds = bull reversal Bucket 3, same targets. 67% WR name."
+      }
+    },
+    {
+      "name": "SPY",
+      "status": "context",
+      "open": 755.90,
+      "high": 758.08,
+      "low": 754.71,
+      "close": 756.38,
+      "ahPrice": 755.64,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": -43.17, "orange": -36.15, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "4H", "blue": 64.71, "orange": 66.00, "cross": "bear", "location": "overbought", "dir": "flat" },
+        { "tf": "DTF", "blue": 79.64, "orange": 68.91, "cross": "bull", "location": "overbought", "dir": "up" },
+        { "tf": "WTF", "blue": 91.34, "orange": 86.19, "cross": "bull", "location": "extreme-overbought", "dir": "up" }
+      ],
+      "levels": {
+        "pdh": 758.08,
+        "pdl": 754.71,
+        "orbH": 757.48,
+        "orbL": 755.50,
+        "ahh": 756.86,
+        "ahl": 755.34,
+        "pmh": 756.39,
+        "pml": 754.98,
+        "worbh": 752.12,
+        "worbl": 748.37,
+        "lworbh": 0.00,
+        "lworbl": 0.00,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plan": {
+        "setupType": "macro-context",
+        "entryZone": { "low": 0.00, "high": 0.00 },
+        "trigger": 0.00,
+        "invalidation": { "preEntry": 0.00, "postEntry": 0.00 },
+        "targets": [0.00, 0.00, 0.00],
+        "qualityGates": {
+          "smiAlignment": true,
+          "levelIntegrity": true,
+          "roomAvailable": true,
+          "noRejectionWick": true
+        },
+        "qualityScore": 4,
+        "suggestedSize": 0,
+        "bias": "bull",
+        "slot": null,
+        "tier": "context-only",
+        "notes": "BULL macro. Closed $756.38 — $4.26 above WORBH $752.12. DTF 79.64 deep overbought bull cross rising. WTF 91.34 extreme overbought bull cross rising. EOM flush contained — low $754.71, never touched WORBH $752.12. Dip buyers absorbed supply. 4H minor fresh bear cross in overbought — EOM noise, not trend. 1H oversold going into Monday — early weakness possible, wait for 9:20. Bull threshold $754.71. Bear threshold $752.12. CRITICAL: New WORB sets Monday June 2 full session — current WORBH/WORBL become LWORBH/LWORBL next week."
+      }
+    }
+  ]
+}
