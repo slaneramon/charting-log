@@ -1,0 +1,452 @@
+{
+  "id": "2026-06-01",
+  "date": "2026-06-01",
+  "title": "Week of June 1 — Computex catalyst, NVDA/MSFT breakout, MAG7 rotation selling",
+  "spyClose": 758.43,
+  "marketTone": "mixed-bullish",
+  "macro": {
+    "iran": "Ceasefire MOU unsigned — monitor overnight",
+    "bonds": "No major disruption",
+    "oil": "Elevated on Hormuz risk — monitor",
+    "fed": "No scheduled releases Tuesday",
+    "catalyst": "NVDA Computex: Jensen unveiled N1X PC chip with MSFT/MediaTek. Dell, HP, ASUS, Lenovo all in. Active catalyst live. MAG7 rotation selling (META -5.5%, TSLA -4.6%) offset by NVDA/MSFT strength."
+  },
+  "worb": {
+    "note": "New WORB set from Monday June 1 full RTH session. Locked all week through Friday June 5.",
+    "aapl": { "high": 310.94, "low": 305.02 },
+    "amzn": { "high": 266.67, "low": 260.70 },
+    "googl": { "high": 378.54, "low": 373.52 },
+    "meta": { "high": 634.47, "low": 623.36 },
+    "msft": { "high": 466.33, "low": 458.27 },
+    "nvda": { "high": 224.87, "low": 215.70 },
+    "tsla": { "high": 429.60, "low": 415.44 },
+    "spy": { "high": 760.31, "low": 754.70 }
+  },
+  "macroFilter": {
+    "rule": "Direction locked at 9:20 AM, not 8:45 AM",
+    "bullThreshold": 756.60,
+    "bearThreshold": 754.70,
+    "bullScenario": "SPY holds above $756.60 at 9:20 = BULL day. Trade NVDA Slot 1, MSFT Slot 1/2 on WORBL hold or PBH hold.",
+    "mixedScenario": "SPY between $754.70 and $756.60 = MIXED. NVDA only, reduced size.",
+    "bearScenario": "SPY below $754.70 (WORBL) = BEAR. No MAG7 calls. META/AMZN/TSLA puts on failed reclaims only."
+  },
+  "sizing": {
+    "baseEntry": 1750,
+    "maxTrades": 3,
+    "dailyLossLimit": 700,
+    "walkAwayTarget": 800,
+    "maxSimultaneousPositions": 1,
+    "notes": "Position 2 only if P1 profitable + $3+ room + 2m above +40 + separate setup. Swing positions in options — see swing notes per name."
+  },
+  "names": [
+    {
+      "name": "AAPL",
+      "status": "active",
+      "open": 305.91,
+      "high": 306.00,
+      "low": 305.02,
+      "close": 306.32,
+      "ahPrice": 305.20,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": -64.36, "orange": -58.75, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "4H", "blue": -74.56, "orange": -59.10, "cross": "bear", "location": "extreme-oversold", "dir": "down" },
+        { "tf": "DTF", "blue": 58.98, "orange": 67.24, "cross": "bear", "location": "overbought", "dir": "down" }
+      ],
+      "levels": {
+        "pdh": 310.94,
+        "pdl": 305.02,
+        "orbH": 310.94,
+        "orbL": 308.57,
+        "ahh": 306.75,
+        "ahl": 305.20,
+        "pmh": 311.86,
+        "pml": 309.00,
+        "worbh": 310.94,
+        "worbl": 305.02,
+        "lworbh": 311.86,
+        "lworbl": 307.67,
+        "fvg1": 308.69,
+        "fvg2": null
+      },
+      "plan": {
+        "setupType": "no-trade",
+        "entryZone": { "low": 0.00, "high": 0.00 },
+        "trigger": 0.00,
+        "invalidation": { "preEntry": 0.00, "postEntry": 0.00 },
+        "targets": [0.00, 0.00, 0.00],
+        "qualityGates": {
+          "smiAlignment": false,
+          "levelIntegrity": false,
+          "roomAvailable": false,
+          "noRejectionWick": false
+        },
+        "qualityScore": 0,
+        "suggestedSize": 0,
+        "bias": "bear",
+        "slot": null,
+        "tier": "off-list",
+        "notes": "DTF fresh bear cross from overbought — daily trend reversing. 4H extreme oversold at -74 with no curl. AH below WORBL $305.02. Off-list for calls. Watch for 4H curl from extreme oversold before reassessing. FVG $308.69 = first overhead target if bounce develops."
+      }
+    },
+    {
+      "name": "AMZN",
+      "status": "active",
+      "open": 266.29,
+      "high": 266.67,
+      "low": 259.75,
+      "close": 261.25,
+      "ahPrice": 259.60,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": -75.54, "orange": -75.66, "cross": "bull", "location": "oversold", "dir": "flat" },
+        { "tf": "4H", "blue": -71.18, "orange": -50.47, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "DTF", "blue": 38.21, "orange": 44.97, "cross": "bear", "location": "mid", "dir": "down" }
+      ],
+      "levels": {
+        "pdh": 266.67,
+        "pdl": 260.70,
+        "orbH": 266.67,
+        "orbL": 260.70,
+        "ahh": 270.05,
+        "ahl": 0.00,
+        "pmh": 270.79,
+        "pml": 265.74,
+        "worbh": 266.67,
+        "worbl": 260.70,
+        "lworbh": 269.27,
+        "lworbl": 262.07,
+        "fvg1": 266.29,
+        "fvg2": 261.79
+      },
+      "plan": {
+        "setupType": "no-trade-first-candle",
+        "entryZone": { "low": 260.70, "high": 261.79 },
+        "trigger": 261.50,
+        "invalidation": { "preEntry": 259.00, "postEntry": 259.50 },
+        "targets": [264.00, 266.29, 266.67],
+        "qualityGates": {
+          "smiAlignment": false,
+          "levelIntegrity": false,
+          "roomAvailable": true,
+          "noRejectionWick": false
+        },
+        "qualityScore": 1,
+        "suggestedSize": 0,
+        "bias": "bear",
+        "slot": null,
+        "tier": "off-list",
+        "notes": "Failed WORBH $266.67 at open — tagged it and immediately sold. DTF fresh bear cross. AH $259.60 below WORBL $260.70. Put on failed reclaim of FVG $261.79 or WORBL $260.70. No calls until 4H curls and WORBL cleanly reclaims."
+      }
+    },
+    {
+      "name": "GOOGL",
+      "status": "active",
+      "open": 376.62,
+      "high": 377.41,
+      "low": 366.31,
+      "close": 376.39,
+      "ahPrice": 373.70,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": -35.41, "orange": -34.15, "cross": "bear", "location": "oversold", "dir": "flat" },
+        { "tf": "4H", "blue": -63.60, "orange": -66.72, "cross": "bull", "location": "oversold", "dir": "up" },
+        { "tf": "DTF", "blue": -64.88, "orange": -59.12, "cross": "bear", "location": "oversold", "dir": "down" }
+      ],
+      "levels": {
+        "pdh": 378.54,
+        "pdl": 373.52,
+        "orbH": 377.41,
+        "orbL": 373.52,
+        "ahh": 381.54,
+        "ahl": 366.31,
+        "pmh": 380.82,
+        "pml": 375.20,
+        "worbh": 378.54,
+        "worbl": 373.52,
+        "lworbh": 389.32,
+        "lworbl": 382.67,
+        "fvg1": 387.18,
+        "fvg2": 384.70
+      },
+      "plan": {
+        "setupType": "no-trade-first-candle",
+        "entryZone": { "low": 373.52, "high": 376.39 },
+        "trigger": 375.00,
+        "invalidation": { "preEntry": 372.00, "postEntry": 372.50 },
+        "targets": [378.54, 382.67, 387.18],
+        "qualityGates": {
+          "smiAlignment": false,
+          "levelIntegrity": true,
+          "roomAvailable": true,
+          "noRejectionWick": false
+        },
+        "qualityScore": 2,
+        "suggestedSize": 1000,
+        "bias": "bull",
+        "slot": 3,
+        "tier": "primary-bull",
+        "notes": "Slot 3 react-only. 4H fresh bull cross from deeply oversold — Bucket 3 signal. Closed above WORBL $373.52. DTF still bear cross limits conviction. AH $373.70 sitting just above WORBL. Entry: holds WORBL at open + 2m confirmation. T1 PDH $378.54, T2 LWORBL $382.67. Loses WORBL $373.52 = no trade. Bulls must reclaim $392.13 per chart annotation for full structural repair."
+      }
+    },
+    {
+      "name": "META",
+      "status": "active",
+      "open": 635.62,
+      "high": 635.62,
+      "low": 597.19,
+      "close": 600.46,
+      "ahPrice": 600.80,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": -82.00, "orange": -84.26, "cross": "bull", "location": "extreme-oversold", "dir": "flat" },
+        { "tf": "4H", "blue": -56.55, "orange": -33.99, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "DTF", "blue": 20.01, "orange": 31.55, "cross": "bear", "location": "mid", "dir": "down" }
+      ],
+      "levels": {
+        "pdh": 634.47,
+        "pdl": 623.36,
+        "orbH": 635.62,
+        "orbL": 617.04,
+        "ahh": 633.00,
+        "ahl": 631.03,
+        "pmh": 637.21,
+        "pml": 626.65,
+        "worbh": 634.47,
+        "worbl": 623.36,
+        "lworbh": 614.50,
+        "lworbl": 605.36,
+        "fvg1": 626.19,
+        "fvg2": 604.61
+      },
+      "plan": {
+        "setupType": "no-trade",
+        "entryZone": { "low": 0.00, "high": 0.00 },
+        "trigger": 0.00,
+        "invalidation": { "preEntry": 0.00, "postEntry": 0.00 },
+        "targets": [0.00, 0.00, 0.00],
+        "qualityGates": {
+          "smiAlignment": false,
+          "levelIntegrity": false,
+          "roomAvailable": false,
+          "noRejectionWick": false
+        },
+        "qualityScore": 0,
+        "suggestedSize": 0,
+        "bias": "bear",
+        "slot": null,
+        "tier": "off-list",
+        "notes": "Destroyed. -$35 (-5.5%) session. Opened at high, sold all day. DTF fresh bear cross. $22.90 below WORBL $623.36. LWORBL $605.36 broken in AH. 4H accelerating into oversold. Off-list for calls. Put on failed reclaim of FVG $604.61. Watch for 4H curl + LWORBL $605.36 reclaim before reassessing."
+      }
+    },
+    {
+      "name": "MSFT",
+      "status": "active",
+      "open": 464.83,
+      "high": 466.33,
+      "low": 458.27,
+      "close": 460.60,
+      "ahPrice": 452.35,
+      "swing": true,
+      "swingNote": "Swing candidate. DTF gapped above 200 SMA — major technical event. Bull cross and rising. Computex catalyst sustaining daily trend. 4H resetting from extreme overbought — healthy digestion. Options: $460C or $465C, 3-4 weeks out. Entry on WORBL $458.27 hold or PBH $450.33 Bucket 3. Target $466.33 (WORBH) then $467.15 (FVG). Stop below $450.33.",
+      "smi": [
+        { "tf": "1H", "blue": -70.82, "orange": -65.02, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "4H", "blue": 56.84, "orange": 67.91, "cross": "bear", "location": "overbought", "dir": "down" },
+        { "tf": "DTF", "blue": 59.59, "orange": 41.19, "cross": "bull", "location": "overbought", "dir": "up" }
+      ],
+      "levels": {
+        "pdh": 466.33,
+        "pdl": 458.27,
+        "orbH": 465.75,
+        "orbL": 458.93,
+        "ahh": 460.93,
+        "ahl": 450.28,
+        "pmh": 472.21,
+        "pml": 455.00,
+        "worbh": 466.33,
+        "worbl": 458.27,
+        "lworbh": 422.62,
+        "lworbl": 413.08,
+        "fvg1": 467.15,
+        "fvg2": 446.67
+      },
+      "plan": {
+        "setupType": "bull-continuation",
+        "entryZone": { "low": 450.33, "high": 458.27 },
+        "trigger": 458.27,
+        "invalidation": { "preEntry": 448.00, "postEntry": 449.00 },
+        "targets": [465.75, 466.33, 467.15],
+        "qualityGates": {
+          "smiAlignment": true,
+          "levelIntegrity": true,
+          "roomAvailable": true,
+          "noRejectionWick": false
+        },
+        "qualityScore": 3,
+        "suggestedSize": 1500,
+        "bias": "bull",
+        "slot": 2,
+        "tier": "primary-bull",
+        "notes": "Slot 2. DTF gapped above 200 SMA — strongest daily structure outside NVDA. Bull cross and rising. 4H resetting from 88+ overbought — healthy, not breakdown. AH $452.35 below WORBL — watch open. Scenario 1: opens above WORBL $458.27 and holds = call, trigger on 2m. Scenario 2: PBH $450.33 holds = Bucket 3 call, $15+ room to WORBH. Loses $450.33 = stand down. SWING: $460C or $465C 3-4 weeks — DTF 200 SMA gap is multi-day thesis."
+      }
+    },
+    {
+      "name": "NVDA",
+      "status": "active",
+      "open": 215.73,
+      "high": 224.87,
+      "low": 215.70,
+      "close": 224.40,
+      "ahPrice": 223.95,
+      "swing": true,
+      "swingNote": "Primary swing candidate. DTF fresh bull cross from deeply oversold — Bucket 3 on daily confirmed. Computex catalyst (N1X PC chip) sustains multi-day. 4H bull cross mid-range with room. Options: $225C or $227.50C, 2-4 weeks out. Better entry if pulls to FVG $221.01 first. Targets: $224.87 (WORBH), $230 (LWORBH). Stop below $217.43 (LWORBL).",
+      "smi": [
+        { "tf": "1H", "blue": 82.87, "orange": 84.61, "cross": "bear", "location": "extreme-overbought", "dir": "flat" },
+        { "tf": "4H", "blue": 66.01, "orange": 49.27, "cross": "bull", "location": "overbought", "dir": "up" },
+        { "tf": "DTF", "blue": -37.36, "orange": -46.44, "cross": "bull", "location": "oversold", "dir": "up" }
+      ],
+      "levels": {
+        "pdh": 224.87,
+        "pdl": 215.70,
+        "orbH": 220.78,
+        "orbL": 215.81,
+        "ahh": 212.99,
+        "ahl": 211.19,
+        "pmh": 216.82,
+        "pml": 214.30,
+        "worbh": 224.87,
+        "worbl": 215.70,
+        "lworbh": 221.64,
+        "lworbl": 217.43,
+        "fvg1": 221.01,
+        "fvg2": 218.88
+      },
+      "plan": {
+        "setupType": "bull-continuation",
+        "entryZone": { "low": 221.01, "high": 224.87 },
+        "trigger": 224.87,
+        "invalidation": { "preEntry": 219.00, "postEntry": 220.00 },
+        "targets": [224.87, 228.00, 230.00],
+        "qualityGates": {
+          "smiAlignment": true,
+          "levelIntegrity": true,
+          "roomAvailable": true,
+          "noRejectionWick": true
+        },
+        "qualityScore": 4,
+        "suggestedSize": 1750,
+        "bias": "bull",
+        "slot": 1,
+        "tier": "primary-bull",
+        "notes": "Slot 1. Highest conviction on the board. DTF Bucket 3 confirmed — fresh bull cross from -63 oversold on +6.26% catalyst day. 4H bull cross mid-range = room to run. AH $223.95 holding near WORBH $224.87. Scenario 1: opens above WORBH $224.87 = breakout continuation, enter on 2m hold. Scenario 2: pulls to FVG $221.01 and holds = better swing entry. Invalidation: loses LWORBL $217.43. SWING: $225C or $227.50C 2-4 weeks — DTF just starting the move. One-and-done rule applies for day trade component."
+      }
+    },
+    {
+      "name": "TSLA",
+      "status": "active",
+      "open": 427.37,
+      "high": 429.60,
+      "low": 415.43,
+      "close": 415.82,
+      "ahPrice": 413.57,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": -91.49, "orange": -90.15, "cross": "bear", "location": "extreme-oversold", "dir": "down" },
+        { "tf": "4H", "blue": -82.02, "orange": -65.49, "cross": "bear", "location": "extreme-oversold", "dir": "down" },
+        { "tf": "DTF", "blue": 37.00, "orange": 36.65, "cross": "bull", "location": "mid", "dir": "flat" }
+      ],
+      "levels": {
+        "pdh": 429.60,
+        "pdl": 415.44,
+        "orbH": 429.60,
+        "orbL": 422.65,
+        "ahh": 417.18,
+        "ahl": 0.00,
+        "pmh": 432.53,
+        "pml": 427.15,
+        "worbh": 429.60,
+        "worbl": 415.44,
+        "lworbh": 435.29,
+        "lworbl": 426.19,
+        "fvg1": 425.46,
+        "fvg2": 418.17,
+        "fvg3": 410.24
+      },
+      "plan": {
+        "setupType": "no-trade",
+        "entryZone": { "low": 0.00, "high": 0.00 },
+        "trigger": 0.00,
+        "invalidation": { "preEntry": 0.00, "postEntry": 0.00 },
+        "targets": [0.00, 0.00, 0.00],
+        "qualityGates": {
+          "smiAlignment": false,
+          "levelIntegrity": false,
+          "roomAvailable": false,
+          "noRejectionWick": false
+        },
+        "qualityScore": 0,
+        "suggestedSize": 0,
+        "bias": "bear",
+        "slot": null,
+        "tier": "off-list",
+        "notes": "-4.57% session. 1H and 4H both extreme oversold with no curl. DTF bull cross barely holding (37.00/36.65) — at risk of bear cross Tuesday. AH $413.57 below WORBL $415.44. Off-list for calls. Watch for DTF to stabilize + 4H to curl from extreme oversold. Put on failed WORBL $415.44 reclaim if bears remain in control."
+      }
+    },
+    {
+      "name": "SPY",
+      "status": "context",
+      "open": 755.32,
+      "high": 760.31,
+      "low": 754.70,
+      "close": 758.43,
+      "ahPrice": 756.56,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": -9.16, "orange": 6.57, "cross": "bear", "location": "mid", "dir": "down" },
+        { "tf": "4H", "blue": 43.45, "orange": 53.58, "cross": "bear", "location": "mid", "dir": "down" },
+        { "tf": "DTF", "blue": 83.76, "orange": 76.34, "cross": "bull", "location": "overbought", "dir": "up" }
+      ],
+      "levels": {
+        "pdh": 760.31,
+        "pdl": 754.70,
+        "orbH": 756.60,
+        "orbL": 754.71,
+        "ahh": 758.81,
+        "ahl": 756.21,
+        "pmh": 759.27,
+        "pml": 754.98,
+        "worbh": 760.31,
+        "worbl": 754.70,
+        "lworbh": 752.12,
+        "lworbl": 748.37,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plan": {
+        "setupType": "macro-context",
+        "entryZone": { "low": 0.00, "high": 0.00 },
+        "trigger": 0.00,
+        "invalidation": { "preEntry": 0.00, "postEntry": 0.00 },
+        "targets": [0.00, 0.00, 0.00],
+        "qualityGates": {
+          "smiAlignment": true,
+          "levelIntegrity": true,
+          "roomAvailable": true,
+          "noRejectionWick": true
+        },
+        "qualityScore": 4,
+        "suggestedSize": 0,
+        "bias": "bull",
+        "slot": null,
+        "tier": "context-only",
+        "notes": "BULL macro. New WORB set: WORBH $760.31 / WORBL $754.70. Closed $758.43 inside WORB. DTF 83.76 deep overbought bull cross rising — macro trend intact despite MAG7 rotation selling. Bull threshold $756.60 (ORB H). Bear threshold $754.70 (WORBL). 1H and 4H pulled back EOD — normal digestion. AH $756.56 holding above ORB H."
+      }
+    }
+  ]
+}
