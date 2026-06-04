@@ -1,0 +1,291 @@
+{
+  "id": "2026-06-03",
+  "date": "2026-06-03",
+  "title": "Week of June 2 — Iran Flush, AVGO Beat Changes Everything",
+  "spyClose": 754.36,
+  "marketTone": "mixed-bearish",
+  "macro": {
+    "iran": "Active. Missiles on Kuwait airport overnight. Risk-off all session.",
+    "bonds": "",
+    "oil": "Oil +3% on Iran escalation. Macro headwind.",
+    "fed": "",
+    "catalyst": "AVGO Q2: beat EPS, slight revenue miss, Q3 guide strong. Sold -8% AH then recovered +2.8%. Semiconductors/AI thesis validated. Direct NVDA tailwind. SPY DTF fresh bear cross from extreme overbought (87→78). Tech complex mixed — META +$20 (Bucket 3 call), NVDA -$7.87 (macro flush but thesis intact). AAPL AH recovery on AVGO. TSLA swing open Jun-08 427.5C."
+  },
+  "worb": {
+    "note": "Set from Monday June 1 full RTH session. Locked through Friday June 5.",
+    "spy":  { "high": 760.31, "low": 754.70 },
+    "aapl": { "high": 310.94, "low": 305.02 },
+    "amzn": { "high": 266.67, "low": 260.70 },
+    "googl": { "high": 378.54, "low": 373.52 },
+    "meta": { "high": 634.47, "low": 623.36 },
+    "msft": { "high": 466.33, "low": 458.27 },
+    "nvda": { "high": 224.87, "low": 215.70 },
+    "tsla": { "high": 429.60, "low": 415.44 }
+  },
+  "macroFilter": {
+    "rule": "Direction locked at 9:20 AM from SPY price relative to thresholds",
+    "bullThreshold": 754.70,
+    "bearThreshold": 752.12,
+    "bullScenario": "SPY reclaims WORBL $754.70 — NVDA Slot 1 on WORBL $215.70 reclaim, META Slot 1 on WORBL $623.36 reclaim, AAPL Slot 2 watch.",
+    "mixedScenario": "SPY $752.12–$754.70 — best single setup only. NVDA if FVG holds.",
+    "bearScenario": "SPY below $752.12 — no calls. AMZN put on failed $253.46 reclaim. GOOGL put on failed ORB H $366.39."
+  },
+  "sizing": {
+    "baseEntry": 1750,
+    "maxTrades": 3,
+    "dailyLossLimit": 700,
+    "walkAwayTarget": 800,
+    "maxSimultaneousPositions": 1,
+    "notes": "Week RED improving. Slot 1 $1,750. Slot 2 $1,500. Slot 3 $1,000. TSLA swing open — counts as a position if it moves into profit zone."
+  },
+  "names": [
+    {
+      "name": "SPY",
+      "status": "context",
+      "open": 758.14, "high": 758.80, "low": 749.86, "close": 754.36, "ahPrice": 750.64,
+      "swing": false, "swingNote": "",
+      "smi": [
+        { "tf": "4H",  "blue": -47.51, "orange": -18.75, "cross": "bear", "location": "approaching-oversold", "dir": "declining-fast" },
+        { "tf": "DTF", "blue": 78.85,  "orange": 80.33,  "cross": "bear", "location": "extreme-overbought-fresh-cross", "dir": "declining" },
+        { "tf": "WTF", "blue": null,   "orange": null,   "cross": "",    "location": "", "dir": "" }
+      ],
+      "levels": {
+        "pdh": 758.80, "pdl": 753.57, "orbH": 758.80, "orbL": 756.46,
+        "ahh": 754.36, "ahl": 749.86, "pmh": 759.63, "pml": 757.70,
+        "worbh": 760.31, "worbl": 754.70, "lworbh": 752.12, "lworbl": 748.37,
+        "fvg1": null, "fvg2": null
+      },
+      "plan": {
+        "setupType": "macro-context",
+        "entryZone": { "low": 0, "high": 0 },
+        "trigger": 754.70,
+        "invalidation": { "preEntry": 752.12, "postEntry": 752.12 },
+        "targets": [757.00, 758.25, 0],
+        "qualityGates": { "smiAlignment": false, "levelIntegrity": true, "roomAvailable": true, "noRejectionWick": false },
+        "qualityScore": 2,
+        "suggestedSize": 0,
+        "bias": "bear",
+        "slot": null,
+        "tier": "context-only",
+        "notes": "DTF fresh bear cross from extreme overbought (87→78). AH $750.64, $4.06 below WORBL. AVGO could lift futures overnight — check SPY futures at 8:45 before forming bias. Bull: reclaim $754.70. Bear: stays below $752.12."
+      }
+    },
+    {
+      "name": "AAPL",
+      "status": "active",
+      "open": 314.30, "high": 316.94, "low": 308.86, "close": 310.37, "ahPrice": 313.93,
+      "swing": false, "swingNote": "",
+      "smi": [
+        { "tf": "1H",  "blue": 5.59,  "orange": -17.25, "cross": "bull", "location": "crossing-zero", "dir": "rising-fast" },
+        { "tf": "4H",  "blue": 29.86, "orange": 31.28,  "cross": "bear", "location": "mid-range",     "dir": "flat" },
+        { "tf": "DTF", "blue": 54.52, "orange": 59.96,  "cross": "bear", "location": "mid-range",     "dir": "declining" }
+      ],
+      "levels": {
+        "pdh": 316.94, "pdl": 308.86, "orbH": 316.94, "orbL": 314.15,
+        "ahh": 314.50, "ahl": 309.70, "pmh": 315.15, "pml": 313.30,
+        "worbh": 310.94, "worbl": 305.02, "lworbh": 0, "lworbl": 0,
+        "fvg1": null, "fvg2": null
+      },
+      "plan": {
+        "setupType": "bull-continuation",
+        "entryZone": { "low": 310.94, "high": 314.15 },
+        "trigger": 314.15,
+        "invalidation": { "preEntry": 309.00, "postEntry": 310.94 },
+        "targets": [316.94, 318.00, 0],
+        "qualityGates": { "smiAlignment": true, "levelIntegrity": true, "roomAvailable": true, "noRejectionWick": true },
+        "qualityScore": 3,
+        "suggestedSize": 1500,
+        "bias": "bull",
+        "slot": 2,
+        "tier": "primary-bull",
+        "notes": "Slot 2. AH $313.93 reclaims WORBH $310.94 on AVGO catalyst. DTF shallow cross from overbought — bullish structure intact (values 54/60, positive). 1H bull cross rising fast. Entry: holds WORBH $310.94 or opens above ORB L $314.15 → call. T1 PDH $316.94 ($3+ from $313 area). BULL macro required. Check 8:45 for gap positioning."
+      }
+    },
+    {
+      "name": "AMZN",
+      "status": "active",
+      "open": 254.67, "high": 257.09, "low": 247.71, "close": 250.06, "ahPrice": 251.25,
+      "swing": false, "swingNote": "",
+      "smi": [
+        { "tf": "1H",  "blue": -25.65, "orange": -39.68, "cross": "bull", "location": "oversold",       "dir": "rising" },
+        { "tf": "4H",  "blue": -72.54, "orange": -75.08, "cross": "bull", "location": "extreme-oversold","dir": "improving-AH" },
+        { "tf": "DTF", "blue": -33.62, "orange":  -5.28, "cross": "bear", "location": "mid-range",      "dir": "accelerating" }
+      ],
+      "levels": {
+        "pdh": 257.09, "pdl": 247.72, "orbH": 257.10, "orbL": 253.46,
+        "ahh": 251.53, "ahl": 249.30, "pmh": 256.77, "pml": 254.20,
+        "worbh": 266.67, "worbl": 260.70, "lworbh": 269.30, "lworbl": 0,
+        "fvg1": 259.08, "fvg2": 252.94
+      },
+      "plan": {
+        "setupType": "bear-continuation",
+        "entryZone": { "low": 252.50, "high": 253.46 },
+        "trigger": 253.46,
+        "invalidation": { "preEntry": 254.00, "postEntry": 254.00 },
+        "targets": [249.30, 247.72, 0],
+        "qualityGates": { "smiAlignment": false, "levelIntegrity": true, "roomAvailable": true, "noRejectionWick": true },
+        "qualityScore": 2,
+        "suggestedSize": 0,
+        "bias": "bear",
+        "slot": null,
+        "tier": "primary-bear-only",
+        "notes": "OFF-LIST for calls. DTF established accelerating bear cross (blue -33, orange -5, gap widening). 4H extreme oversold AH flip noted but DTF overrides. Put only: failed reclaim of FVG $252.94 / ORB L $253.46. T1 AHL $249.30, T2 PDL $247.72. 4H extreme oversold = squeeze risk, do not chase puts at open. BEAR macro required."
+      }
+    },
+    {
+      "name": "GOOGL",
+      "status": "active",
+      "open": 362.03, "high": 366.45, "low": 357.00, "close": 359.45, "ahPrice": 357.80,
+      "swing": false, "swingNote": "",
+      "smi": [
+        { "tf": "1H",  "blue": -66.77, "orange": -57.45, "cross": "bear", "location": "deeply-oversold",  "dir": "declining" },
+        { "tf": "4H",  "blue": -76.13, "orange": -73.91, "cross": "bear", "location": "extreme-oversold", "dir": "declining" },
+        { "tf": "DTF", "blue": -79.44, "orange": -72.31, "cross": "bear", "location": "deeply-oversold",  "dir": "accelerating" }
+      ],
+      "levels": {
+        "pdh": 366.45, "pdl": 357.00, "orbH": 366.39, "orbL": 361.00,
+        "ahh": 364.49, "ahl": 361.00, "pmh": 365.00, "pml": 355.88,
+        "worbh": 378.54, "worbl": 373.52, "lworbh": 389.32, "lworbl": 382.67,
+        "fvg1": 387.18, "fvg2": 384.70
+      },
+      "plan": {
+        "setupType": "no-trade",
+        "entryZone": { "low": 0, "high": 0 },
+        "trigger": 0,
+        "invalidation": { "preEntry": 0, "postEntry": 0 },
+        "targets": [0, 0, 0],
+        "qualityGates": { "smiAlignment": false, "levelIntegrity": false, "roomAvailable": false, "noRejectionWick": false },
+        "qualityScore": 0,
+        "suggestedSize": 0,
+        "bias": "bear",
+        "slot": null,
+        "tier": "off-list",
+        "notes": "OFF-LIST. All TFs established accelerating bear cross. DTF at -79, gap widening. AH -$1.65, no catalyst. Put scenario only: bounce to ORB H $366.39 fails. 4H extreme oversold = squeeze risk. BEAR macro required."
+      }
+    },
+    {
+      "name": "META",
+      "status": "active",
+      "open": 602.86, "high": 624.15, "low": 600.27, "close": 623.11, "ahPrice": 619.30,
+      "swing": false, "swingNote": "",
+      "smi": [
+        { "tf": "1H",  "blue": 56.61,  "orange": 64.69,  "cross": "bear", "location": "overbought",   "dir": "declining-normal-reset" },
+        { "tf": "4H",  "blue": -0.13,  "orange": -23.78, "cross": "bull", "location": "crossing-zero", "dir": "rising-strongly" },
+        { "tf": "DTF", "blue": -16.29, "orange":  -4.32, "cross": "bear", "location": "fresh-shallow", "dir": "gap-narrowing" }
+      ],
+      "levels": {
+        "pdh": 624.15, "pdl": 600.27, "orbH": 614.28, "orbL": 600.31,
+        "ahh": 623.11, "ahl": 618.12, "pmh": 603.77, "pml": 597.35,
+        "worbh": 634.47, "worbl": 623.36, "lworbh": 614.50, "lworbl": 605.36,
+        "fvg1": 607.52, "fvg2": null
+      },
+      "plan": {
+        "setupType": "bull-continuation",
+        "entryZone": { "low": 621.00, "high": 623.36 },
+        "trigger": 623.36,
+        "invalidation": { "preEntry": 620.00, "postEntry": 618.12 },
+        "targets": [624.15, 634.47, 0],
+        "qualityGates": { "smiAlignment": true, "levelIntegrity": true, "roomAvailable": true, "noRejectionWick": true },
+        "qualityScore": 3,
+        "suggestedSize": 1750,
+        "bias": "bull",
+        "slot": 1,
+        "tier": "primary-bull",
+        "notes": "Slot 1. 4H bull cross at zero rising strongly. DTF fresh shallow cross with gap NARROWING (was -24pts yesterday, now -12pts) — not accelerating bear. AH $619.30, $3.81 below WORBL $623.36. AVGO tech tailwind could close gap overnight. Entry: WORBL $623.36 reclaim on 2m close. T1 PDH $624.15 (confirmation), T2 WORBH $634.47 ($11.11 room). Invalidation: loses AHL $618.12. BULL macro required. Check gap at 8:45."
+      }
+    },
+    {
+      "name": "MSFT",
+      "status": "active",
+      "open": 438.67, "high": 440.40, "low": 424.26, "close": 427.43, "ahPrice": 426.50,
+      "swing": false, "swingNote": "",
+      "smi": [
+        { "tf": "1H",  "blue": -51.42, "orange": -59.07, "cross": "bull", "location": "oversold",        "dir": "rising" },
+        { "tf": "4H",  "blue": -81.88, "orange": -73.49, "cross": "bear", "location": "extreme-oversold", "dir": "declining" },
+        { "tf": "DTF", "blue": 21.40,  "orange": 33.05,  "cross": "bear", "location": "mid-range",       "dir": "fresh-cross-today" }
+      ],
+      "levels": {
+        "pdh": 440.40, "pdl": 424.26, "orbH": 440.40, "orbL": 431.88,
+        "ahh": 428.61, "ahl": 425.21, "pmh": 443.10, "pml": 436.25,
+        "worbh": 466.33, "worbl": 458.27, "lworbh": 0, "lworbl": 0,
+        "fvg1": null, "fvg2": null
+      },
+      "plan": {
+        "setupType": "no-trade-first-candle",
+        "entryZone": { "low": 426.50, "high": 428.61 },
+        "trigger": 428.61,
+        "invalidation": { "preEntry": 424.26, "postEntry": 425.21 },
+        "targets": [431.88, 434.00, 0],
+        "qualityGates": { "smiAlignment": false, "levelIntegrity": false, "roomAvailable": true, "noRejectionWick": false },
+        "qualityScore": 2,
+        "suggestedSize": 0,
+        "bias": "mixed",
+        "slot": null,
+        "tier": "off-list",
+        "notes": "OFF-LIST tonight. 4H at -81 still declining — floor not found yet. DTF fresh bear cross today. 1H bull cross rising = only positive. CONDITIONAL: if AVGO tech lift carries MSFT above AHH $428.61 in premarket → Slot 3 bounce call. T1 ORB L $431.88 ($3.27 room). Confirm at 8:45."
+      }
+    },
+    {
+      "name": "NVDA",
+      "status": "active",
+      "open": 221.69, "high": 222.82, "low": 213.13, "close": 214.82, "ahPrice": 214.26,
+      "swing": false, "swingNote": "AVGO beat tonight = direct sector catalyst. DTF bull cross maintained through today flush. Highest conviction setup for tomorrow.",
+      "smi": [
+        { "tf": "1H",  "blue": -76.30, "orange": -78.14, "cross": "bull", "location": "deeply-oversold",       "dir": "fresh-cross-last-bar" },
+        { "tf": "4H",  "blue": -54.12, "orange": -31.94, "cross": "bear", "location": "approaching-oversold",  "dir": "declining" },
+        { "tf": "DTF", "blue": -18.75, "orange": -24.82, "cross": "bull", "location": "recovering",            "dir": "gap-narrowing" }
+      ],
+      "levels": {
+        "pdh": 222.82, "pdl": 213.13, "orbH": 222.82, "orbL": 218.03,
+        "ahh": 215.49, "ahl": 213.13, "pmh": 224.39, "pml": 220.70,
+        "worbh": 224.87, "worbl": 215.70, "lworbh": 230.00, "lworbl": 0,
+        "fvg1": 221.01, "fvg2": 214.12
+      },
+      "plan": {
+        "setupType": "bull-reversal-bucket3",
+        "entryZone": { "low": 215.70, "high": 217.00 },
+        "trigger": 217.00,
+        "invalidation": { "preEntry": 213.13, "postEntry": 215.70 },
+        "targets": [221.01, 224.87, 0],
+        "qualityGates": { "smiAlignment": true, "levelIntegrity": true, "roomAvailable": true, "noRejectionWick": true },
+        "qualityScore": 4,
+        "suggestedSize": 1750,
+        "bias": "bull",
+        "slot": 1,
+        "tier": "primary-bull",
+        "notes": "Slot 1. AVGO beat = highest conviction catalyst for NVDA. DTF bull cross maintained through today's macro flush — thesis intact. 1H fresh bull cross from deeply oversold. Entry: WORBL $215.70 reclaim → call. T1 FVG $221.01 ($5.31 room), T2 WORBH $224.87 ($9.17 room). If AVGO gaps NVDA above $221 premarket, FVG becomes floor — entry on hold there. Invalidation: loses WORBL $215.70. BULL macro required. 4/4."
+      }
+    },
+    {
+      "name": "TSLA",
+      "status": "active",
+      "open": 418.79, "high": 433.60, "low": 416.00, "close": 423.81, "ahPrice": 420.10,
+      "swing": true, "swingNote": "OPEN SWING: Jun-08 427.5C, 1 contract, entry $9.06 E*TRADE. Strike $7.40 OTM at AH $420.10. 3 trading days left (June 4, 5, 8). Hard stop WORBL $415.44. Today proved $433+ reachable.",
+      "smi": [
+        { "tf": "1H",  "blue": -45.45, "orange": -34.89, "cross": "bear", "location": "oversold",  "dir": "declining" },
+        { "tf": "4H",  "blue": -19.17, "orange": -23.87, "cross": "bull", "location": "mid-range", "dir": "flat" },
+        { "tf": "DTF", "blue":   9.58, "orange":  19.98, "cross": "bear", "location": "mid-range", "dir": "declining-gap-widening" }
+      ],
+      "levels": {
+        "pdh": 433.60, "pdl": 416.00, "orbH": 421.79, "orbL": 416.00,
+        "ahh": 424.90, "ahl": 419.50, "pmh": 421.39, "pml": 417.15,
+        "worbh": 429.60, "worbl": 415.44, "lworbh": 435.29, "lworbl": 426.19,
+        "fvg1": 425.46, "fvg2": null
+      },
+      "plan": {
+        "setupType": "bull-continuation",
+        "entryZone": { "low": 420.00, "high": 422.08 },
+        "trigger": 422.08,
+        "invalidation": { "preEntry": 419.50, "postEntry": 415.44 },
+        "targets": [424.90, 429.60, 433.60],
+        "qualityGates": { "smiAlignment": false, "levelIntegrity": true, "roomAvailable": true, "noRejectionWick": false },
+        "qualityScore": 2,
+        "suggestedSize": 1000,
+        "bias": "bull",
+        "slot": null,
+        "tier": "primary-bull",
+        "notes": "Swing OPEN — Jun-08 427.5C. 4H bull cross maintained. DTF bear cross widening = urgency. 3 days left. Today showed $433.60 reachable. Hard stop WORBL $415.44. Day trade: chop range $422.08 hold → call on BULL macro only. T1 AHH $424.90, T2 WORBH $429.60. 1H/DTF bear = lower conviction new trade. Quality 2/4 day trade."
+      }
+    }
+  ]
+}
