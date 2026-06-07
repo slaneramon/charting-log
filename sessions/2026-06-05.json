@@ -1,0 +1,481 @@
+{
+  "id": "2026-06-05",
+  "date": "2026-06-05",
+  "title": "Week of June 8 — NFP sell-off, distribution day, M patterns in play",
+  "spyClose": 737.40,
+  "marketTone": "bear",
+  "macro": {
+    "nfp": "NFP +172K (beat) released June 5 — market sold off hard anyway. Distribution signal.",
+    "bonds": "Yields elevated — market pricing in 'good news is bad news' labor strength.",
+    "oil": "TBD premarket",
+    "fed": "No meeting imminent. NFP beat reduces cut probability.",
+    "catalyst": "SPY -2.58% on NFP day. DTF bear cross. 4H extreme OS. Prior WORBL 754.70 = key overhead resistance Monday."
+  },
+  "worb": {
+    "note": "June 8 week WORB NOT YET SET — locks Monday June 8 RTH open. Prior week (June 1) levels are carry-forward targets/resistance.",
+    "aapl":  { "high": 0.00, "low": 0.00, "prior_high": 310.94, "prior_low": 305.02 },
+    "amzn":  { "high": 0.00, "low": 0.00, "prior_high": 266.67, "prior_low": 260.70 },
+    "googl": { "high": 0.00, "low": 0.00, "prior_high": 378.54, "prior_low": 373.52 },
+    "meta":  { "high": 0.00, "low": 0.00, "prior_high": 634.47, "prior_low": 599.56 },
+    "msft":  { "high": 0.00, "low": 0.00, "prior_high": 466.33, "prior_low": 458.27 },
+    "nvda":  { "high": 0.00, "low": 0.00, "prior_high": 224.87, "prior_low": 215.70 },
+    "tsla":  { "high": 0.00, "low": 0.00, "prior_high": 429.60, "prior_low": 415.44 },
+    "spy":   { "high": 0.00, "low": 0.00, "prior_high": 760.31, "prior_low": 754.70 }
+  },
+  "macroFilter": {
+    "rule": "Direction locked at 9:20 AM, not 8:45 AM. GOOGL tradeable regardless of SPY direction — RS is the permission slip.",
+    "bullThreshold": 754.70,
+    "bearThreshold": 737.40,
+    "bullScenario": "SPY recovers above prior WORBL 754.70 = bull day unlikely given distribution. GOOGL Slot 1 leads.",
+    "mixedScenario": "SPY between 737-754 = mixed. GOOGL call only. Smaller size on others.",
+    "bearScenario": "SPY at/below 737.40 at 9:20 = BEAR day. TSLA Leg 2 PUT + META Slot 2 lead. GOOGL still valid call (RS override)."
+  },
+  "sizing": {
+    "baseEntry": 1750,
+    "maxTrades": 3,
+    "dailyLossLimit": 700,
+    "walkAwayTarget": 800,
+    "maxSimultaneousPositions": 1,
+    "notes": "Position 2 only if P1 profitable + $3+ room + 2m above +40 + separate setup. Up $1,000 by 10:30 = close everything, walk."
+  },
+  "names": [
+    {
+      "name": "AAPL",
+      "status": "off-list",
+      "open": 312.84,
+      "high": 0.00,
+      "low": 0.00,
+      "close": 307.55,
+      "ahPrice": 0.00,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H",  "blue": 0.00, "orange": 0.00, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "4H",  "blue": 0.00, "orange": 0.00, "cross": "bear", "location": "mid",      "dir": "down" },
+        { "tf": "DTF", "blue": 0.00, "orange": 0.00, "cross": "bear", "location": "mid",      "dir": "down" }
+      ],
+      "levels": {
+        "pdh": 0.00, "pdl": 0.00,
+        "orbH": 0.00, "orbL": 0.00,
+        "ahh": 0.00, "ahl": 0.00,
+        "pmh": 0.00, "pml": 0.00,
+        "worbh": 0.00, "worbl": 0.00,
+        "lworbh": 310.94, "lworbl": 305.02,
+        "fvg1": null, "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "none",
+          "setupType": "no-trade",
+          "sequence": null,
+          "entryZone": { "low": 0.00, "high": 0.00 },
+          "trigger": 0.00,
+          "invalidation": { "preEntry": 0.00, "postEntry": 0.00 },
+          "targets": [],
+          "qualityGates": {
+            "smiAlignment": false,
+            "levelIntegrity": false,
+            "roomAvailable": false,
+            "noRejectionWick": false
+          },
+          "qualityScore": 0,
+          "suggestedSize": 0,
+          "slot": null,
+          "tier": "off-list",
+          "premarket": { "validates": "N/A", "invalidates": "N/A" },
+          "notes": "4H not at extreme OS. DTF bear cross with no bullish structure. No setup. Inside carry-forward range 305-310. Passive monitor only."
+        }
+      ]
+    },
+    {
+      "name": "AMZN",
+      "status": "active",
+      "open": 254.26,
+      "high": 0.00,
+      "low": 0.00,
+      "close": 245.98,
+      "ahPrice": 0.00,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H",  "blue": 0.00,   "orange": 0.00, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "4H",  "blue": -55.00, "orange": 0.00, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "DTF", "blue": -64.60, "orange": 0.00, "cross": "bear", "location": "oversold", "dir": "down" }
+      ],
+      "levels": {
+        "pdh": 0.00, "pdl": 0.00,
+        "orbH": 0.00, "orbL": 0.00,
+        "ahh": 0.00, "ahl": 0.00,
+        "pmh": 0.00, "pml": 0.00,
+        "worbh": 0.00, "worbl": 0.00,
+        "lworbh": 266.67, "lworbl": 260.70,
+        "fvg1": 251.00, "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "bull-reversal-bucket3",
+          "sequence": null,
+          "entryZone": { "low": 244.00, "high": 247.00 },
+          "trigger": 0.00,
+          "invalidation": { "preEntry": 243.00, "postEntry": 242.00 },
+          "targets": [251.00, 260.70],
+          "qualityGates": {
+            "smiAlignment": false,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 2,
+          "suggestedSize": 1000,
+          "slot": 3,
+          "tier": "off-list",
+          "premarket": {
+            "validates": "4H hits -60 or deeper → Double Extreme activated. React only at open on ORB L hold.",
+            "invalidates": "4H still above -60 at open — no Double Extreme, skip. OR premarket runs $5+ from close."
+          },
+          "notes": "DTF extreme OS -64.60. 4H developing toward extreme — Double Extreme watch. React-only Slot 3. $14.72 below prior WORBL 260.70. FVG 250-252 is T1. Below $10 two-way threshold — single call leg only."
+        }
+      ]
+    },
+    {
+      "name": "GOOGL",
+      "status": "active",
+      "open": 366.53,
+      "high": 0.00,
+      "low": 0.00,
+      "close": 368.67,
+      "ahPrice": 0.00,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H",  "blue": 0.00,   "orange": 0.00, "cross": "bear", "location": "oversold", "dir": "flat" },
+        { "tf": "4H",  "blue": 50.06,  "orange": 0.00, "cross": "bull", "location": "mid",      "dir": "up"   },
+        { "tf": "DTF", "blue": -55.87, "orange": 0.00, "cross": "bull", "location": "oversold", "dir": "up"   }
+      ],
+      "levels": {
+        "pdh": 0.00, "pdl": 0.00,
+        "orbH": 0.00, "orbL": 0.00,
+        "ahh": 0.00, "ahl": 0.00,
+        "pmh": 0.00, "pml": 0.00,
+        "worbh": 0.00, "worbl": 0.00,
+        "lworbh": 378.54, "lworbl": 373.52,
+        "fvg1": 384.70, "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "bull-reversal",
+          "sequence": null,
+          "entryZone": { "low": 366.00, "high": 370.00 },
+          "trigger": 0.00,
+          "invalidation": { "preEntry": 363.00, "postEntry": 365.00 },
+          "targets": [373.52, 378.54, 384.70],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 4,
+          "suggestedSize": 1750,
+          "slot": 1,
+          "tier": "primary-bull",
+          "premarket": {
+            "validates": "Holding above 365, flat or drifting up, 4H maintains bull cross orientation",
+            "invalidates": "Gap-down below 362 with no recovery. OR premarket already at 373+ (T1 hit — move done, reduce to Slot 3 only)."
+          },
+          "notes": "RS +1.63% vs SPY on a -2.58% down day. DTF fresh bull cross from multi-session extreme OS -55.87. 4H bull cross confirmed. Gapped down $5.66, recovered $2.14 intraday = buyers absorbing selling. TRADEABLE REGARDLESS OF SPY DIRECTION — RS is the permission slip. $4.85 below prior WORBL 373.52 = T1."
+        }
+      ]
+    },
+    {
+      "name": "META",
+      "status": "active",
+      "open": 622.88,
+      "high": 0.00,
+      "low": 0.00,
+      "close": 592.80,
+      "ahPrice": 0.00,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H",  "blue": -62.54, "orange": 0.00, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "4H",  "blue": -16.21, "orange": 0.00, "cross": "bear", "location": "mid",      "dir": "down" },
+        { "tf": "DTF", "blue": -19.84, "orange": 0.00, "cross": "bear", "location": "mid",      "dir": "down" }
+      ],
+      "levels": {
+        "pdh": 0.00, "pdl": 583.00,
+        "orbH": 0.00, "orbL": 0.00,
+        "ahh": 0.00, "ahl": 0.00,
+        "pmh": 0.00, "pml": 0.00,
+        "worbh": 0.00, "worbl": 0.00,
+        "lworbh": 634.47, "lworbl": 599.56,
+        "fvg1": null, "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "put",
+          "setupType": "bear-continuation",
+          "sequence": null,
+          "entryZone": { "low": 596.00, "high": 601.00 },
+          "trigger": 599.56,
+          "invalidation": { "preEntry": 578.00, "postEntry": 602.00 },
+          "targets": [583.00, 575.00],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 3,
+          "suggestedSize": 1500,
+          "slot": 2,
+          "tier": "primary-bear",
+          "premarket": {
+            "validates": "Bounce attempt premarket drifting toward 595-599. Prior WORBL untouched.",
+            "invalidates": "Gap-down below 578 at open — chasing, skip. OR premarket clears 602 (put thesis broken, prior WORBL no longer resistance)."
+          },
+          "notes": "RW -2.96% vs SPY. DTF bear cross -19.84. 4H fresh bear cross -16.21. 1H extreme OS -62.54 but no curl = no bounce imminent. Wait for bounce to prior WORBL 599.56 then rejection entry. PDL 583.00 = T1. $6.76 below prior WORBL. Below $10 two-way threshold on call leg — single put only."
+        }
+      ]
+    },
+    {
+      "name": "MSFT",
+      "status": "active",
+      "open": 428.35,
+      "high": 0.00,
+      "low": 0.00,
+      "close": 416.69,
+      "ahPrice": 0.00,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H",  "blue": -89.86, "orange": 0.00, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "4H",  "blue": -71.62, "orange": 0.00, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "DTF", "blue": 0.00,   "orange": 0.00, "cross": "bear", "location": "mid",      "dir": "down" }
+      ],
+      "levels": {
+        "pdh": 0.00, "pdl": 0.00,
+        "orbH": 0.00, "orbL": 0.00,
+        "ahh": 0.00, "ahl": 0.00,
+        "pmh": 0.00, "pml": 0.00,
+        "worbh": 0.00, "worbl": 0.00,
+        "lworbh": 466.33, "lworbl": 458.27,
+        "fvg1": null, "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "bull-reversal-bucket3",
+          "sequence": null,
+          "entryZone": { "low": 413.08, "high": 418.00 },
+          "trigger": 413.08,
+          "invalidation": { "preEntry": 411.00, "postEntry": 412.00 },
+          "targets": [420.35, 428.00],
+          "qualityGates": {
+            "smiAlignment": false,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 2,
+          "suggestedSize": 1000,
+          "slot": 3,
+          "tier": "off-list",
+          "premarket": {
+            "validates": "Holding 5/25 WORBL 413.08. 1H beginning to show any curl from -89.86 extreme.",
+            "invalidates": "Break below 411 premarket. OR DTF also hits extreme (-60+) without 1H confirmation — wait, don't chase."
+          },
+          "notes": "1H -89.86 DEEPEST IN SYSTEM. 4H -71.62 extreme OS. DTF still bear. React-only Slot 3. Key level: 5/25 WORBL 413.08 must hold as support. 5/25 WORBH 420.35 = T1. $41 below current week prior WORBL 458.27. React only — do not initiate without 1H curl confirmation."
+        }
+      ]
+    },
+    {
+      "name": "NVDA",
+      "status": "active",
+      "open": 214.49,
+      "high": 0.00,
+      "low": 0.00,
+      "close": 205.20,
+      "ahPrice": 205.88,
+      "swing": false,
+      "swingNote": "Prior swing entry zone $221 — price now $205, well below zone. Reassess Monday.",
+      "smi": [
+        { "tf": "1H",  "blue": 0.00,   "orange": 0.00, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "4H",  "blue": -73.91, "orange": 0.00, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "DTF", "blue": -40.72, "orange": 0.00, "cross": "bear", "location": "mid",      "dir": "down" }
+      ],
+      "levels": {
+        "pdh": 0.00, "pdl": 204.33,
+        "orbH": 0.00, "orbL": 0.00,
+        "ahh": 205.88, "ahl": 0.00,
+        "pmh": 0.00, "pml": 0.00,
+        "worbh": 0.00, "worbl": 0.00,
+        "lworbh": 224.87, "lworbl": 215.70,
+        "fvg1": null, "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "no-trade-first-candle",
+          "sequence": null,
+          "entryZone": { "low": 203.00, "high": 206.00 },
+          "trigger": 0.00,
+          "invalidation": { "preEntry": 202.00, "postEntry": 202.00 },
+          "targets": [210.00, 215.70],
+          "qualityGates": {
+            "smiAlignment": false,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 2,
+          "suggestedSize": 1000,
+          "slot": 3,
+          "tier": "off-list",
+          "premarket": {
+            "validates": "DOUBLE EXTREME activated: DTF hits -60 at open → snap-back justified. 4H at -73.91 already extreme. React-only if BOTH timeframes at extreme.",
+            "invalidates": "DTF stays above -60 → no Double Extreme → no trade. Or gap-down below 202 — too extended."
+          },
+          "notes": "4H extreme OS -73.91 confirmed. DTF -40.72 approaching extreme but NOT YET. Double Extreme watch: if DTF hits -60 Monday = snap-back call Slot 3 react-only. React to AHH 205.88 fail = bearish. React to hold = bullish. Do NOT initiate without DTF extreme confirmation. RW -3.58% vs SPY."
+        }
+      ]
+    },
+    {
+      "name": "TSLA",
+      "status": "active",
+      "open": 420.66,
+      "high": 0.00,
+      "low": 388.60,
+      "close": 390.88,
+      "ahPrice": 0.00,
+      "swing": false,
+      "swingNote": "Jun-08 427.5C CLOSED prior to June 5 session.",
+      "smi": [
+        { "tf": "1H",  "blue": -78.03, "orange": 0.00, "cross": "bull", "location": "oversold", "dir": "up"   },
+        { "tf": "4H",  "blue": -82.66, "orange": 0.00, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "DTF", "blue": -42.61, "orange": 0.00, "cross": "bear", "location": "mid",      "dir": "down" }
+      ],
+      "levels": {
+        "pdh": 0.00, "pdl": 388.60,
+        "orbH": 0.00, "orbL": 0.00,
+        "ahh": 0.00, "ahl": 0.00,
+        "pmh": 0.00, "pml": 0.00,
+        "worbh": 0.00, "worbl": 0.00,
+        "lworbh": 429.60, "lworbl": 415.44,
+        "fvg1": null, "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "bull-reversal-bucket3",
+          "sequence": "Exit Leg 1 at neckline 407-408. That level becomes Leg 2 entry trigger on rejection.",
+          "entryZone": { "low": 386.00, "high": 392.00 },
+          "trigger": 388.60,
+          "invalidation": { "preEntry": 385.00, "postEntry": 387.00 },
+          "targets": [407.00, 408.00],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 4,
+          "suggestedSize": 1500,
+          "slot": 2,
+          "tier": "primary-bull",
+          "premarket": {
+            "validates": "Holding above PDL 388.60 premarket, flat to slight drift up, no dump below 385.",
+            "invalidates": "Gap-down below 385 no recovery. OR premarket already at 407+ (move done, skip Leg 1 — Leg 2 entry may be live)."
+          },
+          "notes": "1H bull cross from -78.03 extreme OS. 4H extreme OS -82.66 = snap fuel. ORB L hold at 388.60 = entry trigger. $17 room to neckline 407-408 = T1 and Leg 2 setup. TWO-WAY SETUP — this leg funds Leg 2."
+        },
+        {
+          "leg": 2,
+          "direction": "put",
+          "setupType": "bear-continuation",
+          "sequence": "Enters on neckline rejection after Leg 1 exits. M pattern measured move continuation.",
+          "entryZone": { "low": 407.00, "high": 410.00 },
+          "trigger": 407.00,
+          "invalidation": { "preEntry": 402.00, "postEntry": 411.00 },
+          "targets": [399.00, 395.00, 382.00],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 4,
+          "suggestedSize": 1750,
+          "slot": 1,
+          "tier": "primary-bear",
+          "premarket": {
+            "validates": "Neckline 407-408 untouched premarket. Price still below 402 at 8:45.",
+            "invalidates": "Premarket already at 408+ → move happened → Leg 1 entry gone, reassess. Premarket breaks above 415.44 (prior WORBL) = M pattern invalidated."
+          },
+          "notes": "M pattern confirmed broken on DTF and 4H. Neckline 407-408 = prior breakdown valley = now resistance. Prior WORBL 415.44 above = additional resistance layer. Measured move target 380-382 = T3 ($25 room). RW -4.01% vs SPY = strongest bear on board. STRONGEST SETUP IN SESSION."
+        }
+      ]
+    },
+    {
+      "name": "SPY",
+      "status": "context",
+      "open": 752.31,
+      "high": 0.00,
+      "low": 0.00,
+      "close": 737.40,
+      "ahPrice": 0.00,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H",  "blue": 0.00,   "orange": 0.00, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "4H",  "blue": -73.63, "orange": 0.00, "cross": "bear", "location": "oversold", "dir": "down" },
+        { "tf": "DTF", "blue": 0.00,   "orange": 0.00, "cross": "bear", "location": "mid",      "dir": "down" }
+      ],
+      "levels": {
+        "pdh": 0.00, "pdl": 0.00,
+        "orbH": 0.00, "orbL": 0.00,
+        "ahh": 0.00, "ahl": 0.00,
+        "pmh": 0.00, "pml": 0.00,
+        "worbh": 0.00, "worbl": 0.00,
+        "lworbh": 760.31, "lworbl": 754.70,
+        "fvg1": null, "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "none",
+          "setupType": "macro-context",
+          "sequence": null,
+          "entryZone": { "low": 0.00, "high": 0.00 },
+          "trigger": 0.00,
+          "invalidation": { "preEntry": 0.00, "postEntry": 0.00 },
+          "targets": [],
+          "qualityGates": {
+            "smiAlignment": false,
+            "levelIntegrity": false,
+            "roomAvailable": false,
+            "noRejectionWick": false
+          },
+          "qualityScore": 0,
+          "suggestedSize": 0,
+          "slot": null,
+          "tier": "context-only",
+          "premarket": {
+            "validates": "N/A — macro context only",
+            "invalidates": "N/A"
+          },
+          "notes": "NFP +172K beat, market sold off -2.58% = distribution. DTF bear cross. 4H extreme OS -73.63 (AH). Snap possible Monday AM but macro is BEAR. Prior WORBL 754.70 = overhead resistance. New WORB locks Monday at RTH open. SPY at 9:20 activates direction for the session (except GOOGL which trades regardless)."
+        }
+      ]
+    }
+  ]
+}
