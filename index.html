@@ -137,6 +137,7 @@ function getChipStyle(n){
   const plans=n.plans||[];
   if(n.status==='context') return 'chop';
   if(n.status==='off-list'){
+    // Check if any plan has a real direction
     const dirs=plans.map(p=>p.direction).filter(d=>d&&d!=='none');
     if(dirs.length===0) return 'chop';
   }
@@ -289,6 +290,18 @@ function renderPlanOld(n){
 }
 
 // ─── Plan rendering — new leg format ─────────────────────────────
+function renderGates(plan){
+  const gk={smiAlignment:'SMI align',levelIntegrity:'Level integrity',roomAvailable:'Room $3+',noRejectionWick:'No wick'};
+  if(!plan.qualityGates) return '';
+  const pills=Object.entries(gk).map(([k,lbl])=>{
+    const pass=plan.qualityGates[k];
+    const col=pass?'var(--bull)':'var(--bear)';
+    const bg=pass?'rgba(31,217,138,0.07)':'rgba(240,82,82,0.07)';
+    return`<span style="background:${bg};border:1px solid ${col};color:${col};border-radius:20px;font-size:10px;font-family:var(--mono);padding:2px 8px">${pass?'✓':'✗'} ${lbl}</span>`;
+  }).join('');
+  return`<div style="display:flex;gap:5px;flex-wrap:wrap;padding:7px 13px;border-top:1px solid var(--border)">${pills}</div>`;
+}
+
 function renderLegCard(plan){
   if(!plan) return '';
   const isCall=plan.direction==='call';
@@ -296,8 +309,9 @@ function renderLegCard(plan){
   const cardCls=isCall?'leg-card-call':isPut?'leg-card-put':'';
   const dirLabel=isCall?`<span style="color:var(--bull);font-weight:700;font-family:var(--mono);font-size:11px">▲ CALL</span>`:isPut?`<span style="color:var(--bear);font-weight:700;font-family:var(--mono);font-size:11px">▼ PUT</span>`:'';
   const slotBadge=plan.slot?`<span class="badge b-note">Slot ${plan.slot}</span>`:'';
-  const qBadge=plan.qualityScore!==undefined?`<span style="font-size:11px;color:var(--text3);font-family:var(--mono)">${plan.qualityScore}/4</span>`:'';
-  const sizeStr=plan.suggestedSize?`<span style="font-size:11px;color:var(--text3);font-family:var(--mono)">$${plan.suggestedSize.toLocaleString()}</span>`:'';
+  const scoreCol=plan.qualityScore===4?'var(--bull)':plan.qualityScore===3?'var(--caut)':'var(--bear)';
+  const qBadge=plan.qualityScore!==undefined?`<span style="font-size:11px;color:${scoreCol};font-family:var(--mono);font-weight:600">${plan.qualityScore}/4</span>`:'';
+  const sizeStr=plan.suggestedSize?`<span style="font-size:11px;color:var(--text2);font-family:var(--mono);font-weight:600">$${plan.suggestedSize.toLocaleString()}</span>`:'';
 
   const rows=[];
   if(plan.entryZone?.low&&plan.entryZone?.high&&plan.entryZone.low!==0)
@@ -313,33 +327,88 @@ function renderLegCard(plan){
 
   const planRows=rows.map(r=>`<div class="plan-row"><span class="plan-k">${r.k}</span><span class="plan-v">${r.v}</span></div>`).join('');
   const seqBlock=plan.sequence?`<div style="padding:7px 13px;border-top:1px solid var(--border);font-size:11px;color:var(--accent);font-style:italic;font-family:var(--mono)">→ ${plan.sequence}</div>`:'';
-  const pmBlock=(plan.premarket?.validates||plan.premarket?.invalidates)?`
-    <div class="pm-section">
-      <div class="pm-lbl">Premarket 8:45</div>
-      ${plan.premarket.validates?`<div class="pm-row">✅ ${plan.premarket.validates}</div>`:''}
-      ${plan.premarket.invalidates?`<div class="pm-row">❌ ${plan.premarket.invalidates}</div>`:''}
+
+  // Premarket — skip if N/A
+  const pmV=plan.premarket?.validates;
+  const pmI=plan.premarket?.invalidates;
+  const pmVshow=pmV&&pmV!=='N/A'&&!pmV.startsWith('N/A');
+  const pmIshow=pmI&&pmI!=='N/A'&&!pmI.startsWith('N/A');
+  const pmBlock=(pmVshow||pmIshow)?`
+    <div style="padding:10px 13px;border-top:2px solid var(--accent);background:rgba(108,142,245,0.04)">
+      <div style="font-size:9px;font-family:var(--mono);color:var(--accent);letter-spacing:.08em;text-transform:uppercase;margin-bottom:7px;font-weight:600">⏰ Premarket check — 8:45 AM</div>
+      ${pmVshow?`<div style="font-size:12px;color:var(--text2);padding:3px 0;line-height:1.5">✅ ${pmV}</div>`:''}
+      ${pmIshow?`<div style="font-size:12px;color:var(--text2);padding:3px 0;line-height:1.5">❌ ${pmI}</div>`:''}
     </div>`:''
+
   const notesBlock=plan.notes?`<div class="notes-section">${plan.notes}</div>`:'';
+  const gatesBlock=renderGates(plan);
 
   return`<div class="leg-card ${cardCls}">
     <div class="leg-card-hdr">${dirLabel} ${slotBadge} ${qBadge} ${sizeStr}</div>
     ${planRows}
     ${seqBlock}
+    ${gatesBlock}
     ${pmBlock}
     ${notesBlock}
   </div>`;
 }
 
+function renderOffListCard(plan){
+  // For direction:none plans — show watch context and non-N/A premarket
+  if(!plan||!plan.notes) return '';
+  const pmV=plan.premarket?.validates;
+  const pmI=plan.premarket?.invalidates;
+  const pmVshow=pmV&&pmV!=='N/A'&&!pmV.startsWith('N/A');
+  const pmIshow=pmI&&pmI!=='N/A'&&!pmI.startsWith('N/A');
+  const pmBlock=(pmVshow||pmIshow)?`
+    <div style="padding:10px 13px;border-top:1px solid var(--border)">
+      <div style="font-size:9px;font-family:var(--mono);color:var(--text3);letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px">Premarket watch</div>
+      ${pmVshow?`<div style="font-size:12px;color:var(--text2);padding:2px 0;line-height:1.5">✅ ${pmV}</div>`:''}
+      ${pmIshow?`<div style="font-size:12px;color:var(--text2);padding:2px 0;line-height:1.5">❌ ${pmI}</div>`:''}
+    </div>`:'';
+  return`<div style="border:1px solid var(--border);border-radius:var(--rs);overflow:hidden;margin-bottom:10px">
+    <div style="padding:7px 13px;background:var(--bg3);border-bottom:1px solid var(--border);font-size:9px;font-family:var(--mono);color:var(--text3);letter-spacing:.07em;text-transform:uppercase">Watch context</div>
+    <div style="padding:9px 13px;font-size:12px;color:var(--text3);line-height:1.6;font-family:var(--mono)">${plan.notes}</div>
+    ${pmBlock}
+  </div>`;
+}
+
 function renderPlansNew(n){
-  const plans=(n.plans||[]).filter(p=>p.direction&&p.direction!=='none');
-  if(!plans.length) return '';
-  if(plans.length===1){
-    return`<div class="section-label">Setup plan</div>${renderLegCard(plans[0])}`;
+  const tradeable=(n.plans||[]).filter(p=>p.direction&&p.direction!=='none');
+  const offList=(n.plans||[]).filter(p=>!p.direction||p.direction==='none');
+  if(!tradeable.length){
+    // Off-list: show watch context for first plan with notes
+    const ctx=offList.find(p=>p.notes);
+    return ctx?`<div class="section-label">Watch context</div>${renderOffListCard(ctx)}`:'';
   }
+  if(tradeable.length===1){
+    return`<div class="section-label">Setup plan</div>${renderLegCard(tradeable[0])}`;
+  }
+  // Two-way: side by side columns
   return`<div class="section-label">Two-way setup — both legs tracked</div>
     <div class="twoway-grid">
-      ${plans.map(p=>renderLegCard(p)).join('')}
+      ${tradeable.map(p=>renderLegCard(p)).join('')}
     </div>`;
+}
+
+// ─── Sizing block ─────────────────────────────────────────────────
+function renderSizing(s){
+  if(!s.sizing) return '';
+  const sz=s.sizing;
+  const items=[
+    sz.baseEntry?{k:'Base entry',v:`$${sz.baseEntry.toLocaleString()}`}:null,
+    sz.maxTrades?{k:'Max trades/day',v:sz.maxTrades}:null,
+    sz.maxSimultaneousPositions?{k:'Max simultaneous',v:sz.maxSimultaneousPositions}:null,
+    sz.dailyLossLimit?{k:'Stop trading if down',v:`$${sz.dailyLossLimit.toLocaleString()}`}:null,
+    sz.walkAwayTarget?{k:'Walk away if up',v:`$${sz.walkAwayTarget.toLocaleString()}`}:null,
+  ].filter(Boolean);
+  const pills=items.map(i=>`<div class="level-pill"><div class="level-key">${i.k}</div><div class="level-val">${i.v}</div></div>`).join('');
+  const noteLine=sz.notes?`<div style="padding:8px 0 2px;font-size:11px;color:var(--text3);font-family:var(--mono);line-height:1.5">${sz.notes}</div>`:'';
+  return`<div class="card" style="margin-bottom:20px;border-color:rgba(108,142,245,0.2)">
+    <div class="section-label" style="margin-bottom:10px">Session sizing rules</div>
+    <div class="levels-grid" style="margin-bottom:${sz.notes?'4px':'0'}">${pills}</div>
+    ${noteLine}
+  </div>`;
 }
 
 // ─── Swing pills ─────────────────────────────────────────────────
@@ -387,6 +456,7 @@ function renderDetail(id){
       ${s.openItems.map(i=>`<div class="open-item"><span class="open-dot"></span>${i}</div>`).join('')}
     </div>`:'';
 
+  // macro filter block (new schema)
   let macroFilterBlock='';
   if(s.macroFilter){
     macroFilterBlock=`<div class="card" style="margin-bottom:20px">
@@ -418,10 +488,13 @@ function renderDetail(id){
     const slbl=getStatusLabel(n);
     const sbadge=getBadgeClass(n);
     const isNew=isNewSchema(n);
+
+    // Old format fields
     const tcls={bull:'bull-th',bear:'bear-th',caut:'caut-th'}[n.status]||'';
     const thesisHtml=n.thesis?`<div class="section-label">Thesis</div><div class="thesis ${tcls}">${n.thesis}</div>`:'';
     const huntHtml=(n.huntUp||n.huntDn)?`<div class="section-label">Stop hunt map</div><div class="hunt-grid"><div class="hunt-card hunt-up"><div class="hunt-lbl">▲ Upside</div>${n.huntUp||'—'}</div><div class="hunt-card hunt-dn"><div class="hunt-lbl">▼ Downside</div>${n.huntDn||'—'}</div></div>`:'';
     const planHtml=isNew?renderPlansNew(n):renderPlanOld(n);
+
     const swingInPanel=n.swing?`
       <div class="swing-banner" style="margin-bottom:14px">
         <div class="swing-banner-hdr">
@@ -430,6 +503,7 @@ function renderDetail(id){
         </div>
         <div class="swing-pills">${buildSwingPills(n.swingNote)}</div>
       </div>`:'';
+
     const closeLbl=n.close?`<span style="font-size:12px;font-family:var(--mono);color:var(--text3)">Close: ${n.close}</span>`:'';
     const openLbl=n.open?`<span style="font-size:12px;font-family:var(--mono);color:var(--text3)">Open: ${n.open}</span>`:'';
 
@@ -453,6 +527,7 @@ function renderDetail(id){
     <div class="d-title">${s.title||'Nightly Chart Session'}</div>
     ${renderMacroBlock(s)}
     ${macroFilterBlock}
+    ${renderSizing(s)}
     ${swingSummary}
     ${openBlock}
     ${active.length?`<div class="name-tabs">${tabs}</div><div>${panels}</div>`:'<div style="color:var(--text3)">No name data recorded.</div>'}
