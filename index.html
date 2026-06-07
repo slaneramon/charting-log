@@ -16,7 +16,7 @@ header{border-bottom:1px solid var(--border);padding:20px 0 16px;display:flex;al
 .logo-sub{font-size:11px;color:var(--text3);letter-spacing:.06em;text-transform:uppercase;font-family:var(--mono);margin-left:10px}
 .view{display:none}.view.active{display:block}
 .badge{display:inline-block;font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;letter-spacing:.04em;text-transform:uppercase;font-family:var(--mono)}
-.b-bull{background:var(--bull-bg);color:var(--bull)}.b-bear{background:var(--bear-bg);color:var(--bear)}.b-caut{background:var(--caut-bg);color:var(--caut)}.b-chop{background:var(--chop-bg);color:var(--chop)}.b-swing{background:var(--swing-bg);color:var(--swing);border:1px solid var(--swing-bd)}.b-note{background:rgba(255,255,255,.05);color:var(--text3)}
+.b-bull{background:var(--bull-bg);color:var(--bull)}.b-bear{background:var(--bear-bg);color:var(--bear)}.b-caut{background:var(--caut-bg);color:var(--caut)}.b-chop{background:var(--chop-bg);color:var(--chop)}.b-swing{background:var(--swing-bg);color:var(--swing);border:1px solid var(--swing-bd)}.b-note{background:rgba(255,255,255,.05);color:var(--text3)}.b-twoway{background:rgba(108,142,245,0.12);color:var(--accent)}
 .session-card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);margin-bottom:12px;overflow:hidden;cursor:pointer;transition:border-color .15s}
 .session-card:hover{border-color:var(--border2)}
 .sc-header{padding:16px 20px 12px;display:flex;align-items:flex-start;justify-content:space-between;border-bottom:1px solid var(--border)}
@@ -27,9 +27,9 @@ header{border-bottom:1px solid var(--border);padding:20px 0 16px;display:flex;al
 .row-lbl{font-size:9px;font-family:var(--mono);color:var(--text3);letter-spacing:.07em;text-transform:uppercase;margin-bottom:7px}
 .chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
 .name-chip{display:flex;align-items:center;gap:4px;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:500;font-family:var(--mono);border:1px solid transparent}
-.chip-bull{background:var(--bull-bg);border-color:var(--bull-bd);color:var(--bull)}.chip-bear{background:var(--bear-bg);border-color:var(--bear-bd);color:var(--bear)}.chip-caut{background:var(--caut-bg);border-color:var(--caut-bd);color:var(--caut)}.chip-chop{background:var(--chop-bg);color:var(--chop)}
+.chip-bull{background:var(--bull-bg);border-color:var(--bull-bd);color:var(--bull)}.chip-bear{background:var(--bear-bg);border-color:var(--bear-bd);color:var(--bear)}.chip-caut{background:var(--caut-bg);border-color:var(--caut-bd);color:var(--caut)}.chip-chop{background:var(--chop-bg);color:var(--chop)}.chip-twoway{background:rgba(108,142,245,0.12);border-color:rgba(108,142,245,0.35);color:var(--accent)}
 .chip-dot{width:5px;height:5px;border-radius:50%}
-.chip-bull .chip-dot{background:var(--bull)}.chip-bear .chip-dot{background:var(--bear)}.chip-caut .chip-dot{background:var(--caut)}.chip-chop .chip-dot{background:var(--chop)}
+.chip-bull .chip-dot{background:var(--bull)}.chip-bear .chip-dot{background:var(--bear)}.chip-caut .chip-dot{background:var(--caut)}.chip-chop .chip-dot{background:var(--chop)}.chip-twoway .chip-dot{background:var(--accent)}
 .swing-section{background:var(--swing-bg);border:1px solid var(--swing-bd);border-radius:var(--rs);padding:11px 14px}
 .swing-section-lbl{font-size:9px;font-family:var(--mono);color:var(--swing);letter-spacing:.07em;text-transform:uppercase;margin-bottom:8px;opacity:.8}
 .swing-chips{display:flex;gap:10px;flex-wrap:wrap}
@@ -54,7 +54,7 @@ header{border-bottom:1px solid var(--border);padding:20px 0 16px;display:flex;al
 .ntab{padding:7px 13px;border-radius:var(--rs) var(--rs) 0 0;font-size:12px;font-weight:600;font-family:var(--mono);color:var(--text3);border:1px solid transparent;border-bottom:none;margin-bottom:-1px;transition:all .12s}
 .ntab:hover{color:var(--text2)}
 .ntab.active{background:var(--bg2);border-color:var(--border);border-bottom-color:var(--bg2);color:var(--text)}
-.ntab.s-bull.active{color:var(--bull)}.ntab.s-bear.active{color:var(--bear)}.ntab.s-caut.active{color:var(--caut)}.ntab.s-chop.active{color:var(--chop)}
+.ntab.s-bull.active{color:var(--bull)}.ntab.s-bear.active{color:var(--bear)}.ntab.s-caut.active{color:var(--caut)}.ntab.s-chop.active{color:var(--chop)}.ntab.s-twoway.active{color:var(--accent)}
 .swing-dot{width:5px;height:5px;border-radius:50%;background:var(--swing);display:inline-block;margin-left:4px;vertical-align:middle}
 .npanel{display:none}.npanel.active{display:block}
 .levels-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px;margin-bottom:14px}
@@ -83,26 +83,21 @@ header{border-bottom:1px solid var(--border);padding:20px 0 16px;display:flex;al
 .open-item{display:flex;align-items:flex-start;gap:9px;font-size:13px;color:var(--text2);padding:7px 0;border-bottom:1px solid var(--border);line-height:1.5}
 .open-item:last-child{border-bottom:none}
 .open-dot{width:5px;height:5px;border-radius:50%;background:var(--accent);margin-top:5px;flex-shrink:0}
-.macro-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-bottom:20px}
+.macro-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-bottom:20px}
 .macro-card{background:var(--bg3);border:1px solid var(--border);border-radius:var(--rs);padding:11px 14px}
 .macro-lbl{font-size:10px;font-family:var(--mono);color:var(--text3);letter-spacing:.06em;text-transform:uppercase;margin-bottom:3px}
 .macro-val{font-size:15px;font-weight:600}
-.macro-filter-box{background:var(--bg3);border:1px solid var(--border);border-radius:var(--rs);padding:12px 16px;margin-bottom:20px}
-.macro-filter-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
-.mf-pill{border-radius:var(--rs);padding:7px 12px;font-size:12px;font-family:var(--mono);line-height:1.5}
-.mf-bull{background:var(--bull-bg);border:1px solid var(--bull-bd);color:var(--bull)}
-.mf-bear{background:var(--bear-bg);border:1px solid var(--bear-bd);color:var(--bear)}
-.mf-mixed{background:var(--caut-bg);border:1px solid var(--caut-bd);color:var(--caut)}
-.ohlc-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
-.ohlc-pill{background:var(--bg3);border:1px solid var(--border);border-radius:var(--rs);padding:7px 12px;min-width:80px}
-.ohlc-k{font-size:10px;color:var(--text3);font-family:var(--mono);margin-bottom:2px}
-.ohlc-v{font-size:14px;font-weight:700;font-family:var(--mono)}
-.gate-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:6px;margin-bottom:14px}
-.gate-pill{background:var(--bg3);border:1px solid var(--border);border-radius:var(--rs);padding:7px 11px;display:flex;align-items:center;gap:8px}
-.gate-icon{font-size:14px}
-.gate-lbl{font-size:11px;font-family:var(--mono);color:var(--text2)}
+.leg-card{border-radius:var(--rs);overflow:hidden;margin-bottom:10px}
+.leg-card-call{border:1px solid var(--bull-bd);background:rgba(31,217,138,0.03)}
+.leg-card-put{border:1px solid var(--bear-bd);background:rgba(240,82,82,0.03)}
+.leg-card-hdr{padding:8px 13px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:8px;background:var(--bg3)}
+.pm-section{padding:9px 13px;border-top:1px solid var(--border);background:var(--bg)}
+.pm-lbl{font-size:9px;font-family:var(--mono);color:var(--text3);letter-spacing:.07em;text-transform:uppercase;margin-bottom:6px}
+.pm-row{font-size:12px;color:var(--text2);padding:2px 0;line-height:1.5}
+.notes-section{padding:8px 13px;border-top:1px solid var(--border);font-size:12px;color:var(--text3);line-height:1.6;font-family:var(--mono)}
+.twoway-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
 ::-webkit-scrollbar{width:5px;height:5px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--bg4);border-radius:3px}
-@media(max-width:600px){.hunt-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.hunt-grid{grid-template-columns:1fr}.twoway-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -133,39 +128,43 @@ header{border-bottom:1px solid var(--border);padding:20px 0 16px;display:flex;al
 <script>
 let SESSIONS=[];
 
-// ── Schema detection ──────────────────────────────────────────
-function isNewSchema(n){
-  return n && n.levels && !Array.isArray(n.levels);
-}
+// ─── Schema detection ───────────────────────────────────────────
+function isNewSchema(n){ return Array.isArray(n.plans); }
 
-// ── Chip color for session list ───────────────────────────────
-function chipStatus(n){
-  if(isNewSchema(n)){
-    if(!n.plan) return 'chop';
-    const tier=n.plan.tier||'';
-    const bias=n.plan.bias||'';
-    if(tier==='context-only') return 'chop';
-    if(bias==='bull') return 'bull';
-    if(bias==='bear') return 'bear';
-    if(bias==='mixed') return 'caut';
-    return 'chop';
+// ─── Chip / badge style helpers ─────────────────────────────────
+function getChipStyle(n){
+  if(!isNewSchema(n)) return n.status||'chop';
+  const plans=n.plans||[];
+  if(n.status==='context') return 'chop';
+  if(n.status==='off-list'){
+    const dirs=plans.map(p=>p.direction).filter(d=>d&&d!=='none');
+    if(dirs.length===0) return 'chop';
   }
-  return n.status||'chop';
+  const dirs=plans.map(p=>p.direction).filter(d=>d&&d!=='none');
+  if(dirs.includes('call')&&dirs.includes('put')) return 'twoway';
+  if(dirs.includes('call')) return 'bull';
+  if(dirs.includes('put')) return 'bear';
+  return 'chop';
 }
 
-// ── Market tone badge ─────────────────────────────────────────
-function toneInfo(tone){
-  const map={
-    'bull':{cls:'b-bull',lbl:'Risk On'},
-    'bear':{cls:'b-bear',lbl:'Risk Off'},
-    'mixed-bullish':{cls:'b-caut',lbl:'Mixed Bullish'},
-    'mixed-bearish':{cls:'b-caut',lbl:'Mixed Bearish'},
-    'caut':{cls:'b-caut',lbl:'Mixed'},
-    'chop':{cls:'b-chop',lbl:'Chop'}
-  };
-  return map[tone]||{cls:'b-note',lbl:tone||''};
+function getStatusLabel(n){
+  if(!isNewSchema(n)) return {bull:'Bullish',caut:'Caution',bear:'Bearish',chop:'No trade'}[n.status]||n.status;
+  const plans=n.plans||[];
+  const dirs=plans.map(p=>p.direction).filter(d=>d&&d!=='none');
+  if(dirs.includes('call')&&dirs.includes('put')) return 'Two-Way';
+  if(dirs.includes('call')) return n.status==='off-list'?'Call — React':'Call';
+  if(dirs.includes('put')) return 'Put';
+  if(n.status==='context') return 'Context';
+  if(n.status==='off-list') return 'Off List';
+  return 'No Trade';
 }
 
+function getBadgeClass(n){
+  const s=getChipStyle(n);
+  return {bull:'b-bull',bear:'b-bear',caut:'b-caut',chop:'b-chop',twoway:'b-twoway'}[s]||'b-note';
+}
+
+// ─── Data loading ────────────────────────────────────────────────
 async function loadSessions(){
   try{
     const r=await fetch('sessions/index.json?t='+Date.now());
@@ -187,7 +186,6 @@ function showDash(){
   document.getElementById('view-detail').classList.remove('active');
   window.scrollTo(0,0);
 }
-
 function showDetail(id){
   document.getElementById('view-dash').classList.remove('active');
   document.getElementById('view-detail').classList.add('active');
@@ -195,6 +193,7 @@ function showDetail(id){
   window.scrollTo(0,0);
 }
 
+// ─── Dashboard ───────────────────────────────────────────────────
 function renderDash(){
   const lbl=document.getElementById('count-lbl');
   const list=document.getElementById('session-list');
@@ -203,11 +202,13 @@ function renderDash(){
     list.innerHTML='<div style="text-align:center;padding:80px 20px;color:var(--text3)"><div style="font-size:18px;font-weight:600;color:var(--text2);margin-bottom:8px">No sessions yet</div></div>';
     return;
   }
+  const toneMap={bull:'b-bull',bear:'b-bear','mixed-bullish':'b-caut','mixed-bearish':'b-caut',caut:'b-caut',chop:'b-chop'};
+  const toneLbl={bull:'Risk On',bear:'Risk Off','mixed-bullish':'Mixed','mixed-bearish':'Mixed',caut:'Mixed',chop:'Chop'};
   list.innerHTML=SESSIONS.map(s=>{
     const active=(s.names||[]).filter(n=>n.status!=='skip');
     const swings=active.filter(n=>n.swing);
     const chips=active.map(n=>{
-      const cs=chipStatus(n);
+      const cs=getChipStyle(n);
       return`<div class="name-chip chip-${cs}"><span class="chip-dot"></span>${n.name}</div>`;
     }).join('');
     const swingBlock=swings.length?`
@@ -217,17 +218,16 @@ function renderDash(){
           ${swings.map(n=>`<div class="swing-chip-card"><div class="swing-chip-name">${n.name}</div><div class="swing-chip-note">${n.swingNote||''}</div></div>`).join('')}
         </div>
       </div>`:'';
-    const ti=toneInfo(s.marketTone);
     return`<div class="session-card" onclick="showDetail('${s.id}')">
       <div class="sc-header">
         <div><div class="sc-date">${fmtDate(s.date)}</div><div class="sc-title">${s.title||'Nightly Chart Session'}</div></div>
         <div class="sc-meta">
-          ${s.marketTone?`<span class="badge ${ti.cls}">${ti.lbl}</span>`:''}
+          ${s.marketTone?`<span class="badge ${toneMap[s.marketTone]||'b-note'}">${toneLbl[s.marketTone]||s.marketTone}</span>`:''}
           ${swings.length?`<span class="badge b-swing">⚡ ${swings.length} swing${swings.length>1?'s':''}</span>`:''}
         </div>
       </div>
       <div class="sc-body">
-        <div class="row-lbl">0DTE status</div>
+        <div class="row-lbl">watchlist status</div>
         <div class="chips">${chips}</div>
         ${swingBlock}
       </div>
@@ -235,112 +235,147 @@ function renderDash(){
   }).join('');
 }
 
-// ── New schema renderers ──────────────────────────────────────
-
-function renderOHLC(n){
-  const fields=[['Open',n.open],['High',n.high],['Low',n.low],['Close',n.close],['AH',n.ahPrice]];
-  return fields.filter(([,v])=>v&&v!==0).map(([k,v])=>`<div class="ohlc-pill"><div class="ohlc-k">${k}</div><div class="ohlc-v">$${v}</div></div>`).join('');
+// ─── Macro ───────────────────────────────────────────────────────
+function renderMacroBlock(s){
+  if(!s.macro&&!s.spyClose) return '';
+  let macroHtml='';
+  if(typeof s.macro==='string'&&s.macro){
+    macroHtml=`<div class="macro-card" style="grid-column:span 4"><div class="macro-lbl">Macro</div><div style="font-size:12.5px;color:var(--text2);line-height:1.7;margin-top:4px">${s.macro}</div></div>`;
+  } else if(typeof s.macro==='object'&&s.macro){
+    const fields=Object.entries(s.macro).filter(([,v])=>v&&v!=='TBD premarket');
+    macroHtml=fields.map(([k,v])=>`<div class="macro-card"><div class="macro-lbl">${k}</div><div style="font-size:12px;color:var(--text2);line-height:1.5;margin-top:3px">${v}</div></div>`).join('');
+  }
+  return`<div class="macro-grid">
+    ${s.spyClose?`<div class="macro-card"><div class="macro-lbl">SPY Close</div><div class="macro-val">${s.spyClose}</div></div>`:''}
+    ${macroHtml}
+  </div>`;
 }
 
-function renderLevelsNew(levels){
-  if(!levels) return '';
-  const keys={pdh:'PDH',pdl:'PDL',orbH:'ORB H',orbL:'ORB L',ahh:'AHH',ahl:'AHL',pmh:'PM High',pml:'PM Low',worbh:'WORBH',worbl:'WORBL',lworbh:'LWORBH',lworbl:'LWORBL',fvg1:'FVG 1',fvg2:'FVG 2'};
-  return Object.entries(keys).filter(([k])=>levels[k]&&levels[k]!==0&&levels[k]!==null).map(([k,label])=>`<div class="level-pill"><div class="level-key">${label}</div><div class="level-val">$${levels[k]}</div></div>`).join('');
+// ─── Levels ──────────────────────────────────────────────────────
+function renderLevels(n){
+  if(!n.levels) return '';
+  let pills='';
+  if(Array.isArray(n.levels)){
+    pills=n.levels.filter(l=>l.k&&l.v).map(l=>`<div class="level-pill"><div class="level-key">${l.k}</div><div class="level-val">${l.v}</div></div>`).join('');
+  } else {
+    const map={pdh:'PDH',pdl:'PDL',orbH:'ORB H',orbL:'ORB L',ahh:'AHH',ahl:'AHL',pmh:'PMH',pml:'PML',worbh:'WORBH',worbl:'WORBL',lworbh:'Prior WORBH',lworbl:'Prior WORBL',fvg1:'FVG 1',fvg2:'FVG 2'};
+    pills=Object.entries(map).filter(([k])=>{
+      const v=n.levels[k];
+      return v&&v!==0&&v!==0.00;
+    }).map(([k,lbl])=>`<div class="level-pill"><div class="level-key">${lbl}</div><div class="level-val">${n.levels[k]}</div></div>`).join('');
+  }
+  return pills?`<div class="section-label">Key levels</div><div class="levels-grid">${pills}</div>`:'';
 }
 
-function renderSMINew(smi){
-  if(!smi||!smi.length) return '';
-  return smi.map(r=>{
-    const cross=r.cross||r.signal||'';
-    const sig=cross==='bull'?`<span class="bull-t">▲ Bull</span>`:cross==='bear'?`<span class="bear-t">▼ Bear</span>`:`<span class="dim">—</span>`;
-    const blue=r.blue!==undefined&&r.blue!==null?r.blue:'—';
-    const orange=r.orange!==undefined&&r.orange!==null?r.orange:'—';
-    const loc=r.location?`<span class="dim" style="font-size:10px">${r.location}</span>`:'';
-    return`<tr><td class="dim">${r.tf}</td><td>${blue}</td><td>${orange}</td><td>${sig}</td><td class="dim" style="font-size:11px">${r.dir||'—'} ${loc}</td></tr>`;
+// ─── SMI ─────────────────────────────────────────────────────────
+function renderSMI(n){
+  const rows=(n.smi||[]).filter(r=>r.blue||r.orange||r.signal||r.cross);
+  if(!rows.length) return '';
+  const trs=rows.map(r=>{
+    const sv=r.signal||r.cross||'';
+    const sig=sv==='bull'?`<span class="bull-t">▲ Bull</span>`:sv==='bear'?`<span class="bear-t">▼ Bear</span>`:sv==='caut'?`<span class="caut-t">~ Stalling</span>`:`<span class="dim">—</span>`;
+    const loc=r.location||r.dir||'';
+    return`<tr><td class="dim">${r.tf}</td><td>${r.blue||'—'}</td><td>${r.orange||'—'}</td><td>${sig}</td><td class="dim" style="font-size:11px;max-width:200px">${loc}</td></tr>`;
   }).join('');
+  return`<div class="section-label">SMI readings</div><div class="smi-wrap"><table class="smi-tbl"><thead><tr><th>TF</th><th>Blue</th><th>Orange</th><th>Signal</th><th>State</th></tr></thead><tbody>${trs}</tbody></table></div>`;
 }
 
-function renderPlanNew(plan){
+// ─── Plan rendering — old [{k,v}] format ─────────────────────────
+function renderPlanOld(n){
+  const plan=n.plan||[];
+  if(!Array.isArray(plan)||!plan.length) return '';
+  const rows=plan.map(p=>`<div class="plan-row"><span class="plan-k">${p.k}</span><span class="plan-v">${p.v}</span></div>`).join('');
+  return`<div class="plan-box"><div class="plan-hdr">0DTE scalp plan</div>${rows}</div>`;
+}
+
+// ─── Plan rendering — new leg format ─────────────────────────────
+function renderLegCard(plan){
   if(!plan) return '';
+  const isCall=plan.direction==='call';
+  const isPut=plan.direction==='put';
+  const cardCls=isCall?'leg-card-call':isPut?'leg-card-put':'';
+  const dirLabel=isCall?`<span style="color:var(--bull);font-weight:700;font-family:var(--mono);font-size:11px">▲ CALL</span>`:isPut?`<span style="color:var(--bear);font-weight:700;font-family:var(--mono);font-size:11px">▼ PUT</span>`:'';
+  const slotBadge=plan.slot?`<span class="badge b-note">Slot ${plan.slot}</span>`:'';
+  const qBadge=plan.qualityScore!==undefined?`<span style="font-size:11px;color:var(--text3);font-family:var(--mono)">${plan.qualityScore}/4</span>`:'';
+  const sizeStr=plan.suggestedSize?`<span style="font-size:11px;color:var(--text3);font-family:var(--mono)">$${plan.suggestedSize.toLocaleString()}</span>`:'';
+
   const rows=[];
-  if(plan.setupType) rows.push(['Setup',plan.setupType]);
-  if(plan.entryZone&&(plan.entryZone.low||plan.entryZone.high)){
-    if(plan.entryZone.low&&plan.entryZone.high&&plan.entryZone.low!==0)
-      rows.push(['Entry zone',`$${plan.entryZone.low} — $${plan.entryZone.high}`]);
-  }
-  if(plan.trigger&&plan.trigger!==0) rows.push(['Trigger',`$${plan.trigger}`]);
-  if(plan.invalidation){
-    if(plan.invalidation.preEntry&&plan.invalidation.preEntry!==0) rows.push(['Pre-entry stop',`$${plan.invalidation.preEntry}`]);
-    if(plan.invalidation.postEntry&&plan.invalidation.postEntry!==0) rows.push(['Post-entry stop',`$${plan.invalidation.postEntry}`]);
-  }
-  if(plan.targets&&plan.targets.some(t=>t>0)){
-    const tgts=plan.targets.filter(t=>t>0);
-    rows.push(['Targets',tgts.map((t,i)=>`T${i+1}: $${t}`).join(' · ')]);
-  }
-  if(plan.qualityScore!==undefined) rows.push(['Quality',`${plan.qualityScore}/4`]);
-  if(plan.suggestedSize&&plan.suggestedSize!==0) rows.push(['Size',`$${plan.suggestedSize}`]);
-  if(plan.slot) rows.push(['Slot',`Slot ${plan.slot}`]);
-  return rows.map(([k,v])=>`<div class="plan-row"><span class="plan-k">${k}</span><span class="plan-v">${v}</span></div>`).join('');
+  if(plan.entryZone?.low&&plan.entryZone?.high&&plan.entryZone.low!==0)
+    rows.push({k:'Entry zone',v:`${plan.entryZone.low} – ${plan.entryZone.high}`});
+  if(plan.trigger&&plan.trigger!==0)
+    rows.push({k:'Trigger',v:plan.trigger});
+  if(plan.invalidation?.preEntry&&plan.invalidation.preEntry!==0)
+    rows.push({k:'Pre-entry stop',v:plan.invalidation.preEntry});
+  if(plan.invalidation?.postEntry&&plan.invalidation.postEntry!==0)
+    rows.push({k:'Post-entry stop',v:plan.invalidation.postEntry});
+  const targets=(plan.targets||[]).filter(t=>t&&t!==0);
+  if(targets.length) rows.push({k:'Targets',v:targets.join(' → ')});
+
+  const planRows=rows.map(r=>`<div class="plan-row"><span class="plan-k">${r.k}</span><span class="plan-v">${r.v}</span></div>`).join('');
+  const seqBlock=plan.sequence?`<div style="padding:7px 13px;border-top:1px solid var(--border);font-size:11px;color:var(--accent);font-style:italic;font-family:var(--mono)">→ ${plan.sequence}</div>`:'';
+  const pmBlock=(plan.premarket?.validates||plan.premarket?.invalidates)?`
+    <div class="pm-section">
+      <div class="pm-lbl">Premarket 8:45</div>
+      ${plan.premarket.validates?`<div class="pm-row">✅ ${plan.premarket.validates}</div>`:''}
+      ${plan.premarket.invalidates?`<div class="pm-row">❌ ${plan.premarket.invalidates}</div>`:''}
+    </div>`:''
+  const notesBlock=plan.notes?`<div class="notes-section">${plan.notes}</div>`:'';
+
+  return`<div class="leg-card ${cardCls}">
+    <div class="leg-card-hdr">${dirLabel} ${slotBadge} ${qBadge} ${sizeStr}</div>
+    ${planRows}
+    ${seqBlock}
+    ${pmBlock}
+    ${notesBlock}
+  </div>`;
 }
 
-function renderQualityGates(gates){
-  if(!gates) return '';
-  const gateList=[
-    ['smiAlignment','SMI Alignment'],
-    ['levelIntegrity','Level Integrity'],
-    ['roomAvailable','Room Available'],
-    ['noRejectionWick','No Rejection Wick']
-  ];
-  return gateList.map(([k,label])=>{
-    const pass=gates[k];
-    return`<div class="gate-pill"><span class="gate-icon">${pass?'✅':'❌'}</span><span class="gate-lbl">${label}</span></div>`;
-  }).join('');
-}
-
-function renderMacroNew(macro,macroFilter,spyClose){
-  if(!macro&&!spyClose) return '';
-  let html='<div class="macro-grid">';
-  if(spyClose) html+=`<div class="macro-card"><div class="macro-lbl">SPY Close</div><div class="macro-val">$${spyClose}</div></div>`;
-  if(typeof macro==='string'){
-    html+=`<div class="macro-card" style="grid-column:span 3"><div class="macro-lbl">Macro</div><div style="font-size:13px;color:var(--text2);line-height:1.6;margin-top:4px">${macro}</div></div>`;
-  } else if(macro&&typeof macro==='object'){
-    const items=[['Iran/Geo',macro.iran],['Bonds',macro.bonds],['Oil',macro.oil],['Fed',macro.fed],['Catalyst',macro.catalyst]];
-    items.filter(([,v])=>v).forEach(([k,v])=>{
-      html+=`<div class="macro-card"><div class="macro-lbl">${k}</div><div style="font-size:12px;color:var(--text2);line-height:1.5;margin-top:3px">${v}</div></div>`;
-    });
+function renderPlansNew(n){
+  const plans=(n.plans||[]).filter(p=>p.direction&&p.direction!=='none');
+  if(!plans.length) return '';
+  if(plans.length===1){
+    return`<div class="section-label">Setup plan</div>${renderLegCard(plans[0])}`;
   }
-  html+='</div>';
-  if(macroFilter){
-    html+=`<div class="macro-filter-box">
-      <div class="section-label">Macro filter — lock at 9:20 AM</div>
-      <div class="macro-filter-row">
-        ${macroFilter.bullScenario?`<div class="mf-pill mf-bull"><strong>BULL</strong> above $${macroFilter.bullThreshold}<br><span style="opacity:.7;font-size:11px">${macroFilter.bullScenario}</span></div>`:''}
-        ${macroFilter.mixedScenario?`<div class="mf-pill mf-mixed"><strong>MIXED</strong><br><span style="opacity:.7;font-size:11px">${macroFilter.mixedScenario}</span></div>`:''}
-        ${macroFilter.bearScenario?`<div class="mf-pill mf-bear"><strong>BEAR</strong> below $${macroFilter.bearThreshold}<br><span style="opacity:.7;font-size:11px">${macroFilter.bearScenario}</span></div>`:''}
-      </div>
+  return`<div class="section-label">Two-way setup — both legs tracked</div>
+    <div class="twoway-grid">
+      ${plans.map(p=>renderLegCard(p)).join('')}
     </div>`;
-  }
-  return html;
 }
 
-// ── Detail renderer (handles both schemas) ────────────────────
+// ─── Swing pills ─────────────────────────────────────────────────
+function buildSwingPills(note){
+  if(!note)return`<div class="swing-pill"><div class="swing-pill-k">Note</div><div class="swing-pill-v">—</div></div>`;
+  const pills=[];
+  const entryM=note.match(/entry[:\s]+([^.]+?)(?:[.,]|expiry|target|stop|size|$)/i);
+  const expiryM=note.match(/expir\w+[:\s]+([^.]+?)(?:[.,]|entry|target|stop|size|$)/i);
+  const targetM=note.match(/target[:\s]+([^.]+?)(?:[.,]|entry|expiry|stop|size|$)/i);
+  const stopM=note.match(/stop[:\s]+([^.]+?)(?:[.,]|entry|expiry|target|size|$)/i);
+  const sizeM=note.match(/size[:\s]+([^.]+?)(?:[.,]|entry|expiry|target|stop|$)/i);
+  if(entryM)pills.push(['Entry zone',entryM[1].trim()]);
+  if(expiryM)pills.push(['Expiry',expiryM[1].trim()]);
+  if(targetM)pills.push(['Target',targetM[1].trim()]);
+  if(stopM)pills.push(['Stop',stopM[1].trim()]);
+  if(sizeM)pills.push(['Size',sizeM[1].trim()]);
+  if(pills.length)return pills.map(([k,v])=>`<div class="swing-pill"><div class="swing-pill-k">${k}</div><div class="swing-pill-v">${v}</div></div>`).join('');
+  return`<div class="swing-pill" style="grid-column:span 4"><div class="swing-pill-k">Parameters</div><div class="swing-pill-v" style="font-size:12px;line-height:1.5">${note}</div></div>`;
+}
+
+// ─── Detail view ─────────────────────────────────────────────────
 function renderDetail(id){
   const s=SESSIONS.find(x=>x.id===id);
-  if(!s) return;
+  if(!s)return;
   const el=document.getElementById('detail-content');
-  const names=(s.names||[]).filter(n=>n.status!=='skip');
-  const swings=names.filter(n=>n.swing);
-
-  const macroBlock=renderMacroNew(s.macro,s.macroFilter,s.spyClose);
+  const active=(s.names||[]).filter(n=>n.status!=='skip');
+  const swings=active.filter(n=>n.swing);
 
   const swingSummary=swings.length?`
     <div style="margin-bottom:24px">
-      <div class="section-label" style="margin-bottom:10px">⚡ Active swing positions</div>
+      <div class="section-label" style="margin-bottom:10px">⚡ Active swing positions — separate capital, separate rules</div>
       ${swings.map(n=>`
         <div class="swing-banner">
           <div class="swing-banner-hdr">
             <span class="swing-banner-title">${n.name}</span>
-            <span class="swing-banner-sub">swing trade · not 0DTE</span>
+            <span class="swing-banner-sub">swing trade · not 0DTE · different capital</span>
           </div>
           <div class="swing-pills">${buildSwingPills(n.swingNote)}</div>
         </div>`).join('')}
@@ -352,112 +387,76 @@ function renderDetail(id){
       ${s.openItems.map(i=>`<div class="open-item"><span class="open-dot"></span>${i}</div>`).join('')}
     </div>`:'';
 
-  const tabs=names.map((n,i)=>{
-    const cs=chipStatus(n);
+  let macroFilterBlock='';
+  if(s.macroFilter){
+    macroFilterBlock=`<div class="card" style="margin-bottom:20px">
+      <div class="section-label" style="margin-bottom:8px">9:20 direction lock</div>
+      <div style="font-size:12px;color:var(--text3);font-family:var(--mono);margin-bottom:8px">${s.macroFilter.rule||''}</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px">
+        <div style="background:var(--bull-bg);border:1px solid var(--bull-bd);border-radius:var(--rs);padding:9px 12px">
+          <div style="font-size:9px;font-family:var(--mono);color:var(--bull);letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px">Bull &gt; ${s.macroFilter.bullThreshold}</div>
+          <div style="font-size:11px;color:var(--text2);line-height:1.4">${s.macroFilter.bullScenario||''}</div>
+        </div>
+        <div style="background:var(--caut-bg);border:1px solid var(--caut-bd);border-radius:var(--rs);padding:9px 12px">
+          <div style="font-size:9px;font-family:var(--mono);color:var(--caut);letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px">Mixed</div>
+          <div style="font-size:11px;color:var(--text2);line-height:1.4">${s.macroFilter.mixedScenario||''}</div>
+        </div>
+        <div style="background:var(--bear-bg);border:1px solid var(--bear-bd);border-radius:var(--rs);padding:9px 12px">
+          <div style="font-size:9px;font-family:var(--mono);color:var(--bear);letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px">Bear &lt; ${s.macroFilter.bearThreshold}</div>
+          <div style="font-size:11px;color:var(--text2);line-height:1.4">${s.macroFilter.bearScenario||''}</div>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  const tabs=active.map((n,i)=>{
+    const cs=getChipStyle(n);
     return`<button class="ntab s-${cs} ${i===0?'active':''}" onclick="switchTab(this,'np-${s.id}-${n.name}')">${n.name}${n.swing?'<span class="swing-dot"></span>':''}</button>`;
   }).join('');
 
-  const panels=names.map((n,i)=>{
-    if(isNewSchema(n)){
-      return renderPanelNew(s,n,i);
-    } else {
-      return renderPanelOld(s,n,i);
-    }
+  const panels=active.map((n,i)=>{
+    const slbl=getStatusLabel(n);
+    const sbadge=getBadgeClass(n);
+    const isNew=isNewSchema(n);
+    const tcls={bull:'bull-th',bear:'bear-th',caut:'caut-th'}[n.status]||'';
+    const thesisHtml=n.thesis?`<div class="section-label">Thesis</div><div class="thesis ${tcls}">${n.thesis}</div>`:'';
+    const huntHtml=(n.huntUp||n.huntDn)?`<div class="section-label">Stop hunt map</div><div class="hunt-grid"><div class="hunt-card hunt-up"><div class="hunt-lbl">▲ Upside</div>${n.huntUp||'—'}</div><div class="hunt-card hunt-dn"><div class="hunt-lbl">▼ Downside</div>${n.huntDn||'—'}</div></div>`:'';
+    const planHtml=isNew?renderPlansNew(n):renderPlanOld(n);
+    const swingInPanel=n.swing?`
+      <div class="swing-banner" style="margin-bottom:14px">
+        <div class="swing-banner-hdr">
+          <span class="swing-banner-title">⚡ Swing position</span>
+          <span class="swing-banner-sub">separate capital · separate rules · losing scalp never closes this</span>
+        </div>
+        <div class="swing-pills">${buildSwingPills(n.swingNote)}</div>
+      </div>`:'';
+    const closeLbl=n.close?`<span style="font-size:12px;font-family:var(--mono);color:var(--text3)">Close: ${n.close}</span>`:'';
+    const openLbl=n.open?`<span style="font-size:12px;font-family:var(--mono);color:var(--text3)">Open: ${n.open}</span>`:'';
+
+    return`<div class="npanel ${i===0?'active':''}" id="np-${s.id}-${n.name}">
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:14px">
+        <span class="badge ${sbadge}">${slbl}</span>
+        ${n.swing?'<span class="badge b-swing">⚡ Swing</span>':''}
+        ${openLbl} ${closeLbl}
+      </div>
+      ${swingInPanel}
+      ${renderSMI(n)}
+      ${renderLevels(n)}
+      ${thesisHtml}
+      ${huntHtml}
+      ${planHtml}
+    </div>`;
   }).join('');
 
   el.innerHTML=`
     <div class="d-date">${fmtDate(s.date)}</div>
     <div class="d-title">${s.title||'Nightly Chart Session'}</div>
-    ${macroBlock}${swingSummary}${openBlock}
-    ${names.length?`<div class="name-tabs">${tabs}</div><div>${panels}</div>`:'<div style="color:var(--text3)">No name data recorded.</div>'}
+    ${renderMacroBlock(s)}
+    ${macroFilterBlock}
+    ${swingSummary}
+    ${openBlock}
+    ${active.length?`<div class="name-tabs">${tabs}</div><div>${panels}</div>`:'<div style="color:var(--text3)">No name data recorded.</div>'}
   `;
-}
-
-function renderPanelNew(s,n,i){
-  const cs=chipStatus(n);
-  const plan=n.plan||{};
-  const slbl={bull:'Bullish',bear:'Bearish',mixed:'Mixed',chop:'No Trade'}[cs]||cs;
-  const sbadge={bull:'b-bull',bear:'b-bear',caut:'b-caut',chop:'b-chop'}[cs]||'b-note';
-  const tcls={bull:'bull-th',bear:'bear-th',caut:'caut-th'}[cs]||'';
-
-  const ohlc=renderOHLC(n);
-  const smiRows=renderSMINew(n.smi);
-  const lvls=renderLevelsNew(n.levels);
-  const planRows=renderPlanNew(plan);
-  const gates=renderQualityGates(plan.qualityGates);
-  const thesis=plan.notes||n.thesis||'';
-
-  const swingInPanel=n.swing?`
-    <div class="swing-banner" style="margin-bottom:14px">
-      <div class="swing-banner-hdr">
-        <span class="swing-banner-title">⚡ Swing position</span>
-        <span class="swing-banner-sub">separate capital · separate rules</span>
-      </div>
-      <div class="swing-pills">${buildSwingPills(n.swingNote)}</div>
-    </div>`:'';
-
-  return`<div class="npanel ${i===0?'active':''}" id="np-${s.id}-${n.name}">
-    <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:14px">
-      <span class="badge ${sbadge}">${slbl}</span>
-      ${plan.slot?`<span class="badge b-caut">Slot ${plan.slot}</span>`:''}
-      ${n.swing?'<span class="badge b-swing">⚡ Swing</span>':''}
-      ${plan.tier?`<span style="font-size:11px;font-family:var(--mono);color:var(--text3)">${plan.tier}</span>`:''}
-    </div>
-    ${swingInPanel}
-    ${ohlc?`<div class="section-label">Session OHLC</div><div class="ohlc-row">${ohlc}</div>`:''}
-    ${smiRows?`<div class="section-label">SMI readings</div><div class="smi-wrap"><table class="smi-tbl"><thead><tr><th>TF</th><th>Blue (SMI)</th><th>Orange (EMA)</th><th>Cross</th><th>Dir / Location</th></tr></thead><tbody>${smiRows}</tbody></table></div>`:''}
-    ${lvls?`<div class="section-label">Key levels</div><div class="levels-grid">${lvls}</div>`:''}
-    ${gates?`<div class="section-label">Quality gates</div><div class="gate-grid">${gates}</div>`:''}
-    ${planRows?`<div class="plan-box"><div class="plan-hdr">Trade plan</div>${planRows}</div>`:''}
-    ${thesis?`<div class="section-label">Plan notes</div><div class="thesis ${tcls}">${thesis}</div>`:''}
-  </div>`;
-}
-
-function renderPanelOld(s,n,i){
-  const slbl={bull:'Bullish',caut:'Caution',bear:'Bearish',chop:'No trade'}[n.status]||n.status;
-  const sbadge={bull:'b-bull',caut:'b-caut',bear:'b-bear',chop:'b-chop'}[n.status]||'b-note';
-  const tcls={bull:'bull-th',bear:'bear-th',caut:'caut-th'}[n.status]||'';
-  const smiRows=(n.smi||[]).filter(r=>r.blue||r.orange||r.signal).map(r=>{
-    const sig=r.signal==='bull'?`<span class="bull-t">▲ Bullish</span>`:r.signal==='bear'?`<span class="bear-t">▼ Bearish</span>`:r.signal==='caut'?`<span class="caut-t">~ Stalling</span>`:`<span class="dim">—</span>`;
-    return`<tr><td class="dim">${r.tf}</td><td>${r.blue||'—'}</td><td>${r.orange||'—'}</td><td>${sig}</td><td class="dim" style="font-size:11px">${r.dir||'—'}</td></tr>`;
-  }).join('');
-  const lvls=(n.levels||[]).filter(l=>l.k&&l.v).map(l=>`<div class="level-pill"><div class="level-key">${l.k}</div><div class="level-val">${l.v}</div></div>`).join('');
-  const planRows=(n.plan||[]).map(p=>`<div class="plan-row"><span class="plan-k">${p.k}</span><span class="plan-v">${p.v}</span></div>`).join('');
-  const swingInPanel=n.swing?`
-    <div class="swing-banner" style="margin-bottom:14px">
-      <div class="swing-banner-hdr"><span class="swing-banner-title">⚡ Swing position</span></div>
-      <div class="swing-pills">${buildSwingPills(n.swingNote)}</div>
-    </div>`:'';
-  return`<div class="npanel ${i===0?'active':''}" id="np-${s.id}-${n.name}">
-    <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:14px">
-      <span class="badge ${sbadge}">${slbl}</span>
-      ${n.swing?'<span class="badge b-swing">⚡ Swing</span>':''}
-      ${n.close?`<span style="font-size:12px;font-family:var(--mono);color:var(--text3)">Close: ${n.close}</span>`:''}
-    </div>
-    ${swingInPanel}
-    ${smiRows?`<div class="section-label">SMI readings</div><div class="smi-wrap"><table class="smi-tbl"><thead><tr><th>TF</th><th>Blue</th><th>Orange</th><th>Signal</th><th>Direction</th></tr></thead><tbody>${smiRows}</tbody></table></div>`:''}
-    ${lvls?`<div class="section-label">Key levels</div><div class="levels-grid">${lvls}</div>`:''}
-    ${n.thesis?`<div class="section-label">Thesis</div><div class="thesis ${tcls}">${n.thesis}</div>`:''}
-    ${(n.huntUp||n.huntDn)?`<div class="section-label">Stop hunt map</div><div class="hunt-grid"><div class="hunt-card hunt-up"><div class="hunt-lbl">▲ Upside</div>${n.huntUp||'—'}</div><div class="hunt-card hunt-dn"><div class="hunt-lbl">▼ Downside</div>${n.huntDn||'—'}</div></div>`:''}
-    ${planRows?`<div class="plan-box"><div class="plan-hdr">0DTE scalp plan</div>${planRows}</div>`:''}
-  </div>`;
-}
-
-function buildSwingPills(note){
-  if(!note)return`<div class="swing-pill"><div class="swing-pill-k">Note</div><div class="swing-pill-v">—</div></div>`;
-  const pills=[];
-  const entryM=note.match(/entry[:\s]+([^.]+?)(?:[\.\,]|expiry|target|stop|size|$)/i);
-  const expiryM=note.match(/expir[y\w]+[:\s]+([^.]+?)(?:[\.\,]|entry|target|stop|size|$)/i);
-  const targetM=note.match(/target[:\s]+([^.]+?)(?:[\.\,]|entry|expiry|stop|size|$)/i);
-  const stopM=note.match(/stop[:\s]+([^.]+?)(?:[\.\,]|entry|expiry|target|size|$)/i);
-  const sizeM=note.match(/size[:\s]+([^.]+?)(?:[\.\,]|entry|expiry|target|stop|$)/i);
-  if(entryM)pills.push(['Entry zone',entryM[1].trim()]);
-  if(expiryM)pills.push(['Expiry',expiryM[1].trim()]);
-  if(targetM)pills.push(['Target',targetM[1].trim()]);
-  if(stopM)pills.push(['Stop',stopM[1].trim()]);
-  if(sizeM)pills.push(['Size',sizeM[1].trim()]);
-  if(pills.length)return pills.map(([k,v])=>`<div class="swing-pill"><div class="swing-pill-k">${k}</div><div class="swing-pill-v">${v}</div></div>`).join('');
-  return`<div class="swing-pill" style="grid-column:span 4"><div class="swing-pill-k">Parameters</div><div class="swing-pill-v" style="font-size:12px;line-height:1.5">${note}</div></div>`;
 }
 
 function switchTab(btn,panelId){
