@@ -1,0 +1,505 @@
+{
+  "id": "2026-06-09",
+  "date": "2026-06-09",
+  "title": "June 9 EOD — SPY $24 intraday range (H:746.90→L:722.59→C:737.05), TSLA sell-the-open + DTF bear cross, NVDA $11 flush + $9 snap, GOOGL swing call held into CPI. CPI Wed 8:30 AM.",
+  "spyClose": 737.05,
+  "marketTone": "bear",
+  "macro": {
+    "cpi": "CPI May prints Wednesday June 10 at 8:30 AM ET. PRIMARY CATALYST. All setups secondary to CPI direction. Hot = bear acceleration. Cool = relief rally snap setups.",
+    "bonds": "2-yr yield 4.15% — above Fed funds 3.5-3.75%. Market pricing Oct rate hike.",
+    "oil": "Brent ~$92, WTI ~$88. Iran/Israel ceasefire progress today (-2% oil). Hormuz still blockaded.",
+    "fed": "FOMC June 16-17. Kevin Warsh. Rate hike on table. No overnight holds all week.",
+    "catalyst": "Whipsaw session. SPY opened 743.63, ran to PDH 746.90, CRASHED to 722.59 ($24 range!), recovered to close 737.05. TSLA: sell-the-open (ORB H = PDH = first bar 418.50), 200SMA rejection, crashed $34 to 384.24, recovered to 396.68. DTF bear cross CONFIRMED. NVDA: flushed $11.36 to 199.34, snapped +$8.83 to close 208.19. GOOGL: only GREEN name (+0.26%), ran to 372.09 (DTF EMA cluster), sold THROUGH WORBL to 357.30, recovered to close 364.26. META: broke WORBH 592.00 to 597.63, rejected to close 584.59. MSFT: PDL exact 398.48 = $10 below WORBL. CPI de-risking, Iran re-escalation, SpaceX IPO capital absorption cited as afternoon sellers."
+  },
+  "worb": {
+    "note": "June 8 week WORB LOCKED from Monday RTH H/L. UNCHANGED — same all week.",
+    "aapl":  { "high": 317.40, "low": 301.17, "prior_high": 310.94, "prior_low": 305.02 },
+    "amzn":  { "high": 249.42, "low": 243.36, "prior_high": 266.67, "prior_low": 260.70 },
+    "googl": { "high": 366.20, "low": 360.53, "prior_high": 378.54, "prior_low": 373.52 },
+    "meta":  { "high": 592.00, "low": 579.22, "prior_high": 634.47, "prior_low": 599.56 },
+    "msft":  { "high": 417.16, "low": 408.56, "prior_high": 466.33, "prior_low": 458.27 },
+    "nvda":  { "high": 210.47, "low": 206.00, "prior_high": 224.87, "prior_low": 215.70 },
+    "tsla":  { "high": 412.94, "low": 394.72, "prior_high": 429.60, "prior_low": 415.44 },
+    "spy":   { "high": 745.34, "low": 738.19, "prior_high": 760.31, "prior_low": 754.70 }
+  },
+  "macroFilter": {
+    "rule": "CPI 8:30 AM PROTOCOL: No direction lock until after print. SPY closed $1.14 below WORBL 738.19. 4H bull cross gap 10.81 = SPY bull thread. DTF bear gap 21.84 = structural headwind.",
+    "bullThreshold": 738.19,
+    "bearThreshold": 735.00,
+    "cpiProtocol": "1. Print 8:30 AM. 2. Observe premarket gaps at 8:45 AM. 3. Cool/inline → GOOGL WORBH 366.20 reclaim + NVDA WORBL 206.00 hold → call list leads. 4. Hot → TSLA WORBL 394.72 fail + AAPL ORB cap + META WORBH cap → bear list leads.",
+    "bullScenario": "CPI cool → SPY gaps above WORBL 738.19 → GOOGL (#1, swing held) + NVDA (#2) lead. GOOGL WORBH 366.20 reclaim = gate. NVDA WORBL 206.00 hold = gate.",
+    "bearScenario": "CPI hot → SPY gaps below 735 → TSLA WORBL 394.72 fail + META WORBH cap + AAPL ORB cap → TSLA (#1 put) leads.",
+    "mixedScenario": "CPI inline, tape choppy → MSFT + AMZN double extreme OS Slot 3 react-only. Wait for 15m ORB, react to levels only."
+  },
+  "sizing": {
+    "baseEntry": 1750,
+    "maxTrades": 3,
+    "dailyLossLimit": 700,
+    "walkAwayTarget": 800,
+    "maxSimultaneousPositions": 1,
+    "notes": "CPI day — half-size all entries until direction confirmed post-print. GOOGL swing = position 1 already on. META: behavioral flag (size down, no adds after cutoff). Up $1000 by 10:30 = close everything, walk."
+  },
+  "callRankings": [
+    { "rank": 1, "name": "GOOGL", "slot": 1, "note": "All 4 TFs bull cross. DTF approaching extreme OS (gap 0.74). Only green name. WORBH 366.20 reclaim = gate. SWING HELD." },
+    { "rank": 2, "name": "NVDA",  "slot": 1, "note": "Strongest 4H recovery (gap 13.56). 1H above zero (+33.60). AH low 205.79 breached WORBL 206.00 — reclaim required at open." },
+    { "rank": 3, "name": "AMZN",  "slot": 3, "note": "Approaching double extreme OS. AH low 243.18 breached WORBL 243.36. Reclaim required. React-only." },
+    { "rank": 4, "name": "MSFT",  "slot": 3, "note": "Double extreme OS confirmed. PDL 398.48 held exactly. React-only." }
+  ],
+  "putRankings": [
+    { "rank": 1, "name": "TSLA", "slot": 1, "note": "DTF bear cross today. 200SMA rejection. WORBL 394.72 barely holding (AH low 394.92 = $0.20 above). WORBL fail = trigger." },
+    { "rank": 2, "name": "META", "slot": 2, "note": "Broke WORBH 592.00 to 597.63 then FULL REJECTION to 584.59. Failed breakout. WORBH 592 = cap." },
+    { "rank": 3, "name": "AAPL", "slot": 2, "note": "Strongest RW (-3.36% vs SPY). DTF bear accelerating (gap 29.77). $10+ below WORBL. WORBL 301.17 = resistance cap." },
+    { "rank": 4, "name": "MSFT", "slot": 2, "note": "DTF extreme OS bear. $5.15 below WORBL. Dual-direction (double extreme OS = snap risk)." }
+  ],
+  "worlbWatchAH": [
+    { "name": "AMZN", "ahLow": 243.18, "ahClose": 243.31, "worbl": 243.36, "status": "BREACHED — low 243.18, $0.18 through WORBL" },
+    { "name": "NVDA", "ahLow": 205.79, "ahClose": 206.59, "worbl": 206.00, "status": "BREACHED — low 205.79, $0.21 through WORBL" },
+    { "name": "TSLA", "ahLow": 394.92, "ahClose": 395.97, "worbl": 394.72, "status": "HELD — low 394.92 vs WORBL 394.72, margin $0.20" }
+  ],
+  "names": [
+    {
+      "name": "SPY",
+      "status": "macro-gate",
+      "open": 743.63,
+      "high": 746.90,
+      "low": 722.59,
+      "close": 737.05,
+      "ahPrice": 735.69,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "15m", "blue": -37.75, "orange": -43.21, "cross": "bull", "location": "oversold",  "dir": "up",   "gap": 5.46,  "note": "AH recovery from -56.59 intraday low. Bull cross." },
+        { "tf": "1H",  "blue": 17.92,  "orange": 10.06,  "cross": "bull", "location": "mid",       "dir": "up",   "gap": 7.86,  "note": "ABOVE ZERO in AH. Strong 1H recovery from intraday crash. Gap widening." },
+        { "tf": "4H",  "blue": -24.61, "orange": -35.42, "cross": "bull", "location": "oversold",  "dir": "up",   "gap": 10.81, "note": "Bull cross, gap 10.81. SPY primary bull thread overnight." },
+        { "tf": "DTF", "blue": -21.85, "orange": -0.01,  "cross": "bear", "location": "mid-low",   "dir": "down", "gap": 21.84, "note": "Bear cross, gap widening. Orange near zero = structural headwind." }
+      ],
+      "levels": {
+        "pdh": 746.90, "pdl": 722.59,
+        "orbH": 745.36, "orbL": 743.27,
+        "ahh": 737.72, "ahl": 734.25,
+        "pmh": 0.00, "pml": 0.00,
+        "worbh": 745.34, "worbl": 738.19,
+        "lworbh": 760.31, "lworbl": 754.70,
+        "fvg1": null, "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "none",
+          "setupType": "macro-gate-only",
+          "sequence": null,
+          "entryZone": { "low": 0.00, "high": 0.00 },
+          "trigger": 0.00,
+          "invalidation": { "preEntry": 0.00, "postEntry": 0.00 },
+          "targets": [],
+          "qualityGates": { "smiAlignment": false, "levelIntegrity": false, "roomAvailable": false, "noRejectionWick": false },
+          "qualityScore": 0,
+          "suggestedSize": 0,
+          "slot": null,
+          "tier": "macro-gate",
+          "premarket": {
+            "validates": "CPI cool → SPY gaps above WORBL 738.19 → 4H bull gap widens above 13 → call list leads.",
+            "invalidates": "CPI hot → SPY gaps below 735 → 4H cross risk → bear list leads."
+          },
+          "notes": "Macro gate only. Day: extraordinary $24 range — H 746.90 → L 722.59 → C 737.05. Closed $1.14 below WORBL. 1H recovered above zero in AH (17.92/10.06) — strong recovery signal. 4H bull cross gap 10.81 = key overnight variable. DTF bear gap 21.84 = structural headwind. CPI 8:30 AM is the only number that matters tomorrow. Day %: (737.05 - 739.22) / 739.22 = -0.29% RED."
+        }
+      ]
+    },
+    {
+      "name": "GOOGL",
+      "status": "active",
+      "open": 367.09,
+      "high": 372.09,
+      "low": 357.30,
+      "close": 364.26,
+      "ahPrice": 363.34,
+      "swing": true,
+      "swingNote": "SLANE HOLDING CALL OVERNIGHT. All 4 TFs bull cross. DTF approaching extreme OS (gap 0.74). WORBH 366.20 reclaim = gate. WORBL 360.53 held on close + AH despite intraday breach to 357.30.",
+      "smi": [
+        { "tf": "15m", "blue": -30.74, "orange": -32.09, "cross": "bull", "location": "oversold",  "dir": "up",   "gap": 1.35,  "note": "AH bull, recovering from -35.71 intraday. Thin." },
+        { "tf": "1H",  "blue": -2.85,  "orange": -6.81,  "cross": "bull", "location": "near-zero", "dir": "up",   "gap": 3.96,  "note": "Near zero, AH recovering. All 4 AH bars trending up (was -9.19 at 4PM → -2.85 at 7PM)." },
+        { "tf": "4H",  "blue": -29.92, "orange": -31.49, "cross": "bull", "location": "oversold",  "dir": "up",   "gap": 1.57,  "note": "Bull cross, OS. Needs widening." },
+        { "tf": "DTF", "blue": -58.43, "orange": -59.17, "cross": "bull", "location": "oversold",  "dir": "flat", "gap": 0.74,  "note": "VERY THIN bull cross (0.74 gap). One bad day flips bear. CPI = binary for this cross." }
+      ],
+      "levels": {
+        "pdh": 372.09, "pdl": 357.30,
+        "orbH": 372.09, "orbL": 366.50,
+        "ahh": 365.24, "ahl": 362.57,
+        "pmh": 0.00, "pml": 0.00,
+        "worbh": 366.20, "worbl": 360.53,
+        "lworbh": 378.54, "lworbl": 373.52,
+        "fvg1": null, "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "bull-all-tf-swing-worbh-reclaim",
+          "sequence": "CPI cool → SPY gap above WORBL → GOOGL WORBH 366.20 reclaim → hold or add",
+          "entryZone": { "low": 362.57, "high": 366.20 },
+          "trigger": 366.21,
+          "invalidation": { "preEntry": 360.53, "postEntry": 358.00 },
+          "targets": [370.38, 372.09, 374.17],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 7,
+          "suggestedSize": 1750,
+          "slot": 1,
+          "tier": "primary",
+          "premarket": {
+            "validates": "CPI cool → WORBH 366.20 reclaim premarket or at open. AH holds above WORBL 360.53. DTF bull gap holds above 0.5.",
+            "invalidates": "CPI hot → premarket gap below 360.53 → STOP existing call. DTF crosses bear → exit or hedge."
+          },
+          "notes": "RANKED #1 CALL. SWING POSITION HELD. All 4 TFs bull cross. RS: +0.26% vs SPY -0.29% = only green name. Day structure: opened 367.09, ran to PDH 372.09 (= ORB H = DTF 9EMA 370.38 cluster, mid-zone), rejected, sold THROUGH WORBL 360.53 to 357.30, then RECOVERED to close 364.26 + AH 363.34. Intraday recovery +$6.96 from PDL with all TFs maintaining bull cross = strong buyer response at WORBL. AH held above WORBL (AHL 362.57 > WORBL 360.53). Targets: DTF 9EMA 370.38 → PDH 372.09 → DTF 21EMA 374.17. CPI is binary for this call. STOP: WORBL 360.53 loss."
+        }
+      ]
+    },
+    {
+      "name": "NVDA",
+      "status": "active",
+      "open": 210.62,
+      "high": 211.40,
+      "low": 199.34,
+      "close": 208.19,
+      "ahPrice": 206.59,
+      "swing": false,
+      "swingNote": "Extraordinary day: ORB H = PDH = first bar. Flushed $11.36 to 199.34, snapped +$8.83 to close 208.19. AH low 205.79 breached WORBL 206.00.",
+      "smi": [
+        { "tf": "15m", "blue": -54.13, "orange": -58.92, "cross": "bull", "location": "oversold",  "dir": "up",   "gap": 4.79,  "note": "AH bull, recovering from -71.08 intraday. Approaching extreme OS but turning up." },
+        { "tf": "1H",  "blue": 33.60,  "orange": 26.79,  "cross": "bull", "location": "mid",       "dir": "up",   "gap": 6.81,  "note": "ABOVE ZERO. Strongest 1H in watchlist. Accelerating up all 4 AH bars." },
+        { "tf": "4H",  "blue": -16.97, "orange": -30.53, "cross": "bull", "location": "oversold",  "dir": "up",   "gap": 13.56, "note": "STRONGEST 4H RECOVERY in watchlist. Gap 13.56, widening. Far from extreme OS." },
+        { "tf": "DTF", "blue": -54.07, "orange": -48.21, "cross": "bear", "location": "oversold",  "dir": "down", "gap": 5.86,  "note": "Bear cross, gap widening. Counter-DTF call — size down vs GOOGL." }
+      ],
+      "levels": {
+        "pdh": 211.40, "pdl": 199.34,
+        "orbH": 211.40, "orbL": 208.83,
+        "ahh": 208.97, "ahl": 205.79,
+        "pmh": 0.00, "pml": 0.00,
+        "worbh": 210.47, "worbl": 206.00,
+        "lworbh": 224.87, "lworbl": 215.70,
+        "fvg1": null, "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "bull-reversal-4H-strongest-snap",
+          "sequence": "CPI cool/neutral → WORBL 206.00 reclaim confirmed at open → ORB L 208.83 hold → entry",
+          "entryZone": { "low": 206.00, "high": 208.83 },
+          "trigger": 208.84,
+          "invalidation": { "preEntry": 205.79, "postEntry": 205.00 },
+          "targets": [211.40, 215.70, 218.00],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": false,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 6,
+          "suggestedSize": 1500,
+          "slot": 1,
+          "tier": "primary",
+          "premarket": {
+            "validates": "WORBL 206.00 reclaim at PM open. CPI cool/inline. 4H bull gap holds or widens. 1H stays above zero.",
+            "invalidates": "AH low 205.79 extends. WORBL 206.00 not reclaimed. CPI hot. DTF gap widens above 8."
+          },
+          "notes": "RANKED #2 CALL. CONDITIONAL on WORBL hold. ORB H = PDH = first bar 211.40 (sell-the-open, but recovered). Flushed $11.36 to PDL 199.34, snapped +$8.83 to close 208.19. 1H above zero (33.60/26.79) = strongest 1H in watchlist. 4H gap 13.56 = strongest 4H recovery in watchlist. RISK: AH low 205.79 breached WORBL 206.00. Need reclaim confirmation at open. DTF bear overhang (counter-DTF = size down 1500 vs 1750). Room: WORBL 206 → ORB H 211.40 = $5.40, then LWORBL 215.70. Day %: (208.19 - 208.64) / 208.64 = -0.22% essentially inline."
+        }
+      ]
+    },
+    {
+      "name": "TSLA",
+      "status": "active",
+      "open": 411.03,
+      "high": 418.50,
+      "low": 384.24,
+      "close": 396.68,
+      "ahPrice": 395.97,
+      "swing": false,
+      "swingNote": "Was #1 call this morning — now #1 put. Sell-the-open: ORB H = PDH = FIRST BAR. 200SMA rejection. DTF bear cross confirmed today. WORBL 394.72 barely holding (AH low 394.92 = $0.20 above).",
+      "smi": [
+        { "tf": "15m", "blue": -52.00, "orange": -54.51, "cross": "bull", "location": "oversold",  "dir": "up",   "gap": 2.51,  "note": "AH bull cross, recovering from -67.41 intraday. Thin." },
+        { "tf": "1H",  "blue": -20.53, "orange": -26.74, "cross": "bull", "location": "mid-low",   "dir": "up",   "gap": 6.21,  "note": "Bull cross, recovering. AH trending up all 4 bars. 1H recovery = pullback within downtrend." },
+        { "tf": "4H",  "blue": -27.85, "orange": -25.00, "cross": "bear", "location": "oversold",  "dir": "down", "gap": 2.85,  "note": "Bear cross. Flipped from bull. Key confirming signal." },
+        { "tf": "DTF", "blue": -49.49, "orange": -40.78, "cross": "bear", "location": "oversold",  "dir": "down", "gap": 8.71,  "note": "Bear cross confirmed TODAY. Gap widening." }
+      ],
+      "levels": {
+        "pdh": 418.50, "pdl": 384.24,
+        "orbH": 418.50, "orbL": 410.81,
+        "ahh": 397.59, "ahl": 394.92,
+        "pmh": 0.00, "pml": 0.00,
+        "worbh": 412.94, "worbl": 394.72,
+        "lworbh": 429.60, "lworbl": 415.44,
+        "fvg1": null, "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "put",
+          "setupType": "bear-dtf-cross-200sma-rejection-worbl-fail",
+          "sequence": "CPI hot OR neutral + TSLA caps below WORBH 412.94 → WORBL 394.72 fail → put entry",
+          "entryZone": { "low": 394.72, "high": 397.59 },
+          "trigger": 394.71,
+          "invalidation": { "preEntry": 400.00, "postEntry": 402.00 },
+          "targets": [390.00, 384.24, 380.00],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 7,
+          "suggestedSize": 1750,
+          "slot": 1,
+          "tier": "primary",
+          "premarket": {
+            "validates": "CPI hot OR neutral. TSLA stays below WORBH 412.94. AH low 394.92 extends below WORBL 394.72. DTF bear gap widens above 10.",
+            "invalidates": "CPI cool → gap above 402. 4H bear cross flips bull. WORBL 394.72 holds + reclaim above 400."
+          },
+          "notes": "RANKED #1 PUT. Was #1 call this morning — complete reversal. Sell-the-open: ORB H = PDH = FIRST BAR (418.50). Gapped above WORBH 412.94, hit 200SMA cluster, hard rejection, crashed $34 to 384.24, recovered to 396.68. DTF bear cross CONFIRMED TODAY (was bull Mon-Tue). 4H also flipped bear. WORBH 412.94 = major resistance. WORBL 394.72 barely holding (AH low 394.92 = $0.20 above). Room: WORBL fail → PDL 384.24 = $10.48, then 380 = $14.72. Day %: (396.68 - 408.95) / 408.95 = -3.00% RW (-2.71% vs SPY)."
+        }
+      ]
+    },
+    {
+      "name": "META",
+      "status": "active",
+      "open": 591.75,
+      "high": 597.63,
+      "low": 581.01,
+      "close": 584.59,
+      "ahPrice": 587.25,
+      "swing": false,
+      "swingNote": "Broke WORBH 592.00 to 597.63, THEN full rejection to close 584.59. Failed breakout bear signal. 4H at extreme OS threshold (snap risk). Behavioral flag active.",
+      "smi": [
+        { "tf": "15m", "blue": -41.24, "orange": -45.23, "cross": "bull", "location": "oversold",  "dir": "up",   "gap": 3.99,  "note": "AH bull cross, recovering from -55.52 intraday low." },
+        { "tf": "1H",  "blue": -20.77, "orange": -20.55, "cross": "bear", "location": "mid-low",   "dir": "flat", "gap": 0.22,  "note": "BARELY BEAR. Oscillating — was bull then rolled bear in AH. Not a strong signal." },
+        { "tf": "4H",  "blue": -59.54, "orange": -62.12, "cross": "bull", "location": "extreme-os-threshold", "dir": "up", "gap": 2.58, "note": "Orange -62.12 through extreme OS threshold. Blue -59.54 approaching. Snap risk — monitor for full 4H extreme condition." },
+        { "tf": "DTF", "blue": -57.25, "orange": -41.89, "cross": "bear", "location": "oversold",  "dir": "down", "gap": 15.36, "note": "Bear cross, gap widening." }
+      ],
+      "levels": {
+        "pdh": 597.63, "pdl": 581.01,
+        "orbH": 596.06, "orbL": 587.95,
+        "ahh": 589.80, "ahl": 584.49,
+        "pmh": 0.00, "pml": 0.00,
+        "worbh": 592.00, "worbl": 579.22,
+        "lworbh": 634.47, "lworbl": 599.56,
+        "fvg1": null, "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "put",
+          "setupType": "bear-failed-worbh-breakout",
+          "sequence": "WORBH 592.00 cap confirmed → bounce to 588-592 → put on 15m rejection → target PDL 581.01 → WORBL 579.22",
+          "entryZone": { "low": 584.49, "high": 592.00 },
+          "trigger": 584.48,
+          "invalidation": { "preEntry": 592.01, "postEntry": 594.00 },
+          "targets": [581.01, 579.22, 573.00],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 6,
+          "suggestedSize": 1250,
+          "slot": 2,
+          "tier": "secondary",
+          "premarket": {
+            "validates": "Below WORBH 592.00 at open. DTF bear gap holds. 4H does NOT develop bull cross premarket.",
+            "invalidates": "4H develops full bull cross with widening gap premarket. Gap above 592. CPI cool → rip."
+          },
+          "notes": "RANKED #2 PUT. BEHAVIORAL FLAG — size down all day, no adds after cutoff. Day: opened 591.75, broke WORBH 592.00 to PDH 597.63 (second 15m bar), FULL REJECTION to close 584.59 ($13.04 range). Strong failed breakout. AH bounced to 589.80 = still below WORBH (good bear structure). 4H at extreme OS threshold = SNAP RISK — if 4H develops full bull cross, downgrade. Room: AHH 589.80 → PDL 581.01 = $8.79. WORBL 579.22 = full target. Day %: (584.59 - 585.39) / 585.39 = -0.14% slight RS (outperformed SPY)."
+        }
+      ]
+    },
+    {
+      "name": "MSFT",
+      "status": "active",
+      "open": 409.03,
+      "high": 411.98,
+      "low": 398.48,
+      "close": 403.41,
+      "ahPrice": 403.10,
+      "swing": false,
+      "swingNote": "Double Extreme OS confirmed: 4H blue -73.60 + orange -78.36 (both extreme) AND DTF blue -63.10 (extreme). PDL 398.48 exact match to key level. Dual-direction.",
+      "smi": [
+        { "tf": "15m", "blue": -15.10, "orange": -19.71, "cross": "bull", "location": "mid-low",   "dir": "up",   "gap": 4.61,  "note": "AH bull cross, recovering well from session lows." },
+        { "tf": "1H",  "blue": -27.61, "orange": -30.31, "cross": "bull", "location": "mid-low",   "dir": "up",   "gap": 2.70,  "note": "Bull cross, recovering. AH trending up all 4 bars." },
+        { "tf": "4H",  "blue": -73.60, "orange": -78.36, "cross": "bull", "location": "extreme-os", "dir": "up",  "gap": 4.76,  "note": "EXTREME OS — both lines through -60. Bull cross, gap 4.76. Double extreme condition met on 4H." },
+        { "tf": "DTF", "blue": -63.10, "orange": -44.16, "cross": "bear", "location": "extreme-os", "dir": "down","gap": 18.94, "note": "EXTREME OS blue (-63.10). Bear cross, gap widening. Double Extreme OS rule: 4H AND DTF blue at -60+." }
+      ],
+      "levels": {
+        "pdh": 411.98, "pdl": 398.48,
+        "orbH": 410.60, "orbL": 407.25,
+        "ahh": 404.20, "ahl": 402.05,
+        "pmh": 0.00, "pml": 0.00,
+        "worbh": 417.16, "worbl": 408.56,
+        "lworbh": 466.33, "lworbl": 458.27,
+        "fvg1": null, "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "double-extreme-os-react-slot3",
+          "sequence": "CPI cool → PDL 398.48 hold → 15m bull widens → react entry above 403",
+          "entryZone": { "low": 398.48, "high": 403.00 },
+          "trigger": 403.01,
+          "invalidation": { "preEntry": 398.47, "postEntry": 396.00 },
+          "targets": [407.25, 408.56, 411.98],
+          "qualityGates": {
+            "smiAlignment": false,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 4,
+          "suggestedSize": 1000,
+          "slot": 3,
+          "tier": "react-only",
+          "premarket": {
+            "validates": "CPI cool. PDL 398.48 holds. 4H bull gap widens above 7. 1H gap widens above 4.",
+            "invalidates": "PDL 398.48 loses. CPI hot. 4H cross fails."
+          },
+          "notes": "DUAL-DIRECTION. Call plan (Slot 3 react): Double Extreme OS — 4H blue -73.60 + orange -78.36 + DTF blue -63.10. PDL 398.48 exact. Room: PDL → WORBL 408.56 = $10.08. KPMG partnership today = no negative catalyst, pure macro drag. React-only."
+        },
+        {
+          "leg": 2,
+          "direction": "put",
+          "setupType": "bear-continuation-below-worbl",
+          "sequence": "CPI hot OR PDL 398.48 loses → put entry → target 395 → 390",
+          "entryZone": { "low": 398.48, "high": 403.10 },
+          "trigger": 398.47,
+          "invalidation": { "preEntry": 403.02, "postEntry": 405.00 },
+          "targets": [395.00, 390.00, 385.00],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 5,
+          "suggestedSize": 1250,
+          "slot": 2,
+          "tier": "secondary",
+          "premarket": {
+            "validates": "CPI hot → premarket gap below 403. PDL 398.48 loses. DTF bear gap above 20.",
+            "invalidates": "PDL holds + 4H bull gap widens. CPI cool."
+          },
+          "notes": "Put continuation: $5.15 below WORBL, DTF bear widening. PDL 398.48 loses → target 390 = $8.48 additional downside. CPI hot elevates this to primary. Day %: (403.41 - 411.74) / 411.74 = -2.02% RW (-1.73% vs SPY)."
+        }
+      ]
+    },
+    {
+      "name": "AMZN",
+      "status": "active",
+      "open": 247.73,
+      "high": 250.43,
+      "low": 240.40,
+      "close": 244.19,
+      "ahPrice": 243.31,
+      "swing": false,
+      "swingNote": "Approaching double extreme OS. AH low 243.18 breached WORBL 243.36. Both DTF lines extreme OS. 4H blue at threshold. WORBL reclaim required for any call.",
+      "smi": [
+        { "tf": "15m", "blue": -41.47, "orange": -35.65, "cross": "bear", "location": "oversold",  "dir": "down", "gap": 5.82,  "note": "AH BEAR cross — last 4 bars deteriorating (-32.89 → -25.81 → -28.34 → -41.47). Caution." },
+        { "tf": "1H",  "blue": -23.89, "orange": -26.34, "cross": "bull", "location": "mid-low",   "dir": "up",   "gap": 2.45,  "note": "Bull cross, thin. Recovering slightly." },
+        { "tf": "4H",  "blue": -59.51, "orange": -62.73, "cross": "bull", "location": "extreme-os-threshold", "dir": "up", "gap": 3.22, "note": "APPROACHING extreme OS. Blue -59.51 (0.49 from -60). Orange -62.73 already through. Bull cross." },
+        { "tf": "DTF", "blue": -78.21, "orange": -69.23, "cross": "bear", "location": "extreme-os", "dir": "down","gap": 8.98,  "note": "BOTH lines extreme OS (blue -78.21, orange -69.23). Bear cross. Strongest DTF extreme OS in watchlist." }
+      ],
+      "levels": {
+        "pdh": 250.43, "pdl": 240.40,
+        "orbH": 250.42, "orbL": 246.53,
+        "ahh": 244.55, "ahl": 243.18,
+        "pmh": 0.00, "pml": 0.00,
+        "worbh": 249.42, "worbl": 243.36,
+        "lworbh": 266.67, "lworbl": 260.70,
+        "fvg1": null, "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "double-extreme-os-approaching-react-slot3",
+          "sequence": "WORBL 243.36 reclaim confirmed → 15m resolves to bull → react above AHH 244.55",
+          "entryZone": { "low": 243.36, "high": 244.55 },
+          "trigger": 244.56,
+          "invalidation": { "preEntry": 243.17, "postEntry": 242.00 },
+          "targets": [246.53, 248.88, 249.42],
+          "qualityGates": {
+            "smiAlignment": false,
+            "levelIntegrity": false,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 3,
+          "suggestedSize": 1000,
+          "slot": 3,
+          "tier": "react-only",
+          "premarket": {
+            "validates": "WORBL 243.36 reclaims at PM open. 15m resolves to bull. 4H gap widens above 5. CPI cool.",
+            "invalidates": "WORBL stays lost premarket. 15m bear accelerates. CPI hot."
+          },
+          "notes": "RANKED #3 CALL (react-only). DTF double extreme OS approaching (DTF both lines extreme, 4H blue 0.49 from threshold). AH low 243.18 BREACHED WORBL 243.36 — AH close 243.31 below WORBL. WORBL reclaim at open is required. 15m AH flipped BEAR (caution signal). PDL 240.40 = put alternative if WORBL fails cleanly. Day %: (244.19 - 245.22) / 245.22 = -0.42% slight RW."
+        }
+      ]
+    },
+    {
+      "name": "AAPL",
+      "status": "active",
+      "open": 300.28,
+      "high": 300.75,
+      "low": 287.78,
+      "close": 290.55,
+      "ahPrice": 290.81,
+      "swing": false,
+      "swingNote": "Strongest RW in watchlist (-3.36% vs SPY). ORB H = PDH = first bar (sell-the-open day 2). 4H at -84.73 = deepest in watchlist, 1.56 gap from bull flip. DTF bear accelerating.",
+      "smi": [
+        { "tf": "15m", "blue": -18.06, "orange": -14.75, "cross": "bear", "location": "mid-low",   "dir": "up",   "gap": 3.31,  "note": "AH bear cross. Not OS. Recovering slightly but bear." },
+        { "tf": "1H",  "blue": -46.49, "orange": -53.45, "cross": "bull", "location": "oversold",  "dir": "up",   "gap": 6.96,  "note": "Bull cross, gap 6.96. AH recovering (was -63 at 4PM, now -46.49). Approaching -40 = mid-OS." },
+        { "tf": "4H",  "blue": -84.73, "orange": -83.17, "cross": "bear", "location": "extreme-os", "dir": "flat", "gap": 1.56,  "note": "DEEPEST IN WATCHLIST (-84.73). Gap 1.56 from bull cross. Bear by thread. 4H bull flip IMMINENT." },
+        { "tf": "DTF", "blue": -52.03, "orange": -22.26, "cross": "bear", "location": "oversold",  "dir": "down", "gap": 29.77, "note": "Bear cross, gap 29.77 widening. Orange -22.26 not yet OS = long runway for DTF bear." }
+      ],
+      "levels": {
+        "pdh": 300.75, "pdl": 287.78,
+        "orbH": 300.75, "orbL": 297.05,
+        "ahh": 291.40, "ahl": 290.19,
+        "pmh": 0.00, "pml": 0.00,
+        "worbh": 317.40, "worbl": 301.17,
+        "lworbh": 310.94, "lworbl": 305.02,
+        "fvg1": null, "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "put",
+          "setupType": "bear-continuation-below-worbl-rw",
+          "sequence": "WORBL 301.17 cap holds → ORB L 297.05 or lower fails → put entry",
+          "entryZone": { "low": 289.00, "high": 297.05 },
+          "trigger": 289.99,
+          "invalidation": { "preEntry": 297.06, "postEntry": 300.00 },
+          "targets": [287.78, 285.00, 280.00],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 5,
+          "suggestedSize": 1250,
+          "slot": 2,
+          "tier": "secondary",
+          "premarket": {
+            "validates": "CPI hot OR inline. Holds below WORBL 301.17 at open. AH stays below 295. DTF gap widens above 32.",
+            "invalidates": "CPI cool → 4H flips bull cross (gap 1.56 — imminent). Gap above 295+ with clean 15m bull cross. 4H bull flip = upgrade to Slot 3 call watch."
+          },
+          "notes": "RANKED #3 PUT. Strongest RW: -3.65% vs SPY -0.29% = -3.36% underperformance. ORB H = PDH = first bar 300.75 (sell-the-open pattern, day 2 of WWDC sell-the-news). $10.62 below WORBL 301.17. AH 290.81 essentially flat from close — no recovery. 4H CAUTION: gap 1.56 from bull cross — if it flips premarket, upgrade to Slot 3 call (double extreme OS). DTF bear gap 29.77 overrides 4H snap for put thesis under CPI hot. Room down: 290.55 → PDL 287.78 = $2.77, then 285 / 280. Day %: (290.55 - 301.54) / 301.54 = -3.65% RW."
+        }
+      ]
+    }
+  ]
+}
