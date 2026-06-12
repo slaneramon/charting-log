@@ -1,31 +1,64 @@
 {
   "id": "2026-06-11",
   "date": "2026-06-11",
-  "title": "Week of June 8 — Bucket 3 Snaps + SpaceX IPO Friday",
+  "title": "Week of June 8 \u2014 Bucket 3 Snaps + SpaceX IPO Friday",
   "spyClose": 737.76,
   "marketTone": "mixed-bullish",
+  "rankings": [
+    "TSLA",
+    "NVDA",
+    "GOOGL",
+    "AAPL",
+    "AMZN",
+    "META",
+    "MSFT"
+  ],
   "macro": {
-    "iran": "War premium deflating — WTI -1.63% to $86.28 despite new Trump strike threats. XLE -1.94%. Market pricing out fear.",
-    "bonds": "10Y at 4.45% (-2.20%). Bonds bid. VIX 19.44 -12.51% — back below 20 after spiking to 22.22 premarket.",
-    "oil": "WTI -1.63% on Iran day = telling. Fear premium coming out. XLE -1.94%, XLP -0.26% — risk-ON rotation confirmed.",
+    "iran": "War premium deflating \u2014 WTI -1.63% to $86.28 despite new Trump strike threats. XLE -1.94%. Market pricing out fear.",
+    "bonds": "10Y at 4.45% (-2.20%). Bonds bid. VIX 19.44 -12.51% \u2014 back below 20 after spiking to 22.22 premarket.",
+    "oil": "WTI -1.63% on Iran day = telling. Fear premium coming out. XLE -1.94%, XLP -0.26% \u2014 risk-ON rotation confirmed.",
     "fed": "FOMC June 16-17. No overnight holds through the event. Kevin Warsh rate hike on table.",
-    "catalyst": "SpaceX IPO Friday June 12. TSLA halo effect. Sustained premarket bid likely — upgrades Friday thesis from chop-possible to trend-day base case. Monitor SpaceX pricing and first 15m."
+    "catalyst": "SpaceX IPO Friday June 12. TSLA halo effect. Sustained premarket bid likely \u2014 upgrades Friday thesis from chop-possible to trend-day base case. Monitor SpaceX pricing and first 15m."
   },
   "worb": {
     "note": "Set from Monday June 8 full RTH session. Locked all week.",
-    "aapl": { "high": 317.40, "low": 301.17 },
-    "amzn": { "high": 249.42, "low": 243.36 },
-    "googl": { "high": 366.20, "low": 360.53 },
-    "meta": { "high": 592.00, "low": 579.22 },
-    "msft": { "high": 417.16, "low": 408.56 },
-    "nvda": { "high": 210.47, "low": 206.00 },
-    "tsla": { "high": 412.94, "low": 394.72 },
-    "spy": { "high": 745.34, "low": 738.19 }
+    "aapl": {
+      "high": 317.4,
+      "low": 301.17
+    },
+    "amzn": {
+      "high": 249.42,
+      "low": 243.36
+    },
+    "googl": {
+      "high": 366.2,
+      "low": 360.53
+    },
+    "meta": {
+      "high": 592.0,
+      "low": 579.22
+    },
+    "msft": {
+      "high": 417.16,
+      "low": 408.56
+    },
+    "nvda": {
+      "high": 210.47,
+      "low": 206.0
+    },
+    "tsla": {
+      "high": 412.94,
+      "low": 394.72
+    },
+    "spy": {
+      "high": 745.34,
+      "low": 738.19
+    }
   },
   "macroFilter": {
-    "rule": "Direction locked at 9:20 AM off first SPY candle. TSLA is the tape tell — holds $400 through first 30 min = trend day confirmed.",
+    "rule": "Direction locked at 9:20 AM off first SPY candle. TSLA is the tape tell \u2014 holds $400 through first 30 min = trend day confirmed.",
     "bullThreshold": 738.19,
-    "bearThreshold": 735.00,
+    "bearThreshold": 735.0,
     "bullScenario": "SPY above WORBL 738.19 at 9:20 = BULL. Trade TSLA #1, NVDA #2, GOOGL #3. SpaceX IPO sustained bid = trend day base case.",
     "mixedScenario": "SPY 735.00-738.19 = MIXED. TSLA only, smaller size. Watch WORBL reclaim attempt.",
     "bearScenario": "SPY below 735.00 = BEAR. META put, MSFT put only. TSLA below WORBL 394.72 = flip to put."
@@ -36,23 +69,44 @@
     "dailyLossLimit": 700,
     "walkAwayTarget": 800,
     "maxSimultaneousPositions": 1,
-    "notes": "Up $1,000+ by 10:30 AM = close everything, walk. FOMC next week — protect gains into weekend."
+    "notes": "Up $1,000+ by 10:30 AM = close everything, walk. FOMC next week \u2014 protect gains into weekend."
   },
   "names": [
     {
       "name": "AAPL",
       "status": "active",
       "open": 293.72,
-      "high": 297.00,
+      "high": 297.0,
       "low": 289.59,
       "close": 295.63,
       "ahPrice": 295.83,
       "swing": false,
       "swingNote": "",
       "smi": [
-        { "tf": "1H", "blue": 63.07, "orange": 60.60, "cross": "bull", "location": "overbought", "dir": "up" },
-        { "tf": "4H", "blue": -4.72, "orange": -25.41, "cross": "bull", "location": "mid", "dir": "up" },
-        { "tf": "DTF", "blue": -60.63, "orange": -51.91, "cross": "bear", "location": "oversold", "dir": "up" }
+        {
+          "tf": "1H",
+          "blue": 63.07,
+          "orange": 60.6,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up"
+        },
+        {
+          "tf": "4H",
+          "blue": -4.72,
+          "orange": -25.41,
+          "cross": "bull",
+          "location": "mid",
+          "dir": "up"
+        },
+        {
+          "tf": "DTF",
+          "blue": -60.63,
+          "orange": -51.91,
+          "cross": "bear",
+          "location": "oversold",
+          "dir": "up"
+        }
       ],
       "levels": {
         "pdh": 297.47,
@@ -63,9 +117,9 @@
         "ahl": 295.19,
         "pmh": 294.24,
         "pml": 291.68,
-        "worbh": 317.40,
+        "worbh": 317.4,
         "worbl": 301.17,
-        "lworbh": 311.00,
+        "lworbh": 311.0,
         "lworbl": 305.08,
         "fvg1": 302.32,
         "fvg2": null
@@ -75,14 +129,21 @@
           "leg": 1,
           "direction": "call",
           "setupType": "bull-reversal-bucket3",
-          "sequence": "Leg 1: DTF bear cross gap at -8.72 — one strong session from flip. WORBL $301.17 = same level as DTF EMA cluster ($299.69-$300.35). Entry on OB reset from current 1H near-OB. Leg 2 available if WORBL rejects — take partials at EMA cluster, don't hold through, then flip to Leg 2 on 15m bear cross.",
-          "entryZone": { "low": 294.24, "high": 297.47 },
+          "sequence": "Leg 1: DTF bear cross gap at -8.72 \u2014 one strong session from flip. WORBL $301.17 = same level as DTF EMA cluster ($299.69-$300.35). Entry on OB reset from current 1H near-OB. Leg 2 available if WORBL rejects \u2014 take partials at EMA cluster, don't hold through, then flip to Leg 2 on 15m bear cross.",
+          "entryZone": {
+            "low": 294.24,
+            "high": 297.47
+          },
           "trigger": 297.47,
           "invalidation": {
             "preEntry": 291.68,
             "postEntry": 293.85
           },
-          "targets": [301.17, 302.32, 305.08],
+          "targets": [
+            301.17,
+            302.32,
+            305.08
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -97,20 +158,27 @@
             "validates": "Holding above $293.85 (ORB H), DTF gap continues narrowing, 15m pulling back from OB without crashing",
             "invalidates": "Premarket back below $291.68 (PML), new Iran headline spike"
           },
-          "notes": "Rank #4. DTF gap -8.72 (was -20.92 June 10). RW -0.31% vs SPY — slight weakness despite Bucket 3 firing. WORBL $301.17 = DTF EMA cluster $299.69-$300.35: take meaningful partials at this zone, not a clean hold-through. 1H 200 SMA ~$306 = Slane's bull day theory target ($10+ from current, only on strong rip Friday)."
+          "notes": "Rank #4. DTF gap -8.72 (was -20.92 June 10). RW -0.31% vs SPY \u2014 slight weakness despite Bucket 3 firing. WORBL $301.17 = DTF EMA cluster $299.69-$300.35: take meaningful partials at this zone, not a clean hold-through. 1H 200 SMA ~$306 = Slane's bull day theory target ($10+ from current, only on strong rip Friday)."
         },
         {
           "leg": 2,
           "direction": "put",
           "setupType": "bear-continuation",
           "sequence": "WORBL $301.17 tested and rejected on 15m bear cross. Leg 1 exits at EMA cluster, flip to Leg 2.",
-          "entryZone": { "low": 298.00, "high": 301.17 },
+          "entryZone": {
+            "low": 298.0,
+            "high": 301.17
+          },
           "trigger": 301.17,
           "invalidation": {
             "preEntry": 302.32,
             "postEntry": 301.17
           },
-          "targets": [294.24, 291.68, 289.59],
+          "targets": [
+            294.24,
+            291.68,
+            289.59
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -125,7 +193,7 @@
             "validates": "Bounce into $299-$301 zone, 15m bear cross fires at that level",
             "invalidates": "WORBL $301.17 reclaim + close above on 15m"
           },
-          "notes": "Secondary — only active if WORBL rejects cleanly. DTF bear cross still active. EMA cluster at $299-$301 is major resistance. $11.58 room to PDL $289.59 qualifies as two-way setup."
+          "notes": "Secondary \u2014 only active if WORBL rejects cleanly. DTF bear cross still active. EMA cluster at $299-$301 is major resistance. $11.58 room to PDL $289.59 qualifies as two-way setup."
         }
       ]
     },
@@ -140,9 +208,30 @@
       "swing": false,
       "swingNote": "",
       "smi": [
-        { "tf": "1H", "blue": 84.25, "orange": 73.47, "cross": "bull", "location": "overbought", "dir": "up" },
-        { "tf": "4H", "blue": -26.69, "orange": -43.43, "cross": "bull", "location": "oversold", "dir": "up" },
-        { "tf": "DTF", "blue": -79.79, "orange": -78.29, "cross": "bear", "location": "oversold", "dir": "up" }
+        {
+          "tf": "1H",
+          "blue": 84.25,
+          "orange": 73.47,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up"
+        },
+        {
+          "tf": "4H",
+          "blue": -26.69,
+          "orange": -43.43,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up"
+        },
+        {
+          "tf": "DTF",
+          "blue": -79.79,
+          "orange": -78.29,
+          "cross": "bear",
+          "location": "oversold",
+          "dir": "up"
+        }
       ],
       "levels": {
         "pdh": 242.14,
@@ -155,9 +244,9 @@
         "pml": 237.66,
         "worbh": 249.42,
         "worbl": 243.36,
-        "lworbh": 0.00,
+        "lworbh": 0.0,
         "lworbl": 260.77,
-        "fvg1": 245.90,
+        "fvg1": 245.9,
         "fvg2": 254.01
       },
       "plans": [
@@ -165,14 +254,21 @@
           "leg": 1,
           "direction": "call",
           "setupType": "bull-reversal-bucket3",
-          "sequence": "AMZN DTF gap at -1.50 — RAZOR THIN, near-certain flip Friday on any green. AH $1.11 below WORBL $243.36. 1H OB (84.25) = expect early pullback at open → entry on 15m reset. This is the most structurally primed name on the board for DTF flip. Leg 2 if WORBL rejects.",
-          "entryZone": { "low": 241.02, "high": 243.36 },
+          "sequence": "AMZN DTF gap at -1.50 \u2014 RAZOR THIN, near-certain flip Friday on any green. AH $1.11 below WORBL $243.36. 1H OB (84.25) = expect early pullback at open \u2192 entry on 15m reset. This is the most structurally primed name on the board for DTF flip. Leg 2 if WORBL rejects.",
+          "entryZone": {
+            "low": 241.02,
+            "high": 243.36
+          },
           "trigger": 243.36,
           "invalidation": {
             "preEntry": 240.91,
             "postEntry": 241.02
           },
-          "targets": [245.90, 249.42, 254.01],
+          "targets": [
+            245.9,
+            249.42,
+            254.01
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -187,20 +283,27 @@
             "validates": "Holding above $241.67 (AHL), ideally above $242, DTF flip confirmed at open, 15m pulling back from OB cleanly",
             "invalidates": "Premarket back below $240.91 (ORB H), or AH reversal below $241.02"
           },
-          "notes": "Rank #5. DTF gap -1.50 (was -7.55 June 10). Most structurally primed for DTF bull cross — near-certain on any green Friday. RW -0.23% vs SPY (mild, considering flat open). 1H 200 SMA ~$255.41 = Slane's bull day theory long target ($13+ from current, realistic on momentum continuation). FVG $254.01 and 1H 200 SMA $255.41 are essentially the same level."
+          "notes": "Rank #5. DTF gap -1.50 (was -7.55 June 10). Most structurally primed for DTF bull cross \u2014 near-certain on any green Friday. RW -0.23% vs SPY (mild, considering flat open). 1H 200 SMA ~$255.41 = Slane's bull day theory long target ($13+ from current, realistic on momentum continuation). FVG $254.01 and 1H 200 SMA $255.41 are essentially the same level."
         },
         {
           "leg": 2,
           "direction": "put",
           "setupType": "bear-continuation",
           "sequence": "WORBL $243.36 tested and rejected. DTF flip fails. Leg 1 off, flip to Leg 2.",
-          "entryZone": { "low": 241.02, "high": 243.36 },
+          "entryZone": {
+            "low": 241.02,
+            "high": 243.36
+          },
           "trigger": 243.36,
           "invalidation": {
-            "preEntry": 244.00,
+            "preEntry": 244.0,
             "postEntry": 243.36
           },
-          "targets": [240.91, 237.91, 235.18],
+          "targets": [
+            240.91,
+            237.91,
+            235.18
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -215,7 +318,7 @@
             "validates": "WORBL $243.36 test + clear rejection candle, 15m bear cross re-fires",
             "invalidates": "WORBL reclaim + 15m close above"
           },
-          "notes": "Secondary. AHH $242.25 already approaching WORBL — WORBL rejection requires complete fail of that test tomorrow. DTF gap -1.50 means even a small green Friday likely flips the DTF — makes put setup less likely."
+          "notes": "Secondary. AHH $242.25 already approaching WORBL \u2014 WORBL rejection requires complete fail of that test tomorrow. DTF gap -1.50 means even a small green Friday likely flips the DTF \u2014 makes put setup less likely."
         }
       ]
     },
@@ -223,27 +326,48 @@
       "name": "GOOGL",
       "status": "active",
       "open": 355.93,
-      "high": 358.80,
+      "high": 358.8,
       "low": 346.36,
       "close": 357.77,
       "ahPrice": 360.16,
       "swing": false,
       "swingNote": "",
       "smi": [
-        { "tf": "1H", "blue": 78.94, "orange": 65.17, "cross": "bull", "location": "overbought", "dir": "up" },
-        { "tf": "4H", "blue": -31.27, "orange": -47.46, "cross": "bull", "location": "oversold", "dir": "up" },
-        { "tf": "DTF", "blue": -59.20, "orange": -60.94, "cross": "bull", "location": "oversold", "dir": "up" }
+        {
+          "tf": "1H",
+          "blue": 78.94,
+          "orange": 65.17,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up"
+        },
+        {
+          "tf": "4H",
+          "blue": -31.27,
+          "orange": -47.46,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up"
+        },
+        {
+          "tf": "DTF",
+          "blue": -59.2,
+          "orange": -60.94,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up"
+        }
       ],
       "levels": {
-        "pdh": 358.80,
+        "pdh": 358.8,
         "pdl": 346.36,
         "orbH": 357.71,
         "orbL": 347.85,
         "ahh": 361.12,
         "ahl": 358.29,
-        "pmh": 359.30,
+        "pmh": 359.3,
         "pml": 355.35,
-        "worbh": 366.20,
+        "worbh": 366.2,
         "worbl": 360.53,
         "lworbh": 378.54,
         "lworbl": 373.52,
@@ -255,14 +379,21 @@
           "leg": 1,
           "direction": "call",
           "setupType": "bull-reversal-bucket3",
-          "sequence": "Only name with confirmed DTF bull cross tonight (thin +1.74). AH $0.37 below WORBL $360.53. AHH $361.12 already tested above WORBL. 1H 200 SMA $370.80 embedded in DTF EMA cluster — treat as one zone on bull day. Leg 2 if WORBL rejects.",
-          "entryZone": { "low": 359.30, "high": 360.53 },
+          "sequence": "Only name with confirmed DTF bull cross tonight (thin +1.74). AH $0.37 below WORBL $360.53. AHH $361.12 already tested above WORBL. 1H 200 SMA $370.80 embedded in DTF EMA cluster \u2014 treat as one zone on bull day. Leg 2 if WORBL rejects.",
+          "entryZone": {
+            "low": 359.3,
+            "high": 360.53
+          },
           "trigger": 360.53,
           "invalidation": {
-            "preEntry": 358.80,
-            "postEntry": 358.80
+            "preEntry": 358.8,
+            "postEntry": 358.8
           },
-          "targets": [361.75, 366.20, 370.80],
+          "targets": [
+            361.75,
+            366.2,
+            370.8
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -277,20 +408,27 @@
             "validates": "Premarket holding above $360, AHH $361.12 tested again, 15m bull cross developing",
             "invalidates": "Opens below $358.80 (PDH now support), 15m bear fires, RW continues vs SPY"
           },
-          "notes": "Rank #3. RW -1.31% today = yellow flag despite DTF bull cross. DTF gap only +1.74 — fragile, one red day re-crosses to bear. 1H 200 SMA $370.80 embedded between DTF 21EMA $365.62 and 9EMA $371.21 — treat entire $365-371 zone as one resistance cluster on bull day. Path: WORBL $360.53 → WORBH $366.20 → 1H 200 SMA $370.80."
+          "notes": "Rank #3. RW -1.31% today = yellow flag despite DTF bull cross. DTF gap only +1.74 \u2014 fragile, one red day re-crosses to bear. 1H 200 SMA $370.80 embedded between DTF 21EMA $365.62 and 9EMA $371.21 \u2014 treat entire $365-371 zone as one resistance cluster on bull day. Path: WORBL $360.53 \u2192 WORBH $366.20 \u2192 1H 200 SMA $370.80."
         },
         {
           "leg": 2,
           "direction": "put",
           "setupType": "bear-continuation",
           "sequence": "WORBL $360.53 fails. DTF bull cross (thin) dies. Leg 1 off.",
-          "entryZone": { "low": 357.71, "high": 360.53 },
+          "entryZone": {
+            "low": 357.71,
+            "high": 360.53
+          },
           "trigger": 360.53,
           "invalidation": {
             "preEntry": 361.12,
             "postEntry": 361.75
           },
-          "targets": [357.71, 354.31, 347.85],
+          "targets": [
+            357.71,
+            354.31,
+            347.85
+          ],
           "qualityGates": {
             "smiAlignment": false,
             "levelIntegrity": true,
@@ -320,20 +458,41 @@
       "swing": false,
       "swingNote": "",
       "smi": [
-        { "tf": "1H", "blue": 77.90, "orange": 60.56, "cross": "bull", "location": "overbought", "dir": "up" },
-        { "tf": "4H", "blue": -48.99, "orange": -60.36, "cross": "bull", "location": "oversold", "dir": "up" },
-        { "tf": "DTF", "blue": -76.23, "orange": -66.80, "cross": "bear", "location": "oversold", "dir": "down" }
+        {
+          "tf": "1H",
+          "blue": 77.9,
+          "orange": 60.56,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up"
+        },
+        {
+          "tf": "4H",
+          "blue": -48.99,
+          "orange": -60.36,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up"
+        },
+        {
+          "tf": "DTF",
+          "blue": -76.23,
+          "orange": -66.8,
+          "cross": "bear",
+          "location": "oversold",
+          "dir": "down"
+        }
       ],
       "levels": {
         "pdh": 572.17,
         "pdl": 557.01,
         "orbH": 568.22,
-        "orbL": 561.90,
-        "ahh": 572.90,
+        "orbL": 561.9,
+        "ahh": 572.9,
         "ahl": 567.73,
-        "pmh": 576.80,
-        "pml": 565.80,
-        "worbh": 592.00,
+        "pmh": 576.8,
+        "pml": 565.8,
+        "worbh": 592.0,
         "worbl": 579.22,
         "lworbh": 621.61,
         "lworbl": 599.49,
@@ -345,14 +504,21 @@
           "leg": 1,
           "direction": "put",
           "setupType": "bear-continuation",
-          "sequence": "Primary. RW -2.15% on +1.70% SPY day. Closed red. $6.35 below WORBL in AH. DTF bear cross deepening. Bucket 3 CAUTION (DTF bearish = dead-cat bounce risk). SpaceX IPO may compress morning entry — wait for 15m confirmation.",
-          "entryZone": { "low": 565.00, "high": 568.43 },
+          "sequence": "Primary. RW -2.15% on +1.70% SPY day. Closed red. $6.35 below WORBL in AH. DTF bear cross deepening. Bucket 3 CAUTION (DTF bearish = dead-cat bounce risk). SpaceX IPO may compress morning entry \u2014 wait for 15m confirmation.",
+          "entryZone": {
+            "low": 565.0,
+            "high": 568.43
+          },
           "trigger": 568.43,
           "invalidation": {
-            "preEntry": 572.90,
-            "postEntry": 572.90
+            "preEntry": 572.9,
+            "postEntry": 572.9
           },
-          "targets": [561.90, 557.01, 551.00],
+          "targets": [
+            561.9,
+            557.01,
+            551.0
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -367,20 +533,27 @@
             "validates": "Opens below $568, 15m bears confirm, no WORBL attempt, RW continues vs SPY",
             "invalidates": "Premarket ramping above $576+, 15m bull cross holding above ORB H"
           },
-          "notes": "Rank #6. RW -2.15%, closed -$2.55 red on SPY +1.70% day = heavy distribution. DTF bear cross gap -9.43. 1H 200 SMA $606.42 — not in range. Not viable for Friday."
+          "notes": "Rank #6. RW -2.15%, closed -$2.55 red on SPY +1.70% day = heavy distribution. DTF bear cross gap -9.43. 1H 200 SMA $606.42 \u2014 not in range. Not viable for Friday."
         },
         {
           "leg": 2,
           "direction": "call",
           "setupType": "bull-reversal-bucket3",
           "sequence": "CAUTION tier. DTF bearish + 4H fresh bull cross = dead-cat bounce risk. Reduced size only. Only if WORBL reclaims.",
-          "entryZone": { "low": 577.00, "high": 579.22 },
+          "entryZone": {
+            "low": 577.0,
+            "high": 579.22
+          },
           "trigger": 579.22,
           "invalidation": {
-            "preEntry": 574.00,
-            "postEntry": 576.80
+            "preEntry": 574.0,
+            "postEntry": 576.8
           },
-          "targets": [584.49, 592.00, 599.49],
+          "targets": [
+            584.49,
+            592.0,
+            599.49
+          ],
           "qualityGates": {
             "smiAlignment": false,
             "levelIntegrity": true,
@@ -404,24 +577,45 @@
       "status": "active",
       "open": 395.21,
       "high": 396.85,
-      "low": 384.00,
+      "low": 384.0,
       "close": 390.34,
       "ahPrice": 392.81,
       "swing": false,
       "swingNote": "",
       "smi": [
-        { "tf": "1H", "blue": 31.52, "orange": 9.37, "cross": "bull", "location": "mid", "dir": "up" },
-        { "tf": "4H", "blue": -58.24, "orange": -68.36, "cross": "bull", "location": "oversold", "dir": "up" },
-        { "tf": "DTF", "blue": -82.12, "orange": -71.30, "cross": "bear", "location": "oversold", "dir": "down" }
+        {
+          "tf": "1H",
+          "blue": 31.52,
+          "orange": 9.37,
+          "cross": "bull",
+          "location": "mid",
+          "dir": "up"
+        },
+        {
+          "tf": "4H",
+          "blue": -58.24,
+          "orange": -68.36,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up"
+        },
+        {
+          "tf": "DTF",
+          "blue": -82.12,
+          "orange": -71.3,
+          "cross": "bear",
+          "location": "oversold",
+          "dir": "down"
+        }
       ],
       "levels": {
-        "pdh": 391.50,
-        "pdl": 384.00,
+        "pdh": 391.5,
+        "pdl": 384.0,
         "orbH": 402.85,
         "orbL": 388.42,
         "ahh": 392.95,
         "ahl": 390.41,
-        "pmh": 400.00,
+        "pmh": 400.0,
         "pml": 394.82,
         "worbh": 417.16,
         "worbl": 408.56,
@@ -436,13 +630,20 @@
           "direction": "put",
           "setupType": "bear-continuation",
           "sequence": "Primary. Worst structure of all 8 names. RW -3.47%. $15.75 below WORBL in AH. DTF bear cross gap -10.81, still widening. Sold relentlessly all session with no bounce. Bucket 3 CAUTION applies.",
-          "entryZone": { "low": 389.97, "high": 394.82 },
-          "trigger": 400.00,
+          "entryZone": {
+            "low": 389.97,
+            "high": 394.82
+          },
+          "trigger": 400.0,
           "invalidation": {
-            "preEntry": 395.00,
+            "preEntry": 395.0,
             "postEntry": 394.82
           },
-          "targets": [391.50, 388.42, 384.00],
+          "targets": [
+            391.5,
+            388.42,
+            384.0
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -457,20 +658,27 @@
             "validates": "Opens below $394, fails PMH $400 attempt, 15m bears, RW continues vs SPY",
             "invalidates": "Premarket ramping above $397+, PMH $400 tested cleanly, 15m bull cross"
           },
-          "notes": "Rank #7. RW -3.47% = worst of all 8. DTF gap -10.81 widening. Red candle on green tape = heavy distribution. 1H 200 SMA $422.55 — not viable, $29.74 above AH with multiple walls between."
+          "notes": "Rank #7. RW -3.47% = worst of all 8. DTF gap -10.81 widening. Red candle on green tape = heavy distribution. 1H 200 SMA $422.55 \u2014 not viable, $29.74 above AH with multiple walls between."
         },
         {
           "leg": 2,
           "direction": "call",
           "setupType": "bull-reversal-bucket3",
           "sequence": "CAUTION tier. PMH $400 reclaim only. Essentially off-list.",
-          "entryZone": { "low": 397.00, "high": 400.00 },
-          "trigger": 400.00,
+          "entryZone": {
+            "low": 397.0,
+            "high": 400.0
+          },
+          "trigger": 400.0,
           "invalidation": {
             "preEntry": 394.82,
-            "postEntry": 397.00
+            "postEntry": 397.0
           },
-          "targets": [402.85, 406.97, 408.56],
+          "targets": [
+            402.85,
+            406.97,
+            408.56
+          ],
           "qualityGates": {
             "smiAlignment": false,
             "levelIntegrity": true,
@@ -500,9 +708,30 @@
       "swing": false,
       "swingNote": "",
       "smi": [
-        { "tf": "1H", "blue": 79.16, "orange": 70.20, "cross": "bull", "location": "overbought", "dir": "up" },
-        { "tf": "4H", "blue": -19.81, "orange": -34.01, "cross": "bull", "location": "oversold", "dir": "up" },
-        { "tf": "DTF", "blue": -68.01, "orange": -62.36, "cross": "bear", "location": "oversold", "dir": "down" }
+        {
+          "tf": "1H",
+          "blue": 79.16,
+          "orange": 70.2,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up"
+        },
+        {
+          "tf": "4H",
+          "blue": -19.81,
+          "orange": -34.01,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up"
+        },
+        {
+          "tf": "DTF",
+          "blue": -68.01,
+          "orange": -62.36,
+          "cross": "bear",
+          "location": "oversold",
+          "dir": "down"
+        }
       ],
       "levels": {
         "pdh": 205.66,
@@ -512,9 +741,9 @@
         "ahh": 206.43,
         "ahl": 204.56,
         "pmh": 203.59,
-        "pml": 201.20,
+        "pml": 201.2,
         "worbh": 210.47,
-        "worbl": 206.00,
+        "worbl": 206.0,
         "lworbh": 224.87,
         "lworbl": 215.76,
         "fvg1": 212.05,
@@ -525,14 +754,21 @@
           "leg": 1,
           "direction": "call",
           "setupType": "bull-reversal-bucket3",
-          "sequence": "AHH $206.43 already cleared WORBL $206.00. AH at $0.04 below WORBL — gate is binary at open. 15m reset already occurred in AH (bear cross firing from neutral). 1H 200 SMA $212.59 is most realistic bull day 200 SMA target of the group ($6.63 from AH). Leg 2 if WORBL rejects.",
-          "entryZone": { "low": 205.00, "high": 206.00 },
-          "trigger": 206.00,
+          "sequence": "AHH $206.43 already cleared WORBL $206.00. AH at $0.04 below WORBL \u2014 gate is binary at open. 15m reset already occurred in AH (bear cross firing from neutral). 1H 200 SMA $212.59 is most realistic bull day 200 SMA target of the group ($6.63 from AH). Leg 2 if WORBL rejects.",
+          "entryZone": {
+            "low": 205.0,
+            "high": 206.0
+          },
+          "trigger": 206.0,
           "invalidation": {
             "preEntry": 204.56,
             "postEntry": 204.56
           },
-          "targets": [206.43, 210.47, 212.59],
+          "targets": [
+            206.43,
+            210.47,
+            212.59
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -547,20 +783,27 @@
             "validates": "Premarket holding above $205.50, pressing $207+, 15m bull cross developing",
             "invalidates": "Opens below $204.56 (AHL), 15m never fires, gap fill to $201"
           },
-          "notes": "Rank #2. RS +0.52% — only positive RS name of the six analyzed. 4H gap +14.20 rocketing. Bucket 3 CAUTION (DTF still bear cross, gap -5.65) but RS + WORBL proximity elevates within CAUTION tier. 1H 200 SMA $212.59 = most realistic bull day target. Path: WORBL $206 → WORBH $210.47 → 1H 200 SMA $212.59 / FVG zone $212.05-$213.77."
+          "notes": "Rank #2. RS +0.52% \u2014 only positive RS name of the six analyzed. 4H gap +14.20 rocketing. Bucket 3 CAUTION (DTF still bear cross, gap -5.65) but RS + WORBL proximity elevates within CAUTION tier. 1H 200 SMA $212.59 = most realistic bull day target. Path: WORBL $206 \u2192 WORBH $210.47 \u2192 1H 200 SMA $212.59 / FVG zone $212.05-$213.77."
         },
         {
           "leg": 2,
           "direction": "put",
           "setupType": "bear-continuation",
           "sequence": "WORBL $206.00 rejection. Leg 1 off, flip to puts.",
-          "entryZone": { "low": 203.59, "high": 206.00 },
-          "trigger": 206.00,
+          "entryZone": {
+            "low": 203.59,
+            "high": 206.0
+          },
+          "trigger": 206.0,
           "invalidation": {
             "preEntry": 206.43,
-            "postEntry": 206.00
+            "postEntry": 206.0
           },
-          "targets": [203.59, 202.86, 201.20],
+          "targets": [
+            203.59,
+            202.86,
+            201.2
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -575,7 +818,7 @@
             "validates": "Opens below $204, can't reclaim $205, 15m bears confirm",
             "invalidates": "WORBL $206 reclaim, WORBH tag $210.47"
           },
-          "notes": "Secondary. AHH $206.43 already poked above WORBL — puts require complete fail of that test. noRejectionWick false = AH already cleared WORBL."
+          "notes": "Secondary. AHH $206.43 already poked above WORBL \u2014 puts require complete fail of that test. noRejectionWick false = AH already cleared WORBL."
         }
       ]
     },
@@ -590,14 +833,35 @@
       "swing": false,
       "swingNote": "",
       "smi": [
-        { "tf": "1H", "blue": 85.72, "orange": 81.98, "cross": "bull", "location": "overbought", "dir": "up" },
-        { "tf": "4H", "blue": -9.82, "orange": -32.47, "cross": "bull", "location": "oversold", "dir": "up" },
-        { "tf": "DTF", "blue": -58.04, "orange": -55.00, "cross": "bear", "location": "oversold", "dir": "up" }
+        {
+          "tf": "1H",
+          "blue": 85.72,
+          "orange": 81.98,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up"
+        },
+        {
+          "tf": "4H",
+          "blue": -9.82,
+          "orange": -32.47,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up"
+        },
+        {
+          "tf": "DTF",
+          "blue": -58.04,
+          "orange": -55.0,
+          "cross": "bear",
+          "location": "oversold",
+          "dir": "up"
+        }
       ],
       "levels": {
         "pdh": 399.54,
         "pdl": 380.66,
-        "orbH": 388.40,
+        "orbH": 388.4,
         "orbL": 380.65,
         "ahh": 399.93,
         "ahl": 396.51,
@@ -605,7 +869,7 @@
         "pml": 382.88,
         "worbh": 412.94,
         "worbl": 394.72,
-        "lworbh": 429.60,
+        "lworbh": 429.6,
         "lworbl": 416.23,
         "fvg1": 403.69,
         "fvg2": 406.97
@@ -615,14 +879,21 @@
           "leg": 1,
           "direction": "call",
           "setupType": "bull-reversal-bucket3",
-          "sequence": "Only name that closed RTH above WORBL ($4.43 above). 15m bear cross reset clean in AH (37.92/50.22 neutral). SpaceX IPO halo catalyst. DTF gap -3.04 — one bull day from flip. WORBH ceiling rule: take meaningful partials at $412.94, never hold above blindly on Bucket 3 snap. Rotation risk: TSLA longs trim to fund SpaceX → WORBL pullback to $396-398 = buy dip, not failure.",
-          "entryZone": { "low": 396.51, "high": 400.00 },
+          "sequence": "Only name that closed RTH above WORBL ($4.43 above). 15m bear cross reset clean in AH (37.92/50.22 neutral). SpaceX IPO halo catalyst. DTF gap -3.04 \u2014 one bull day from flip. WORBH ceiling rule: take meaningful partials at $412.94, never hold above blindly on Bucket 3 snap. Rotation risk: TSLA longs trim to fund SpaceX \u2192 WORBL pullback to $396-398 = buy dip, not failure.",
+          "entryZone": {
+            "low": 396.51,
+            "high": 400.0
+          },
           "trigger": 394.72,
           "invalidation": {
             "preEntry": 392.03,
             "postEntry": 394.72
           },
-          "targets": [399.93, 403.69, 412.94],
+          "targets": [
+            399.93,
+            403.69,
+            412.94
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -637,20 +908,27 @@
             "validates": "AH holding above $397, premarket pressing $400+, 15m bull cross setting up. SpaceX IPO pricing strong.",
             "invalidates": "Gap down through WORBL $394.72, 15m bear cross fires hard, SPY losing $735"
           },
-          "notes": "Rank #1. RS +2.90% — strongest name. 4H gap +22.65 (most mature Bucket 3 — fired 8am). DTF gap -3.04 (was -11.17 June 10). Watch for DTF bull cross flip mid-session if price reaches $403+: if blue closes above orange intraday, upgrade from CAUTION → HIGH CONVICTION in real time. 1H 200 SMA $416.23 coincides with LWORBL — flagged for bull continuation beyond WORBH."
+          "notes": "Rank #1. RS +2.90% \u2014 strongest name. 4H gap +22.65 (most mature Bucket 3 \u2014 fired 8am). DTF gap -3.04 (was -11.17 June 10). Watch for DTF bull cross flip mid-session if price reaches $403+: if blue closes above orange intraday, upgrade from CAUTION \u2192 HIGH CONVICTION in real time. 1H 200 SMA $416.23 coincides with LWORBL \u2014 flagged for bull continuation beyond WORBH."
         },
         {
           "leg": 2,
           "direction": "put",
           "setupType": "bear-continuation",
           "sequence": "Only if WORBL $394.72 loses on 15m close. Leg 1 off, flip to Leg 2.",
-          "entryZone": { "low": 393.00, "high": 394.72 },
+          "entryZone": {
+            "low": 393.0,
+            "high": 394.72
+          },
           "trigger": 394.72,
           "invalidation": {
             "preEntry": 396.51,
             "postEntry": 396.51
           },
-          "targets": [392.03, 389.89, 388.40],
+          "targets": [
+            392.03,
+            389.89,
+            388.4
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -665,7 +943,7 @@
             "validates": "Opens below $394, 15m bears fire immediately, SPY below WORBL $738.19",
             "invalidates": "WORBL reclaim at any point in first 15m"
           },
-          "notes": "Secondary only. TSLA closed $4.43 above WORBL — WORBL loss tomorrow is major structural deterioration requiring SPY confirmation."
+          "notes": "Secondary only. TSLA closed $4.43 above WORBL \u2014 WORBL loss tomorrow is major structural deterioration requiring SPY confirmation."
         }
       ]
     },
@@ -673,19 +951,40 @@
       "name": "SPY",
       "status": "context",
       "open": 728.76,
-      "high": 740.00,
+      "high": 740.0,
       "low": 724.41,
       "close": 737.76,
       "ahPrice": 739.55,
       "swing": false,
       "swingNote": "",
       "smi": [
-        { "tf": "1H", "blue": 81.78, "orange": 75.58, "cross": "bull", "location": "overbought", "dir": "up" },
-        { "tf": "4H", "blue": 9.54, "orange": -12.51, "cross": "bull", "location": "mid", "dir": "up" },
-        { "tf": "DTF", "blue": -41.41, "orange": -31.65, "cross": "bear", "location": "oversold", "dir": "up" }
+        {
+          "tf": "1H",
+          "blue": 81.78,
+          "orange": 75.58,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up"
+        },
+        {
+          "tf": "4H",
+          "blue": 9.54,
+          "orange": -12.51,
+          "cross": "bull",
+          "location": "mid",
+          "dir": "up"
+        },
+        {
+          "tf": "DTF",
+          "blue": -41.41,
+          "orange": -31.65,
+          "cross": "bear",
+          "location": "oversold",
+          "dir": "up"
+        }
       ],
       "levels": {
-        "pdh": 740.00,
+        "pdh": 740.0,
         "pdl": 724.41,
         "orbH": 729.14,
         "orbL": 726.38,
@@ -697,7 +996,7 @@
         "worbl": 738.19,
         "lworbh": 741.47,
         "lworbl": 733.47,
-        "fvg1": 748.50,
+        "fvg1": 748.5,
         "fvg2": 720.58
       },
       "plans": [
@@ -705,14 +1004,21 @@
           "leg": 1,
           "direction": "call",
           "setupType": "macro-context",
-          "sequence": "SPY RTH closed $0.43 below WORBL $738.19. AH reclaimed to $739.55 (AHH $739.68). If overnight holds, Friday opens ABOVE WORBL for first time this week — changes from resistance to support. 4H fresh bull cross gap +22.05 widening rapidly. DTF gap -9.76 narrowing fast (was -21.88 June 10). SpaceX IPO = sustained bid catalyst Friday. TSLA is the tape tell.",
-          "entryZone": { "low": 738.19, "high": 740.00 },
+          "sequence": "SPY RTH closed $0.43 below WORBL $738.19. AH reclaimed to $739.55 (AHH $739.68). If overnight holds, Friday opens ABOVE WORBL for first time this week \u2014 changes from resistance to support. 4H fresh bull cross gap +22.05 widening rapidly. DTF gap -9.76 narrowing fast (was -21.88 June 10). SpaceX IPO = sustained bid catalyst Friday. TSLA is the tape tell.",
+          "entryZone": {
+            "low": 738.19,
+            "high": 740.0
+          },
           "trigger": 738.19,
           "invalidation": {
             "preEntry": 737.05,
             "postEntry": 737.05
           },
-          "targets": [740.00, 741.47, 745.34],
+          "targets": [
+            740.0,
+            741.47,
+            745.34
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -727,20 +1033,27 @@
             "validates": "SPY premarket holds WORBL $738.19, TSLA above $400, SpaceX IPO pricing strong, VIX stays below 20",
             "invalidates": "SPY loses $737.05 (AHL), VIX spikes above 22, new overnight Iran escalation headline"
           },
-          "notes": "Macro context only. Bull gate: above $738.19 at 9:20. Bear gate: below $735.00. SPY +1.70% day — tech led (XLK +3.29%). Despite massive green day, bear structure technically intact: closed $0.43 below WORBL. DTF gap narrowing fast — if this closes gap by end of week, structural upgrade. 5/25 carry-forward levels: WORBH $741.47 / WORBL $733.47 as secondary reference layers."
+          "notes": "Macro context only. Bull gate: above $738.19 at 9:20. Bear gate: below $735.00. SPY +1.70% day \u2014 tech led (XLK +3.29%). Despite massive green day, bear structure technically intact: closed $0.43 below WORBL. DTF gap narrowing fast \u2014 if this closes gap by end of week, structural upgrade. 5/25 carry-forward levels: WORBH $741.47 / WORBL $733.47 as secondary reference layers."
         },
         {
           "leg": 2,
           "direction": "put",
           "setupType": "macro-context",
           "sequence": "WORBL $738.19 fails to hold at open. AH reclaim gives back. Bear thesis resumes.",
-          "entryZone": { "low": 735.00, "high": 738.19 },
+          "entryZone": {
+            "low": 735.0,
+            "high": 738.19
+          },
           "trigger": 738.19,
           "invalidation": {
             "preEntry": 739.68,
             "postEntry": 738.19
           },
-          "targets": [733.47, 729.14, 724.41],
+          "targets": [
+            733.47,
+            729.14,
+            724.41
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -753,9 +1066,9 @@
           "tier": "context-only",
           "premarket": {
             "validates": "Premarket fails $738.19 and can't reclaim, opens below $737.00",
-            "invalidates": "Any ceasefire/de-escalation headline → gap through WORBH"
+            "invalidates": "Any ceasefire/de-escalation headline \u2192 gap through WORBH"
           },
-          "notes": "Context only. SPY not traded directly. Bear scenario: WORBL rejection → 5/25 WORBL $733.47 → ORB H $729.14 → PDL $724.41. Multiple names gapping below WORBL on open = bear confirmation."
+          "notes": "Context only. SPY not traded directly. Bear scenario: WORBL rejection \u2192 5/25 WORBL $733.47 \u2192 ORB H $729.14 \u2192 PDL $724.41. Multiple names gapping below WORBL on open = bear confirmation."
         }
       ]
     }
