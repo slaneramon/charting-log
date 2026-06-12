@@ -212,9 +212,16 @@ function renderDash(){
   list.innerHTML=SESSIONS.map(s=>{
     const active=(s.names||[]).filter(n=>n.status!=='skip');
     const swings=active.filter(n=>n.swing);
-    const chips=active.map(n=>{
+    // Sort by rankings array if present, else keep original order
+    const sortedActive=s.rankings&&s.rankings.length?[...active].sort((a,b)=>{
+      const ai=s.rankings.indexOf(a.name); const bi=s.rankings.indexOf(b.name);
+      return(ai===-1?999:ai)-(bi===-1?999:bi);
+    }):active;
+    const chips=sortedActive.map(n=>{
       const cs=getChipStyle(n);
-      return`<div class="name-chip chip-${cs}"><span class="chip-dot"></span>${n.name}</div>`;
+      const rank=s.rankings?s.rankings.indexOf(n.name)+1:0;
+      const rankTag=rank>0?`<span style="font-size:9px;opacity:0.5;margin-right:2px;font-family:var(--mono)">#${rank}</span>`:'';
+      return`<div class="name-chip chip-${cs}"><span class="chip-dot"></span>${rankTag}${n.name}</div>`;
     }).join('');
     const swingBlock=swings.length?`
       <div class="swing-section">
@@ -433,6 +440,41 @@ function buildSwingPills(note){
   return`<div class="swing-pill" style="grid-column:span 4"><div class="swing-pill-k">Parameters</div><div class="swing-pill-v" style="font-size:12px;line-height:1.5">${note}</div></div>`;
 }
 
+// ─── Rankings block ──────────────────────────────────────────────
+function renderRankings(s){
+  if(!s.rankings||!s.rankings.length) return '';
+  const nameMap={};
+  (s.names||[]).forEach(n=>{ nameMap[n.name]=n; });
+  const colMap={bull:'var(--bull)',bear:'var(--bear)',caut:'var(--caut)',chop:'var(--text3)',twoway:'var(--accent)'};
+  const bgMap={bull:'var(--bull-bg)',bear:'var(--bear-bg)',caut:'var(--caut-bg)',chop:'rgba(90,96,120,0.08)',twoway:'rgba(108,142,245,0.08)'};
+  const bdMap={bull:'var(--bull-bd)',bear:'var(--bear-bd)',caut:'var(--caut-bd)',chop:'var(--border)',twoway:'rgba(108,142,245,0.25)'};
+  const rows=s.rankings.map((name,i)=>{
+    const n=nameMap[name]; if(!n) return '';
+    const cs=getChipStyle(n);
+    const col=colMap[cs]||'var(--text3)';
+    const bg=bgMap[cs]||'var(--bg3)';
+    const bd=bdMap[cs]||'var(--border)';
+    const primary=(n.plans||[]).find(p=>p.leg===1)||(n.plans||[])[0]||{};
+    const dir=primary.direction==='call'?'▲ CALL':primary.direction==='put'?'▼ PUT':'';
+    const dirCol=primary.direction==='call'?'var(--bull)':primary.direction==='put'?'var(--bear)':'var(--text3)';
+    const isCaut=(primary.tier||'').includes('off-list')||(primary.qualityScore!==undefined&&primary.qualityScore<=2&&primary.direction==='call');
+    // Pull first sentence of notes, strip rank prefix
+    const rawNote=(primary.notes||'').replace(/^Rank #\d+\.\s*/,'');
+    const shortNote=rawNote.split(/\.\s/)[0].replace(/RS [+-]\d+\.\d+%[^.]+/,'').trim().substring(0,80);
+    return`<div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:${bg};border:1px solid ${bd};border-radius:var(--rs)">
+      <span style="font-size:12px;font-weight:700;font-family:var(--mono);color:var(--text3);min-width:24px">#${i+1}</span>
+      <span style="font-size:14px;font-weight:700;font-family:var(--mono);color:${col};min-width:54px">${name}</span>
+      <span style="font-size:11px;font-weight:600;font-family:var(--mono);color:${dirCol};min-width:52px">${dir}</span>
+      ${isCaut?'<span style="font-size:10px;font-family:var(--mono);color:var(--caut);white-space:nowrap">⚠️ CAUTION</span>':''}
+      <span style="font-size:11px;color:var(--text3);font-family:var(--mono);flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${shortNote}</span>
+    </div>`;
+  }).filter(Boolean).join('');
+  return`<div class="card" style="margin-bottom:20px;border-color:rgba(108,142,245,0.2)">
+    <div class="section-label" style="margin-bottom:10px">Rankings — trade in this order</div>
+    <div style="display:flex;flex-direction:column;gap:5px">${rows}</div>
+  </div>`;
+}
+
 // ─── Detail view ─────────────────────────────────────────────────
 function renderDetail(id){
   const s=SESSIONS.find(x=>x.id===id);
@@ -529,6 +571,7 @@ function renderDetail(id){
   el.innerHTML=`
     <div class="d-date">${fmtDate(s.date)}</div>
     <div class="d-title">${s.title||'Nightly Chart Session'}</div>
+    ${renderRankings(s)}
     ${renderMacroBlock(s)}
     ${macroFilterBlock}
     ${renderSizing(s)}
