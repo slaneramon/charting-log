@@ -142,7 +142,11 @@ function getChipStyle(n){
     if(dirs.length===0) return 'chop';
   }
   const dirs=plans.map(p=>p.direction).filter(d=>d&&d!=='none');
-  if(dirs.includes('call')&&dirs.includes('put')) return 'twoway';
+  // Use leg 1 as the primary color signal; fall back to any direction present
+  const primary=plans.find(p=>p.leg===1)||plans[0];
+  const primaryDir=primary?primary.direction:null;
+  if(primaryDir==='call') return 'bull';
+  if(primaryDir==='put') return 'bear';
   if(dirs.includes('call')) return 'bull';
   if(dirs.includes('put')) return 'bear';
   return 'chop';
