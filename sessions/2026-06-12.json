@@ -1,0 +1,1667 @@
+{
+  "id": "2026-06-12",
+  "date": "2026-06-12",
+  "title": "Week of June 16 \u2014 FOMC June 16-17 | DTF Bull Cross Board-Wide",
+  "spyClose": 741.75,
+  "marketTone": "mixed-bullish",
+  "rankings": [
+    "TSLA",
+    "NVDA",
+    "AMZN",
+    "AAPL",
+    "GOOGL",
+    "META",
+    "MSFT"
+  ],
+  "macro": {
+    "fomc": "FOMC June 16-17 \u2014 EVENT RISK. No overnight holds through the meeting. All setups reduced conviction Monday. Rate decision Tuesday. Kevin Warsh hike on table.",
+    "weeklyStructure": "SPY weekly: O=743.36, H=746.90, L=722.59, C=741.75. Down week, closed below weekly open. WTF SMI bear cross at OB (76.73/80.97) \u2014 weekly momentum rolling over from 91 peak 2 weeks ago. WORBH 745.34 is the weekly OB ceiling.",
+    "dtfCross": "SPY DTF bull cross fired Friday June 12 (gap=1.13). Board-wide DTF crosses firing this week. Monday has continuation bias but FOMC compresses conviction.",
+    "spaceX": "SpaceX IPO pricing occurred Friday. TSLA halo realized \u2014 TSLA closed 406.43 (+5.2%). Catalyst exhausted. Monitor any follow-through Monday.",
+    "catalyst": "FOMC is the week's sole driver. No macro trades Monday \u2014 play intraday ORB setups only. Walk-away target $1,000 applies hard this week."
+  },
+  "worb": {
+    "note": "Set from Monday June 8 full RTH session. Locked all week.",
+    "aapl": {
+      "high": 317.4,
+      "low": 301.17
+    },
+    "amzn": {
+      "high": 249.42,
+      "low": 243.36
+    },
+    "googl": {
+      "high": 366.2,
+      "low": 360.53
+    },
+    "meta": {
+      "high": 592.0,
+      "low": 579.22
+    },
+    "msft": {
+      "high": 417.16,
+      "low": 408.56
+    },
+    "nvda": {
+      "high": 210.47,
+      "low": 206.0
+    },
+    "tsla": {
+      "high": 412.94,
+      "low": 394.72
+    },
+    "spy": {
+      "high": 745.34,
+      "low": 738.19
+    }
+  },
+  "macroFilter": {
+    "rule": "Direction locked at 9:20 AM off first SPY candle. FOMC week = reduced size, no overnight holds, walk-away target enforced harder.",
+    "bullThreshold": 745.34,
+    "bearThreshold": 738.19,
+    "bullScenario": "SPY above WORBH 745.34 at 9:20 = BULL continuation. Watch for 1H OB flush-first pattern before entry. DTF fresh cross supports but FOMC caps upside.",
+    "mixedScenario": "SPY 738.19-745.34 = inside WORB range = mixed. Wait for ORB break direction before committing.",
+    "bearScenario": "SPY below WORBL 738.19 = BEAR. 4H still OB but FOMC uncertainty + WTF bear cross = real downside risk. Target PDL 735.03 / 730."
+  },
+  "sizing": {
+    "baseEntry": 1750,
+    "maxTrades": 3,
+    "dailyLossLimit": 800,
+    "walkAwayTarget": 1000,
+    "maxSimultaneousPositions": 2,
+    "notes": "FOMC week \u2014 treat $800 loss as hard stop, $1,000 profit as hard walk. Do not let FOMC binary risk hold you in a trade. No overnight holds Mon or Tue."
+  },
+  "names": [
+    {
+      "name": "AAPL",
+      "status": "active",
+      "open": 296.03,
+      "high": 297.14,
+      "low": 289.62,
+      "close": 291.13,
+      "ahPrice": 291.52,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        {
+          "tf": "15m",
+          "blue": 47.39,
+          "orange": 32.6,
+          "cross": "bull",
+          "location": "neutral",
+          "dir": "up"
+        },
+        {
+          "tf": "1H",
+          "blue": -39.89,
+          "orange": -49.58,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up",
+          "note": "1H bull cross forming in extreme OS. Gap=9.69 and widening. Bucket 3 developing on 1H only."
+        },
+        {
+          "tf": "4H",
+          "blue": -8.94,
+          "orange": 0.26,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down",
+          "note": "4H bull cross fired overnight Thu/Fri, FAILED \u2014 crossed back to bear by noon EDT. Blue declining toward OS. Failed cross = RED FLAG.",
+          "crossBehavior": {
+            "firedDate": "2026-06-11",
+            "day": 2,
+            "tested": true,
+            "testResponse": "FAILED \u2014 fired overnight June 11, crossed back to bear by noon June 12.",
+            "verdict": "WEAKNESS. Failed cross = bearish confirmation. 4H structure does not support calls.",
+            "strength": "failed"
+          }
+        },
+        {
+          "tf": "DTF",
+          "blue": -63.9,
+          "orange": -57.9,
+          "cross": "bear",
+          "location": "oversold",
+          "dir": "down",
+          "gapFlag": "DTF gap=6.0 (was -8.72 June 11, -20.92 June 10). Narrowing but not yet at flag threshold (<5). Approaching. One strong day could trigger flag \u2014 not yet confirmed."
+        },
+        {
+          "tf": "WTF",
+          "blue": 66.14,
+          "orange": 73.16,
+          "cross": "bear",
+          "location": "overbought",
+          "dir": "down",
+          "weeklyCandle": "O=308.74 H=317.40 L=287.38 C=291.13. Down week -5.27%. Worst weekly of MAG7. WTF bear cross FRESH this week (peaked 86.39, now 66.14). Weekly OB rollover actively in progress."
+        }
+      ],
+      "levels": {
+        "pdh": 297.14,
+        "pdl": 289.62,
+        "orbH": 297.1,
+        "orbL": 291.89,
+        "ahh": 291.92,
+        "ahl": 291.06,
+        "pmh": 297.0,
+        "pml": 295.58,
+        "worbh": 317.4,
+        "worbl": 301.17,
+        "lworbh": 0.0,
+        "lworbl": 0.0,
+        "fvg1": 294.2,
+        "fvg2": 289.59
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "put",
+          "setupType": "bear-continuation",
+          "sequence": "Primary. 4H failed bull cross + DTF bear (gap=6.0) + WTF fresh bear cross OB. Bounce into ORB L 291.89-292 or 293-294 zone = PUT entry. Target PDL 289.62 first, then 288-287 on continuation.",
+          "entryZone": {
+            "low": 291.89,
+            "high": 294.2
+          },
+          "trigger": 294.2,
+          "invalidation": {
+            "preEntry": 295.58,
+            "postEntry": 294.2
+          },
+          "targets": [
+            291.89,
+            289.62,
+            287.0
+          ],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 3,
+          "suggestedSize": 1500,
+          "slot": 2,
+          "tier": "primary-bear",
+          "premarket": {
+            "validates": "Premarket holds below 295.58 (PML), 15m bear cross re-fires on any bounce, DTF gap doesn't compress further",
+            "invalidates": "Premarket ramping above 297 PM High, 4H re-crosses bull, DTF gap drops below 3"
+          },
+          "notes": "Rank TBD. WORBL 301.17 is $9.65 above close \u2014 not in play. DTF gap=6.0 narrowing toward flag (<5) but today it widened slightly. WTF worst weekly of MAG7 (-5.27%). 4H failed cross is most bearish structural signal."
+        },
+        {
+          "leg": 2,
+          "direction": "call",
+          "setupType": "os-bounce",
+          "sequence": "1H OS bull cross (gap=9.69) = bounce setup ONLY. Entry after PDL 289.62 sweep exhausts \u2014 wait for 2m bull cross after PDL test. Target ORB L 291.89 / AHH 291.92. Partial at that zone. NOT a trend reversal \u2014 scalp only given DTF/WTF bear.",
+          "entryZone": {
+            "low": 289.62,
+            "high": 291.06
+          },
+          "trigger": 289.62,
+          "invalidation": {
+            "preEntry": 288.0,
+            "postEntry": 289.62
+          },
+          "targets": [
+            291.06,
+            291.89,
+            294.2
+          ],
+          "qualityGates": {
+            "smiAlignment": false,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 2,
+          "suggestedSize": 1000,
+          "slot": 3,
+          "tier": "scalp-only",
+          "premarket": {
+            "validates": "PDL test + rejection candle, 2m bull cross, 1H OS cross gap widening, SPY holding WORBL",
+            "invalidates": "PDL breaks cleanly, no bounce, DTF gap widens further"
+          },
+          "notes": "SCALP ONLY. DTF/WTF bear cross active = any call is against the trend. Take partials aggressively at ORB L 291.89. Do not hold through 4H resistance."
+        }
+      ],
+      "tomorrowOpenPreview": "1H OS bull cross developing (gap=9.69 widening) = expect bounce attempt Monday. But DTF bear cross at extreme OS (gap=6.0), WTF fresh bear cross OB, 4H bull cross FAILED \u2014 this is a bear-continuation structure. Bounce into ORB L 291.89-292 zone is the primary PUT entry setup, not a call. WORBL 301.17 is $9.65 above close \u2014 not in range this week. FOMC = reduced size.",
+      "orbContinuationProbability": "35% upside. 1H OS bull cross gives bounce bias but DTF/WTF/4H bear structure caps it. Most likely scenario: gap to ORB L 291.89-292 at open, test fails, PUT continuation to PDL 289.59. PDL sweep before real direction possible (1H OS = support first). Clean ORB upside break requires 4H re-cross which needs multiple days of recovery.",
+      "rr": {
+        "bull": {
+          "entry": 291.89,
+          "target": 297.1,
+          "stop": 289.62,
+          "upside": 5.21,
+          "risk": 2.27,
+          "ratio": "2.3:1",
+          "note": "ORB L reclaim entry. CAUTION \u2014 DTF/WTF bear cross. Reduced size only. Only if 1H reset completes AND 4H re-crosses bull."
+        },
+        "bear": {
+          "entry": 293.0,
+          "target": 289.62,
+          "stop": 294.2,
+          "upside": 3.38,
+          "risk": 1.2,
+          "ratio": "2.8:1",
+          "note": "Dead-cat bounce entry at 293-294 zone. Target PDL 289.62. Stop above 294.20 key level. Primary setup given DTF/WTF bear structure."
+        }
+      },
+      "manipulation4H": {
+        "risk": "MEDIUM",
+        "variant": "B",
+        "sweepDirection": "DOWN",
+        "sweepTarget": 289.62,
+        "sweepNote": "4H fresh bear cross + PDL 289.62 only $1.47 below AHL 291.06. Classic Variant B: sweep PDL before any bounce. Do NOT buy before PDL test.",
+        "entryTrigger": "2m bull cross AFTER PDL 289.62 test holds \u2014 scalp call only. If PDL breaks, next level 287.00.",
+        "realMove": "SCALP bounce to ORB L 291.89 only (DTF bear active). Not a trend reversal."
+      },
+      "swingEntry": {
+        "active": false,
+        "note": "No swing. DTF bear cross gap=6.0 (bear cross narrowing toward flip but not there). WTF fresh OB bear cross. WORBL 301.17 is $9.65 above. Swing watch trigger: DTF gap drops to <3 + 4H re-crosses bull \u2192 then evaluate."
+      }
+    },
+    {
+      "name": "AMZN",
+      "status": "active",
+      "open": 243.21,
+      "high": 243.36,
+      "low": 233.59,
+      "close": 238.55,
+      "ahPrice": 238.62,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        {
+          "tf": "15m",
+          "blue": 41.4,
+          "orange": 34.83,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up",
+          "note": "Just entered OB on EOD recovery. 15m ripped from LOD 233.59 to close 238.55 (+5.00)."
+        },
+        {
+          "tf": "1H",
+          "blue": 9.93,
+          "orange": -2.88,
+          "cross": "bull",
+          "location": "mid",
+          "dir": "up"
+        },
+        {
+          "tf": "4H",
+          "blue": -9.31,
+          "orange": -8.29,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down",
+          "note": "4H bear cross fired on CLOSING bar today. Bull cross ran overnight Thu \u2192 FAILED. Bear cross fresh as of 4pm EDT close.",
+          "crossBehavior": {
+            "firedDate": "2026-06-11",
+            "day": 2,
+            "tested": true,
+            "testResponse": "FAILED \u2014 fired June 11, lost the cross on the closing bar June 12.",
+            "verdict": "WEAKNESS. Second failed 4H cross attempt. Bearish confirmation.",
+            "strength": "failed"
+          }
+        },
+        {
+          "tf": "DTF",
+          "blue": -75.17,
+          "orange": -76.73,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up",
+          "gapFlag": "DTF GAP COMPRESSION FLAG \u2014 gap=1.56. Bull cross fired at extreme OS Day 1. Most fragile cross on the board. One red day re-crosses to bear. Same Day-1 setup as TSLA June 12."
+        },
+        {
+          "tf": "WTF",
+          "blue": 31.63,
+          "orange": 48.45,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down",
+          "weeklyCandle": "O=246.68 H=250.43 L=233.59 C=238.55. Down -3.04% for the week. WTF blue has fallen from 74 (2 weeks ago) to 31 now \u2014 heading toward OS. Bear cross mid-range, gap=16.82 and widening. More bearish than SPY/AAPL whose WTF is OB. AMZN weekly has NOT found OS floor yet."
+        }
+      ],
+      "levels": {
+        "pdh": 243.36,
+        "pdl": 233.59,
+        "orbH": 243.36,
+        "orbL": 235.48,
+        "ahh": 238.87,
+        "ahl": 238.04,
+        "pmh": 245.25,
+        "pml": 241.82,
+        "worbh": 249.42,
+        "worbl": 243.36,
+        "lworbh": 0.0,
+        "lworbl": 260.77,
+        "fvg1": 245.9,
+        "fvg2": 232.51
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "bucket3-approaching",
+          "sequence": "DTF Day-1 bull cross at extreme OS (gap=1.56). CAUTION tier \u2014 gap too thin to confirm. Wait for: (1) gap widens past 5 on Monday close, (2) 4H re-crosses bull, (3) AHH 238.87 holds as support. Entry on WORBL 243.36 reclaim after confirmed 4H re-cross. NOT at open.",
+          "entryZone": {
+            "low": 241.82,
+            "high": 243.36
+          },
+          "trigger": 243.36,
+          "invalidation": {
+            "preEntry": 238.04,
+            "postEntry": 238.04
+          },
+          "targets": [
+            245.9,
+            249.42,
+            254.01
+          ],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 2,
+          "suggestedSize": 1000,
+          "slot": 3,
+          "tier": "caution-bull",
+          "premarket": {
+            "validates": "Premarket holds above 238.87, presses toward 241-243, DTF gap confirmed wider in Monday's session",
+            "invalidates": "Premarket drops below 237.10, DTF gap narrows back (approaching re-cross to bear), 4H fails to re-cross"
+          },
+          "notes": "Bucket 3 approaching \u2014 NOT confirmed. DTF gap=1.56 is thinnest on board. TSLA analog: same Day-1 pattern on June 12 resulted in flush THEN reversal. Don't be the early buyer. Wait for WORBL test reaction."
+        },
+        {
+          "leg": 2,
+          "direction": "put",
+          "setupType": "bear-continuation",
+          "sequence": "4H fresh bear cross + WTF mid-range bear + 15m OB = flush Monday. Primary scenario: WORBL 243.36 test \u2192 rejection \u2192 put entries. Target PDL 233.59 / FVG 232.51.",
+          "entryZone": {
+            "low": 241.82,
+            "high": 243.36
+          },
+          "trigger": 243.36,
+          "invalidation": {
+            "preEntry": 245.9,
+            "postEntry": 245.9
+          },
+          "targets": [
+            238.04,
+            235.48,
+            233.59
+          ],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 3,
+          "suggestedSize": 1500,
+          "slot": 2,
+          "tier": "primary-bear",
+          "premarket": {
+            "validates": "Premarket fails AHH 238.87, stays below PML 241.82, 4H bear cross confirmed, WTF gap widening",
+            "invalidates": "WORBL 243.36 reclaim clean + 4H re-cross bull on Monday \u2014 then DTF Bucket 3 story takes over"
+          },
+          "notes": "Rank TBD. WORBL = ORB H = 243.36 is THE level. A clean WORBL rejection with 4H bear cross = highest conviction put setup. WTF at 31 heading toward OS gives 2-3 more weeks of weekly selling pressure."
+        }
+      ],
+      "tomorrowOpenPreview": "AMZN: ORB H = WORBL (both 243.36) \u2014 perfect confluence. Today's session opened right at WORBL and immediately flushed -$10 to 233.59 LOD, then recovered +$5 to close. DTF thin bull cross Day 1 (gap=1.56) = Bucket 3 approaching but NOT confirmed. 4H bear cross fired at close = Monday likely opens weak. 15m OB at close = flush-first protocol in play. Key Monday sequence: early weakness to AHL 238.04 or ORB L 235.48, watch for DTF gap to widen (confirms cross) or narrow (cross dies). FOMC week = reduced size. Do NOT chase on DTF cross alone \u2014 gap too thin.",
+      "orbContinuationProbability": "30% upside ORB break. 4H fresh bear cross + WTF mid-range bear (not OS yet) + 15m OB = more likely flush Monday morning. ORB continuation possible IF DTF gap widens past 5 points and 4H re-crosses bull. Downside continuation to PDL 233.59 or FVG 232.51 has higher probability short-term.",
+      "rr": {
+        "bull": {
+          "entry": 238.87,
+          "target": 243.36,
+          "stop": 237.1,
+          "upside": 4.49,
+          "risk": 1.77,
+          "ratio": "2.5:1",
+          "note": "AHH reclaim entry. Target WORBL/ORB H 243.36. Stop below 237.10 level. CAUTION \u2014 4H bear + WTF mid-range bear reduces conviction. DTF cross must hold."
+        },
+        "bear": {
+          "entry": 238.87,
+          "target": 233.59,
+          "stop": 241.82,
+          "upside": 5.28,
+          "risk": 2.95,
+          "ratio": "1.8:1",
+          "note": "Failure at AHH 238.87 \u2192 target PDL 233.59 / FVG 232.51. Stop above PML 241.82. 4H fresh bear cross supports. Primary if AHH rejected at open."
+        }
+      },
+      "manipulation4H": {
+        "risk": "HIGH",
+        "variant": "B",
+        "sweepDirection": "AMBIGUOUS",
+        "sweepTarget": 243.36,
+        "sweepNote": "WORBL/ORB H/PDH 243.36 is $4.74 above AH 238.62 \u2014 classic Variant B upside sweep. Monday likely gaps toward WORBL to sweep stops. Alternatively: 4H fresh bear + 15m OB = DOWN sweep to ORB L 235.48 first.",
+        "entryTrigger": "Wait for WORBL 243.36 test. If WORBL holds on 2m = CALL entry (DTF bull cross confirms). If WORBL rejects on 2m = PUT entry (4H bear confirms). DO NOT enter at open.",
+        "realMove": "Determined at WORBL test. WORBL hold = call to FVG 245.90. WORBL reject = put to ORB L 235.48 / PDL 233.59."
+      },
+      "swingEntry": {
+        "active": false,
+        "note": "Not yet. DTF gap=1.56 too thin \u2014 one red day kills the cross. WTF at 31.63 heading toward OS (needs to reach OS and curl before swing). Watch: DTF gap widens past 8 + WTF blue approaches 0 = pre-swing accumulation zone. WORBL 243.36 is only $4.74 away \u2014 if it holds clean for 2+ days, swing call candidate emerges."
+      }
+    },
+    {
+      "name": "GOOGL",
+      "status": "active",
+      "open": 362.62,
+      "high": 366.57,
+      "low": 354.94,
+      "close": 359.68,
+      "ahPrice": 360.8,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        {
+          "tf": "15m",
+          "blue": 74.32,
+          "orange": 67.57,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up",
+          "note": "AH recovery rip \u2014 15m OB. Flush-first protocol Monday morning."
+        },
+        {
+          "tf": "1H",
+          "blue": -22.24,
+          "orange": -14.73,
+          "cross": "bear",
+          "location": "oversold",
+          "dir": "down",
+          "note": "1H OS bear cross \u2014 result of today's intraday sell to 354.94. Sets up 1H reset as next catalyst. When 1H crosses bull from OS = Bucket 3 full confirmation on multiple TFs."
+        },
+        {
+          "tf": "4H",
+          "blue": 30.34,
+          "orange": 20.13,
+          "cross": "bull",
+          "location": "mid",
+          "dir": "up",
+          "note": "4H bull cross Day 2. Consistent and building. Fired June 11 overnight, held through today's flush, continuing to advance.",
+          "crossBehavior": {
+            "firedDate": "2026-06-11",
+            "day": 2,
+            "tested": true,
+            "testResponse": "HELD \u2014 today flush to 354.94 (-$11) tested the cross. 4H bull cross did not break. Recovered to AH 360.80.",
+            "verdict": "STRENGTH. Cross survived an $11 intraday flush. Proven.",
+            "strength": "confirmed"
+          }
+        },
+        {
+          "tf": "DTF",
+          "blue": -44.95,
+          "orange": -52.95,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up",
+          "gapFlag": "DTF BULL CROSS ACCELERATING. Gap=7.995 (was +1.74 June 11, was -3.51 June 10). Cross fired June 11, WIDENING on Day 2. Strongest DTF momentum on the board. Not fragile \u2014 confirmed and building."
+        },
+        {
+          "tf": "WTF",
+          "blue": 45.31,
+          "orange": 57.19,
+          "cross": "bear",
+          "location": "overbought",
+          "dir": "down",
+          "weeklyCandle": "O=365.18 H=372.08 L=346.36 C=359.68. Down -2.40% for the week. WTF bear cross but blue=45.31 still above OB threshold (+40). Least bearish WTF of MAG7 reviewed so far. Weekly selling is mild \u2014 not the sustained cascade seen in AMZN (blue=31). WORBH 366.20 tested today (hit 366.57 = $0.37 above), rejected. WORBH = weekly resistance."
+        }
+      ],
+      "levels": {
+        "pdh": 366.57,
+        "pdl": 354.94,
+        "orbH": 364.31,
+        "orbL": 357.26,
+        "ahh": 360.98,
+        "ahl": 359.53,
+        "pmh": 365.32,
+        "pml": 359.0,
+        "worbh": 366.2,
+        "worbl": 360.53,
+        "lworbh": 373.58,
+        "lworbl": 0.0,
+        "fvg1": 374.27,
+        "fvg2": 354.31
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "bucket3-forming",
+          "sequence": "Primary. DTF Day-2 accelerating bull cross + 4H Day-2 consistent bull cross + 1H OS reset pending = highest conviction call on the board. Entry sequence: (1) Monday flush-first to 359.53 AHL or 357.26 ORB L (15m OB resets), (2) 1H curls from OS toward neutral, (3) WORBL 360.53 reclaim on 15m bull cross = entry. Target WORBH 366.20 \u2192 FVG 374.27.",
+          "entryZone": {
+            "low": 359.53,
+            "high": 361.12
+          },
+          "trigger": 360.53,
+          "invalidation": {
+            "preEntry": 357.26,
+            "postEntry": 357.26
+          },
+          "targets": [
+            364.31,
+            366.2,
+            368.27
+          ],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 4,
+          "suggestedSize": 1750,
+          "slot": 1,
+          "tier": "primary-bull",
+          "premarket": {
+            "validates": "WORBL 360.53 holds premarket, AH holding 360+ overnight, 15m bull cross developing, DTF gap confirmed wider in Monday data",
+            "invalidates": "Opens below 359.53 (AHL) and can't reclaim WORBL by 10am, 15m bears sustained, DTF gap narrows back toward 3"
+          },
+          "notes": "Best Bucket 3 setup on board. DTF gap widened from 1.74\u21928.0 in ONE day \u2014 this is an accelerating cross, not a fragile one. WORBH 366.20 was tested today (hit 366.57) = resistance known. Take meaningful partial at WORBH; full position size only appropriate on clean WORBL hold. FOMC = no overnight hold."
+        },
+        {
+          "leg": 2,
+          "direction": "put",
+          "setupType": "worbl-rejection",
+          "sequence": "WORBL 360.53 fails at open. 1H OS bear cross sustained. Target ORB L 357.26 / PDL 354.94.",
+          "entryZone": {
+            "low": 357.26,
+            "high": 360.53
+          },
+          "trigger": 360.53,
+          "invalidation": {
+            "preEntry": 362.0,
+            "postEntry": 362.0
+          },
+          "targets": [
+            357.26,
+            354.94,
+            354.31
+          ],
+          "qualityGates": {
+            "smiAlignment": false,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 2,
+          "suggestedSize": 1000,
+          "slot": 3,
+          "tier": "secondary-bear",
+          "premarket": {
+            "validates": "Opens below WORBL 360.53, can't reclaim, 15m bears, AHL 359.53 loses",
+            "invalidates": "WORBL reclaim on first 15m candle \u2014 then flip to Leg 1"
+          },
+          "notes": "Secondary. DTF accelerating bull cross makes sustained puts difficult. WORBL rejection = short-term flush to PDL 354.94 at most, then Bucket 3 likely reasserts. Take T1 quickly."
+        }
+      ],
+      "tomorrowOpenPreview": "GOOGL is the strongest Bucket 3 candidate on the board. DTF bull cross accelerating (gap 1.74\u21928.0 in one day). 4H bull cross Day 2, consistent. 1H OS = next catalyst is 1H reset and bull cross. AH holding WORBL 360.53 ($0.27 above). Monday gate: does WORBL hold at open? If YES \u2192 1H OS reset completes \u2192 call entry sequence. WORBH 366.20 tested today (rejected at 366.57) = resistance target, not immediate breakout level. 15m OB in AH = flush-first Monday morning protocol. FOMC week = reduced size, no overnight holds.",
+      "orbContinuationProbability": "65% upside IF WORBL 360.53 holds at Monday open. DTF accelerating + 4H building + 1H OS resetting = highest confluence Bucket 3 setup on board. Key risk: 15m OB at AH close = early flush likely. Optimal entry: wait for 15m flush to AHL 359.53 or ORB L 357.26, confirm 1H curling up, then WORBL reclaim is the trigger.",
+      "rr": {
+        "bull": {
+          "entry": 360.53,
+          "target": 366.2,
+          "stop": 359.53,
+          "upside": 5.67,
+          "risk": 1.0,
+          "ratio": "5.7:1",
+          "note": "WORBL reclaim after 1H reset. Target WORBH 366.20 (tested today, will be attempted again). Stop below AHL 359.53. Best R:R on the board if WORBL holds."
+        },
+        "bear": {
+          "entry": 360.53,
+          "target": 357.26,
+          "stop": 362.0,
+          "upside": 3.27,
+          "risk": 1.47,
+          "ratio": "2.2:1",
+          "note": "WORBL rejection \u2192 target ORB L 357.26 / PDL 354.94. Secondary setup. DTF accelerating bull cross reduces conviction on puts."
+        }
+      },
+      "manipulation4H": {
+        "risk": "LOW",
+        "variant": "none",
+        "sweepDirection": "DOWN",
+        "sweepTarget": 359.53,
+        "sweepNote": "Today's flush to 354.94 was the primary manipulation sweep. Monday morning 15m OB (74.32) will flush first. Sweep target: AHL 359.53 or ORB L 357.26. Smaller in scope than today's -$11 move.",
+        "entryTrigger": "2m bull cross after AHL 359.53 holds (preferred) or ORB L 357.26 holds. WORBL 360.53 reclaim confirms real move is active.",
+        "realMove": "CALL to WORBH 366.20. Today's rejection of WORBH (hit 366.57) is a known resistance \u2014 take partial there, not a hold-through level."
+      },
+      "swingEntry": {
+        "active": true,
+        "direction": "call",
+        "trigger": "WORBL 360.53 holds Monday + DTF gap widens past 12 (from current 8.0)",
+        "entry": 360.53,
+        "targets": [
+          366.2,
+          368.27,
+          374.27
+        ],
+        "stop": 357.26,
+        "timeframe": "2-4 days",
+        "note": "BEST SWING CANDIDATE. DTF accelerating (gap 1.74\u21928.0 in one day). 4H Day-2 bull cross building. 1H OS = next leg pending. WTF blue=45.31 still in OB \u2014 weekly hasn't turned hostile yet. FOMC risk = hold through volatility only if WORBL holds on FOMC day. Target FVG 374.27 as swing terminus."
+      }
+    },
+    {
+      "name": "META",
+      "status": "active",
+      "open": 572.95,
+      "high": 576.07,
+      "low": 560.9,
+      "close": 566.98,
+      "ahPrice": 568.79,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        {
+          "tf": "15m",
+          "blue": 85.37,
+          "orange": 83.84,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up",
+          "note": "EXTREME OB (85+). Largest 15m OB reading on the board. Significant flush Monday morning is near-certain."
+        },
+        {
+          "tf": "1H",
+          "blue": -10.64,
+          "orange": -13.44,
+          "cross": "bull",
+          "location": "mid",
+          "dir": "up",
+          "note": "Bull cross near neutral. Rising from OS. Improving intraday structure."
+        },
+        {
+          "tf": "4H",
+          "blue": -14.57,
+          "orange": -21.71,
+          "cross": "bull",
+          "location": "mid",
+          "dir": "up",
+          "note": "Bull cross Day 2. Consistent, building toward neutral. Gap=7.14 and widening.",
+          "crossBehavior": {
+            "firedDate": "2026-06-11",
+            "day": 2,
+            "tested": true,
+            "testResponse": "HELD \u2014 today open 572.95 dropped to low 560.90 (-$12.05 intraday). 4H bull cross did not break. Blue continued building from -22 to -14.57 through the selling. Cross held under real intraday pressure.",
+            "verdict": "STRENGTH. $12 intraday flush did not break the 4H bull cross. Gap widened through the decline. Proven under pressure.",
+            "strength": "confirmed"
+          }
+        },
+        {
+          "tf": "DTF",
+          "blue": -77.05,
+          "orange": -71.93,
+          "cross": "bear",
+          "location": "oversold",
+          "dir": "up",
+          "gapFlag": "DTF APPROACHING FLAG \u2014 gap=5.13 (was 9.43 June 11, 15.48 June 10). Narrowing ~4-5 pts/day. Could flip to BULL CROSS Monday. Watch at EOD Monday \u2014 if gap drops below 5, flag fires. If flip confirmed, META becomes Bucket 3 candidate."
+        },
+        {
+          "tf": "WTF",
+          "blue": -21.23,
+          "orange": -5.97,
+          "cross": "bear",
+          "location": "oversold",
+          "dir": "down",
+          "weeklyCandle": "O=592.00 H=597.63 L=557.01 C=566.98. Down -4.39% for the week. WTF blue=-21.23 orange=-5.97 \u2014 BOTH in OS territory. Orange approaching 0 = WTF approaching potential Bucket 3 setup on weekly. Bear cross but OS floor forming. CAUTION: ex-dividend Monday June 15 ($0.525/share \u2014 negligible gap ~$0.53 down)."
+        }
+      ],
+      "levels": {
+        "pdh": 576.07,
+        "pdl": 560.9,
+        "orbH": 576.0,
+        "orbL": 566.05,
+        "ahh": 568.94,
+        "ahl": 566.67,
+        "pmh": 577.74,
+        "pml": 568.86,
+        "worbh": 592.0,
+        "worbl": 579.22,
+        "lworbh": 621.41,
+        "lworbl": 599.49,
+        "fvg1": 602.02,
+        "fvg2": 557.01
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "put",
+          "setupType": "bear-continuation",
+          "sequence": "Primary bear setup while DTF remains bear cross. WORBL 579.22 far above ($10.43). 15m extreme OB flush Monday = short opportunity on bounce failure at AHH 568.94. Target PDL 560.90.",
+          "entryZone": {
+            "low": 567.0,
+            "high": 568.94
+          },
+          "trigger": 568.94,
+          "invalidation": {
+            "preEntry": 571.0,
+            "postEntry": 571.0
+          },
+          "targets": [
+            566.05,
+            561.9,
+            560.9
+          ],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 3,
+          "suggestedSize": 1500,
+          "slot": 2,
+          "tier": "primary-bear",
+          "premarket": {
+            "validates": "Opens at or below AHH 568.94, 15m flush confirms, DTF gap does NOT narrow below 3 Monday",
+            "invalidates": "DTF gap fires below 5 and confirmed \u2014 flip to Leg 2 call setup"
+          },
+          "notes": "Bear primary while DTF bear cross holds. Ex-div $0.525 Monday \u2014 negligible. WTF OS bear = weekly selling active but approaching floor. Take puts while structure supports, then flip to swing call if DTF crosses."
+        },
+        {
+          "leg": 2,
+          "direction": "call",
+          "setupType": "bucket3-watch",
+          "sequence": "DTF bull cross fires Monday (gap drops below 5 \u2192 confirmed flip). Entry after 15m OB flush to ORB L 566.05. 4H bull cross Day 2-3 continues. Target ORB H 576.00 \u2192 WORBL 579.22.",
+          "entryZone": {
+            "low": 565.0,
+            "high": 566.67
+          },
+          "trigger": 566.05,
+          "invalidation": {
+            "preEntry": 563.0,
+            "postEntry": 563.0
+          },
+          "targets": [
+            568.94,
+            576.0,
+            579.22
+          ],
+          "qualityGates": {
+            "smiAlignment": false,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 2,
+          "suggestedSize": 1000,
+          "slot": 3,
+          "tier": "conditional-bull",
+          "premarket": {
+            "validates": "DTF gap confirmed below 5 on Monday close, 4H bull cross widening, ORB L holds as support after flush",
+            "invalidates": "DTF gap widens back (not narrowing), ORB L 566.05 breaks clean, PDL 560.90 approached"
+          },
+          "notes": "Conditional \u2014 only active if DTF crosses bull Monday. If it does, this becomes the primary setup and swing watch activates."
+        }
+      ],
+      "tomorrowOpenPreview": "15m EXTREME OB (85.37) = near-certain flush Monday morning. Ex-div Monday June 15 ($0.525 \u2014 negligible). DTF gap=5.13 APPROACHING FLAG \u2014 could flip to bull cross Monday. If DTF flips intraday, META becomes Bucket 3 watch. 4H Day-2 bull cross building toward neutral. 1H bull cross near neutral. Primary risk: WORBL 579.22 is $10.43 above AH \u2014 far. WTF OS bear cross approaching floor (orange=-5.97, near 0). FOMC no overnight holds.",
+      "orbContinuationProbability": "35% upside continuation. 15m extreme OB near-certain flush negates open momentum. DTF approaching flip but not confirmed. Best setup: flush to ORB L 566.05 \u2192 2m bull cross \u2192 call entry targeting PML 568.86 / AHH 568.94 / ORB H 576.00. Full bull continuation only if DTF confirms flip during Monday session.",
+      "rr": {
+        "bull": {
+          "entry": 566.05,
+          "target": 576.0,
+          "stop": 564.0,
+          "upside": 9.95,
+          "risk": 2.05,
+          "ratio": "4.9:1",
+          "note": "Post-flush ORB L entry 566.05. Target ORB H 576.00. Stop below 564. Only valid if 4H bull cross holds and DTF gap confirmed narrowing."
+        },
+        "bear": {
+          "entry": 568.94,
+          "target": 560.9,
+          "stop": 571.0,
+          "upside": 8.04,
+          "risk": 2.06,
+          "ratio": "3.9:1",
+          "note": "AHH rejection 568.94 \u2192 target PDL 560.90. Stop above 571. Primary if 15m OB flush doesn't find support at ORB L."
+        }
+      },
+      "manipulation4H": {
+        "risk": "MEDIUM",
+        "variant": "B",
+        "sweepDirection": "DOWN",
+        "sweepTarget": 566.05,
+        "sweepNote": "15m extreme OB (85+) + 4H bull cross Day 2 + ORB L 566.05 within $2.74 of AH 568.79. Variant B: Monday morning flush sweeps ORB L 566.05 / AHL 566.67 before real move. If DTF flips during the flush (gap drops below 5), the post-flush bounce becomes a high-conviction call.",
+        "entryTrigger": "2m bull cross after ORB L 566.05 holds. Watch DTF gap at EOD Monday \u2014 if gap <5 confirms, hold position for swing. If PDL 560.90 swept, wait for 2m bull cross there instead.",
+        "realMove": "CALL to ORB H 576.00 \u2192 PMH 577.74 (near-term). Swing to WORBL 579.22 \u2192 FVG 602.02 if DTF confirms bull cross this week."
+      },
+      "swingEntry": {
+        "active": false,
+        "watchStatus": "DTF APPROACHING \u2014 monitor Monday",
+        "trigger": "DTF gap drops below 3 confirmed on Monday close + 4H gap widens past 12",
+        "entry": 566.05,
+        "targets": [
+          576.0,
+          579.22,
+          599.49,
+          602.02
+        ],
+        "stop": 557.01,
+        "timeframe": "3-5 days",
+        "note": "META is a SWING WATCH \u2014 not active yet. DTF gap=5.13, narrowing at ~4-5 pts/day. If it crosses bull Monday, this becomes an active swing with WTF OS floor forming. WTF orange=-5.97 approaching 0 = weekly structure approaching Bucket 3 on weekly timeframe. $0.525 ex-div Monday is negligible. If DTF flips: entry on ORB L post-flush, target FVG 602.02 as swing terminus over 3-5 days."
+      }
+    },
+    {
+      "name": "MSFT",
+      "status": "active",
+      "open": 391.43,
+      "high": 391.74,
+      "low": 382.27,
+      "close": 390.74,
+      "ahPrice": 390.55,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        {
+          "tf": "15m",
+          "blue": 13.74,
+          "orange": 9.63,
+          "cross": "bull",
+          "location": "mid",
+          "dir": "up",
+          "note": "Bull cross near neutral. Recovering. End-of-day/AH quiet. No OB risk Monday morning."
+        },
+        {
+          "tf": "1H",
+          "blue": 38.65,
+          "orange": 31.42,
+          "cross": "bull",
+          "location": "mid",
+          "dir": "up",
+          "note": "Bull cross, gap=7.23. Blue=38.65 \u2014 ONE POINT from OB threshold (+40). Will likely cross into OB on first push Monday. Monitor for 1H OB flush-first protocol."
+        },
+        {
+          "tf": "4H",
+          "blue": -27.96,
+          "orange": -34.53,
+          "cross": "bull",
+          "location": "os",
+          "dir": "up",
+          "note": "Bull cross building from extreme OS. Gap=6.57. Day 2+, consistent and widening. 4H structure improving despite price weakness.",
+          "crossBehavior": {
+            "firedDate": "2026-06-11",
+            "day": 2,
+            "tested": true,
+            "testResponse": "HELD \u2014 Friday intraday range 382.27 to 391.74 ($9.47 range, started near LOD then recovered). 4H bull cross held and widened throughout (gap moved from 7.16 to 6.57 \u2014 still bull, building). Cross was not broken despite price at the week lows.",
+            "verdict": "STRENGTH. Cross held through the lowest price of the week. Gap widening confirms build.",
+            "strength": "confirmed"
+          }
+        },
+        {
+          "tf": "DTF",
+          "blue": -81.8,
+          "orange": -76.55,
+          "cross": "bear",
+          "location": "oversold",
+          "dir": "up",
+          "gapFlag": "DTF APPROACHING FLAG \u2014 gap=5.25 (was 10.82 June 11, 16.32 June 10). Narrowing ~5 pts/day. Similar pace to META. Could flip Monday. Watch DTF gap at Monday EOD \u2014 if <5, flag fires."
+        },
+        {
+          "tf": "WTF",
+          "blue": 19.43,
+          "orange": 36.51,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down",
+          "weeklyCandle": "O=414.14 H=417.16 L=382.27 C=390.74. Down -6.22% \u2014 worst weekly of MAG7. Bear cross mid-range (blue=19.43 heading toward OS, orange=36.51 still mid). NOT in OS yet \u2014 2-3 more weeks of weekly selling pressure before WTF floor. Weekly candle was a hammer-type (long wick 382\u2192391 recovery) but closed red. No WTF floor forming yet."
+        }
+      ],
+      "levels": {
+        "pdh": 391.74,
+        "pdl": 382.27,
+        "orbH": 391.74,
+        "orbL": 382.52,
+        "ahh": null,
+        "ahl": 390.48,
+        "pmh": 394.43,
+        "pml": 390.6,
+        "worbh": 417.16,
+        "worbl": 408.56,
+        "fvg1": 406.97,
+        "fvg2": 423.46,
+        "fvg3": 427.15,
+        "fvg4": 453.73,
+        "ref_5_25_worbh": 419.78,
+        "lvl_414": 414.1,
+        "lvl_400": 400.61,
+        "lvl_395": 395.19,
+        "lvl_392": 392.83
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "put",
+          "setupType": "pm-high-rejection",
+          "sequence": "Monitor Monday open. If MSFT gaps toward PM High 394.43 and rejects on 2m (Variant B sweep plays out) \u2192 PUT entry. DTF bear dominant, WORBL $18 away, WTF mid-range bear. Best-R:R setup on board at 7.6:1.",
+          "entryZone": {
+            "low": 393.5,
+            "high": 394.43
+          },
+          "trigger": 394.43,
+          "invalidation": {
+            "preEntry": 395.5,
+            "postEntry": 395.5
+          },
+          "targets": [
+            391.74,
+            389.53,
+            386.14,
+            382.52
+          ],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 3,
+          "suggestedSize": 1500,
+          "slot": 2,
+          "tier": "primary-bear",
+          "notes": "Primary setup. Sweep up to PM High \u2192 rejection \u2192 put. Clean R:R. 1H approaching OB adds to flush thesis. FOMC: take profits before 2 PM."
+        },
+        {
+          "leg": 2,
+          "direction": "call",
+          "setupType": "dtf-flag-conditional",
+          "sequence": "CONDITIONAL ONLY. If DTF gap confirmed <3 Monday + 4H gap widens past 10 + PM High 394.43 holds as support on 2m \u2014 call entry targeting FVG 406.97.",
+          "entryZone": {
+            "low": 393.0,
+            "high": 394.43
+          },
+          "trigger": 394.43,
+          "invalidation": {
+            "preEntry": 391.74,
+            "postEntry": 391.74
+          },
+          "targets": [
+            400.61,
+            406.97,
+            408.56
+          ],
+          "qualityGates": {
+            "smiAlignment": false,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 1,
+          "suggestedSize": 750,
+          "slot": 3,
+          "tier": "conditional-bull",
+          "notes": "Low conviction without DTF flip. Size 50% of normal. FOMC: close before 2 PM."
+        }
+      ],
+      "tomorrowOpenPreview": "1H blue=38.65, one point from OB threshold \u2014 will likely cross into OB on first push Monday. 1H OB flush-first protocol may apply: do not buy at open, wait for 1H reset. 4H Day 2+ bull cross building. DTF gap=5.25 approaching flag \u2014 same pace as META. If DTF flips Monday, MSFT structure improves materially. WORBL 408.56 is $18 away \u2014 not in play Monday. PM Low 390.60 = AH ($390.55) is resting AT PM Low. FOMC Monday: no overnight holds, reduced conviction all week.",
+      "orbContinuationProbability": "25% upside. 1H approaching OB = flush risk at open. DTF bear cross extreme. WORBL $18 away = no breakout scenario. ORB only meaningful if MSFT gaps above PM High 394.43 and holds \u2014 that would signal strength, but DTF says fade it. Skip ORB Monday. Wait for structure setup.",
+      "rr": {
+        "bull": {
+          "entry": 391.74,
+          "target": 400.61,
+          "stop": 389.53,
+          "upside": 8.87,
+          "risk": 2.21,
+          "ratio": "4.0:1",
+          "note": "Only valid if DTF gap drops to <3 Monday and 4H gap widens past 10. High-condition trade \u2014 not automatic."
+        },
+        "bear": {
+          "entry": 394.43,
+          "target": 382.52,
+          "stop": 396.0,
+          "upside": 11.91,
+          "risk": 1.57,
+          "ratio": "7.6:1",
+          "note": "PM High rejection. DTF bear dominant. Strongest R:R on the board if PM High sweep plays out Monday."
+        }
+      },
+      "manipulation4H": {
+        "risk": "MEDIUM",
+        "variant": "B",
+        "sweepDirection": "UP",
+        "sweepTarget": 394.43,
+        "sweepNote": "4H bull cross Day 2+ + PM High 394.43 ($3.88 above AH) + ORB H 391.74 ($1.19 above AH) \u2014 both within $5. Classic Variant B upside sweep: Monday morning push to ORB H/PM High to run sell stops before real move. AH sitting AT PM Low 390.60 = compressed and coiled into Monday open.",
+        "entryTrigger": "Wait for PM High 394.43 test. 2m BEAR cross after PM High rejection = PUT entry (DTF bear dominant). 2m BULL cross if PM High holds with volume = CALL entry (only if DTF gap <3 confirms Monday). Do NOT enter at open \u2014 1H approaching OB adds flush risk.",
+        "realMove": "PUT if PM High rejection: target ORB L 382.52 / PDL 382.27. CALL if PM High holds AND DTF confirms: target FVG 406.97 \u2192 WORBL 408.56."
+      },
+      "swingEntry": {
+        "active": false,
+        "note": "No swing. WTF mid-range bear (blue=19.43, 2-3 weeks from OS floor). WORBL 408.56 is $18 away. Swing watch trigger: DTF flips bull + WTF blue approaches OS (-40) + 4H gap widens past 15. Not this week."
+      }
+    },
+    {
+      "name": "NVDA",
+      "status": "active",
+      "open": 204.86,
+      "high": 207.07,
+      "low": 203.44,
+      "close": 205.19,
+      "ahPrice": 205.42,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        {
+          "tf": "15m",
+          "blue": 58.46,
+          "orange": 51.5,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up",
+          "note": "OB \u2014 BOTH lines above +40 (blue=58, orange=51). Flush-first Monday. Not as extreme as META (85+) but both solidly in OB."
+        },
+        {
+          "tf": "1H",
+          "blue": -6.31,
+          "orange": -7.01,
+          "cross": "bull",
+          "location": "mid",
+          "dir": "up",
+          "note": "Bull cross near neutral. Gap=0.70 \u2014 very thin. Just crossed zero-line. Rising."
+        },
+        {
+          "tf": "4H",
+          "blue": 39.01,
+          "orange": 26.92,
+          "cross": "bull",
+          "location": "mid",
+          "dir": "up",
+          "note": "Bull cross DAY 2 \u2014 fired Thursday, rejected off 21 EMA on Friday then recovered. Gap=12.09 widening. Blue=39.01 approaching OB (+40). Cross held and building \u2014 same maturity as GOOGL.",
+          "crossBehavior": {
+            "firedDate": "2026-06-12",
+            "day": 2,
+            "tested": true,
+            "testResponse": "HELD \u2014 rejected off 21 EMA on Friday, recovered by close/AH.",
+            "verdict": "STRENGTH. Cross was tested at 21 EMA and held. Proven on Day 2.",
+            "strength": "confirmed"
+          }
+        },
+        {
+          "tf": "DTF",
+          "blue": -67.75,
+          "orange": -65.05,
+          "cross": "bear",
+          "location": "oversold",
+          "dir": "up",
+          "gapFlag": "DTF FLAG FIRING \u2014 gap=2.70 (was 5.65 June 11, 8.49 June 10). Already BELOW the 5-point threshold. DTF bull cross is imminent \u2014 could fire Monday. If it fires: NVDA becomes confirmed Bucket 3."
+        },
+        {
+          "tf": "WTF",
+          "blue": 19.89,
+          "orange": 32.39,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down",
+          "weeklyCandle": "O=210.18 H=211.40 L=199.34 C=205.19. Weekly down. Scary intraweek low to 199.34 but recovered to 205. Weekly close essentially same as prior week close (205.10 \u2192 205.19) = consolidation at support. WTF blue=19.89 declining from OB (was 49.92 two weeks ago). Bear cross but NOT in OS \u2014 still mid-range. Less bearish than AAPL/META/MSFT on weekly."
+        }
+      ],
+      "levels": {
+        "pdh": 207.07,
+        "pdl": 203.44,
+        "orbH": 206.23,
+        "orbL": 203.45,
+        "ahh": 205.63,
+        "ahl": 205.05,
+        "pmh": 206.63,
+        "pml": 203.91,
+        "worbh": 210.47,
+        "worbl": 206.0,
+        "lworbl": 215.76,
+        "fvg1": 212.05,
+        "fvg2": 213.77,
+        "fvg3": 219.27,
+        "fvg4": 222.37,
+        "lvl_208": 208.45,
+        "lvl_204": 204.85,
+        "lvl_200": 200.5,
+        "lvl_197": 197.24
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "bucket3-loading",
+          "sequence": "Primary setup. 15m OB flush first \u2192 WORBL 206.00 post-flush hold \u2192 2m bull cross \u2192 CALL. DTF flag firing makes this the most actionable Bucket 3 loading setup on the board today alongside GOOGL.",
+          "entryZone": {
+            "low": 205.5,
+            "high": 206.0
+          },
+          "trigger": 206.0,
+          "invalidation": {
+            "preEntry": 204.85,
+            "postEntry": 204.48
+          },
+          "targets": [
+            207.07,
+            210.47,
+            212.05
+          ],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 4,
+          "suggestedSize": 2000,
+          "slot": 1,
+          "tier": "primary-bull",
+          "notes": "Highest conviction call on board alongside GOOGL if DTF cross fires Monday. 4H Day 2 (fired Thu, held Fri rejection off 21 EMA, recovered) = proven cross. WORBL hold post-flush is the gate. FOMC: take T1 at PDH 207.07, trail stop to entry for T2/T3. No hold through 2 PM."
+        },
+        {
+          "leg": 2,
+          "direction": "put",
+          "setupType": "pm-high-rejection",
+          "sequence": "If PM High 206.63 sweep happens and 2m rejects = PUT. Only if WORBL doesn't hold clean after flush.",
+          "entryZone": {
+            "low": 206.2,
+            "high": 206.63
+          },
+          "trigger": 206.63,
+          "invalidation": {
+            "preEntry": 207.1,
+            "postEntry": 207.1
+          },
+          "targets": [
+            205.05,
+            203.91,
+            203.45
+          ],
+          "qualityGates": {
+            "smiAlignment": false,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 2,
+          "suggestedSize": 1000,
+          "slot": 3,
+          "tier": "secondary-bear",
+          "notes": "Lower conviction given DTF approaching flip. Only if WORBL clearly breaks and PM High is clean rejection."
+        }
+      ],
+      "tomorrowOpenPreview": "AH 205.42 is $0.58 BELOW WORBL 206.00 \u2014 coiled just under the gate. 15m OB (both lines above +40) = flush-first Monday. DTF gap=2.70, FLAG FIRING \u2014 could cross bull during Monday session. 4H Day 2 bull cross (fired Thursday, rejected 21 EMA Friday, recovered \u2014 proven cross). 1H thin bull cross near neutral. Same 4H maturity as GOOGL. FOMC: no overnight holds.",
+      "orbContinuationProbability": "55% upside (conditional). DTF flag firing changes probability significantly \u2014 if DTF confirms bull cross during Monday session, ORB continuation upgrades to HIGH. Base case without DTF: 35% (15m OB flush offsets bias). Key gating question at 8:30am: is NVDA premarket above or below WORBL 206.00?",
+      "rr": {
+        "bull": {
+          "entry": 206.0,
+          "target": 210.47,
+          "stop": 204.85,
+          "upside": 4.47,
+          "risk": 1.15,
+          "ratio": "3.9:1",
+          "note": "WORBL hold post-flush. Target WORBH 210.47. Stop below AHL 204.85. Upgrades to 5:1+ if DTF confirms and target extends to FVG 212.05."
+        },
+        "bear": {
+          "entry": 206.63,
+          "target": 203.45,
+          "stop": 207.5,
+          "upside": 3.18,
+          "risk": 0.87,
+          "ratio": "3.7:1",
+          "note": "PM High rejection. DTF approaching flip limits conviction on puts. Only if WORBL 206.00 breaks clean on 2m."
+        }
+      },
+      "manipulation4H": {
+        "risk": "MEDIUM",
+        "variant": "B",
+        "sweepDirection": "UP",
+        "sweepTarget": 206.63,
+        "sweepNote": "4H bull cross DAY 1 + 15m both in OB + 5 levels within $1.65 of AH (WORBL 206.00/$0.58, ORB H 206.23/$0.81, PDH 207.07/$1.65, PM High 206.63/$1.21). Classic Variant B: AH coiled $0.58 below WORBL. Monday will push up through WORBL, ORB H, toward PM High 206.63 before real move is revealed. Do NOT buy at open \u2014 flush first from 15m OB.",
+        "entryTrigger": "Wait for 15m OB flush first (to AHL 205.05 / PM Low 203.91 zone). Then: 2m bull cross after WORBL 206.00 holds on retest = CALL entry (Bucket 3 loading if DTF fires). If PM High 206.63 rejects on 2m bear = PUT entry.",
+        "realMove": "CALL to WORBH 210.47 \u2192 FVG 212.05 (if DTF confirms bull cross Monday). PUT on PM High rejection \u2192 PM Low 203.91 \u2192 ORB L 203.45."
+      },
+      "swingEntry": {
+        "active": false,
+        "note": "Not yet \u2014 no swing while DTF unconfirmed. If DTF fires Monday and 4H clears OB: intraday runner only. Swing watch once DTF widens past 10 + weekly consolidation confirmed."
+      }
+    },
+    {
+      "name": "TSLA",
+      "status": "active",
+      "open": 399.49,
+      "high": 406.68,
+      "low": 386.76,
+      "close": 406.43,
+      "ahPrice": 406.13,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        {
+          "tf": "15m",
+          "blue": 15.44,
+          "orange": 16.3,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down",
+          "note": "AH bear cross formed \u2014 both lines drifting down from intraday peak. Neutral territory. End-of-day reset from the intraday OB run. This is a healthy pullback, not a reversal signal."
+        },
+        {
+          "tf": "1H",
+          "blue": 81.19,
+          "orange": 75.62,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up",
+          "note": "EXTREME OB. Both lines above +75. Highest 1H reading on the board. Peaked late session and still rising into AH. Flush-first Monday is mandatory. Do not buy open."
+        },
+        {
+          "tf": "4H",
+          "blue": 61.09,
+          "orange": 44.08,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up",
+          "note": "Bull cross in OB territory, gap=17.01 and widening. Most mature OB 4H cross on the board.",
+          "crossBehavior": {
+            "firedDate": "2026-06-11",
+            "day": 2,
+            "tested": true,
+            "testResponse": "HELD MULTIPLE TIMES \u2014 most battle-tested cross on the board. Test 1 (June 12 first 4H bar): $15 intraday flush from 403 to 388.60 \u2014 cross held (blue=24.46 > orange=10.19). Test 2 (June 12 second 4H bar): new LOD 386.76, then $20 rip to 406.66 \u2014 cross not only held but accelerated (blue=43.96 > orange=27.07). Two massive stress tests in one day. Cross widened through both.",
+            "verdict": "MAXIMUM STRENGTH. Survived a $15 flush and a $20 range day without breaking. This cross is fully proven.",
+            "strength": "confirmed"
+          }
+        },
+        {
+          "tf": "DTF",
+          "blue": -43.09,
+          "orange": -49.04,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up",
+          "gapFlag": "DTF BULL CROSS FIRED TODAY \u2014 June 12 Day 1. Gap was -3.04 June 11 (flag was active). Today's +1.82% close confirmed the flip. Blue=-43.09 > orange=-49.04, gap=+5.95. This is the DTF cross that was telegraphed last night. Now confirmed Day 1."
+        },
+        {
+          "tf": "WTF",
+          "blue": 29.08,
+          "orange": 35.0,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down",
+          "weeklyCandle": "O=396.33 H=418.50 L=380.15 C=406.43. UP +$15.43 / +3.95% \u2014 ONLY green week of major names. WORBH tested (hit 418.50 intraday, closed below). WTF bear cross but blue=29 NOT in OS \u2014 weekly price held and closed green despite WTF bear. SpaceX IPO + merger narrative is overriding the weekly SMI bearishness. Less concerning than AAPL/META/MSFT WTF which had massive red weeks."
+        }
+      ],
+      "levels": {
+        "pdh": 406.68,
+        "pdl": 386.76,
+        "ahh": 407.5,
+        "ahl": 405.0,
+        "orbH": 404.29,
+        "orbL": 396.15,
+        "pmh": 404.34,
+        "pml": 396.64,
+        "worbh": 412.94,
+        "worbl": 394.72,
+        "lworbh1": 434.15,
+        "lworbh2": 429.51,
+        "lworbl1": 423.2,
+        "lworbl2": 415.37,
+        "fvg1": 413.31,
+        "fvg2": 375.06,
+        "lvl_403": 403.51,
+        "lvl_402": 402.89,
+        "lvl_399": 399.24,
+        "lvl_394": 394.3,
+        "lvl_392": 392.83
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "dtf-day1-bucket3",
+          "sequence": "TSLA is #1 name Monday. DTF Day 1 bull cross confirmed. 4H OB and battle-tested. Buy the flush. Wait for 1H OB burn-off \u2192 $404 zone hold \u2192 2m bull cross \u2192 CALL entry.",
+          "entryZone": {
+            "low": 403.5,
+            "high": 404.34
+          },
+          "trigger": 404.29,
+          "invalidation": {
+            "preEntry": 401.69,
+            "postEntry": 401.69
+          },
+          "targets": [
+            407.5,
+            410.04,
+            412.94,
+            415.37
+          ],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 5,
+          "suggestedSize": 2500,
+          "slot": 1,
+          "tier": "primary-bull",
+          "notes": "#1 ranked name. DTF Day 1 + proven 4H cross + DTF cross confirmed from telegraphed setup. Full size. FOMC: take T1 at AHH 407.50, T2 at 410.04, T3 at WORBH 412.94. Close everything before 2 PM."
+        }
+      ],
+      "tomorrowOpenPreview": "1H extreme OB (81.19/75.62) = flush-first protocol mandatory. Do not buy the open. 15m AH bear cross at neutral = confirming the reset is beginning over weekend. DTF bull cross Day 1 (fired today \u2014 gap was -3.04 June 11, confirmed flip to +5.95 June 12). 4H OB cross most proven on board. AH 406.13 is $6.80 ABOVE WORBL 394.72 \u2014 well-positioned. Flush target: PM High 404.34 / ORB H 404.29 area (the $404 zone). After flush + 1H resets from OB: CALL to WORBH 412.94. FOMC Monday: no overnight hold.",
+      "orbContinuationProbability": "60% upside continuation after flush. DTF Day 1 + 4H OB proven = highest probability on board. But 1H extreme OB guarantees flush first. Skip the ORB at open. Buy the flush to the $404 zone, not the gap.",
+      "rr": {
+        "bull": {
+          "entry": 404.29,
+          "target": 412.94,
+          "stop": 402.0,
+          "upside": 8.65,
+          "risk": 2.29,
+          "ratio": "3.8:1",
+          "note": "Post-flush ORB H / PM High zone entry. Target WORBH 412.94. Stop below 402. If WORBH clears clean: extend to FVG 413.31 \u2192 LWORBL 415.37."
+        },
+        "bear": {
+          "entry": 407.5,
+          "target": 399.24,
+          "stop": 409.0,
+          "upside": 8.26,
+          "risk": 1.5,
+          "ratio": "5.5:1",
+          "note": "AHH rejection at 407.50. Only if flush goes further than expected and $404 zone breaks. Low probability given DTF Day 1."
+        }
+      },
+      "manipulation4H": {
+        "risk": "LOW",
+        "variant": "none",
+        "sweepDirection": "DOWN",
+        "sweepTarget": 404.29,
+        "sweepNote": "4H OB cross + 1H extreme OB = OB exhaustion flush, not a traditional Variant B stop sweep. The 15m AH bear cross confirms the reset is starting. Monday will open near AH levels (~406) and flush toward ORB H 404.29 / PM High 404.34 as the 1H burns off the extreme OB reading. This is the controlled pullback, not a manipulation sweep. The $404 zone is the buy zone.",
+        "entryTrigger": "15m OB flush to $404 zone (ORB H 404.29 / PM High 404.34). Wait for 2m bull cross after $404 holds. Do NOT buy the open \u2014 1H extreme OB (81.19) will dump the first 30-60 minutes.",
+        "realMove": "CALL to WORBH 412.94 after flush. If WORBH breaks clean: extend to FVG 413.31 \u2192 LWORBL 415.37. DTF Day 1 supports multi-target runner."
+      },
+      "swingEntry": {
+        "active": false,
+        "note": "Not a swing while FOMC is Monday-Tuesday. After FOMC: if DTF gap widens past 15 and WTF blue approaches 20 (OS floor forming), reassess. SpaceX merger narrative = potential multi-week swing candidate post-FOMC."
+      }
+    },
+    {
+      "name": "SPY",
+      "status": "context",
+      "open": 740.71,
+      "high": 744.44,
+      "low": 735.03,
+      "close": 741.75,
+      "ahPrice": 742.36,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        {
+          "tf": "15m",
+          "blue": 37.6,
+          "orange": 32.91,
+          "cross": "bull",
+          "location": "neutral",
+          "dir": "up"
+        },
+        {
+          "tf": "1H",
+          "blue": 42.38,
+          "orange": 41.15,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up",
+          "peakContext": "peaked ~60+ midday, reset to 42.38 = mid-reset. Not a fresh OS cross. Flush-first risk Monday."
+        },
+        {
+          "tf": "4H",
+          "blue": 67.98,
+          "orange": 57.03,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up",
+          "crossBehavior": {
+            "firedDate": "2026-06-11",
+            "day": 2,
+            "tested": false,
+            "testResponse": "No rejection test \u2014 cross fired overnight and accelerated straight into OB (67.98/57.03). Intraday low 735.03 did not stress the cross. Different context: OB origin means the tracking question shifts from held/failed to when OB exhausts.",
+            "verdict": "ACCELERATING \u2014 no test needed to read. OB cross in continuation mode. Watch for OB rollover signal, not rejection hold.",
+            "strength": "accelerating"
+          }
+        },
+        {
+          "tf": "DTF",
+          "blue": -29.39,
+          "orange": -30.52,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up",
+          "gapFlag": "DTF GAP COMPRESSION \u2014 gap=1.13, cross fired Friday. Extremely fresh. Same day-1 pattern as TSLA June 12."
+        },
+        {
+          "tf": "WTF",
+          "blue": 76.73,
+          "orange": 80.97,
+          "cross": "bear",
+          "location": "overbought",
+          "dir": "down",
+          "weeklyCandle": "O=743.36 H=746.90 L=722.59 C=741.75. Red week, closed below open. Long lower wick = buyers absorbed the flush. WTF OB bear cross = weekly ceiling. Peaked 91.34 two weeks ago, now 76.73 and rolling."
+        }
+      ],
+      "levels": {
+        "pdh": 744.44,
+        "pdl": 735.03,
+        "orbH": 740.8,
+        "orbL": 735.78,
+        "ahh": 742.72,
+        "ahl": 741.55,
+        "pmh": 743.35,
+        "pml": 738.12,
+        "worbh": 745.34,
+        "worbl": 738.19,
+        "lworbh": 0.0,
+        "lworbl": 0.0,
+        "fvg1": 748.5,
+        "fvg2": 722.59
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "macro-context",
+          "sequence": "DTF day-1 bull cross. 1H OB at open = flush-first. Wait for 1H reset to 40-45 range. Entry on WORBH 745.34 reclaim after 1H reset confirmed. Target FVG 748.50. FOMC week: take partials at first target, no holds overnight.",
+          "entryZone": {
+            "low": 744.44,
+            "high": 745.34
+          },
+          "trigger": 745.34,
+          "invalidation": {
+            "preEntry": 743.35,
+            "postEntry": 743.35
+          },
+          "targets": [
+            748.5,
+            751.0
+          ],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 3,
+          "suggestedSize": 0,
+          "slot": null,
+          "tier": "context-only",
+          "premarket": {
+            "validates": "1H OB reset confirmed (15m bear cross to 38-40), SPY holding above 743, WORBH test sets up clean",
+            "invalidates": "1H never resets \u2014 stays above 42 and rips = skip entry, watch from sidelines. FOMC premarket weakness = stand down."
+          },
+          "notes": "Context only. SPY not traded directly. Bull scenario: flush-first to 741-742, 1H resets, then WORBH 745.34 reclaim entry for mag7 calls."
+        },
+        {
+          "leg": 2,
+          "direction": "put",
+          "setupType": "macro-context",
+          "sequence": "1H OB at open \u2014 if 15m bear cross fires immediately and WORBL 738.19 approached, PUT setups in names with DTF CAUTION (META, MSFT). WTF OB bear cross validates weekly selling pressure.",
+          "entryZone": {
+            "low": 738.19,
+            "high": 742.0
+          },
+          "trigger": 738.19,
+          "invalidation": {
+            "preEntry": 742.72,
+            "postEntry": 742.0
+          },
+          "targets": [
+            735.03,
+            730.0
+          ],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 2,
+          "suggestedSize": 0,
+          "slot": null,
+          "tier": "context-only",
+          "premarket": {
+            "validates": "WORBL 738.19 approached premarket, multiple names show 1H OB flush, WTF bear cross alignment",
+            "invalidates": "SPY holds above 742 all premarket, names reset cleanly to 40-45 1H without breaking WORBL"
+          },
+          "notes": "WTF OB bear cross is new Friday EOD finding. First time we have weekly context. Bear scenario requires WORBL failure \u2014 otherwise flush is buyable after 1H reset."
+        }
+      ],
+      "tomorrowOpenPreview": "DTF fresh bull cross (1.13 gap, day 1) supports Monday continuation. BUT: 1H will open OB (42.38 Friday close) \u2014 board-wide OB scan required premarket. Run flush-first protocol before any call entry. FOMC June 16-17 is the week's binary event. WORBH 745.34 is only $2.98 above AH close \u2014 likely tests WORBH at open. WTF OB bear cross = treat 745-748 zone as distribution, not breakout, until weekly resets. Bull gate: above WORBH 745.34 clean after 1H reset. Bear gate: WORBL 738.19 loss at 9:20.",
+      "orbContinuationProbability": "40%. DTF bull cross + 4H healthy OB = continuation bias. But 1H OB at open + FOMC event risk + WTF bear cross overhead = more likely a flush to 741-740 ORB zone first, THEN continuation. Clean upside break above WORBH 745.34 with 1H reset: 55% probable if no FOMC-related premarket weakness.",
+      "rr": {
+        "bull": {
+          "entry": 745.34,
+          "target": 748.5,
+          "stop": 743.35,
+          "upside": 3.16,
+          "risk": 1.99,
+          "ratio": "1.6:1",
+          "note": "WORBH reclaim entry. Target FVG 748.50. Stop below PMH 743.35."
+        },
+        "bear": {
+          "entry": 741.5,
+          "target": 738.19,
+          "stop": 743.35,
+          "upside": 3.31,
+          "risk": 1.85,
+          "ratio": "1.8:1",
+          "note": "1H OB reset entry near ORB H zone 741-742. Target WORBL 738.19. Stop above AHH 742.72."
+        }
+      },
+      "manipulation4H": {
+        "risk": "LOW",
+        "variant": "none",
+        "sweepDirection": "DOWN",
+        "sweepTarget": 741.55,
+        "sweepNote": "15m OB at close \u2192 flush-first to AHL 741.55 or ORB H 740.80 before any continuation",
+        "entryTrigger": "2m bull cross after AHL/ORB H holds \u2014 do not buy at open",
+        "realMove": "WORBH 745.34 if WORBL holds | WORBL 738.19 test if flush exceeds AHL"
+      },
+      "swingEntry": {
+        "active": false,
+        "note": "No swing. WTF OB bear cross rolling from 76.73 \u2192 overhead resistance. FOMC week compresses all conviction. DTF Day-1 gap=1.13 too thin. Revisit if DTF gap widens past 10."
+      }
+    }
+  ],
+  "mondayRankings": {
+    "date": "2026-06-16",
+    "fomc": "June 16-17 \u2014 Decision Tuesday June 17 at 2:00 PM ET. No overnight holds Mon or Tue. Close all positions before 2 PM Tuesday.",
+    "boardWideFlags": [
+      "FOMC June 16-17 \u2014 conviction reduced all week, no overnight holds",
+      "DTF flags firing on multiple names (TSLA confirmed, NVDA gap=2.70, MSFT gap=5.25, META gap=5.13)",
+      "3 failed 4H crosses this week (AAPL, AMZN failed; SPY thin) vs 4 confirmed (TSLA, GOOGL, NVDA, META, MSFT)",
+      "1H OB flush-first on TSLA (extreme), NVDA, META \u2014 do not buy opens on these names"
+    ],
+    "rankings": [
+      {
+        "rank": 1,
+        "name": "TSLA",
+        "bias": "CALL",
+        "conviction": "HIGH",
+        "setup": "Buy the $404 flush. DTF Day 1 confirmed (gap was -3.04 Thurs, fired Fri). 4H OB, most battle-tested cross on board (survived two $15+ stress tests). AH $6.80 above WORBL.",
+        "entry": "Post-flush $404 zone (ORB H 404.29 / PM High 404.34) + 2m bull cross",
+        "target": "WORBH 412.94 \u2192 FVG 413.31 \u2192 LWORBL 415.37",
+        "stop": 401.69,
+        "fomc_rule": "Take T1 at AHH 407.50, T2 at 410.04, T3 at WORBH 412.94. Close all before Tuesday 2 PM."
+      },
+      {
+        "rank": 2,
+        "name": "GOOGL",
+        "bias": "CALL",
+        "conviction": "HIGH",
+        "setup": "WORBL 360.53 hold post-flush. DTF accelerating (gap 1.74\u21928.0 in one day, Day 2). 4H Day 2 proven (survived $11 flush). AH at WORBL.",
+        "entry": "WORBL 360.53 hold + 2m bull cross after 15m OB flush to AHL 359.53",
+        "target": "WORBH 366.20 \u2192 368.27 \u2192 FVG 374.27",
+        "stop": 357.26,
+        "fomc_rule": "Active swing watch \u2014 hold through FOMC only if WORBL holds on FOMC day."
+      },
+      {
+        "rank": 3,
+        "name": "NVDA",
+        "bias": "CALL",
+        "conviction": "MEDIUM-HIGH",
+        "setup": "DTF flag firing (gap=2.70 \u2014 below 5 threshold). 4H Day 2 proven (21 EMA rejection held). AH $0.58 below WORBL 206.00. Post-flush WORBL hold = entry.",
+        "entry": "15m OB flush first \u2192 WORBL 206.00 hold + 2m bull cross",
+        "target": "PDH 207.07 \u2192 WORBH 210.47 \u2192 FVG 212.05 (if DTF confirms)",
+        "stop": 204.85,
+        "fomc_rule": "Take T1 at PDH 207.07, trail to entry for T2/T3. Close before Tuesday 2 PM."
+      },
+      {
+        "rank": 4,
+        "name": "MSFT",
+        "bias": "PUT",
+        "conviction": "MEDIUM",
+        "setup": "Variant B sweep UP to PM High 394.43 then rejection. DTF flag firing (gap=5.25). 4H Day 2 confirmed. Best R:R on board (7.6:1) if PM High rejects. WORBL $18 away.",
+        "entry": "PM High 394.43 sweep \u2192 2m bear cross rejection \u2192 PUT",
+        "target": "ORB L 382.52 \u2192 PDL 382.27",
+        "stop": 395.5,
+        "fomc_rule": "Take profits before Tuesday 2 PM. No size expansion on FOMC week."
+      },
+      {
+        "rank": 5,
+        "name": "META",
+        "bias": "WATCH",
+        "conviction": "LOW-MEDIUM",
+        "setup": "DTF approaching flag (gap=5.13). 4H Day 2 confirmed ($12 flush held). 15m EXTREME OB = flush mandatory. Ex-div $0.525 Monday. Watch DTF gap at Monday EOD \u2014 if <3, flip to call setup Tuesday.",
+        "entry": "POST-FLUSH ONLY: ORB L 566.05 hold + 2m bull cross (if DTF confirms flip)",
+        "target": "ORB H 576.00 \u2192 PM High 577.74",
+        "stop": 563.0,
+        "fomc_rule": "No position unless DTF confirms. If DTF flips: CALL Tuesday after FOMC."
+      },
+      {
+        "rank": 6,
+        "name": "AAPL",
+        "bias": "PUT",
+        "conviction": "MEDIUM",
+        "setup": "4H cross FAILED. DTF bear (gap=6.0 narrowing but unconfirmed). WORBL $10 away. Wait for bounce to ORB L 291.89-294.20 cluster, then PUT on failure.",
+        "entry": "Rally to ORB L 291.89-292.66 zone \u2192 2m bear cross \u2192 PUT",
+        "target": "PDL 289.62 \u2192 286-287 zone",
+        "stop": 293.15,
+        "fomc_rule": "PUT only. No calls without WORBL reclaim. FOMC = reduced size."
+      },
+      {
+        "rank": 7,
+        "name": "AMZN",
+        "bias": "WATCH",
+        "conviction": "LOW",
+        "setup": "4H cross FAILED twice. DTF Day 1 thin (gap=1.56 \u2014 most fragile on board). Wait for WORBL 243.36 test \u2014 that's the only meaningful level. PUT on rejection, CALL only if DTF widens past 5.",
+        "entry": "WORBL 243.36 test reaction determines direction",
+        "target": "WORBL hold \u2192 FVG 245.90 | WORBL reject \u2192 ORB L 235.48",
+        "stop": null,
+        "fomc_rule": "Skip if no WORBL test. Do not chase."
+      },
+      {
+        "rank": 8,
+        "name": "SPY",
+        "bias": "CONTEXT",
+        "conviction": "N/A",
+        "setup": "DTF Day 1 thin (gap=1.13). WTF OB bear rolling from 76.73. FOMC week = do not trade SPY directly. Use as market direction guide.",
+        "entry": "N/A \u2014 context only",
+        "target": "Bull gate: WORBH 745.34 after WORBL holds | Bear gate: WORBL 738.19 loss at 9:20",
+        "stop": null,
+        "fomc_rule": "SPY = direction read only. No SPY positions during FOMC week."
+      }
+    ]
+  }
+}
