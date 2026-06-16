@@ -63,10 +63,10 @@
     "notes": "Position 2 only if P1 profitable + $3+ room + 2m above +40 + separate setup. FOMC rule: ALL positions closed by 2:00 PM ET Tuesday June 17. No exceptions."
   },
   "rankings": [
-    "META",
-    "TSLA",
-    "NVDA",
     "GOOGL",
+    "NVDA",
+    "TSLA",
+    "META",
     "AMZN",
     "AAPL",
     "MSFT"
@@ -982,28 +982,17 @@
     "rankings": [
       {
         "rank": 1,
-        "name": "META",
+        "name": "GOOGL",
         "bias": "CALL",
         "conviction": "HIGH",
-        "setup": "DTF Day 1 fired (gap 5.79) \u2014 first bull cross after 5 consecutive bear bars. Biggest structural event of the session. 4H OB narrowing (12.09) is the risk. Entry from LWORBL $579.22 after morning dip.",
-        "entry": "LWORBL $579.22 hold + 2m bull cross after 1H bear cross reset",
-        "target": "ORB H $592.81 \u2192 WORBH $601.27 \u2192 FVG $613.60",
-        "stop": 575.0,
-        "fomc_rule": "Take T1 at ORB H $592.81, T2 at WORBH $601.27. Close before 2 PM Tuesday."
+        "setup": "DTF Day 3 (19.02 accelerating). 15m/1H fully reset into OS/mid = clean reload. Low $366.55 tested and held vs LWORBH $366.62 = textbook test-hold. 4H OB narrowing (4.94) = only risk \u2014 monitor during session.",
+        "entry": "WORBL $366.55/LWORBH $366.62 hold + 2m bull cross",
+        "target": "AHH $369.95 \u2192 ORB H $372.12 \u2192 WORBH $372.99 \u2192 2WLWORBL $373.58",
+        "stop": 364.5,
+        "fomc_rule": "Clean setup. Take T1 at AHH $369.95, trail for WORBH. Close before 2 PM Tuesday."
       },
       {
         "rank": 2,
-        "name": "TSLA",
-        "bias": "TWO-WAY",
-        "conviction": "HIGH",
-        "setup": "Leg 1: 4H bear cross just fired (gap -0.84), AH -$5.76 to $405.39. PUT on morning spike to LWORBH $412.94. Leg 2: DTF Day 2 (12.11), 15m extreme OS bull cross fired. CALL from flush zone $407-409 after Leg 1 or gap-down.",
-        "entry": "Leg 1 PUT: spike to $412-413 + 2m bear cross | Leg 2 CALL: AHL $408.50/WORBL $407.10 + 2m bull cross",
-        "target": "Leg 1: ORB L $408.99 \u2192 WORBL $407.10 | Leg 2: AHH $411.95 \u2192 LWORBH $412.94 \u2192 WORBH $416.00",
-        "stop": 414.5,
-        "fomc_rule": "If gap-down at open near $405-407, skip Leg 1 entirely \u2014 go straight to Leg 2 CALL. Close all before 2 PM Tuesday."
-      },
-      {
-        "rank": 3,
         "name": "NVDA",
         "bias": "CALL",
         "conviction": "HIGH",
@@ -1014,15 +1003,26 @@
         "fomc_rule": "Take T1 at WORBH $212.71, trail for T2/T3. Close before 2 PM Tuesday."
       },
       {
+        "rank": 3,
+        "name": "TSLA",
+        "bias": "TWO-WAY",
+        "conviction": "HIGH",
+        "setup": "Leg 1: 4H bear cross just fired (gap -0.84), AH -$5.76 to $405.39. PUT on morning spike to LWORBH $412.94. Leg 2: DTF Day 2 (12.11), 15m extreme OS bull cross fired. CALL from flush zone $407-409 after Leg 1 or gap-down.",
+        "entry": "Leg 1 PUT: spike to $412-413 + 2m bear cross | Leg 2 CALL: AHL $408.50/WORBL $407.10 + 2m bull cross",
+        "target": "Leg 1: ORB L $408.99 \u2192 WORBL $407.10 | Leg 2: AHH $411.95 \u2192 LWORBH $412.94 \u2192 WORBH $416.00",
+        "stop": 414.5,
+        "fomc_rule": "If gap-down at open near $405-407, skip Leg 1 entirely \u2014 go straight to Leg 2 CALL. Close all before 2 PM Tuesday."
+      },
+      {
         "rank": 4,
-        "name": "GOOGL",
+        "name": "META",
         "bias": "CALL",
         "conviction": "HIGH",
-        "setup": "DTF Day 3 (19.02 accelerating). 15m/1H fully reset into OS/mid = clean reload. Low $366.55 tested and held vs LWORBH $366.62 = textbook test-hold. 4H OB narrowing (4.94) = only risk \u2014 monitor during session.",
-        "entry": "WORBL $366.55/LWORBH $366.62 hold + 2m bull cross",
-        "target": "AHH $369.95 \u2192 ORB H $372.12 \u2192 WORBH $372.99 \u2192 2WLWORBL $373.58",
-        "stop": 364.5,
-        "fomc_rule": "Clean setup. Take T1 at AHH $369.95, trail for WORBH. Close before 2 PM Tuesday."
+        "setup": "DTF Day 1 fired (gap 5.79) \u2014 first bull cross after 5 consecutive bear bars. Biggest structural event of the session. 4H OB narrowing (12.09) is the risk. Entry from LWORBL $579.22 after morning dip.",
+        "entry": "LWORBL $579.22 hold + 2m bull cross after 1H bear cross reset",
+        "target": "ORB H $592.81 \u2192 WORBH $601.27 \u2192 FVG $613.60",
+        "stop": 575.0,
+        "fomc_rule": "Take T1 at ORB H $592.81, T2 at WORBH $601.27. Close before 2 PM Tuesday."
       },
       {
         "rank": 5,
