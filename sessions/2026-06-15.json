@@ -9,10 +9,10 @@
     "bonds": "10Y yield 4.47% (-0.22%). Rate cut odds unchanged. FOMC hold Wednesday widely expected.",
     "oil": "WTI $81.43 (-5%). XLE worst sector today. Oil weakness = tailwind for margin-sensitive tech names.",
     "fed": "FOMC rate decision Wednesday June 18 2:00 PM ET. Kevin Warsh first press conference. 4th consecutive hold expected. RULE: NO overnight holds Monday or Tuesday. Close ALL positions by 2:00 PM ET Tuesday June 17. Flat into FOMC.",
-    "catalyst": "Iran deal MoU = primary catalyst. MAG7 +1.16% (TSLA) to +4.67% (META). XLK +3.78%. VIX -8.37% to 16.20. Juneteenth Friday June 20 = market closed = 4-day trading week (Tue–Thu tradeable)."
+    "catalyst": "Iran deal MoU = primary catalyst. MAG7 +1.16% (TSLA) to +4.67% (META). XLK +3.78%. VIX -8.37% to 16.20. Juneteenth Friday June 20 = market closed = 4-day trading week (Tue-Thu tradeable)."
   },
   "worb": {
-    "note": "Set from Monday June 15 full session. Locked all week June 15–19.",
+    "note": "Set from Monday June 15 full session. Locked all week June 15-19.",
     "spy":  { "high": 756.68, "low": 751.76 },
     "aapl": { "high": 297.78, "low": 291.70 },
     "amzn": { "high": 247.81, "low": 244.73 },
@@ -27,7 +27,7 @@
     "bullThreshold": 756.68,
     "bearThreshold": 751.76,
     "bullScenario": "SPY at/above $756.68 at 9:20 = BULL day. Lead with GOOGL Slot 1 call, NVDA after flush, TSLA Leg 2 after flush. Max 3 trades.",
-    "mixedScenario": "SPY $751.76–756.68 at 9:20 = MIXED. Best single setup only. GOOGL call if WORBL $366.55 holding. Reduce to Slot 2 size.",
+    "mixedScenario": "SPY $751.76-756.68 at 9:20 = MIXED. Best single setup only. GOOGL call if WORBL $366.55 holding. Reduce to Slot 2 size.",
     "bearScenario": "SPY below $751.76 = BEAR (unlikely on Iran deal). TSLA Leg 1 put only. Slot 3 size ($1000). All other names stand down."
   },
   "sizing": {
@@ -37,6 +37,154 @@
     "walkAwayTarget": 800,
     "maxSimultaneousPositions": 1,
     "notes": "Position 2 only if P1 profitable + $3+ room + 2m above +40 + separate setup. FOMC rule: ALL positions closed by 2:00 PM ET Tuesday June 17. No exceptions."
+  },
+  "rankings": {
+    "generated": "2026-06-15",
+    "formula": "Room x Conviction = Rank Score",
+    "sessionDirection": "BULL — Iran deal MoU + risk-on rotation. Lead bull list at 9:20 if SPY above $756.68.",
+    "standbyBear": "TSLA Leg 1 put on morning spike only. All other names bull or off-list.",
+    "bull": [
+      {
+        "rank": 1,
+        "name": "META",
+        "direction": "call",
+        "setupType": "bull-reversal",
+        "slot": 2,
+        "entry": 582.00,
+        "primaryTarget": 592.81,
+        "room": 10.81,
+        "conviction": 3,
+        "rankScore": 32.43,
+        "keyLevel": "LWORBL $579.22",
+        "qualityScore": 3,
+        "rsRw": "RS vs SPY — strongest gainer today (+4.67% vs SPY +1.76%)",
+        "condition": "CONDITIONAL — 4H gap must hold above 6. If 4H crosses bear before entry, stand down.",
+        "note": "DTF Day 1 fired (gap 5.79). 5 prior bars all bear = major structural shift. 4H OB narrowing (12.09) is the only risk. Entry from LWORBL $579.22 on 2m bull cross."
+      },
+      {
+        "rank": 2,
+        "name": "TSLA",
+        "leg": 2,
+        "direction": "call",
+        "setupType": "bull-reversal",
+        "slot": 1,
+        "entry": 408.50,
+        "primaryTarget": 416.00,
+        "room": 7.50,
+        "conviction": 4,
+        "rankScore": 30.00,
+        "keyLevel": "WORBL $407.10 / AHL $408.50",
+        "qualityScore": 4,
+        "rsRw": "neutral vs SPY intraday",
+        "condition": "Requires Leg 1 flush to $407-409 OR gap-down open that completes flush naturally. AH $405.39 = flush may already be in progress.",
+        "note": "DTF Day 2 (12.11 widening). 15m extreme OS bull cross fired at close (gap 2.53). Structural long driver."
+      },
+      {
+        "rank": 3,
+        "name": "NVDA",
+        "direction": "call",
+        "setupType": "bull-reversal",
+        "slot": 1,
+        "entry": 210.50,
+        "primaryTarget": 216.10,
+        "room": 5.60,
+        "conviction": 4,
+        "rankScore": 22.40,
+        "keyLevel": "LWORBH $210.47",
+        "qualityScore": 4,
+        "rsRw": "slight RS vs SPY",
+        "condition": "FLUSH-FIRST mandatory. Do not buy the open. Entry only after flush to $210-211 area on 2m bull cross.",
+        "note": "DTF Day 1 (6.49). 4H both lines extreme OB (81/73) with narrowing gap = morning dip guaranteed."
+      },
+      {
+        "rank": 4,
+        "name": "GOOGL",
+        "direction": "call",
+        "setupType": "bull-continuation",
+        "slot": 1,
+        "entry": 367.50,
+        "primaryTarget": 372.99,
+        "room": 5.49,
+        "conviction": 4,
+        "rankScore": 21.96,
+        "keyLevel": "WORBL $366.55 / LWORBH $366.62",
+        "qualityScore": 4,
+        "rsRw": "RS vs SPY (+2.69%)",
+        "condition": "Monitor 4H gap (4.94 narrowing) during session. If 4H crosses bear, reduce immediately.",
+        "note": "DTF Day 3 (19.02 accelerating). 15m/1H fully reset into OS/mid. Highest structural conviction. No swing active."
+      },
+      {
+        "rank": 5,
+        "name": "AMZN",
+        "direction": "call",
+        "setupType": "bull-continuation",
+        "slot": 2,
+        "entry": 245.50,
+        "primaryTarget": 249.42,
+        "room": 3.92,
+        "conviction": 3,
+        "rankScore": 11.76,
+        "keyLevel": "WORBL $244.73",
+        "qualityScore": 3,
+        "rsRw": "RS vs SPY (+3.13%)",
+        "condition": "Wait for 15m/1H reset from extreme OB. Entry on reload, not at open.",
+        "note": "DTF Day 2 (9.58). 4H widening (16.45). AH $248.14 above WORBH = institutional buying extended hours."
+      },
+      {
+        "rank": 6,
+        "name": "AAPL",
+        "direction": "call",
+        "setupType": "bull-reversal",
+        "slot": null,
+        "entry": 292.50,
+        "primaryTarget": 297.78,
+        "room": 5.28,
+        "conviction": 2,
+        "rankScore": 10.56,
+        "keyLevel": "WORBL $291.70",
+        "qualityScore": 3,
+        "rsRw": "neutral vs SPY (+1.82%)",
+        "condition": "OFF-LIST — DTF must fire bull cross (gap 0.16 = imminent). Upgrade to Slot 3 call if DTF fires Tuesday.",
+        "note": "4H Day 1 OB = Variant B sweep risk below WORBL before real move. Wait for DTF first."
+      },
+      {
+        "rank": 7,
+        "name": "MSFT",
+        "direction": "call",
+        "setupType": "bull-reversal",
+        "slot": null,
+        "entry": 395.00,
+        "primaryTarget": 406.97,
+        "room": 11.97,
+        "conviction": 1,
+        "rankScore": 11.97,
+        "keyLevel": "PM Low $394.74 / WORBL $392.85",
+        "qualityScore": 3,
+        "rsRw": "RW vs SPY (1H bear declining all session despite +$9 move)",
+        "condition": "OFF-LIST — DTF gap (1.91) must widen past 5. Largest room of any name but lowest DTF conviction.",
+        "note": "Most conditional setup of the session. 4H OB narrowing (17.54). Activate only if DTF validates Tuesday."
+      }
+    ],
+    "bear": [
+      {
+        "rank": 1,
+        "name": "TSLA",
+        "leg": 1,
+        "direction": "put",
+        "setupType": "bear-reversal",
+        "slot": 2,
+        "entry": 412.50,
+        "primaryTarget": 407.10,
+        "room": 5.40,
+        "conviction": 3,
+        "rankScore": 16.20,
+        "keyLevel": "LWORBH $412.94 (spike rejection zone)",
+        "qualityScore": 3,
+        "rsRw": "RW vs SPY in AH (-1.40% AH on EU FSD regulatory claims)",
+        "condition": "Only valid on morning spike to $412-413. If gap-down at open — SKIP, go directly to Leg 2 call watch.",
+        "note": "4H just crossed bear (gap -0.84, fragile). AH -$5.76 to $405.39. Leg 1 is optional — Leg 2 call is the primary trade."
+      }
+    ]
   },
   "names": [
     {
@@ -48,7 +196,7 @@
       "close": 296.42,
       "ahPrice": 0,
       "swing": false,
-      "swingNote": "Off watch until DTF fires confirmed bull cross.",
+      "swingNote": "",
       "smi": [
         { "tf": "1H", "blue": 25.57, "orange": 35.43, "cross": "bear", "location": "mid", "dir": "down" },
         {
@@ -93,7 +241,7 @@
             "validates": "DTF crosses bull confirmed (gap widens past 1.0) at 8:45 + price holds above WORBL $291.70",
             "invalidates": "DTF stays bear or gap narrows back to zero | price breaks below $290.00 premarket"
           },
-          "notes": "OFF-LIST until DTF fires bull cross. Gap 0.16 = Day 1 likely Tuesday. 4H Day 1 OB = Variant B manipulation: expect sweep below WORBL $291.70 at 8am 4H candle BEFORE real move. Entry on 2m bull cross AFTER WORBL holds — not on the wick. If DTF fires and WORBL holds: upgrade to Slot 3 call, target WORBH $297.78."
+          "notes": "OFF-LIST until DTF fires bull cross. Gap 0.16 = Day 1 likely Tuesday. 4H Day 1 OB = Variant B manipulation: expect sweep below WORBL $291.70 at 8am 4H candle BEFORE real move. Entry on 2m bull cross AFTER WORBL holds. If DTF fires and WORBL holds: upgrade to Slot 3 call, target WORBH $297.78."
         }
       ],
       "manipulation4H": {
@@ -115,7 +263,7 @@
       "close": 246.02,
       "ahPrice": 248.14,
       "swing": false,
-      "swingNote": "Near activation: DTF Day 2 (gap 9.58 > 8 threshold). Need WORBL $244.73 to hold Tuesday for second day confirmation. Check again Tuesday EOD.",
+      "swingNote": "",
       "smi": [
         { "tf": "1H", "blue": 66.99, "orange": 63.12, "cross": "bull", "location": "overbought", "dir": "up" },
         {
@@ -158,9 +306,9 @@
           "tier": "primary-bull",
           "premarket": {
             "validates": "15m/1H reset from extreme OB overnight + WORBL $244.73 holds premarket + 4H gap still above 12 at 8:45",
-            "invalidates": "WORBL $244.73 breaks premarket | 4H gap narrows below 10 | AH reverses below $246.02 (close)"
+            "invalidates": "WORBL $244.73 breaks premarket | 4H gap narrows below 10 | AH reverses below $246.02"
           },
-          "notes": "DTF Day 2 (9.58 widening) + 4H widening (16.45) = structural bull. 15m/1H both at extreme OB at close = reset expected overnight. Entry only AFTER reset: wait for 15m to pull back to mid zone, then 2m bull cross confirms reload. AH $248.14 (above WORBH) shows institutional buying. Target sequence: ORB H $247.80 → LWORBH $249.42 → FVG $251.27. FOMC: close before 2 PM Tuesday."
+          "notes": "DTF Day 2 (9.58 widening) + 4H widening (16.45) = structural bull. 15m/1H at extreme OB at close = reset expected overnight. Entry only AFTER reset: wait for 15m to pull back to mid, then 2m bull cross. AH $248.14 above WORBH = institutional extended. Target: ORB H $247.80 → LWORBH $249.42 → FVG $251.27. FOMC close before 2 PM Tuesday."
         }
       ],
       "manipulation4H": {
@@ -181,8 +329,8 @@
       "low": 366.55,
       "close": 369.35,
       "ahPrice": 0,
-      "swing": true,
-      "swingNote": "ACTIVE. DTF Day 3 accelerating (gap 19.02 widening). Low $366.55 tested and held vs LWORBH $366.62 = textbook test-hold. Hard exit before 2:00 PM ET Tuesday June 17 (FOMC flat rule). Target WORBH $372.99 → 2WLWORBL $373.58. Stop $364.50.",
+      "swing": false,
+      "swingNote": "",
       "smi": [
         { "tf": "1H", "blue": 1.40, "orange": 15.36, "cross": "bear", "location": "mid", "dir": "down" },
         {
@@ -227,7 +375,7 @@
             "validates": "Price holds above LWORBH $366.62 premarket + 15m begins recovery from OS toward bull cross",
             "invalidates": "Price breaks below $365.00 premarket | 4H gap narrows to zero (bear cross fires)"
           },
-          "notes": "Highest conviction call of the session. DTF Day 3 (19.02 widening). 15m/1H reset completely into OS/mid = clean reload. 4H OB narrowing (4.94) = primary risk — monitor during session; if 4H crosses bear, reduce immediately. Swing active. If entry in $366.55-369 zone on 2m bull cross: target AHH $369.95 → ORB H $372.12 → WORBH $372.99 → 2WLWORBL $373.58. Hard exit before 2 PM Tuesday per FOMC rule."
+          "notes": "DTF Day 3 (19.02 accelerating). 15m/1H fully reset into OS/mid = clean reload. 4H OB narrowing (4.94) = key risk — if 4H crosses bear during session, reduce immediately. Low $366.55 held on LWORBH $366.62 = textbook test-hold. Target: AHH $369.95 → ORB H $372.12 → WORBH $372.99 → 2WLWORBL $373.58. FOMC close before 2 PM Tuesday."
         }
       ],
       "manipulation4H": {
@@ -235,7 +383,7 @@
         "variant": "none",
         "sweepDirection": "down",
         "sweepTarget": 366.55,
-        "sweepNote": "4H OB narrowing (4.94). Morning dip to WORBL $366.55/LWORBH $366.62 zone possible before continuation. Not extreme enough for formal Variant.",
+        "sweepNote": "4H OB narrowing (4.94). Morning dip to WORBL $366.55/LWORBH $366.62 zone possible before continuation.",
         "entryTrigger": "2m bull cross after WORBL $366.55 holds at 8am or 9:30 open",
         "realMove": "CALL to WORBH $372.99 → 2WLWORBL $373.58"
       }
@@ -249,7 +397,7 @@
       "close": 593.48,
       "ahPrice": 0,
       "swing": false,
-      "swingNote": "DTF Day 1 fired (gap 5.79). Watch for Day 2 confirmation. 4H OB narrowing (12.09) = bear cross risk. No overnight holds per FOMC rule.",
+      "swingNote": "",
       "smi": [
         { "tf": "1H", "blue": 19.64, "orange": 32.88, "cross": "bear", "location": "mid", "dir": "down" },
         {
@@ -291,10 +439,10 @@
           "slot": 2,
           "tier": "primary-bull",
           "premarket": {
-            "validates": "4H gap re-opens above 14 OR price holds LWORBL $579.22 premarket + 15m OS recovery confirmed",
-            "invalidates": "4H gap narrows below 6 or 4H crosses bear | price breaks below $576.00"
+            "validates": "4H gap holds above 6 at 8:45 + price holds LWORBL $579.22 + 15m OS recovery confirmed",
+            "invalidates": "4H gap narrows below 6 or crosses bear | price breaks below $576.00"
           },
-          "notes": "DTF Day 1 bull cross = biggest structural event today. 5 prior DTF bars all bear. 4H OB narrowing (12.09) = primary risk — if 4H flips bear, stand down immediately. 1H bear cross mid all session despite +$13 move = weak internal. Entry from LWORBL $579.22 support on 2m bull cross after any morning dip. Targets: ORB H $592.81 → LWORBH $592.00 → WORBH $601.27 → FVG $613.60. FOMC: close before 2 PM Tuesday."
+          "notes": "DTF Day 1 bull cross = major structural event (gap 5.79). 5 prior DTF bars all bear. 4H OB narrowing (12.09) = primary risk. 1H bear cross mid all session = weak internal. Entry from LWORBL $579.22 on 2m bull cross after morning dip. Targets: ORB H $592.81 → WORBH $601.27 → FVG $613.60. FOMC close before 2 PM Tuesday."
         }
       ],
       "manipulation4H": {
@@ -316,7 +464,7 @@
       "close": 399.76,
       "ahPrice": 0,
       "swing": false,
-      "swingNote": "Off watch. DTF Day 1 gap 1.91 = thinnest cross of all 8 names. Need gap > 5 to activate.",
+      "swingNote": "",
       "smi": [
         { "tf": "1H", "blue": 34.34, "orange": 41.71, "cross": "bear", "location": "mid", "dir": "down" },
         {
@@ -358,10 +506,10 @@
           "slot": null,
           "tier": "off-list",
           "premarket": {
-            "validates": "DTF gap widens past 5 confirmed at 8:45 + 4H gap narrates slower (still above 15) + WORBL $392.85 holds",
+            "validates": "DTF gap widens past 5 confirmed at 8:45 + 4H gap still above 15 + WORBL $392.85 holds",
             "invalidates": "DTF gap stays below 3 or closes back bear | price breaks below $391.00"
           },
-          "notes": "OFF-LIST until DTF validates. Gap 1.91 = thinnest of all 8 (META 5.79, AMZN 9.58, GOOGL 19.02). 4H OB Day 1 with gap already narrowing (17.54) = compressing pattern. 1H bear cross declining entire session despite $9 move = weak internals. Activation condition: DTF gap > 5 + 4H stops narrowing → upgrade to Slot 3 call, FVG $406.97 → LWORBL $408.56. FOMC: close before 2 PM Tuesday."
+          "notes": "OFF-LIST until DTF validates. Gap 1.91 = thinnest of all 8 (META 5.79, AMZN 9.58, GOOGL 19.02). 4H OB Day 1 with gap already narrowing (17.54). 1H bear cross declining entire session despite $9 move. Activation: DTF gap > 5 + 4H stops narrowing → upgrade to Slot 3. FVG $406.97 → LWORBL $408.56. FOMC close before 2 PM Tuesday."
         }
       ],
       "manipulation4H": {
@@ -383,7 +531,7 @@
       "close": 212.45,
       "ahPrice": 210.94,
       "swing": false,
-      "swingNote": "DTF Day 1 (gap 6.49). Watch for Day 2 widening Tuesday. FOMC Wednesday = no overnight holds.",
+      "swingNote": "",
       "smi": [
         { "tf": "1H", "blue": 62.68, "orange": 68.07, "cross": "bear", "location": "overbought", "dir": "down" },
         {
@@ -428,7 +576,7 @@
             "validates": "Morning flush completes to $210-211 area + 15m OS bull cross fires + 2m bull cross confirms at LWORBH $210.47 or ORB H $211.33",
             "invalidates": "AH bleeds below WORBL $208.34 overnight | flush goes below $207.50 without bull cross recovery"
           },
-          "notes": "DTF Day 1 (6.49 widening). 4H BOTH lines extreme OB (81.48/73.04) with narrowing gap = flush-first mandatory. DO NOT buy the open. AH $210.94 already below close ($212.45) = flush may already be starting. Wait for morning dip to LWORBH $210.47/ORB H $211.33 zone, then 2m bull cross. 15m closed recovering from extreme OS (widening gap 12.81) = ready to reload post-flush. AH weakness from $20B bond dilution is manageable. Target: WORBH $212.71 → $213.77 → FVG $216.10. FOMC: close before 2 PM Tuesday."
+          "notes": "DTF Day 1 (6.49 widening). 4H BOTH lines extreme OB (81.48/73.04) with narrowing gap = flush-first mandatory. DO NOT buy the open. AH $210.94 already below close ($212.45) = flush may already be starting. Wait for morning dip to LWORBH $210.47/ORB H $211.33 on 2m bull cross. 15m closed from extreme OS with widening gap (12.81) = ready to reload post-flush. Target: WORBH $212.71 → $213.77 → FVG $216.10. FOMC close before 2 PM Tuesday."
         }
       ],
       "manipulation4H": {
@@ -450,7 +598,7 @@
       "close": 411.15,
       "ahPrice": 405.39,
       "swing": false,
-      "swingNote": "DTF Day 2 (12.11 widening). Two-way day trade only. FOMC Wednesday = no overnight holds.",
+      "swingNote": "",
       "smi": [
         { "tf": "1H", "blue": -33.93, "orange": -31.53, "cross": "bear", "location": "oversold", "dir": "down" },
         {
@@ -492,10 +640,10 @@
           "slot": 2,
           "tier": "primary-bear",
           "premarket": {
-            "validates": "Morning spike to AHH $411.95/LWORBH $412.94 area + 2m bear cross on rejection",
-            "invalidates": "Price opens above $414.00 and holds | 4H gap closes back bull | no spike occurs (skip Leg 1 entirely)"
+            "validates": "Morning spike to AHH $411.95/LWORBH $412.94 + 2m bear cross on rejection",
+            "invalidates": "Price opens above $414.00 and holds | 4H gap closes back bull | no spike occurs — skip Leg 1"
           },
-          "notes": "4H JUST crossed bear (gap -0.84 = FRAGILE). AH -$5.76 to $405.39 on Reuters EU FSD regulatory claims. If TSLA opens gap-down near $405-407 at open, SKIP Leg 1 and go straight to Leg 2 watch. Leg 1 only valid on a morning spike to $412-413. Do NOT chase gap-down with puts."
+          "notes": "4H JUST crossed bear (gap -0.84 = FRAGILE). AH -$5.76 to $405.39 on Reuters EU FSD regulatory claims. If TSLA opens gap-down near $405-409 at open, SKIP Leg 1 and go straight to Leg 2 watch. Leg 1 only valid on a morning spike to $412-413. Do NOT chase gap-down with puts."
         },
         {
           "leg": 2,
@@ -517,10 +665,10 @@
           "slot": 1,
           "tier": "primary-bull",
           "premarket": {
-            "validates": "15m extreme OS bull cross (fired at close, gap 2.53) still active at 8:45 + AHL $408.50/WORBL $407.10 holding in AH/PM",
+            "validates": "15m extreme OS bull cross (fired at close, gap 2.53) still active at 8:45 + AHL $408.50/WORBL $407.10 holding",
             "invalidates": "WORBL $407.10 breaks below and holds | AH bleeds to $403 or below"
           },
-          "notes": "DTF Day 2 widening (12.11) = structural driver. 15m extreme OS bull cross fired at close (gap 2.53 = dual extreme OS). AH $405.39 = price already at flush zone. If AH stabilizes and Tuesday opens near $407-409, flush may already be complete — early 2m bull cross from OS = Leg 2 entry without needing Leg 1 to play out first. Target: AHH $411.95 → LWORBH $412.94 → WORBH $416.00. FOMC: close before 2 PM Tuesday."
+          "notes": "DTF Day 2 widening (12.11) = structural driver. 15m extreme OS bull cross fired at close (gap 2.53). AH $405.39 = price already at flush zone. If AH stabilizes and Tuesday opens near $407-409, flush may already be complete — early 2m bull cross from OS = Leg 2 entry without needing Leg 1. Target: AHH $411.95 → LWORBH $412.94 → WORBH $416.00. FOMC close before 2 PM Tuesday."
         }
       ],
       "manipulation4H": {
@@ -544,8 +692,7 @@
       "swing": false,
       "swingNote": "",
       "smi": [
-        { "tf": "1H", "blue": 86.00, "orange": 83.00, "cross": "bull", "location": "overbought", "dir": "down",
-          "note": "Approximate from context — CSV not read this session" },
+        { "tf": "1H", "blue": 86.00, "orange": 83.00, "cross": "bull", "location": "overbought", "dir": "down", "note": "Approximate from context — CSV not read this session" },
         {
           "tf": "4H", "blue": 84.00, "orange": 76.00, "cross": "bull", "location": "overbought", "dir": "up",
           "note": "Approximate from context — CSV not read this session",
@@ -554,8 +701,7 @@
             "verdict": "strength", "strength": "confirmed"
           }
         },
-        { "tf": "DTF", "blue": 0, "orange": 0, "cross": "bull", "location": "mid", "dir": "up",
-          "note": "DTF values not captured this session" }
+        { "tf": "DTF", "blue": 0, "orange": 0, "cross": "bull", "location": "mid", "dir": "up", "note": "DTF values not captured this session" }
       ],
       "levels": {
         "pdh": 756.68, "pdl": 751.76,
@@ -590,7 +736,7 @@
             "validates": "SPY holds above WORBL $751.76 at 9:20 = BULL gate open",
             "invalidates": "SPY below WORBL $751.76 at 9:20 = gate closed, flip to bear names or stand down"
           },
-          "notes": "MACRO CONTEXT ONLY — not tradeable. 1H OB narrowing (~86/83) = 1H reset expected Tuesday (chop/pullback, not reversal). 4H OB widening (~84/76) = macro bull structure intact. Bull threshold $756.68 = WORBH. Bear threshold $751.76 = WORBL. SPY between these at 9:20 = MIXED day, best single setup only. FOMC flat rule: all positions closed by 2:00 PM ET Tuesday June 17."
+          "notes": "MACRO CONTEXT ONLY — not tradeable. 1H OB narrowing (~86/83) = reset expected Tuesday. 4H OB widening (~84/76) = macro bull intact. Bull gate $756.68 = WORBH. Bear gate $751.76 = WORBL. All positions closed by 2:00 PM ET Tuesday June 17 per FOMC flat rule."
         }
       ],
       "manipulation4H": {
