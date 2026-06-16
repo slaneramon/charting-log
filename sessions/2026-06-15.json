@@ -1,7 +1,7 @@
 {
   "id": "2026-06-15",
   "date": "2026-06-15",
-  "title": "Week of June 15 — Iran Deal Rally + FOMC Wednesday",
+  "title": "Week of June 15 \u2014 Iran Deal Rally + FOMC Wednesday",
   "spyClose": 754.83,
   "marketTone": "bull",
   "macro": {
@@ -13,14 +13,38 @@
   },
   "worb": {
     "note": "Set from Monday June 15 full session. Locked all week June 15-19.",
-    "spy":  { "high": 756.68, "low": 751.76 },
-    "aapl": { "high": 297.78, "low": 291.70 },
-    "amzn": { "high": 247.81, "low": 244.73 },
-    "googl": { "high": 372.99, "low": 366.55 },
-    "meta": { "high": 601.27, "low": 579.30 },
-    "msft": { "high": 401.75, "low": 392.85 },
-    "nvda": { "high": 212.71, "low": 208.34 },
-    "tsla": { "high": 416.00, "low": 407.10 }
+    "spy": {
+      "high": 756.68,
+      "low": 751.76
+    },
+    "aapl": {
+      "high": 297.78,
+      "low": 291.7
+    },
+    "amzn": {
+      "high": 247.81,
+      "low": 244.73
+    },
+    "googl": {
+      "high": 372.99,
+      "low": 366.55
+    },
+    "meta": {
+      "high": 601.27,
+      "low": 579.3
+    },
+    "msft": {
+      "high": 401.75,
+      "low": 392.85
+    },
+    "nvda": {
+      "high": 212.71,
+      "low": 208.34
+    },
+    "tsla": {
+      "high": 416.0,
+      "low": 407.1
+    }
   },
   "macroFilter": {
     "rule": "Direction locked at 9:20 AM, not 8:45 AM",
@@ -38,184 +62,75 @@
     "maxSimultaneousPositions": 1,
     "notes": "Position 2 only if P1 profitable + $3+ room + 2m above +40 + separate setup. FOMC rule: ALL positions closed by 2:00 PM ET Tuesday June 17. No exceptions."
   },
-  "rankings": {
-    "generated": "2026-06-15",
-    "formula": "Room x Conviction = Rank Score",
-    "sessionDirection": "BULL — Iran deal MoU + risk-on rotation. Lead bull list at 9:20 if SPY above $756.68.",
-    "standbyBear": "TSLA Leg 1 put on morning spike only. All other names bull or off-list.",
-    "bull": [
-      {
-        "rank": 1,
-        "name": "META",
-        "direction": "call",
-        "setupType": "bull-reversal",
-        "slot": 2,
-        "entry": 582.00,
-        "primaryTarget": 592.81,
-        "room": 10.81,
-        "conviction": 3,
-        "rankScore": 32.43,
-        "keyLevel": "LWORBL $579.22",
-        "qualityScore": 3,
-        "rsRw": "RS vs SPY — strongest gainer today (+4.67% vs SPY +1.76%)",
-        "condition": "CONDITIONAL — 4H gap must hold above 6. If 4H crosses bear before entry, stand down.",
-        "note": "DTF Day 1 fired (gap 5.79). 5 prior bars all bear = major structural shift. 4H OB narrowing (12.09) is the only risk. Entry from LWORBL $579.22 on 2m bull cross."
-      },
-      {
-        "rank": 2,
-        "name": "TSLA",
-        "leg": 2,
-        "direction": "call",
-        "setupType": "bull-reversal",
-        "slot": 1,
-        "entry": 408.50,
-        "primaryTarget": 416.00,
-        "room": 7.50,
-        "conviction": 4,
-        "rankScore": 30.00,
-        "keyLevel": "WORBL $407.10 / AHL $408.50",
-        "qualityScore": 4,
-        "rsRw": "neutral vs SPY intraday",
-        "condition": "Requires Leg 1 flush to $407-409 OR gap-down open that completes flush naturally. AH $405.39 = flush may already be in progress.",
-        "note": "DTF Day 2 (12.11 widening). 15m extreme OS bull cross fired at close (gap 2.53). Structural long driver."
-      },
-      {
-        "rank": 3,
-        "name": "NVDA",
-        "direction": "call",
-        "setupType": "bull-reversal",
-        "slot": 1,
-        "entry": 210.50,
-        "primaryTarget": 216.10,
-        "room": 5.60,
-        "conviction": 4,
-        "rankScore": 22.40,
-        "keyLevel": "LWORBH $210.47",
-        "qualityScore": 4,
-        "rsRw": "slight RS vs SPY",
-        "condition": "FLUSH-FIRST mandatory. Do not buy the open. Entry only after flush to $210-211 area on 2m bull cross.",
-        "note": "DTF Day 1 (6.49). 4H both lines extreme OB (81/73) with narrowing gap = morning dip guaranteed."
-      },
-      {
-        "rank": 4,
-        "name": "GOOGL",
-        "direction": "call",
-        "setupType": "bull-continuation",
-        "slot": 1,
-        "entry": 367.50,
-        "primaryTarget": 372.99,
-        "room": 5.49,
-        "conviction": 4,
-        "rankScore": 21.96,
-        "keyLevel": "WORBL $366.55 / LWORBH $366.62",
-        "qualityScore": 4,
-        "rsRw": "RS vs SPY (+2.69%)",
-        "condition": "Monitor 4H gap (4.94 narrowing) during session. If 4H crosses bear, reduce immediately.",
-        "note": "DTF Day 3 (19.02 accelerating). 15m/1H fully reset into OS/mid. Highest structural conviction. No swing active."
-      },
-      {
-        "rank": 5,
-        "name": "AMZN",
-        "direction": "call",
-        "setupType": "bull-continuation",
-        "slot": 2,
-        "entry": 245.50,
-        "primaryTarget": 249.42,
-        "room": 3.92,
-        "conviction": 3,
-        "rankScore": 11.76,
-        "keyLevel": "WORBL $244.73",
-        "qualityScore": 3,
-        "rsRw": "RS vs SPY (+3.13%)",
-        "condition": "Wait for 15m/1H reset from extreme OB. Entry on reload, not at open.",
-        "note": "DTF Day 2 (9.58). 4H widening (16.45). AH $248.14 above WORBH = institutional buying extended hours."
-      },
-      {
-        "rank": 6,
-        "name": "AAPL",
-        "direction": "call",
-        "setupType": "bull-reversal",
-        "slot": null,
-        "entry": 292.50,
-        "primaryTarget": 297.78,
-        "room": 5.28,
-        "conviction": 2,
-        "rankScore": 10.56,
-        "keyLevel": "WORBL $291.70",
-        "qualityScore": 3,
-        "rsRw": "neutral vs SPY (+1.82%)",
-        "condition": "OFF-LIST — DTF must fire bull cross (gap 0.16 = imminent). Upgrade to Slot 3 call if DTF fires Tuesday.",
-        "note": "4H Day 1 OB = Variant B sweep risk below WORBL before real move. Wait for DTF first."
-      },
-      {
-        "rank": 7,
-        "name": "MSFT",
-        "direction": "call",
-        "setupType": "bull-reversal",
-        "slot": null,
-        "entry": 395.00,
-        "primaryTarget": 406.97,
-        "room": 11.97,
-        "conviction": 1,
-        "rankScore": 11.97,
-        "keyLevel": "PM Low $394.74 / WORBL $392.85",
-        "qualityScore": 3,
-        "rsRw": "RW vs SPY (1H bear declining all session despite +$9 move)",
-        "condition": "OFF-LIST — DTF gap (1.91) must widen past 5. Largest room of any name but lowest DTF conviction.",
-        "note": "Most conditional setup of the session. 4H OB narrowing (17.54). Activate only if DTF validates Tuesday."
-      }
-    ],
-    "bear": [
-      {
-        "rank": 1,
-        "name": "TSLA",
-        "leg": 1,
-        "direction": "put",
-        "setupType": "bear-reversal",
-        "slot": 2,
-        "entry": 412.50,
-        "primaryTarget": 407.10,
-        "room": 5.40,
-        "conviction": 3,
-        "rankScore": 16.20,
-        "keyLevel": "LWORBH $412.94 (spike rejection zone)",
-        "qualityScore": 3,
-        "rsRw": "RW vs SPY in AH (-1.40% AH on EU FSD regulatory claims)",
-        "condition": "Only valid on morning spike to $412-413. If gap-down at open — SKIP, go directly to Leg 2 call watch.",
-        "note": "4H just crossed bear (gap -0.84, fragile). AH -$5.76 to $405.39. Leg 1 is optional — Leg 2 call is the primary trade."
-      }
-    ]
-  },
+  "rankings": [
+    "META",
+    "TSLA",
+    "NVDA",
+    "GOOGL",
+    "AMZN",
+    "AAPL",
+    "MSFT"
+  ],
   "names": [
     {
       "name": "AAPL",
       "status": "active",
       "open": 0,
       "high": 297.78,
-      "low": 291.70,
+      "low": 291.7,
       "close": 296.42,
       "ahPrice": 0,
       "swing": false,
       "swingNote": "",
       "smi": [
-        { "tf": "1H", "blue": 25.57, "orange": 35.43, "cross": "bear", "location": "mid", "dir": "down" },
         {
-          "tf": "4H", "blue": 45.18, "orange": 31.09, "cross": "bull", "location": "overbought", "dir": "up",
+          "tf": "1H",
+          "blue": 25.57,
+          "orange": 35.43,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down"
+        },
+        {
+          "tf": "4H",
+          "blue": 45.18,
+          "orange": 31.09,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up",
           "crossBehavior": {
-            "firedDate": "2026-06-15", "day": 1, "tested": false, "testResponse": null,
-            "verdict": "untested", "strength": "building"
+            "firedDate": "2026-06-15",
+            "day": 1,
+            "tested": false,
+            "testResponse": null,
+            "verdict": "untested",
+            "strength": "building"
           }
         },
-        { "tf": "DTF", "blue": -58.23, "orange": -58.07, "cross": "bear", "location": "oversold", "dir": "up" }
+        {
+          "tf": "DTF",
+          "blue": -58.23,
+          "orange": -58.07,
+          "cross": "bear",
+          "location": "oversold",
+          "dir": "up"
+        }
       ],
       "levels": {
-        "pdh": 297.78, "pdl": 291.70,
-        "orbH": 0, "orbL": 0,
-        "ahh": 0, "ahl": 0,
-        "pmh": 0, "pml": 0,
-        "worbh": 297.78, "worbl": 291.70,
-        "lworbh": 317.40, "lworbl": 301.17,
-        "fvg1": null, "fvg2": null
+        "pdh": 297.78,
+        "pdl": 291.7,
+        "orbH": 0,
+        "orbL": 0,
+        "ahh": 0,
+        "ahl": 0,
+        "pmh": 0,
+        "pml": 0,
+        "worbh": 297.78,
+        "worbl": 291.7,
+        "lworbh": 317.4,
+        "lworbl": 301.17,
+        "fvg1": null,
+        "fvg2": null
       },
       "plans": [
         {
@@ -223,10 +138,20 @@
           "direction": "call",
           "setupType": "bull-reversal",
           "sequence": null,
-          "entryZone": { "low": 291.70, "high": 294.00 },
-          "trigger": 292.50,
-          "invalidation": { "preEntry": 290.00, "postEntry": 289.50 },
-          "targets": [294.50, 296.42, 297.78],
+          "entryZone": {
+            "low": 291.7,
+            "high": 294.0
+          },
+          "trigger": 292.5,
+          "invalidation": {
+            "preEntry": 290.0,
+            "postEntry": 289.5
+          },
+          "targets": [
+            294.5,
+            296.42,
+            297.78
+          ],
           "qualityGates": {
             "smiAlignment": false,
             "levelIntegrity": true,
@@ -248,9 +173,9 @@
         "risk": "high",
         "variant": "B",
         "sweepDirection": "down",
-        "sweepTarget": 291.70,
+        "sweepTarget": 291.7,
         "sweepNote": "Fresh 4H bull cross Day 1. Expect morning sweep below WORBL $291.70 before real move up.",
-        "entryTrigger": "2m bull cross after WORBL $291.70 test holds — not on the wick",
+        "entryTrigger": "2m bull cross after WORBL $291.70 test holds \u2014 not on the wick",
         "realMove": "CALL to WORBH $297.78. Valid only if DTF fires bull cross same session."
       }
     },
@@ -265,24 +190,54 @@
       "swing": false,
       "swingNote": "",
       "smi": [
-        { "tf": "1H", "blue": 66.99, "orange": 63.12, "cross": "bull", "location": "overbought", "dir": "up" },
         {
-          "tf": "4H", "blue": 68.47, "orange": 52.02, "cross": "bull", "location": "overbought", "dir": "up",
+          "tf": "1H",
+          "blue": 66.99,
+          "orange": 63.12,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up"
+        },
+        {
+          "tf": "4H",
+          "blue": 68.47,
+          "orange": 52.02,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up",
           "crossBehavior": {
-            "firedDate": "2026-06-12", "day": 2, "tested": false, "testResponse": null,
-            "verdict": "untested", "strength": "building"
+            "firedDate": "2026-06-12",
+            "day": 2,
+            "tested": false,
+            "testResponse": null,
+            "verdict": "untested",
+            "strength": "building"
           }
         },
-        { "tf": "DTF", "blue": -57.57, "orange": -67.15, "cross": "bull", "location": "oversold", "dir": "up" }
+        {
+          "tf": "DTF",
+          "blue": -57.57,
+          "orange": -67.15,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up"
+        }
       ],
       "levels": {
-        "pdh": 247.81, "pdl": 244.73,
-        "orbH": 247.80, "orbL": 245.91,
-        "ahh": 248.54, "ahl": 246.91,
-        "pmh": 245.92, "pml": 240.72,
-        "worbh": 247.81, "worbl": 244.73,
-        "lworbh": 249.42, "lworbl": 243.36,
-        "fvg1": 251.27, "fvg2": null
+        "pdh": 247.81,
+        "pdl": 244.73,
+        "orbH": 247.8,
+        "orbL": 245.91,
+        "ahh": 248.54,
+        "ahl": 246.91,
+        "pmh": 245.92,
+        "pml": 240.72,
+        "worbh": 247.81,
+        "worbl": 244.73,
+        "lworbh": 249.42,
+        "lworbl": 243.36,
+        "fvg1": 251.27,
+        "fvg2": null
       },
       "plans": [
         {
@@ -290,10 +245,20 @@
           "direction": "call",
           "setupType": "bull-continuation",
           "sequence": null,
-          "entryZone": { "low": 244.73, "high": 246.50 },
-          "trigger": 245.50,
-          "invalidation": { "preEntry": 243.50, "postEntry": 243.00 },
-          "targets": [247.81, 249.42, 251.27],
+          "entryZone": {
+            "low": 244.73,
+            "high": 246.5
+          },
+          "trigger": 245.5,
+          "invalidation": {
+            "preEntry": 243.5,
+            "postEntry": 243.0
+          },
+          "targets": [
+            247.81,
+            249.42,
+            251.27
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -308,7 +273,7 @@
             "validates": "15m/1H reset from extreme OB overnight + WORBL $244.73 holds premarket + 4H gap still above 12 at 8:45",
             "invalidates": "WORBL $244.73 breaks premarket | 4H gap narrows below 10 | AH reverses below $246.02"
           },
-          "notes": "DTF Day 2 (9.58 widening) + 4H widening (16.45) = structural bull. 15m/1H at extreme OB at close = reset expected overnight. Entry only AFTER reset: wait for 15m to pull back to mid, then 2m bull cross. AH $248.14 above WORBH = institutional extended. Target: ORB H $247.80 → LWORBH $249.42 → FVG $251.27. FOMC close before 2 PM Tuesday."
+          "notes": "DTF Day 2 (9.58 widening) + 4H widening (16.45) = structural bull. 15m/1H at extreme OB at close = reset expected overnight. Entry only AFTER reset: wait for 15m to pull back to mid, then 2m bull cross. AH $248.14 above WORBH = institutional extended. Target: ORB H $247.80 \u2192 LWORBH $249.42 \u2192 FVG $251.27. FOMC close before 2 PM Tuesday."
         }
       ],
       "manipulation4H": {
@@ -316,7 +281,7 @@
         "variant": "none",
         "sweepDirection": "none",
         "sweepTarget": null,
-        "sweepNote": "4H OB with widening gap (16.45) — momentum not exhaustion. No sweep expected.",
+        "sweepNote": "4H OB with widening gap (16.45) \u2014 momentum not exhaustion. No sweep expected.",
         "entryTrigger": null,
         "realMove": "N/A"
       }
@@ -332,24 +297,54 @@
       "swing": false,
       "swingNote": "",
       "smi": [
-        { "tf": "1H", "blue": 1.40, "orange": 15.36, "cross": "bear", "location": "mid", "dir": "down" },
         {
-          "tf": "4H", "blue": 70.27, "orange": 65.33, "cross": "bull", "location": "overbought", "dir": "up",
+          "tf": "1H",
+          "blue": 1.4,
+          "orange": 15.36,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down"
+        },
+        {
+          "tf": "4H",
+          "blue": 70.27,
+          "orange": 65.33,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up",
           "crossBehavior": {
-            "firedDate": "2026-06-11", "day": 3, "tested": true, "testResponse": "held",
-            "verdict": "strength", "strength": "accelerating"
+            "firedDate": "2026-06-11",
+            "day": 3,
+            "tested": true,
+            "testResponse": "held",
+            "verdict": "strength",
+            "strength": "accelerating"
           }
         },
-        { "tf": "DTF", "blue": -14.91, "orange": -33.93, "cross": "bull", "location": "oversold", "dir": "up" }
+        {
+          "tf": "DTF",
+          "blue": -14.91,
+          "orange": -33.93,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up"
+        }
       ],
       "levels": {
-        "pdh": 372.99, "pdl": 366.55,
-        "orbH": 372.12, "orbL": 367.00,
-        "ahh": 369.95, "ahl": 368.42,
-        "pmh": 368.80, "pml": 364.22,
-        "worbh": 372.99, "worbl": 366.55,
-        "lworbh": 366.62, "lworbl": 360.69,
-        "fvg1": 350.67, "fvg2": null
+        "pdh": 372.99,
+        "pdl": 366.55,
+        "orbH": 372.12,
+        "orbL": 367.0,
+        "ahh": 369.95,
+        "ahl": 368.42,
+        "pmh": 368.8,
+        "pml": 364.22,
+        "worbh": 372.99,
+        "worbl": 366.55,
+        "lworbh": 366.62,
+        "lworbl": 360.69,
+        "fvg1": 350.67,
+        "fvg2": null
       },
       "plans": [
         {
@@ -357,10 +352,20 @@
           "direction": "call",
           "setupType": "bull-continuation",
           "sequence": null,
-          "entryZone": { "low": 366.55, "high": 369.00 },
-          "trigger": 367.50,
-          "invalidation": { "preEntry": 365.00, "postEntry": 364.50 },
-          "targets": [369.95, 372.99, 373.58],
+          "entryZone": {
+            "low": 366.55,
+            "high": 369.0
+          },
+          "trigger": 367.5,
+          "invalidation": {
+            "preEntry": 365.0,
+            "postEntry": 364.5
+          },
+          "targets": [
+            369.95,
+            372.99,
+            373.58
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -375,7 +380,7 @@
             "validates": "Price holds above LWORBH $366.62 premarket + 15m begins recovery from OS toward bull cross",
             "invalidates": "Price breaks below $365.00 premarket | 4H gap narrows to zero (bear cross fires)"
           },
-          "notes": "DTF Day 3 (19.02 accelerating). 15m/1H fully reset into OS/mid = clean reload. 4H OB narrowing (4.94) = key risk — if 4H crosses bear during session, reduce immediately. Low $366.55 held on LWORBH $366.62 = textbook test-hold. Target: AHH $369.95 → ORB H $372.12 → WORBH $372.99 → 2WLWORBL $373.58. FOMC close before 2 PM Tuesday."
+          "notes": "DTF Day 3 (19.02 accelerating). 15m/1H fully reset into OS/mid = clean reload. 4H OB narrowing (4.94) = key risk \u2014 if 4H crosses bear during session, reduce immediately. Low $366.55 held on LWORBH $366.62 = textbook test-hold. Target: AHH $369.95 \u2192 ORB H $372.12 \u2192 WORBH $372.99 \u2192 2WLWORBL $373.58. FOMC close before 2 PM Tuesday."
         }
       ],
       "manipulation4H": {
@@ -385,38 +390,68 @@
         "sweepTarget": 366.55,
         "sweepNote": "4H OB narrowing (4.94). Morning dip to WORBL $366.55/LWORBH $366.62 zone possible before continuation.",
         "entryTrigger": "2m bull cross after WORBL $366.55 holds at 8am or 9:30 open",
-        "realMove": "CALL to WORBH $372.99 → 2WLWORBL $373.58"
+        "realMove": "CALL to WORBH $372.99 \u2192 2WLWORBL $373.58"
       }
     },
     {
       "name": "META",
       "status": "active",
-      "open": 579.90,
+      "open": 579.9,
       "high": 601.27,
-      "low": 579.30,
+      "low": 579.3,
       "close": 593.48,
       "ahPrice": 0,
       "swing": false,
       "swingNote": "",
       "smi": [
-        { "tf": "1H", "blue": 19.64, "orange": 32.88, "cross": "bear", "location": "mid", "dir": "down" },
         {
-          "tf": "4H", "blue": 58.97, "orange": 46.88, "cross": "bull", "location": "overbought", "dir": "up",
+          "tf": "1H",
+          "blue": 19.64,
+          "orange": 32.88,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down"
+        },
+        {
+          "tf": "4H",
+          "blue": 58.97,
+          "orange": 46.88,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up",
           "crossBehavior": {
-            "firedDate": "2026-06-12", "day": 2, "tested": false, "testResponse": null,
-            "verdict": "untested", "strength": "fading"
+            "firedDate": "2026-06-12",
+            "day": 2,
+            "tested": false,
+            "testResponse": null,
+            "verdict": "untested",
+            "strength": "fading"
           }
         },
-        { "tf": "DTF", "blue": -60.34, "orange": -66.13, "cross": "bull", "location": "oversold", "dir": "up" }
+        {
+          "tf": "DTF",
+          "blue": -60.34,
+          "orange": -66.13,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up"
+        }
       ],
       "levels": {
-        "pdh": 601.27, "pdl": 579.30,
-        "orbH": 592.81, "orbL": 0,
-        "ahh": 594.73, "ahl": 591.52,
-        "pmh": 580.80, "pml": 573.00,
-        "worbh": 601.27, "worbl": 579.30,
-        "lworbh": 592.00, "lworbl": 579.22,
-        "fvg1": 621.80, "fvg2": 613.60
+        "pdh": 601.27,
+        "pdl": 579.3,
+        "orbH": 592.81,
+        "orbL": 0,
+        "ahh": 594.73,
+        "ahl": 591.52,
+        "pmh": 580.8,
+        "pml": 573.0,
+        "worbh": 601.27,
+        "worbl": 579.3,
+        "lworbh": 592.0,
+        "lworbl": 579.22,
+        "fvg1": 621.8,
+        "fvg2": 613.6
       },
       "plans": [
         {
@@ -424,10 +459,20 @@
           "direction": "call",
           "setupType": "bull-reversal",
           "sequence": null,
-          "entryZone": { "low": 579.22, "high": 585.00 },
-          "trigger": 582.00,
-          "invalidation": { "preEntry": 576.00, "postEntry": 575.00 },
-          "targets": [592.81, 601.27, 613.60],
+          "entryZone": {
+            "low": 579.22,
+            "high": 585.0
+          },
+          "trigger": 582.0,
+          "invalidation": {
+            "preEntry": 576.0,
+            "postEntry": 575.0
+          },
+          "targets": [
+            592.81,
+            601.27,
+            613.6
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -442,7 +487,7 @@
             "validates": "4H gap holds above 6 at 8:45 + price holds LWORBL $579.22 + 15m OS recovery confirmed",
             "invalidates": "4H gap narrows below 6 or crosses bear | price breaks below $576.00"
           },
-          "notes": "DTF Day 1 bull cross = major structural event (gap 5.79). 5 prior DTF bars all bear. 4H OB narrowing (12.09) = primary risk. 1H bear cross mid all session = weak internal. Entry from LWORBL $579.22 on 2m bull cross after morning dip. Targets: ORB H $592.81 → WORBH $601.27 → FVG $613.60. FOMC close before 2 PM Tuesday."
+          "notes": "DTF Day 1 bull cross = major structural event (gap 5.79). 5 prior DTF bars all bear. 4H OB narrowing (12.09) = primary risk. 1H bear cross mid all session = weak internal. Entry from LWORBL $579.22 on 2m bull cross after morning dip. Targets: ORB H $592.81 \u2192 WORBH $601.27 \u2192 FVG $613.60. FOMC close before 2 PM Tuesday."
         }
       ],
       "manipulation4H": {
@@ -450,15 +495,15 @@
         "variant": "none",
         "sweepDirection": "down",
         "sweepTarget": 579.22,
-        "sweepNote": "4H OB Day 2 narrowing — morning fade possible to LWORBL $579.22 before continuation.",
+        "sweepNote": "4H OB Day 2 narrowing \u2014 morning fade possible to LWORBL $579.22 before continuation.",
         "entryTrigger": "2m bull cross after LWORBL $579.22 holds",
-        "realMove": "CALL to ORB H $592.81 → WORBH $601.27"
+        "realMove": "CALL to ORB H $592.81 \u2192 WORBH $601.27"
       }
     },
     {
       "name": "MSFT",
       "status": "active",
-      "open": 396.80,
+      "open": 396.8,
       "high": 401.75,
       "low": 392.85,
       "close": 399.76,
@@ -466,24 +511,54 @@
       "swing": false,
       "swingNote": "",
       "smi": [
-        { "tf": "1H", "blue": 34.34, "orange": 41.71, "cross": "bear", "location": "mid", "dir": "down" },
         {
-          "tf": "4H", "blue": 61.63, "orange": 44.09, "cross": "bull", "location": "overbought", "dir": "up",
+          "tf": "1H",
+          "blue": 34.34,
+          "orange": 41.71,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down"
+        },
+        {
+          "tf": "4H",
+          "blue": 61.63,
+          "orange": 44.09,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up",
           "crossBehavior": {
-            "firedDate": "2026-06-15", "day": 1, "tested": false, "testResponse": null,
-            "verdict": "untested", "strength": "building"
+            "firedDate": "2026-06-15",
+            "day": 1,
+            "tested": false,
+            "testResponse": null,
+            "verdict": "untested",
+            "strength": "building"
           }
         },
-        { "tf": "DTF", "blue": -72.74, "orange": -74.65, "cross": "bull", "location": "oversold", "dir": "up" }
+        {
+          "tf": "DTF",
+          "blue": -72.74,
+          "orange": -74.65,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up"
+        }
       ],
       "levels": {
-        "pdh": 401.75, "pdl": 392.85,
-        "orbH": 399.35, "orbL": 0,
-        "ahh": 400.28, "ahl": 0,
-        "pmh": 399.89, "pml": 394.74,
-        "worbh": 401.75, "worbl": 392.85,
-        "lworbh": 417.16, "lworbl": 408.56,
-        "fvg1": 406.97, "fvg2": 423.46
+        "pdh": 401.75,
+        "pdl": 392.85,
+        "orbH": 399.35,
+        "orbL": 0,
+        "ahh": 400.28,
+        "ahl": 0,
+        "pmh": 399.89,
+        "pml": 394.74,
+        "worbh": 401.75,
+        "worbl": 392.85,
+        "lworbh": 417.16,
+        "lworbl": 408.56,
+        "fvg1": 406.97,
+        "fvg2": 423.46
       },
       "plans": [
         {
@@ -491,10 +566,20 @@
           "direction": "call",
           "setupType": "bull-reversal",
           "sequence": null,
-          "entryZone": { "low": 392.85, "high": 397.00 },
-          "trigger": 395.00,
-          "invalidation": { "preEntry": 391.00, "postEntry": 390.00 },
-          "targets": [399.89, 401.75, 406.97],
+          "entryZone": {
+            "low": 392.85,
+            "high": 397.0
+          },
+          "trigger": 395.0,
+          "invalidation": {
+            "preEntry": 391.0,
+            "postEntry": 390.0
+          },
+          "targets": [
+            399.89,
+            401.75,
+            406.97
+          ],
           "qualityGates": {
             "smiAlignment": false,
             "levelIntegrity": true,
@@ -509,7 +594,7 @@
             "validates": "DTF gap widens past 5 confirmed at 8:45 + 4H gap still above 15 + WORBL $392.85 holds",
             "invalidates": "DTF gap stays below 3 or closes back bear | price breaks below $391.00"
           },
-          "notes": "OFF-LIST until DTF validates. Gap 1.91 = thinnest of all 8 (META 5.79, AMZN 9.58, GOOGL 19.02). 4H OB Day 1 with gap already narrowing (17.54). 1H bear cross declining entire session despite $9 move. Activation: DTF gap > 5 + 4H stops narrowing → upgrade to Slot 3. FVG $406.97 → LWORBL $408.56. FOMC close before 2 PM Tuesday."
+          "notes": "OFF-LIST until DTF validates. Gap 1.91 = thinnest of all 8 (META 5.79, AMZN 9.58, GOOGL 19.02). 4H OB Day 1 with gap already narrowing (17.54). 1H bear cross declining entire session despite $9 move. Activation: DTF gap > 5 + 4H stops narrowing \u2192 upgrade to Slot 3. FVG $406.97 \u2192 LWORBL $408.56. FOMC close before 2 PM Tuesday."
         }
       ],
       "manipulation4H": {
@@ -518,7 +603,7 @@
         "sweepDirection": "down",
         "sweepTarget": 392.85,
         "sweepNote": "4H OB Day 1 gap narrowing. Morning dip possible to PM Low $394.74 before continuation.",
-        "entryTrigger": "2m bull cross after morning dip holds — only if DTF widens past 5 first",
+        "entryTrigger": "2m bull cross after morning dip holds \u2014 only if DTF widens past 5 first",
         "realMove": "CALL to FVG $406.97 only if DTF validates"
       }
     },
@@ -533,24 +618,54 @@
       "swing": false,
       "swingNote": "",
       "smi": [
-        { "tf": "1H", "blue": 62.68, "orange": 68.07, "cross": "bear", "location": "overbought", "dir": "down" },
         {
-          "tf": "4H", "blue": 81.48, "orange": 73.04, "cross": "bull", "location": "overbought", "dir": "up",
+          "tf": "1H",
+          "blue": 62.68,
+          "orange": 68.07,
+          "cross": "bear",
+          "location": "overbought",
+          "dir": "down"
+        },
+        {
+          "tf": "4H",
+          "blue": 81.48,
+          "orange": 73.04,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up",
           "crossBehavior": {
-            "firedDate": "2026-06-12", "day": 2, "tested": true, "testResponse": "held",
-            "verdict": "strength", "strength": "confirmed"
+            "firedDate": "2026-06-12",
+            "day": 2,
+            "tested": true,
+            "testResponse": "held",
+            "verdict": "strength",
+            "strength": "confirmed"
           }
         },
-        { "tf": "DTF", "blue": -52.07, "orange": -58.56, "cross": "bull", "location": "oversold", "dir": "up" }
+        {
+          "tf": "DTF",
+          "blue": -52.07,
+          "orange": -58.56,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up"
+        }
       ],
       "levels": {
-        "pdh": 212.71, "pdl": 208.34,
-        "orbH": 211.33, "orbL": 208.66,
-        "ahh": 212.50, "ahl": 211.77,
-        "pmh": 210.75, "pml": 207.70,
-        "worbh": 212.71, "worbl": 208.34,
-        "lworbh": 210.47, "lworbl": 206.00,
-        "fvg1": 216.10, "fvg2": null
+        "pdh": 212.71,
+        "pdl": 208.34,
+        "orbH": 211.33,
+        "orbL": 208.66,
+        "ahh": 212.5,
+        "ahl": 211.77,
+        "pmh": 210.75,
+        "pml": 207.7,
+        "worbh": 212.71,
+        "worbl": 208.34,
+        "lworbh": 210.47,
+        "lworbl": 206.0,
+        "fvg1": 216.1,
+        "fvg2": null
       },
       "plans": [
         {
@@ -558,10 +673,20 @@
           "direction": "call",
           "setupType": "bull-reversal",
           "sequence": null,
-          "entryZone": { "low": 208.34, "high": 211.33 },
-          "trigger": 210.50,
-          "invalidation": { "preEntry": 207.50, "postEntry": 206.50 },
-          "targets": [212.71, 213.77, 216.10],
+          "entryZone": {
+            "low": 208.34,
+            "high": 211.33
+          },
+          "trigger": 210.5,
+          "invalidation": {
+            "preEntry": 207.5,
+            "postEntry": 206.5
+          },
+          "targets": [
+            212.71,
+            213.77,
+            216.1
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -576,7 +701,7 @@
             "validates": "Morning flush completes to $210-211 area + 15m OS bull cross fires + 2m bull cross confirms at LWORBH $210.47 or ORB H $211.33",
             "invalidates": "AH bleeds below WORBL $208.34 overnight | flush goes below $207.50 without bull cross recovery"
           },
-          "notes": "DTF Day 1 (6.49 widening). 4H BOTH lines extreme OB (81.48/73.04) with narrowing gap = flush-first mandatory. DO NOT buy the open. AH $210.94 already below close ($212.45) = flush may already be starting. Wait for morning dip to LWORBH $210.47/ORB H $211.33 on 2m bull cross. 15m closed from extreme OS with widening gap (12.81) = ready to reload post-flush. Target: WORBH $212.71 → $213.77 → FVG $216.10. FOMC close before 2 PM Tuesday."
+          "notes": "DTF Day 1 (6.49 widening). 4H BOTH lines extreme OB (81.48/73.04) with narrowing gap = flush-first mandatory. DO NOT buy the open. AH $210.94 already below close ($212.45) = flush may already be starting. Wait for morning dip to LWORBH $210.47/ORB H $211.33 on 2m bull cross. 15m closed from extreme OS with widening gap (12.81) = ready to reload post-flush. Target: WORBH $212.71 \u2192 $213.77 \u2192 FVG $216.10. FOMC close before 2 PM Tuesday."
         }
       ],
       "manipulation4H": {
@@ -586,38 +711,68 @@
         "sweepTarget": 210.47,
         "sweepNote": "4H BOTH lines extreme OB (81/73) with narrowing gap. Classic OB exhaustion = flush-first at 8am 4H open. LWORBH $210.47 = flush target.",
         "entryTrigger": "2m bull cross AFTER flush to LWORBH $210.47 completes. Never on gap-open candle.",
-        "realMove": "CALL from $210-211 area to WORBH $212.71 → FVG $216.10"
+        "realMove": "CALL from $210-211 area to WORBH $212.71 \u2192 FVG $216.10"
       }
     },
     {
       "name": "TSLA",
       "status": "active",
       "open": 412.37,
-      "high": 416.00,
-      "low": 407.10,
+      "high": 416.0,
+      "low": 407.1,
       "close": 411.15,
       "ahPrice": 405.39,
       "swing": false,
       "swingNote": "",
       "smi": [
-        { "tf": "1H", "blue": -33.93, "orange": -31.53, "cross": "bear", "location": "oversold", "dir": "down" },
         {
-          "tf": "4H", "blue": 67.20, "orange": 68.04, "cross": "bear", "location": "overbought", "dir": "down",
+          "tf": "1H",
+          "blue": -33.93,
+          "orange": -31.53,
+          "cross": "bear",
+          "location": "oversold",
+          "dir": "down"
+        },
+        {
+          "tf": "4H",
+          "blue": 67.2,
+          "orange": 68.04,
+          "cross": "bear",
+          "location": "overbought",
+          "dir": "down",
           "crossBehavior": {
-            "firedDate": "2026-06-15", "day": 1, "tested": false, "testResponse": null,
-            "verdict": "untested", "strength": "fragile"
+            "firedDate": "2026-06-15",
+            "day": 1,
+            "tested": false,
+            "testResponse": null,
+            "verdict": "untested",
+            "strength": "fragile"
           }
         },
-        { "tf": "DTF", "blue": -24.82, "orange": -36.93, "cross": "bull", "location": "oversold", "dir": "up" }
+        {
+          "tf": "DTF",
+          "blue": -24.82,
+          "orange": -36.93,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up"
+        }
       ],
       "levels": {
-        "pdh": 416.00, "pdl": 407.10,
-        "orbH": 416.00, "orbL": 408.99,
-        "ahh": 411.95, "ahl": 408.50,
-        "pmh": 413.51, "pml": 409.64,
-        "worbh": 416.00, "worbl": 407.10,
-        "lworbh": 412.94, "lworbl": 394.72,
-        "fvg1": 375.06, "fvg2": null
+        "pdh": 416.0,
+        "pdl": 407.1,
+        "orbH": 416.0,
+        "orbL": 408.99,
+        "ahh": 411.95,
+        "ahl": 408.5,
+        "pmh": 413.51,
+        "pml": 409.64,
+        "worbh": 416.0,
+        "worbl": 407.1,
+        "lworbh": 412.94,
+        "lworbl": 394.72,
+        "fvg1": 375.06,
+        "fvg2": null
       },
       "plans": [
         {
@@ -625,10 +780,20 @@
           "direction": "put",
           "setupType": "bear-reversal",
           "sequence": "Leg 1 PUT exit at ORB L $408.99/WORBL $407.10 sets up Leg 2 CALL entry from flush zone on 15m OS bull cross.",
-          "entryZone": { "low": 411.95, "high": 412.94 },
-          "trigger": 412.50,
-          "invalidation": { "preEntry": 414.00, "postEntry": 414.50 },
-          "targets": [410.36, 408.99, 407.10],
+          "entryZone": {
+            "low": 411.95,
+            "high": 412.94
+          },
+          "trigger": 412.5,
+          "invalidation": {
+            "preEntry": 414.0,
+            "postEntry": 414.5
+          },
+          "targets": [
+            410.36,
+            408.99,
+            407.1
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -641,7 +806,7 @@
           "tier": "primary-bear",
           "premarket": {
             "validates": "Morning spike to AHH $411.95/LWORBH $412.94 + 2m bear cross on rejection",
-            "invalidates": "Price opens above $414.00 and holds | 4H gap closes back bull | no spike occurs — skip Leg 1"
+            "invalidates": "Price opens above $414.00 and holds | 4H gap closes back bull | no spike occurs \u2014 skip Leg 1"
           },
           "notes": "4H JUST crossed bear (gap -0.84 = FRAGILE). AH -$5.76 to $405.39 on Reuters EU FSD regulatory claims. If TSLA opens gap-down near $405-409 at open, SKIP Leg 1 and go straight to Leg 2 watch. Leg 1 only valid on a morning spike to $412-413. Do NOT chase gap-down with puts."
         },
@@ -650,10 +815,20 @@
           "direction": "call",
           "setupType": "bull-reversal",
           "sequence": null,
-          "entryZone": { "low": 407.10, "high": 409.50 },
-          "trigger": 408.50,
-          "invalidation": { "preEntry": 405.50, "postEntry": 405.00 },
-          "targets": [411.95, 412.94, 416.00],
+          "entryZone": {
+            "low": 407.1,
+            "high": 409.5
+          },
+          "trigger": 408.5,
+          "invalidation": {
+            "preEntry": 405.5,
+            "postEntry": 405.0
+          },
+          "targets": [
+            411.95,
+            412.94,
+            416.0
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -668,7 +843,7 @@
             "validates": "15m extreme OS bull cross (fired at close, gap 2.53) still active at 8:45 + AHL $408.50/WORBL $407.10 holding",
             "invalidates": "WORBL $407.10 breaks below and holds | AH bleeds to $403 or below"
           },
-          "notes": "DTF Day 2 widening (12.11) = structural driver. 15m extreme OS bull cross fired at close (gap 2.53). AH $405.39 = price already at flush zone. If AH stabilizes and Tuesday opens near $407-409, flush may already be complete — early 2m bull cross from OS = Leg 2 entry without needing Leg 1. Target: AHH $411.95 → LWORBH $412.94 → WORBH $416.00. FOMC close before 2 PM Tuesday."
+          "notes": "DTF Day 2 widening (12.11) = structural driver. 15m extreme OS bull cross fired at close (gap 2.53). AH $405.39 = price already at flush zone. If AH stabilizes and Tuesday opens near $407-409, flush may already be complete \u2014 early 2m bull cross from OS = Leg 2 entry without needing Leg 1. Target: AHH $411.95 \u2192 LWORBH $412.94 \u2192 WORBH $416.00. FOMC close before 2 PM Tuesday."
         }
       ],
       "manipulation4H": {
@@ -676,8 +851,8 @@
         "variant": "B",
         "sweepDirection": "up",
         "sweepTarget": 412.94,
-        "sweepNote": "Fresh 4H bear cross Day 1 (gap -0.84). If morning spike to LWORBH $412.94 occurs, that IS the Leg 1 PUT entry — it is the manipulation sweep above resistance.",
-        "entryTrigger": "2m bear cross after spike to $412-413 area exhausts — not on initial open candle",
+        "sweepNote": "Fresh 4H bear cross Day 1 (gap -0.84). If morning spike to LWORBH $412.94 occurs, that IS the Leg 1 PUT entry \u2014 it is the manipulation sweep above resistance.",
+        "entryTrigger": "2m bear cross after spike to $412-413 area exhausts \u2014 not on initial open candle",
         "realMove": "PUT to ORB L $408.99/WORBL $407.10. Then CALL from flush on 2m bull cross per DTF Day 2."
       }
     },
@@ -692,25 +867,57 @@
       "swing": false,
       "swingNote": "",
       "smi": [
-        { "tf": "1H", "blue": 86.00, "orange": 83.00, "cross": "bull", "location": "overbought", "dir": "down", "note": "Approximate from context — CSV not read this session" },
         {
-          "tf": "4H", "blue": 84.00, "orange": 76.00, "cross": "bull", "location": "overbought", "dir": "up",
-          "note": "Approximate from context — CSV not read this session",
+          "tf": "1H",
+          "blue": 86.0,
+          "orange": 83.0,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "down",
+          "note": "Approximate from context \u2014 CSV not read this session"
+        },
+        {
+          "tf": "4H",
+          "blue": 84.0,
+          "orange": 76.0,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up",
+          "note": "Approximate from context \u2014 CSV not read this session",
           "crossBehavior": {
-            "firedDate": "2026-06-09", "day": 5, "tested": true, "testResponse": "held",
-            "verdict": "strength", "strength": "confirmed"
+            "firedDate": "2026-06-09",
+            "day": 5,
+            "tested": true,
+            "testResponse": "held",
+            "verdict": "strength",
+            "strength": "confirmed"
           }
         },
-        { "tf": "DTF", "blue": 0, "orange": 0, "cross": "bull", "location": "mid", "dir": "up", "note": "DTF values not captured this session" }
+        {
+          "tf": "DTF",
+          "blue": 0,
+          "orange": 0,
+          "cross": "bull",
+          "location": "mid",
+          "dir": "up",
+          "note": "DTF values not captured this session"
+        }
       ],
       "levels": {
-        "pdh": 756.68, "pdl": 751.76,
-        "orbH": 0, "orbL": 0,
-        "ahh": 0, "ahl": 0,
-        "pmh": 0, "pml": 0,
-        "worbh": 756.68, "worbl": 751.76,
-        "lworbh": 745.34, "lworbl": 738.19,
-        "fvg1": null, "fvg2": null
+        "pdh": 756.68,
+        "pdl": 751.76,
+        "orbH": 0,
+        "orbL": 0,
+        "ahh": 0,
+        "ahl": 0,
+        "pmh": 0,
+        "pml": 0,
+        "worbh": 756.68,
+        "worbl": 751.76,
+        "lworbh": 745.34,
+        "lworbl": 738.19,
+        "fvg1": null,
+        "fvg2": null
       },
       "plans": [
         {
@@ -718,10 +925,20 @@
           "direction": "call",
           "setupType": "macro-context",
           "sequence": null,
-          "entryZone": { "low": 751.76, "high": 756.68 },
+          "entryZone": {
+            "low": 751.76,
+            "high": 756.68
+          },
           "trigger": 756.68,
-          "invalidation": { "preEntry": 751.76, "postEntry": 750.00 },
-          "targets": [756.68, 760.00, 765.00],
+          "invalidation": {
+            "preEntry": 751.76,
+            "postEntry": 750.0
+          },
+          "targets": [
+            756.68,
+            760.0,
+            765.0
+          ],
           "qualityGates": {
             "smiAlignment": true,
             "levelIntegrity": true,
@@ -736,7 +953,7 @@
             "validates": "SPY holds above WORBL $751.76 at 9:20 = BULL gate open",
             "invalidates": "SPY below WORBL $751.76 at 9:20 = gate closed, flip to bear names or stand down"
           },
-          "notes": "MACRO CONTEXT ONLY — not tradeable. 1H OB narrowing (~86/83) = reset expected Tuesday. 4H OB widening (~84/76) = macro bull intact. Bull gate $756.68 = WORBH. Bear gate $751.76 = WORBL. All positions closed by 2:00 PM ET Tuesday June 17 per FOMC flat rule."
+          "notes": "MACRO CONTEXT ONLY \u2014 not tradeable. 1H OB narrowing (~86/83) = reset expected Tuesday. 4H OB widening (~84/76) = macro bull intact. Bull gate $756.68 = WORBH. Bear gate $751.76 = WORBL. All positions closed by 2:00 PM ET Tuesday June 17 per FOMC flat rule."
         }
       ],
       "manipulation4H": {
@@ -744,10 +961,113 @@
         "variant": "none",
         "sweepDirection": "none",
         "sweepTarget": null,
-        "sweepNote": "SPY context only — no manipulation watch.",
+        "sweepNote": "SPY context only \u2014 no manipulation watch.",
         "entryTrigger": null,
         "realMove": "N/A"
       }
     }
-  ]
+  ],
+  "mondayRankings": {
+    "date": "2026-06-17",
+    "fomc": "FOMC rate decision Wednesday June 18 2:00 PM ET. NO overnight holds Monday or Tuesday. Close ALL positions by 2:00 PM ET Tuesday June 17.",
+    "boardWideFlags": [
+      "Iran deal MoU signed weekend \u2014 primary catalyst, risk-on across board",
+      "FOMC Wednesday June 18 \u2014 conviction reduced Tue, no overnight holds Mon/Tue",
+      "DTF crosses firing: META Day 1 (5.79), NVDA Day 1 (6.49), AMZN Day 2 (9.58), GOOGL Day 3 (19.02), TSLA Day 2 (12.11)",
+      "4H extreme OB on NVDA (81/73 both lines) \u2014 flush-first protocol Tuesday, do not buy opens",
+      "MSFT DTF fragile (gap 1.91) \u2014 off-list until gap widens past 5",
+      "TSLA two-way: 4H bear cross fired (gap -0.84) + DTF Day 2 bull = Leg 1 PUT spike, Leg 2 CALL from flush",
+      "Juneteenth Friday June 20 = market closed, 4-day trading week (Tue-Thu only)"
+    ],
+    "rankings": [
+      {
+        "rank": 1,
+        "name": "META",
+        "bias": "CALL",
+        "conviction": "HIGH",
+        "setup": "DTF Day 1 fired (gap 5.79) \u2014 first bull cross after 5 consecutive bear bars. Biggest structural event of the session. 4H OB narrowing (12.09) is the risk. Entry from LWORBL $579.22 after morning dip.",
+        "entry": "LWORBL $579.22 hold + 2m bull cross after 1H bear cross reset",
+        "target": "ORB H $592.81 \u2192 WORBH $601.27 \u2192 FVG $613.60",
+        "stop": 575.0,
+        "fomc_rule": "Take T1 at ORB H $592.81, T2 at WORBH $601.27. Close before 2 PM Tuesday."
+      },
+      {
+        "rank": 2,
+        "name": "TSLA",
+        "bias": "TWO-WAY",
+        "conviction": "HIGH",
+        "setup": "Leg 1: 4H bear cross just fired (gap -0.84), AH -$5.76 to $405.39. PUT on morning spike to LWORBH $412.94. Leg 2: DTF Day 2 (12.11), 15m extreme OS bull cross fired. CALL from flush zone $407-409 after Leg 1 or gap-down.",
+        "entry": "Leg 1 PUT: spike to $412-413 + 2m bear cross | Leg 2 CALL: AHL $408.50/WORBL $407.10 + 2m bull cross",
+        "target": "Leg 1: ORB L $408.99 \u2192 WORBL $407.10 | Leg 2: AHH $411.95 \u2192 LWORBH $412.94 \u2192 WORBH $416.00",
+        "stop": 414.5,
+        "fomc_rule": "If gap-down at open near $405-407, skip Leg 1 entirely \u2014 go straight to Leg 2 CALL. Close all before 2 PM Tuesday."
+      },
+      {
+        "rank": 3,
+        "name": "NVDA",
+        "bias": "CALL",
+        "conviction": "HIGH",
+        "setup": "DTF Day 1 (6.49). 4H BOTH lines extreme OB (81/73) with narrowing gap \u2014 flush-first mandatory. AH $210.94 already below close ($212.45). Wait for morning dip to LWORBH $210.47, then 2m bull cross.",
+        "entry": "FLUSH-FIRST: LWORBH $210.47 or ORB H $211.33 hold + 2m bull cross. Never on gap-open candle.",
+        "target": "WORBH $212.71 \u2192 $213.77 \u2192 FVG $216.10",
+        "stop": 207.5,
+        "fomc_rule": "Take T1 at WORBH $212.71, trail for T2/T3. Close before 2 PM Tuesday."
+      },
+      {
+        "rank": 4,
+        "name": "GOOGL",
+        "bias": "CALL",
+        "conviction": "HIGH",
+        "setup": "DTF Day 3 (19.02 accelerating). 15m/1H fully reset into OS/mid = clean reload. Low $366.55 tested and held vs LWORBH $366.62 = textbook test-hold. 4H OB narrowing (4.94) = only risk \u2014 monitor during session.",
+        "entry": "WORBL $366.55/LWORBH $366.62 hold + 2m bull cross",
+        "target": "AHH $369.95 \u2192 ORB H $372.12 \u2192 WORBH $372.99 \u2192 2WLWORBL $373.58",
+        "stop": 364.5,
+        "fomc_rule": "Clean setup. Take T1 at AHH $369.95, trail for WORBH. Close before 2 PM Tuesday."
+      },
+      {
+        "rank": 5,
+        "name": "AMZN",
+        "bias": "CALL",
+        "conviction": "MEDIUM-HIGH",
+        "setup": "DTF Day 2 (9.58) + 4H widening (16.45). AH $248.14 above WORBH. 15m/1H at extreme OB at close \u2014 wait for reset overnight before entry. Do not buy the open.",
+        "entry": "15m/1H reset from extreme OB overnight + WORBL $244.73 holds + 2m bull cross on reload",
+        "target": "ORB H $247.80 \u2192 LWORBH $249.42 \u2192 FVG $251.27",
+        "stop": 243.0,
+        "fomc_rule": "Take T1 at ORB H, T2 at LWORBH $249.42. Close before 2 PM Tuesday."
+      },
+      {
+        "rank": 6,
+        "name": "AAPL",
+        "bias": "WATCH",
+        "conviction": "LOW-MEDIUM",
+        "setup": "DTF near-cross (gap 0.16) = Day 1 imminent Tuesday. 4H Day 1 OB = Variant B sweep risk below WORBL $291.70 at 8am. Off-list until DTF fires. If DTF fires: upgrade to Slot 3 call from WORBL.",
+        "entry": "DTF confirms bull cross \u2192 WORBL $291.70 sweep holds \u2192 2m bull cross",
+        "target": "WORBH $297.78",
+        "stop": 289.5,
+        "fomc_rule": "Off-list until DTF confirms. Slot 3 size only ($1000). Close before 2 PM Tuesday."
+      },
+      {
+        "rank": 7,
+        "name": "MSFT",
+        "bias": "WATCH",
+        "conviction": "LOW",
+        "setup": "DTF Day 1 fragile (gap 1.91) \u2014 thinnest cross of all 8 names. 4H OB Day 1 narrowing. 1H bear cross declining all session. Off-list until DTF gap widens past 5.",
+        "entry": "DTF gap > 5 confirmed + 4H stops narrowing \u2192 PM Low $394.74 hold + 2m bull cross",
+        "target": "FVG $406.97 \u2192 LWORBL $408.56",
+        "stop": 390.0,
+        "fomc_rule": "Most conditional setup. Skip unless DTF clearly validates. Close before 2 PM Tuesday."
+      },
+      {
+        "rank": 8,
+        "name": "SPY",
+        "bias": "CONTEXT",
+        "conviction": "N/A",
+        "setup": "1H OB narrowing (~86/83) = reset expected. 4H OB widening (~84/76) = macro bull intact. Bull gate WORBH $756.68. Bear gate WORBL $751.76.",
+        "entry": "N/A \u2014 direction read only",
+        "target": "Bull gate: SPY above $756.68 at 9:20 = BULL | Bear gate: SPY below $751.76 = BEAR",
+        "stop": null,
+        "fomc_rule": "SPY = macro direction read only. No SPY positions. FOMC Wednesday June 18 2:00 PM ET."
+      }
+    ]
+  }
 }
