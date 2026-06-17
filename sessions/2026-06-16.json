@@ -1,0 +1,862 @@
+{
+  "id": "2026-06-16",
+  "date": "2026-06-16",
+  "title": "Week of June 15 — FOMC Decision DAY (June 17, 2:00 PM ET). Hard exit all positions.",
+  "spyClose": 750.33,
+  "marketTone": "bear",
+  "macro": {
+    "iran": "MoU signed over weekend. Strait of Hormuz reopening. Peace signing ceremony Friday June 19 Geneva.",
+    "bonds": "Rate cut odds unchanged. FOMC hold expected.",
+    "oil": "WTI weakness = tailwind for tech margins — but board sold off regardless today.",
+    "fed": "FOMC rate decision TOMORROW June 17 at 2:00 PM ET. Kevin Warsh first press conference. 4th consecutive hold expected. RULE: ALL positions CLOSED before 2:00 PM ET tomorrow. No exceptions. Flat into decision.",
+    "catalyst": "Board-wide selloff June 16. NVDA -2.37%, TSLA -1.58%, MSFT -1.48%, AMZN, GOOGL all red. SPY broke WORBL $751.76. Most names closed below their WORBLs. PUT bias board-wide tomorrow."
+  },
+  "worb": {
+    "note": "Set from Monday June 15 full session. Locked all week June 15-19. Do not change.",
+    "spy": { "high": 756.68, "low": 751.76 },
+    "aapl": { "high": 297.78, "low": 291.70 },
+    "amzn": { "high": 247.81, "low": 244.73 },
+    "googl": { "high": 372.99, "low": 366.55 },
+    "meta": { "high": 601.27, "low": 579.30 },
+    "msft": { "high": 401.75, "low": 392.85 },
+    "nvda": { "high": 212.71, "low": 208.34 },
+    "tsla": { "high": 416.00, "low": 407.10 }
+  },
+  "macroFilter": {
+    "rule": "Direction locked at 9:20 AM from SPY position vs WORB",
+    "bullThreshold": 756.68,
+    "bearThreshold": 751.76,
+    "bearScenario": "SPY below $751.76 at 9:20 (BASE CASE — SPY closed $750.33). BEAR day. PUT setups are primary: NVDA, GOOGL, TSLA, AMZN. Watch for morning sweep UP toward $751.76-$754.22 before real move down. Max 2 PUT trades.",
+    "mixedScenario": "SPY $751.76-$756.68 at 9:20 = WORBL reclaim attempt. MIXED. Single setup only at Slot 2 size. Most conservative posture.",
+    "bullScenario": "SPY at/above $756.68 at 9:20 = surprise BULL. Low probability given $750.33 close. If it happens: CALL setups only — MSFT, META, AAPL. No PUT entries on bull gate day."
+  },
+  "sizing": {
+    "baseEntry": 1750,
+    "maxTrades": 2,
+    "dailyLossLimit": 700,
+    "walkAwayTarget": 800,
+    "maxSimultaneousPositions": 1,
+    "notes": "FOMC DAY — reduce to 2 max trades. All positions CLOSED before 2:00 PM ET June 17. No exceptions. Take T1 early, trail cautiously. Do not hold through 1pm without a plan to close."
+  },
+  "rankings": [
+    "NVDA",
+    "GOOGL",
+    "TSLA",
+    "AMZN",
+    "MSFT",
+    "META",
+    "AAPL",
+    "SPY"
+  ],
+  "names": [
+    {
+      "name": "NVDA",
+      "status": "active",
+      "open": 211.18,
+      "high": 211.49,
+      "low": 207.29,
+      "close": 207.41,
+      "ahPrice": 207.52,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        {
+          "tf": "15m",
+          "blue": -45.47,
+          "orange": -28.93,
+          "cross": "bear",
+          "location": "oversold",
+          "dir": "down",
+          "gap": -16.54
+        },
+        {
+          "tf": "1H",
+          "blue": -64.80,
+          "orange": -67.05,
+          "cross": "bull",
+          "location": "extreme-oversold",
+          "dir": "up",
+          "gap": 2.25,
+          "note": "Fresh bull cross — very narrow, unconfirmed. Exhaustion signal only."
+        },
+        {
+          "tf": "4H",
+          "blue": 21.63,
+          "orange": 40.66,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down",
+          "gap": -19.03
+        },
+        {
+          "tf": "DTF",
+          "blue": -42.58,
+          "orange": -50.57,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up",
+          "gap": 7.99
+        }
+      ],
+      "levels": {
+        "worbh": 212.71,
+        "worbl": 208.34,
+        "orbH": 211.50,
+        "orbL": 208.87,
+        "ahh": 208.08,
+        "ahl": 206.97,
+        "pmh": 212.44,
+        "pml": 210.80,
+        "pdh": 211.49,
+        "pdl": 207.29,
+        "lworbh": 210.41,
+        "lworbl": 205.97,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "put",
+          "setupType": "bear-continuation",
+          "entryZone": { "low": 208.34, "high": 208.87 },
+          "trigger": "2m bear cross after pop to sweep zone exhausts",
+          "invalidation": {
+            "preEntry": "Opens above $209.17 and holds — sweep may be accelerating, wait for new structure",
+            "postEntry": "Sustained close above $209.17"
+          },
+          "targets": [207.28, 206.97, 205.97],
+          "manipulation4H": {
+            "variant": "B",
+            "sweepDirection": "up",
+            "sweepTarget": "208.34-208.87",
+            "status": "NOT STARTED — AH $207.52 below all levels",
+            "realDirection": "DOWN",
+            "entry": "Pop to WORBL $208.34-ORB L $208.87 → 2m bear cross fires → PUT"
+          },
+          "slot": 1,
+          "tier": "primary-bear",
+          "notes": "Highest conviction setup on the board. WORBL $208.34 flipped to resistance. 4H bear cross established (-19.03). 15m fresh bear cross widening in OS. DTF bull cross provides floor at LWORBL $205.97. Morning pop to $208.34-$208.87 is the sweep — wait for it, get the cross, then PUT. Hard exit 2pm ET."
+        }
+      ]
+    },
+    {
+      "name": "GOOGL",
+      "status": "active",
+      "open": 373.56,
+      "high": 373.57,
+      "low": 370.24,
+      "close": 373.25,
+      "ahPrice": 371.94,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        {
+          "tf": "15m",
+          "blue": null,
+          "orange": null,
+          "cross": "bear",
+          "location": "oversold",
+          "dir": "down",
+          "note": "From chart read — bear cross, OS, widening"
+        },
+        {
+          "tf": "1H",
+          "blue": null,
+          "orange": null,
+          "cross": "failed-bull",
+          "location": "oversold",
+          "dir": "down",
+          "note": "1H failed bull cross — fired 3 bars then re-crossed bear. Bearish tell."
+        },
+        {
+          "tf": "4H",
+          "blue": null,
+          "orange": null,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down",
+          "gap": -1.52,
+          "note": "Fresh bear cross. Day 1."
+        },
+        {
+          "tf": "DTF",
+          "blue": null,
+          "orange": null,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up",
+          "note": "DTF bull cross widening — limits downside to WORBL $366.55, does not override 4H"
+        }
+      ],
+      "levels": {
+        "worbh": 372.99,
+        "worbl": 366.55,
+        "orbH": null,
+        "orbL": null,
+        "ahh": null,
+        "ahl": 371.94,
+        "pmh": null,
+        "pml": null,
+        "pdh": 373.57,
+        "pdl": 370.24,
+        "lworbh": null,
+        "lworbl": null,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "put",
+          "setupType": "bear-continuation",
+          "entryZone": { "low": 372.99, "high": 373.57 },
+          "trigger": "2m bear cross after pop to WORBH area exhausts",
+          "invalidation": {
+            "preEntry": "Strong open above $374.00 and holds — AH failed reclaim story invalidated",
+            "postEntry": "Sustained close above WORBH $372.99"
+          },
+          "targets": [371.94, 370.00, 366.55],
+          "manipulation4H": {
+            "variant": "B",
+            "sweepDirection": "up",
+            "sweepTarget": "372.99-373.57",
+            "status": "NOT STARTED — AH $371.94 below WORBH $372.99",
+            "realDirection": "DOWN",
+            "entry": "Pop to WORBH $372.99-$373.57 → 2m bear cross → PUT. AH already shows failed reclaim ($371.94)."
+          },
+          "slot": 1,
+          "tier": "primary-bear",
+          "notes": "4H fresh bear cross (-1.52). AH $371.94 closed back below WORBH $372.99 = failed reclaim (WORBH tested and rejected same session). 1H failed bull cross (fired 3 bars → re-crossed bear) = confirming signal. Sweep zone tight. DTF bull cross limits downside to WORBL $366.55. Hard exit 2pm ET."
+        }
+      ]
+    },
+    {
+      "name": "TSLA",
+      "status": "active",
+      "open": 404.11,
+      "high": 412.42,
+      "low": 400.54,
+      "close": 404.66,
+      "ahPrice": 402.75,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        {
+          "tf": "15m",
+          "blue": -65.77,
+          "orange": -57.10,
+          "cross": "bear",
+          "location": "extreme-oversold",
+          "dir": "down",
+          "gap": -8.67
+        },
+        {
+          "tf": "1H",
+          "blue": -56.85,
+          "orange": -46.70,
+          "cross": "bear",
+          "location": "oversold",
+          "dir": "down",
+          "gap": -10.15
+        },
+        {
+          "tf": "4H",
+          "blue": 22.79,
+          "orange": 36.42,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down",
+          "gap": -13.63
+        },
+        {
+          "tf": "DTF",
+          "blue": -13.19,
+          "orange": -25.06,
+          "cross": "bull",
+          "location": "mild-oversold",
+          "dir": "up",
+          "gap": 11.87,
+          "note": "Bull cross from mild OS only. Not extreme. Limited floor strength vs NVDA/MSFT DTF."
+        }
+      ],
+      "levels": {
+        "worbh": 416.00,
+        "worbl": 407.10,
+        "orbH": 408.93,
+        "orbL": 400.56,
+        "ahh": 405.03,
+        "ahl": 402.75,
+        "pmh": 409.32,
+        "pml": 402.99,
+        "pdh": 412.42,
+        "pdl": 400.54,
+        "lworbh": 412.96,
+        "lworbl": 394.75,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "put",
+          "setupType": "bear-continuation",
+          "entryZone": { "low": 407.10, "high": 408.93 },
+          "trigger": "2m bear cross after morning pop to WORBL area exhausts",
+          "invalidation": {
+            "preEntry": "Opens above $409.63 (DTF 21 EMA) and holds — above WORBL resistance zone",
+            "postEntry": "Sustained close above $409.63"
+          },
+          "targets": [404.66, 402.75, 400.56, 394.75],
+          "manipulation4H": {
+            "variant": "B",
+            "sweepDirection": "up",
+            "sweepTarget": "407.10-408.93",
+            "status": "NOT STARTED — AH $402.75 well below sweep zone",
+            "realDirection": "DOWN",
+            "entry": "Morning pop to WORBL $407.10-ORB H $408.93 → sweep exhausts → 2m bear cross → PUT"
+          },
+          "slot": 2,
+          "tier": "primary-bear",
+          "notes": "WORBL $407.10 broken and flipped to resistance. 4H established bear cross (-13.63). 15m/1H both in bear cross, OS territory. Volatile reversal today confirmed distribution (HOD $412.42 → LOD $400.54). DTF bull cross from mild OS = some floor, LWORBL $394.75 is backstop. If no morning pop occurs and price dumps immediately, skip — don't chase. Hard exit 2pm ET."
+        }
+      ]
+    },
+    {
+      "name": "AMZN",
+      "status": "active",
+      "open": 248.16,
+      "high": 249.51,
+      "low": 244.93,
+      "close": 246.00,
+      "ahPrice": 245.76,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        {
+          "tf": "15m",
+          "blue": null,
+          "orange": null,
+          "cross": "bear",
+          "location": "oversold",
+          "dir": "down",
+          "note": "15m failed bounce re-cross bear"
+        },
+        {
+          "tf": "1H",
+          "blue": null,
+          "orange": null,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down"
+        },
+        {
+          "tf": "4H",
+          "blue": null,
+          "orange": null,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down",
+          "gap": -4.54,
+          "note": "Fresh bear cross Day 1"
+        },
+        {
+          "tf": "DTF",
+          "blue": null,
+          "orange": null,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up",
+          "note": "DTF bull cross from OS — limits downside to WORBL $244.73"
+        }
+      ],
+      "levels": {
+        "worbh": 247.81,
+        "worbl": 244.73,
+        "orbH": null,
+        "orbL": null,
+        "ahh": null,
+        "ahl": 245.76,
+        "pmh": null,
+        "pml": null,
+        "pdh": 249.51,
+        "pdl": 244.93,
+        "lworbh": null,
+        "lworbl": null,
+        "fvg1": 251.27,
+        "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "put",
+          "setupType": "bear-continuation",
+          "entryZone": { "low": 246.47, "high": 247.81 },
+          "trigger": "2m bear cross after pop to WORBH area exhausts",
+          "invalidation": {
+            "preEntry": "Sustained close above WORBH $247.81",
+            "postEntry": "Break back above $248.00 with momentum"
+          },
+          "targets": [245.76, 244.73, 243.50],
+          "manipulation4H": {
+            "variant": "B",
+            "sweepDirection": "up",
+            "sweepTarget": "246.47-247.81",
+            "status": "NOT STARTED — AH $245.76 near WORBL",
+            "realDirection": "DOWN",
+            "entry": "Morning pop to $246.47-WORBH $247.81 → 2m bear cross → PUT"
+          },
+          "slot": 2,
+          "tier": "secondary-bear",
+          "notes": "4H fresh bear cross (-4.54). AH $245.76 sitting just above WORBL $244.73. Sweep UP to WORBH $247.81 = $2 move from AH. Trend day down today (gap-and-trap). DTF bull cross = floor at WORBL $244.73. Hard exit 2pm ET."
+        }
+      ]
+    },
+    {
+      "name": "MSFT",
+      "status": "active",
+      "open": 395.79,
+      "high": 396.84,
+      "low": 390.69,
+      "close": 393.83,
+      "ahPrice": 392.95,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        {
+          "tf": "15m",
+          "blue": 31.00,
+          "orange": 16.65,
+          "cross": "bull",
+          "location": "mid",
+          "dir": "up",
+          "gap": 14.35
+        },
+        {
+          "tf": "1H",
+          "blue": -26.62,
+          "orange": -34.79,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up",
+          "gap": 8.18
+        },
+        {
+          "tf": "4H",
+          "blue": 14.40,
+          "orange": 27.90,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down",
+          "gap": -13.50
+        },
+        {
+          "tf": "DTF",
+          "blue": -66.93,
+          "orange": -70.79,
+          "cross": "bull",
+          "location": "extreme-oversold",
+          "dir": "up",
+          "gap": 3.86
+        }
+      ],
+      "levels": {
+        "worbh": 401.75,
+        "worbl": 392.85,
+        "orbH": 397.70,
+        "orbL": 392.20,
+        "ahh": 393.69,
+        "ahl": 392.51,
+        "pmh": 400.90,
+        "pml": 395.52,
+        "pdh": 396.84,
+        "pdl": 390.69,
+        "lworbh": null,
+        "lworbl": 379.00,
+        "fvg1": 406.97,
+        "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "bull-reversal",
+          "entryZone": { "low": 392.20, "high": 392.85 },
+          "trigger": "2m bull cross after morning dip to WORBL zone",
+          "invalidation": {
+            "preEntry": "AH closes below $392.85 — sweep may not be complete, watch for morning flush to $390.69 first",
+            "postEntry": "Sustained break below LOD $390.69"
+          },
+          "targets": [393.69, 397.70, 401.75],
+          "manipulation4H": {
+            "variant": "B",
+            "sweepDirection": "down",
+            "sweepTarget": "392.85-392.20",
+            "status": "APPEARS COMPLETE — LOD $390.69 swept WORBL $392.85 by $2.16 today. AH $392.95 retesting from above.",
+            "realDirection": "UP",
+            "entry": "If morning dip to $392.85-$392.20 → 2m bull cross → CALL. If AH closes below $392.85, watch for one more flush to $390.69 before entry."
+          },
+          "slot": 2,
+          "tier": "secondary-call",
+          "notes": "Counter-trend CALL on a PUT board — only valid because sweep appears complete. DTF extreme OS bull cross (+3.86 widening from -66.93/-70.79) = strongest structural floor on the board. 15m/1H in bull cross recovering. 4H still bear (-13.50) — real move UP is structural recovery, not trend. Take T1 at AHH $393.69, T2 at ORB H $397.70. Hard exit 2pm ET."
+        }
+      ]
+    },
+    {
+      "name": "META",
+      "status": "active",
+      "open": 593.65,
+      "high": 605.81,
+      "low": 592.00,
+      "close": 600.21,
+      "ahPrice": null,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        {
+          "tf": "15m",
+          "blue": null,
+          "orange": null,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down",
+          "note": "Failed bounce re-cross bear"
+        },
+        {
+          "tf": "1H",
+          "blue": null,
+          "orange": null,
+          "cross": "failed-bull",
+          "location": "mid",
+          "dir": "down",
+          "note": "1H failed bull cross — confirming bear"
+        },
+        {
+          "tf": "4H",
+          "blue": null,
+          "orange": null,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "down",
+          "gap": 1.40,
+          "note": "OB compression — bear cross fires at 8am tomorrow near certain. Gap too narrow to survive overnight."
+        },
+        {
+          "tf": "DTF",
+          "blue": null,
+          "orange": null,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up",
+          "note": "DTF bull cross — structural floor at WORBL $579.30"
+        }
+      ],
+      "levels": {
+        "worbh": 601.27,
+        "worbl": 579.30,
+        "orbH": null,
+        "orbL": null,
+        "ahh": null,
+        "ahl": null,
+        "pmh": 595.79,
+        "pml": 591.01,
+        "pdh": 605.81,
+        "pdl": 592.00,
+        "lworbh": null,
+        "lworbl": null,
+        "fvg1": 621.80,
+        "fvg2": 613.60
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "bull-reversal",
+          "entryZone": { "low": 593.33, "high": 597.11 },
+          "trigger": "STEP 1: Wait for 4H bear cross to fire at 8am. STEP 2: Watch for sweep DOWN to $597.11-$593.33. STEP 3: 2m bull cross fires → CALL entry.",
+          "invalidation": {
+            "preEntry": "4H bear cross does NOT fire at 8am (gap somehow holds) — setup invalidated",
+            "postEntry": "Break below $591.00 (PM Low)"
+          },
+          "targets": [600.21, 601.27, 613.60],
+          "manipulation4H": {
+            "variant": "B",
+            "sweepDirection": "down",
+            "sweepTarget": "597.11-593.33",
+            "status": "PENDING — 4H bear cross fires tomorrow at 8am 4H open. Sweep DOWN follows cross.",
+            "realDirection": "UP (DTF bull cross structural)",
+            "entry": "4H bear cross fires at 8am → morning dip to $597.11-$593.33 → 2m bull cross → CALL"
+          },
+          "slot": 2,
+          "tier": "secondary-call",
+          "notes": "Most complex setup — two steps before entry. 4H bull cross gap +1.40 = bear cross fires at 8am tomorrow with near certainty. After cross fires, Variant B: sweep DOWN to $597.11-$593.33. Then DTF bull cross drives real move UP. 1H/15m failed crosses confirm the sweep will be meaningful. Close before 2pm ET."
+        }
+      ]
+    },
+    {
+      "name": "AAPL",
+      "status": "active",
+      "open": 300.78,
+      "high": 302.91,
+      "low": 297.78,
+      "close": 299.24,
+      "ahPrice": null,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        {
+          "tf": "15m",
+          "blue": null,
+          "orange": null,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up"
+        },
+        {
+          "tf": "1H",
+          "blue": null,
+          "orange": null,
+          "cross": "bull",
+          "location": "oversold",
+          "dir": "up"
+        },
+        {
+          "tf": "4H",
+          "blue": null,
+          "orange": null,
+          "cross": "bull",
+          "location": "overbought",
+          "dir": "up",
+          "gap": 5.37,
+          "note": "OB compressing — flush-first protocol. Watch for WORBL sweep at 8am 4H open."
+        },
+        {
+          "tf": "DTF",
+          "blue": -47.29,
+          "orange": -52.68,
+          "cross": "bull",
+          "location": "extreme-oversold",
+          "dir": "up",
+          "gap": 5.39,
+          "note": "Fresh bull cross from extreme OS. Strong structural support."
+        }
+      ],
+      "levels": {
+        "worbh": 297.78,
+        "worbl": 291.70,
+        "orbH": null,
+        "orbL": null,
+        "ahh": null,
+        "ahl": null,
+        "pmh": null,
+        "pml": null,
+        "pdh": 302.91,
+        "pdl": 297.78,
+        "lworbh": null,
+        "lworbl": null,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "flush-first-bull",
+          "entryZone": { "low": 296.48, "high": 297.78 },
+          "trigger": "Morning flush to WORBH $297.78-$296.48 → 2m bull cross → CALL",
+          "invalidation": {
+            "preEntry": "Flush goes below $296.00 without bull cross recovery",
+            "postEntry": "Break below $295.00"
+          },
+          "targets": [299.24, 302.91, 305.00],
+          "manipulation4H": {
+            "variant": "B",
+            "sweepDirection": "down",
+            "sweepTarget": "297.78-296.48",
+            "status": "NOT STARTED — 4H OB compressing (+5.37). Sweep DOWN at 8am 4H open.",
+            "realDirection": "UP (DTF fresh bull cross from extreme OS -47.29/-52.68)",
+            "entry": "8am flush to $297.78-$296.48 → hold + 2m bull cross → CALL"
+          },
+          "slot": 3,
+          "tier": "watch-call",
+          "notes": "Flush-first protocol. 4H OB compressing means morning sweep DOWN is expected before real move UP. DTF fresh bull cross from extreme OS = strong floor. Lowest priority on a PUT board tonight — only trade if flush is clean and 2m cross is clear. Slot 3 size. Hard exit 2pm ET."
+        }
+      ]
+    },
+    {
+      "name": "SPY",
+      "status": "context",
+      "open": 754.39,
+      "high": 756.86,
+      "low": 748.83,
+      "close": 750.33,
+      "ahPrice": 750.33,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        {
+          "tf": "4H",
+          "blue": 56.32,
+          "orange": 65.90,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down",
+          "gap": -9.58,
+          "note": "Established bear cross"
+        },
+        {
+          "tf": "DTF",
+          "blue": null,
+          "orange": null,
+          "cross": "bear",
+          "location": "mid",
+          "dir": "down",
+          "note": "DTF bear cross — macro bears in control"
+        }
+      ],
+      "levels": {
+        "worbh": 756.68,
+        "worbl": 751.76,
+        "pdh": 756.86,
+        "pdl": 748.83,
+        "pmh": null,
+        "pml": null,
+        "ahh": null,
+        "ahl": null,
+        "orbH": null,
+        "orbL": null,
+        "lworbh": null,
+        "lworbl": null,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "put",
+          "setupType": "macro-context",
+          "entryZone": { "low": 751.76, "high": 754.22 },
+          "trigger": "Morning pop to WORBL $751.76-$754.22 → 2m bear cross = SPY put setup (context only)",
+          "invalidation": {
+            "preEntry": "SPY reclaims WORBH $756.68 — flip to bull gate"
+          },
+          "targets": [748.83, 745.00],
+          "manipulation4H": {
+            "variant": "B",
+            "sweepDirection": "up",
+            "sweepTarget": "751.76-754.22",
+            "status": "NOT STARTED — SPY at $750.33, WORBL $751.76 is resistance",
+            "realDirection": "DOWN per 4H bear cross",
+            "entry": "CONTEXT ONLY — not a trading vehicle"
+          },
+          "slot": null,
+          "tier": "context-only",
+          "notes": "MACRO CONTEXT ONLY. WORBL $751.76 broken — now resistance. 4H established bear cross (-9.58). Tomorrow: morning pop to $751.76-$754.22 = sweep. If SPY pops but individual names stay weak = bear confirmation. Bear gate WORBL $751.76 governs all name filters at 9:20 AM. FOMC decision 2pm ET June 17."
+        }
+      ]
+    }
+  ],
+  "tuesdayRankings": {
+    "date": "2026-06-17",
+    "fomc": "FOMC rate decision TODAY June 17 2:00 PM ET. Hard exit ALL positions before 2pm. No exceptions. Flat into FOMC.",
+    "boardWideFlags": [
+      "Board flipped: Monday CALL board → Tuesday PUT board. NVDA, GOOGL, TSLA, AMZN all in PUT setup.",
+      "SPY closed $750.33 — below WORBL $751.76. Bear macro gate active. Expect morning pop to $751.76-$754.22 (sweep) then real move DOWN.",
+      "4H sweeps NOT started on NVDA (pop to $208.34-$208.87), GOOGL (pop to $372.99-$373.57), TSLA (pop to $407.10-$408.93), AMZN (pop to $246.47-$247.81). Entry ONLY after sweep exhausts and 2m bear cross fires.",
+      "MSFT CALL setup — WORBL swept today (LOD $390.69). DTF extreme OS bull cross = strongest structural floor on board. Morning dip to $392.85 → CALL. Counter-trend on PUT board — lower priority.",
+      "META CALL setup — wait for 4H bear cross to fire at 8am, THEN watch for sweep DOWN to $597.11-$593.33, THEN 2m bull cross. Two steps before entry. Complex.",
+      "AAPL CALL — flush-first. 4H OB compressing, morning dip to $297.78-$296.48 expected. Slot 3 only on FOMC day.",
+      "FOMC DAY: Max 2 trades. Take T1 early. Do not hold through 1pm. All flat before 2pm ET."
+    ],
+    "rankings": [
+      {
+        "rank": 1,
+        "name": "NVDA",
+        "bias": "PUT",
+        "conviction": "HIGH",
+        "setup": "4H established bear cross (-19.03). WORBL $208.34 flipped to resistance. 15m fresh bear cross widening in OS. Sweep NOT started. Clearest setup on the board.",
+        "entry": "Morning pop to $208.34-$208.87 + 2m bear cross → PUT",
+        "target": "PDL $207.28 → AHL $206.97 → LWORBL $205.97",
+        "stop": 209.17,
+        "fomc_rule": "Take T1 at PDL $207.28. Trail for $206.97. Close all before 2pm ET. No exceptions."
+      },
+      {
+        "rank": 2,
+        "name": "GOOGL",
+        "bias": "PUT",
+        "conviction": "HIGH",
+        "setup": "4H fresh bear cross (-1.52). AH $371.94 failed WORBH $372.99 reclaim. 1H failed bull cross = confirming bearish tell. Tight sweep zone.",
+        "entry": "Morning pop to WORBH $372.99-$373.57 + 2m bear cross → PUT",
+        "target": "AHL $371.94 → $370.00 → WORBL $366.55",
+        "stop": 374.00,
+        "fomc_rule": "Take T1 at AHL $371.94. Trail to $370. Close all before 2pm ET."
+      },
+      {
+        "rank": 3,
+        "name": "TSLA",
+        "bias": "PUT",
+        "conviction": "MEDIUM-HIGH",
+        "setup": "4H established bear cross (-13.63). WORBL $407.10 broken. Volatile reversal today confirmed distribution. Sweep NOT started. DTF mild OS (risk: less structural floor than NVDA/MSFT).",
+        "entry": "Morning pop to WORBL $407.10-ORB H $408.93 + 2m bear cross → PUT",
+        "target": "AHL $402.75 → ORB L $400.56 → LWORBL $394.75",
+        "stop": 409.63,
+        "fomc_rule": "Take T1 at AHL $402.75. Trail for ORB L. Close all before 2pm ET."
+      },
+      {
+        "rank": 4,
+        "name": "AMZN",
+        "bias": "PUT",
+        "conviction": "MEDIUM-HIGH",
+        "setup": "4H fresh bear cross (-4.54). Trend day down today. AH $245.76 near WORBL $244.73. Sweep zone $246.47-$247.81.",
+        "entry": "Morning pop to $246.47-WORBH $247.81 + 2m bear cross → PUT",
+        "target": "AHL $245.76 → WORBL $244.73 → $243.50",
+        "stop": 248.00,
+        "fomc_rule": "Take T1 at AHL $245.76. Close all before 2pm ET."
+      },
+      {
+        "rank": 5,
+        "name": "MSFT",
+        "bias": "CALL",
+        "conviction": "MEDIUM",
+        "setup": "Counter-trend CALL. WORBL swept today (LOD $390.69). DTF extreme OS bull cross = strongest structural floor on board. 15m/1H in bull cross recovering. 4H still bear — near-term risk. AH $392.95 retesting WORBL.",
+        "entry": "Morning dip to $392.85-$392.20 + 2m bull cross → CALL",
+        "target": "AHH $393.69 → ORB H $397.70 → WORBH $401.75",
+        "stop": 390.69,
+        "fomc_rule": "Counter-trend on PUT board. Take T1 at AHH $393.69. Do not hold past T1 without strong momentum. Close before 2pm ET."
+      },
+      {
+        "rank": 6,
+        "name": "META",
+        "bias": "CALL",
+        "conviction": "MEDIUM",
+        "setup": "Complex two-step setup. 4H bear cross fires at 8am tomorrow. After cross, watch for sweep DOWN to $597.11-$593.33. Then 2m bull cross = CALL entry. DTF bull cross structural support.",
+        "entry": "STEP 1: Wait for 4H bear cross at 8am. STEP 2: Sweep to $597.11-$593.33. STEP 3: 2m bull cross → CALL",
+        "target": "Yesterday close $600.21 → WORBH $601.27 → FVG $613.60",
+        "stop": 591.00,
+        "fomc_rule": "Most conditional setup. Two steps before entry. Take T1 at $600.21. Close all before 2pm ET."
+      },
+      {
+        "rank": 7,
+        "name": "AAPL",
+        "bias": "CALL",
+        "conviction": "LOW-MEDIUM",
+        "setup": "Flush-first. 4H OB compressing (+5.37), DTF fresh bull cross from extreme OS. Morning dip to $297.78-$296.48 expected at 8am 4H open. Lowest priority on PUT board.",
+        "entry": "Flush to $297.78-$296.48 + 2m bull cross → CALL",
+        "target": "Yesterday close $299.24 → PDH $302.91",
+        "stop": 295.00,
+        "fomc_rule": "Slot 3 size only ($1000). Take T1 at $299.24. Close before 2pm ET. Skip if PUT setups are active."
+      },
+      {
+        "rank": 8,
+        "name": "SPY",
+        "bias": "CONTEXT",
+        "conviction": "N/A",
+        "setup": "WORBL $751.76 broken — SPY at $750.33. 4H established bear cross (-9.58). Morning pop expected to $751.76-$754.22 before real move down. Bear gate governs all names at 9:20 AM.",
+        "entry": "N/A — direction read only",
+        "target": "Bear gate: SPY stays below $751.76 at 9:20 = PUT board (base case). Bull gate: SPY above $756.68 = flip to CALL (low probability).",
+        "stop": null,
+        "fomc_rule": "FOMC decision 2pm ET June 17. SPY = macro filter only. No SPY positions."
+      }
+    ]
+  }
+}
