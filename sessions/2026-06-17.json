@@ -1,0 +1,181 @@
+{
+  "session": "EOD",
+  "date": "2026-06-17",
+  "nextSession": "2026-06-18",
+  "sessionFlags": [
+    "Friday June 19 = Juneteenth = MARKET CLOSED",
+    "Thursday June 18 = last trading day before 3-day weekend",
+    "All positions close before Thursday EOD 4:00 PM ET",
+    "Jobless claims 8:30 ET = primary macro driver",
+    "Day trade only — no overnight holds"
+  ],
+  "names": {
+    "SPY": {
+      "close": 740.96,
+      "dtf": { "blue": 23.42, "orange": 13.32, "cross": "BULL", "gap": 10.10 },
+      "smi_4h": { "blue": -26.72, "orange": -8.33, "cross": "BEAR", "behavior": "ESTABLISHED, confirmed" },
+      "smi_1h": { "blue": -26.76, "orange": -33.58, "cross": "BULL", "reset": "OS recovering" },
+      "worb": { "h": 756.68, "l": 751.76, "distanceFromClose": -10.80 },
+      "keyLevels": { "ahh": 745.72, "ahl": 740.70, "pdl": 739.22, "lworbl": 738.20 },
+      "primarySetup": "BEAR if below AHH 745.72",
+      "callSetup": "WATCH — AHL 740.70 hold only",
+      "manipulation": { "variant": "NONE", "active": false },
+      "orbProbability": { "calls": "LOW", "puts": "MODERATE" },
+      "premarketCheck": "SPY above or below AHL 740.70 after claims. Above = bounce. Below = continuation to LWORBL 738.20.",
+      "thesis": "Bears primary if below AHH 745.72. Call WATCH only — AHL hold required."
+    },
+    "AAPL": {
+      "close": 295.95,
+      "ahClose": 298.16,
+      "dtf": { "blue": -43.54, "orange": -48.11, "cross": "BULL", "gap": 4.57, "flag": "THIN <5 — monitoring" },
+      "smi_4h": { "blue": 10.72, "orange": 28.45, "cross": "BEAR", "behavior": "FRESH from OB, widening", "crossBehavior": "FRESH — 2-3 sessions, widening, not yet tested" },
+      "smi_1h": { "blue": -30.26, "orange": -40.23, "cross": "BULL", "reset": "OS recovering from -65, approaching neutral" },
+      "worb": { "h": 297.78, "l": 291.70, "ahAboveWORBH": true, "ahPrice": 298.16 },
+      "keyLevels": { "orbh": 302.05, "orbl": 299.55, "ahh": 298.16, "ahl": 295.60, "pdl": 294.36, "fvg1": 302.26, "fvg2": 304.79 },
+      "manipulation": { "variant": "B", "active": true, "sweepDirection": "UP", "sweepTarget": "WORBH 297.78 to ORB L 299.55 cluster", "entryTrigger": "2m bear cross AFTER sweep exhausts = PUT. 2m bull cross if WORBH holds = CALL.", "realMove": "LOWER toward WORBL 291.70 (if sweep completes and rejects)" },
+      "callSetup": { "slot": 2, "entry": "WORBH 297.78 hold + 2m bull cross", "t1": 302.05, "stop": 296.80, "rr": "3.4:1" },
+      "putSetup": { "slot": 1, "entry": "2m bear cross AFTER WORBH sweep exhausts", "t1": 295.60, "t2": 291.70, "stop": 298.08, "rr": "20:1" },
+      "orbProbability": { "calls": "LOW — Tier 3", "puts": "MODERATE — Tier 1 after sweep" },
+      "premarketCheck": "WORBH 297.78 holding at 8:45? YES = call primary. NO = wait for Variant B sweep to complete. DO NOT ENTER AT OPEN.",
+      "thesis": "ON TABLE both legs. Variant B active. DO NOT ENTER AT OPEN — let sweep resolve."
+    },
+    "AMZN": {
+      "close": 237.50,
+      "ahClose": 239.40,
+      "dtf": { "blue": -39.05, "orange": -45.92, "cross": "BULL", "gap": 6.87, "flag": "Narrowing — was 14.36 two sessions ago. Monitor." },
+      "smi_4h": { "blue": -37.00, "orange": -13.89, "cross": "BEAR", "behavior": "ESTABLISHED, widening, CONFIRMED STRENGTH", "crossBehavior": "Multi-bar confirmed, widening, declining" },
+      "smi_1h": { "blue": -38.22, "orange": -50.99, "cross": "BULL", "reset": "Deep OS recovering from -74, rising fast" },
+      "worb": { "h": 247.81, "l": 244.73, "distanceFromClose": -7.23 },
+      "keyLevels": { "ahh": 239.44, "ahl": 237.42, "pdl": 235.97, "sma200": 232.71 },
+      "manipulation": { "variant": "NONE", "active": false, "watch": "If 4H blue drops below -60 next bar = Variant A: AHL 237.42 sweep" },
+      "putSetup": { "slot": 1, "entry": "AHH 239.44 rejection", "t1": 237.42, "t2": 235.97, "t3": 232.71, "stop": 240.00, "rr": { "t2": "3:1", "t3": "6.3:1" } },
+      "callSetup": { "slot": 2, "entry": "WORBL 244.73 CLEAN RECLAIM + holds", "t1": 249.42, "stop": 244.43, "rr": "16:1", "note": "WORBL reclaim only — do NOT enter calls below WORBL" },
+      "orbProbability": { "calls": "LOW 1/6 — Tier 3 WORBL reclaim only", "puts": "MODERATE 4/6 — Tier 1 on AHH rejection" },
+      "premarketCheck": "Below AHH 239.44 at 8:45 = PUT confirmed. Above WORBL 244.73 = call watch.",
+      "thesis": "PUT PRIMARY Slot 1. Biggest RW on board (-2.21% vs SPY). 200 SMA at 232.71 is the magnet."
+    },
+    "GOOGL": {
+      "close": 363.79,
+      "ahClose": 365.70,
+      "dtf": { "blue": 25.63, "orange": 8.68, "cross": "BULL", "gap": 16.95, "note": "STRONGEST DTF ON BOARD — both lines positive after -2.53% flush" },
+      "smi_4h": { "blue": -37.00, "orange": -15.29, "cross": "BEAR", "behavior": "ESTABLISHED, widening, CONFIRMED STRENGTH", "crossBehavior": "Multi-bar, gap 21.71, not fresh" },
+      "smi_1h": { "blue": -11.00, "orange": -27.00, "cross": "BULL", "reset": "Spring-loaded from deep OS, approaching neutral", "note": "Most OS 1H after META" },
+      "worb": { "h": 372.99, "l": 366.55, "ahDistanceFromWORBL": -0.85 },
+      "keyLevels": { "orbh": 370.50, "orbl": 367.47, "ahh": 365.79, "ahl": 362.02, "lworbl": 360.49 },
+      "manipulation": { "variant": "NONE", "active": false },
+      "callSetup": { "slot": "1 (if WORBL holds)", "entry": "WORBL 366.55 confirmed at 8:45 + 2m bull cross", "t1": 370.50, "t2": 372.99, "stop": 365.55, "rr": "confirmed in analysis", "note": "UPGRADE TO SLOT 1 if WORBL holds PM" },
+      "putSetup": { "slot": 2, "entry": "AHH 365.79 rejection after WORBL fails", "t1": 362.02, "t2": 360.49, "stop": 367.00, "rr": "confirmed in analysis" },
+      "orbProbability": { "calls": "MODERATE if WORBL holds — ORB possible", "puts": "MODERATE 3-4/6 if WORBL rejects" },
+      "premarketCheck": "WORBL 366.55 holding at 8:45? YES = SLOT 1 CALL. NO = put watch. Single level defines the session.",
+      "thesis": "ON TABLE both legs. CALL PRIMARY if WORBL holds — highest conviction call on board. PUT secondary if WORBL rejects."
+    },
+    "META": {
+      "close": 567.58,
+      "ahClose": 574.50,
+      "dtf": { "blue": -42.32, "orange": -47.80, "cross": "BULL", "gap": 5.48, "flag": "Approaching <5 — one more red day = bear flip" },
+      "smi_4h": { "blue": -31.69, "orange": -6.53, "cross": "BEAR", "behavior": "ESTABLISHED, declining, CONFIRMED", "crossBehavior": "Multi-bar established, widening gap 25.16" },
+      "smi_1h": { "blue": -49.23, "orange": -60.76, "cross": "BULL", "reset": "FULL RESET COMPLETE — peak -85.25, now -49.23. SPRING-LOADED.", "note": "Most OS 1H on board" },
+      "worb": { "h": 601.27, "l": 579.30, "distanceFromClose": -11.72, "ahDistanceFromWORBL": -4.80 },
+      "keyLevels": { "ahh": 574.50, "ahl": 567.55, "pdl": 566.19, "lworbl": 579.89, "worblCluster": "579.30-579.89" },
+      "catalysts": ["Italian families EU lawsuit vs META AI", "CTO Bosworth AI reorg memo admitted 'atrocious' rollout"],
+      "cautionFlag": true,
+      "manipulation": { "variant": "NONE (approaching — check 8:45)", "active": false, "watch": "If 4H deepens below -40 overnight = Variant A: sweep AHL/PDL before snap" },
+      "callSetup": { "slot": 3, "type": "CAUTION fast scalp", "entry": "2m bull cross above AHH 574.50 at open. No new overnight negatives.", "t1": 579.30, "t2": 585.66, "stop": 573.50, "rr": { "t1": "5.4:1", "t2": "11:1" }, "note": "FAST SCALP ONLY. Close before afternoon. No new negatives required." },
+      "putSetup": { "slot": 2, "type": "Afternoon risk-reduction", "entry": "AHH 574.50 rejection OR afternoon fade", "t1": 567.55, "t2": 566.31, "stop": 575.50, "rr": "6.95:1" },
+      "orbProbability": { "calls": "LOW 1-2/6 — Tier 3 fast scalp", "puts": "MODERATE 3-4/6 — Tier 1 afternoon" },
+      "premarketCheck": "New META headlines overnight? CLEAR = call scalp valid at open. NEW NEGATIVES = put only, no call.",
+      "thesis": "CAUTION. Slot 3 calls (morning fast scalp). Slot 2 puts (afternoon risk-reduction). Both legs ON TABLE."
+    },
+    "MSFT": {
+      "close": 378.91,
+      "ahClose": 382.33,
+      "dtf": { "blue": -71.16, "orange": -70.97, "cross": "BEAR (FAILED BULL)", "gap": 0.19, "flag": "FAILED CROSS — 2-bar bull attempt collapsed. 0.19 gap = dead. WEAKNESS signal." },
+      "smi_4h": { "blue": -66.04, "orange": -52.71, "cross": "BEAR", "behavior": "ESTABLISHED HIGH RELIABILITY — 4+ bars confirmed", "crossBehavior": "Fired 4-5 bars ago, confirmed each bar, gap widened then orange caught down. ESTABLISHED BEAR." },
+      "smi_1h": { "blue": -41.62, "orange": -52.70, "cross": "BULL", "reset": "MID-RESET — floor -73.82, current -41.62, gap 11.08 widening. Call entry NOT valid until above -30." },
+      "worb": { "h": 401.75, "l": 392.85, "distanceFromClose": -13.94 },
+      "keyLevels": { "orbh": 390.36, "orbl": 386.76, "ahh": 382.33, "ahl": 378.84, "pdl": 377.32 },
+      "manipulation": { "variant": "APPROACHING A", "active": false, "watch": "Blue -66.04 past -60 threshold. Orange -52.71 approaching -60. Check 8:45 — if orange also below -60 = Variant A triggers.", "sweepDirection": "DOWN", "sweepTarget": 378.84, "entryTrigger": "2m bull cross at AHL post-sweep", "realMove": "Bounce toward ORBL 386.76" },
+      "cautionFlag": true,
+      "putSetup": { "slot": 1, "entry": "AHH 382.33 rejection OR ORBH 390.36 gap-up rejection", "t1": 378.84, "t2": 377.32, "stop_ahh": 383.50, "stop_orbh": 392.85, "rr": { "ahh_entry": "3.0:1", "orbh_entry": "5.2:1" } },
+      "callSetup": { "slot": 3, "entry": "Variant A sweep completes at AHL 378.84 + 2m bull cross + 4H deceleration", "t1": 386.76, "t2": 390.36, "stop": 378.84, "rr": "3.96:1", "note": "STANDBY ONLY — confirm at 8:45" },
+      "orbProbability": { "puts": "HIGH 5/6 — Tier 2 Runner on ORBH rejection", "calls": "LOW 1/6 — Tier 1 Scalp Variant A only" },
+      "premarketCheck": "AHH 382.33 or ORBH 390.36 rejection = PUT confirmed. Check 4H Variant A trigger at 8:45 (orange below -60?).",
+      "thesis": "PUT PRIMARY Slot 1. Failed DTF bull cross. 4H high-reliability bear. $13.94 below WORBL."
+    },
+    "NVDA": {
+      "close": 204.65,
+      "ahClose": 206.37,
+      "dtf": { "blue": -37.84, "orange": -44.20, "cross": "BULL", "gap": 6.36, "note": "Narrowed from 7.99 today. Monitor. Still above <5 flag." },
+      "smi_4h": { "blue": -46.10, "orange": -52.71, "cross": "BEAR", "behavior": "ESTABLISHED — DECELERATING (blue: -46.21 → -46.10, essentially flat). KEY SIGNAL.", "crossBehavior": "Established bear but blue showing deceleration. Watch for uptick on 8am 4H bar." },
+      "smi_1h": { "blue": -11.70, "orange": -22.47, "cross": "BULL", "reset": "NEAR-FULL RESET — floor -41.20, current -11.70. Approaching neutral. Call entry valid. Coiled." },
+      "worb": { "h": 212.71, "l": 208.34, "distanceFromClose": -3.69 },
+      "keyLevels": { "orbh": 208.85, "orbl": 207.56, "pmh": 209.14, "pml": 207.60, "ahh": 206.37, "ahl": 204.34, "pdl": 203.08, "lworbh": 210.41 },
+      "manipulation": { "variant": "NONE", "active": false },
+      "callSetup": {
+        "slot": 2,
+        "scenarioA": { "entry": "AHL 204.34 holds + 2m bull cross", "t1": 206.37, "t2": 208.34, "t3": 212.71, "stop": 203.50, "rr": { "t2": "4.76:1", "t3": "9.96:1" } },
+        "scenarioB": { "entry": "WORBL 208.34 reclaim + holds", "t1": 208.85, "t2": 209.21, "t3": 212.71, "stop": 207.60, "rr": { "t3": "5.91:1" } }
+      },
+      "putSetup": { "slot": 3, "entry": "AHH 206.37 rejection confirmed", "t1": 204.34, "t2": 203.08, "stop": 207.00, "rr": "5.22:1", "note": "DTF bull cross reduces conviction. Reduced size." },
+      "orbProbability": { "calls": "MODERATE-HIGH 4/6 — Tier 2 Runner", "puts": "MODERATE 3/6 — Tier 1 Scalp only" },
+      "premarketCheck": "4H 8am bar: blue uptick = CALL CONFIRMED. Blue flat/down = put watch. Above or below WORBL 208.34 after claims.",
+      "thesis": "CALL PRIMARY Slot 2. Best relative performer. DTF bull intact. 4H decelerating. 1H coiled. -26% volume = weak conviction selling."
+    },
+    "TSLA": {
+      "close": 396.38,
+      "ahClose": 397.98,
+      "dtf": { "blue": -13.12, "orange": -19.09, "cross": "BULL", "gap": 5.97, "flag": "CRITICAL — halved in one session (11.87→5.97). Orange RISING while blue FLAT. May flip overnight. CHECK AT 8:45." },
+      "smi_4h": { "blue": -50.08, "orange": -36.01, "cross": "BEAR", "behavior": "ESTABLISHED — ACTIVELY DECLINING (blue -41.15→-50.08 in last bar). Approaching -60 threshold.", "crossBehavior": "Confirmed each bar. Gap 19.21→14.07 narrowing as orange accelerates down. Not decelerating." },
+      "smi_1h": { "blue": -37.81, "orange": -34.91, "cross": "BEAR", "reset": "APPROACHING 1H BULL CROSS — gap 5.98→2.90. Blue stalled. Orange catching down. May cross bullish overnight.", "note": "Not yet crossed. Check 8:45." },
+      "worb": { "h": 416.00, "l": 407.10, "distanceFromClose": -10.72 },
+      "keyLevels": { "orbh": 403.53, "orbl": 399.44, "pmh": 405.00, "pml": 400.55, "ahh": 397.98, "ahl": 396.40, "pdl": 393.78, "lworbl": 394.75, "fvg": 375.06 },
+      "manipulation": { "variant": "APPROACHING A", "active": false, "watch": "Blue -50.08 approaching -60. Check 8am 4H bar. If blue below -60 = Variant A flag active.", "sweepDirection": "DOWN", "sweepTarget": "LWORBL 394.75 / PDL 393.78 cluster", "entryTrigger": "2m bull cross after sweep at cluster", "realMove": "Bounce toward ORBL 399.44" },
+      "cautionFlag": true,
+      "dtfFlipRule": "IF DTF BEAR CROSS AT 8:45 → CALL IS OFF. PUT ONLY. NO EXCEPTIONS.",
+      "putSetup": { "slot": 2, "entry": "AHH 397.98 rejection OR ORBL 399.44 rejection on gap-up", "t1": 396.40, "t2": 393.78, "t3": 394.75, "stop_orbl": 400.00, "rr": { "from_orbl_to_t2": "10.1:1" } },
+      "callSetup": { "slot": 3, "entry": "DTF gap >5 at 8:45 CONFIRMED + 1H bull cross fired + AHL 396.40 holds", "t1": 399.44, "t2": 403.53, "stop": 395.80, "rr": { "t1": "5.07:1", "t2": "11.9:1" }, "note": "CALL IS OFF IF DTF FLIPS. No exceptions." },
+      "orbProbability": { "puts": "HIGH 5/6 — Tier 2 Runner on ORBL rejection", "calls": "LOW 2/6 — Tier 1 Scalp (DTF must hold)" },
+      "premarketCheck": "FIRST CHECK: DTF gap above or below 5 pts at 8:45. Below = PUT ONLY. Above = check 1H bull cross + AHL hold for call.",
+      "thesis": "PUT PRIMARY Slot 2. Most structurally deteriorating DTF. 4H actively declining. CALL conditional only — DTF must hold >5 at 8:45."
+    }
+  },
+  "rankings": {
+    "bullBoard": [
+      { "rank": 1, "name": "GOOGL", "slot": "1*", "trigger": "WORBL 366.55 holds at 8:45", "conviction": "HIGHEST if trigger met" },
+      { "rank": 2, "name": "NVDA", "slot": "2", "trigger": "AHL 204.34 hold (ScA) or WORBL 208.34 reclaim (ScB)", "conviction": "HIGH" },
+      { "rank": 3, "name": "AAPL", "slot": "2", "trigger": "WORBH 297.78 holds PM — DO NOT ENTER AT OPEN", "conviction": "MODERATE (Variant B complex)" },
+      { "rank": 4, "name": "META", "slot": "3", "trigger": "AHH 574.50 holds, no new negatives, morning only", "conviction": "LOW-MODERATE (CAUTION, fast scalp)" }
+    ],
+    "bearBoard": [
+      { "rank": 1, "name": "AMZN", "slot": "1", "trigger": "AHH 239.44 rejection", "conviction": "HIGHEST — biggest RW, near 200 SMA" },
+      { "rank": 2, "name": "MSFT", "slot": "1", "trigger": "AHH 382.33 or ORBH 390.36 rejection", "conviction": "HIGH — failed DTF, established 4H bear" },
+      { "rank": 3, "name": "TSLA", "slot": "2", "trigger": "AHH 397.98 or ORBL 399.44 rejection + DTF check at 8:45", "conviction": "HIGH if DTF confirms flip" },
+      { "rank": 4, "name": "SPY", "slot": "—", "trigger": "Below AHH 745.72 at open", "conviction": "MODERATE — context/macro" },
+      { "rank": 5, "name": "META", "slot": "2", "trigger": "Afternoon fade from failed rally", "conviction": "MODERATE — afternoon risk-reduction" }
+    ]
+  },
+  "dtfGapWatch": {
+    "critical": [
+      { "name": "AAPL", "gap": 4.57, "status": "BELOW FLAG — thin cross active" },
+      { "name": "TSLA", "gap": 5.97, "status": "CRITICAL — may flip overnight, check 8:45" }
+    ],
+    "monitoring": [
+      { "name": "META", "gap": 5.48, "status": "Approaching <5" },
+      { "name": "NVDA", "gap": 6.36, "status": "Monitor" },
+      { "name": "AMZN", "gap": 6.87, "status": "Monitor" }
+    ]
+  },
+  "morningChecklist": {
+    "830": "Jobless claims print — direction defines macro",
+    "845_checks": [
+      "TSLA: DTF gap >5? NO = PUT ONLY",
+      "AAPL: WORBH 297.78 holding? YES = call. NO = wait for Variant B",
+      "GOOGL: WORBL 366.55 holding? YES = Slot 1 call",
+      "NVDA: 4H blue uptick on 8am bar? YES = call confirmed",
+      "MSFT: 4H Variant A triggered? (orange below -60?)",
+      "META: New negative headlines? CLEAR = call scalp. NEW = put only",
+      "AMZN: Below AHH 239.44? YES = put confirmed"
+    ],
+    "priorityOrder": ["GOOGL (call)", "AMZN (put)", "NVDA (call)", "TSLA (put — check DTF first)", "MSFT (put)", "AAPL (Variant B — wait)", "META (morning call scalp, afternoon put)"]
+  }
+}
