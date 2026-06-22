@@ -1,0 +1,660 @@
+{
+  "id": "2026-06-21",
+  "date": "2026-06-21",
+  "title": "Week of June 22 — New WORB Week, 4H Day 2 Bull Continuation",
+  "spyClose": 746.74,
+  "marketTone": "mixed-bullish",
+  "macro": {
+    "iran": "",
+    "bonds": "",
+    "oil": "",
+    "fed": "",
+    "catalyst": "Juneteenth June 19 (market closed). 3-day weekend prior to June 18. Thursday June 18 reversed UP despite gap-down open. Sector data at open reflected sweep, not trend. 4H coordination was bullish across all names."
+  },
+  "worb": {
+    "note": "EXPIRED — June 15-19 WORB ended. NEW WORB sets Monday June 22 from full session high/low. Update current-worb.md after Monday close. Do not use prior week values intraday.",
+    "spy":   { "high": null, "low": null },
+    "aapl":  { "high": null, "low": null },
+    "amzn":  { "high": null, "low": null },
+    "googl": { "high": null, "low": null },
+    "meta":  { "high": null, "low": null },
+    "msft":  { "high": null, "low": null },
+    "nvda":  { "high": null, "low": null },
+    "tsla":  { "high": null, "low": null }
+  },
+  "macroFilter": {
+    "rule": "Direction locked at 9:20 AM, not 8:45 AM. Check SPY 8AM 4H bar first.",
+    "bullThreshold": 748.20,
+    "bearThreshold": 746.44,
+    "bullScenario": "SPY above 748.20 (ORB H) at 9:20 = BULL day, trade NVDA + TSLA primary",
+    "mixedScenario": "SPY between 746.44-748.20 = MIXED, smaller size, single best setup only (NVDA)",
+    "bearScenario": "SPY below 746.44 (AHL) at 9:20 = BEAR day, stand aside or MSFT/META put only"
+  },
+  "sizing": {
+    "baseEntry": 1750,
+    "maxTrades": 3,
+    "dailyLossLimit": 700,
+    "walkAwayTarget": 800,
+    "maxSimultaneousPositions": 1,
+    "notes": "Position 2 only if P1 profitable + $3+ room + 2m above +40 + separate setup"
+  },
+  "names": [
+    {
+      "name": "SPY",
+      "status": "context",
+      "open": 0,
+      "high": 748.50,
+      "low": 743.35,
+      "close": 746.74,
+      "ahPrice": 747.01,
+      "swing": false,
+      "swingNote": "Weekly bear cross from OB. Day trade only.",
+      "smi": [
+        { "tf": "15m", "blue": -48.09, "orange": -49.02, "cross": "bull", "location": "oversold", "dir": "up" },
+        { "tf": "1H",  "blue": 38.38,  "orange": 41.28,  "cross": "bear", "location": "mid",       "dir": "down" },
+        {
+          "tf": "4H", "blue": -9.94, "orange": -16.02, "cross": "bull", "location": "mid", "dir": "up",
+          "crossBehavior": {
+            "firedDate": "2026-06-18",
+            "day": 1,
+            "tested": false,
+            "testResponse": "N/A",
+            "verdict": "untested",
+            "strength": "building"
+          }
+        },
+        { "tf": "DTF", "blue": 28.37,  "orange": 20.84,  "cross": "bull", "location": "mid",       "dir": "up" },
+        { "tf": "WTF", "blue": 70.71,  "orange": 75.84,  "cross": "bear", "location": "overbought", "dir": "down",
+          "weeklyCandle": { "direction": "red", "size": "medium", "note": "Second consecutive red weekly close. Both lines declining from OB. Medium-term weakening." }
+        }
+      ],
+      "levels": {
+        "pdh": 0, "pdl": 0,
+        "orbH": 748.20, "orbL": 743.93,
+        "ahh": 748.50,  "ahl": 746.44,
+        "pmh": 748.01,  "pml": 743.35,
+        "worbh": null,  "worbl": null,
+        "lworbh": 756.68, "lworbl": 751.76,
+        "fvg1": null, "fvg2": null
+      },
+      "manipulation4H": {
+        "risk": "low",
+        "variant": "B",
+        "sweepDirection": "down",
+        "sweepTarget": 746.44,
+        "sweepNote": "AHL is the obvious stop-hunt target. 1H rolled bear in AH sets up Monday dip.",
+        "entryTrigger": "2m bull cross after sweep of AHL 746.44 exhausts",
+        "realMove": "CALL toward AHH 748.50 and ORB H 748.20"
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "macro-context",
+          "sequence": null,
+          "entryZone": { "low": 0, "high": 0 },
+          "trigger": 0,
+          "invalidation": { "preEntry": 0, "postEntry": 0 },
+          "targets": [],
+          "qualityGates": { "smiAlignment": false, "levelIntegrity": false, "roomAvailable": false, "noRejectionWick": false },
+          "qualityScore": 0,
+          "suggestedSize": 0,
+          "slot": null,
+          "tier": "context-only",
+          "premarket": { "validates": "N/A — SPY is macro filter only", "invalidates": "N/A" },
+          "notes": "SPY is not tradeable. Use as macro direction filter only. Bull above 748.20, bear below 746.44 at 9:20 AM."
+        }
+      ]
+    },
+    {
+      "name": "AAPL",
+      "status": "active",
+      "open": 0,
+      "high": 300.56,
+      "low": 295.63,
+      "close": 298.01,
+      "ahPrice": 297.26,
+      "swing": false,
+      "swingNote": "4H bear collapsing — potential flip Monday. Watch 8AM bar.",
+      "smi": [
+        { "tf": "15m", "blue": -65.51, "orange": -64.44, "cross": "bear", "location": "oversold", "dir": "up" },
+        { "tf": "1H",  "blue": -22.06, "orange": -19.11, "cross": "bear", "location": "mid",      "dir": "up" },
+        {
+          "tf": "4H", "blue": -15.85, "orange": -11.09, "cross": "bear", "location": "mid", "dir": "up",
+          "crossBehavior": {
+            "firedDate": "2026-06-17",
+            "day": 2,
+            "tested": true,
+            "testResponse": "failed",
+            "verdict": "weakness",
+            "strength": "failed"
+          }
+        },
+        { "tf": "DTF", "blue": -39.00, "orange": -43.55, "cross": "bull", "location": "mid",      "dir": "up" },
+        { "tf": "WTF", "blue": 52.99,  "orange": 63.08,  "cross": "bear", "location": "overbought","dir": "down",
+          "weeklyCandle": { "direction": "red", "size": "small", "note": "Weekly bear cross from OB. Blue declined below 60 this week." }
+        }
+      ],
+      "levels": {
+        "pdh": 300.56, "pdl": 0,
+        "orbH": 300.45, "orbL": 295.63,
+        "ahh": 298.89,  "ahl": 296.96,
+        "pmh": 298.79,  "pml": 295.82,
+        "worbh": null,  "worbl": null,
+        "lworbh": 297.78, "lworbl": 291.70,
+        "fvg1": 302.26, "fvg2": null
+      },
+      "manipulation4H": {
+        "risk": "high",
+        "variant": "B",
+        "sweepDirection": "down",
+        "sweepTarget": 296.96,
+        "sweepNote": "4H bear cross still active but failing. If/when 4H flips bull, the fake move dips to AHL 296.96 or LWORBH 297.78 area before the real call fires.",
+        "entryTrigger": "2m bull cross after sweep of AHL 296.96 — ONLY VALID after 4H confirms bull on 8AM bar",
+        "realMove": "CALL to ORB H 300.45 → PDH 300.56 → FVG 302.26 if confirmed"
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "bull-reversal",
+          "sequence": null,
+          "entryZone": { "low": 296.96, "high": 297.78 },
+          "trigger": 297.80,
+          "invalidation": { "preEntry": 295.63, "postEntry": 296.50 },
+          "targets": [300.45, 300.56, 302.26],
+          "qualityGates": {
+            "smiAlignment": false,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 2,
+          "suggestedSize": 1000,
+          "slot": 3,
+          "tier": "off-list",
+          "premarket": {
+            "validates": "4H bar confirms bull cross at 8AM AND price holds LWORBH 297.78 at 8:45",
+            "invalidates": "4H does NOT flip bull at 8AM bar, or ORB L 295.63 breaks premarket"
+          },
+          "notes": "CONDITIONAL — do not trade until 4H confirms bull cross on Monday 8AM bar. Current 4H bear gap collapsed 16.69→4.76 in 4 bars — flip imminent but not confirmed. AH at 297.26 = $0.52 below LWORBH 297.78. DTF Day 4 bull supports the bull case once 4H aligns."
+        }
+      ]
+    },
+    {
+      "name": "AMZN",
+      "status": "active",
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 244.39,
+      "ahPrice": 243.01,
+      "swing": false,
+      "swingNote": "Weekly blue near zero (7.35) — medium-term structure weakening. Day trade only.",
+      "smi": [
+        { "tf": "15m", "blue": -37.13, "orange": -43.02, "cross": "bull", "location": "mid",  "dir": "up" },
+        { "tf": "1H",  "blue": 39.38,  "orange": 47.22,  "cross": "bear", "location": "mid",  "dir": "down" },
+        {
+          "tf": "4H", "blue": 0.33, "orange": -11.09, "cross": "bull", "location": "mid", "dir": "up",
+          "crossBehavior": {
+            "firedDate": "2026-06-18",
+            "day": 1,
+            "tested": true,
+            "testResponse": "held",
+            "verdict": "strength",
+            "strength": "confirmed"
+          }
+        },
+        { "tf": "DTF", "blue": -26.84, "orange": -36.38, "cross": "bull", "location": "mid", "dir": "up" },
+        { "tf": "WTF", "blue": 7.35,   "orange": 27.90,  "cross": "bear", "location": "mid", "dir": "down",
+          "weeklyCandle": { "direction": "red", "size": "medium", "note": "Blue near zero and declining. Heavy weekly bear structure." }
+        }
+      ],
+      "levels": {
+        "pdh": 245.72, "pdl": 0,
+        "orbH": 240.85, "orbL": 0,
+        "ahh": 0,       "ahl": 242.28,
+        "pmh": 0,       "pml": 0,
+        "worbh": null,  "worbl": null,
+        "lworbh": 247.81, "lworbl": 244.73,
+        "fvg1": null, "fvg2": null
+      },
+      "manipulation4H": {
+        "risk": "low",
+        "variant": "B",
+        "sweepDirection": "down",
+        "sweepTarget": 242.28,
+        "sweepNote": "1H rolled bear from OB in AH. Monday opens below LWORBL 244.73 — the dip to AHL 242.28 resets 1H and sets up call.",
+        "entryTrigger": "2m bull cross after AHL 242.28 sweep exhausts",
+        "realMove": "CALL to LWORBL 244.73 → PDH 245.72 → LWORBH 247.81"
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "bull-continuation",
+          "sequence": null,
+          "entryZone": { "low": 241.80, "high": 242.28 },
+          "trigger": 242.50,
+          "invalidation": { "preEntry": 240.85, "postEntry": 242.00 },
+          "targets": [244.73, 245.72, 247.81],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 3,
+          "suggestedSize": 1500,
+          "slot": 2,
+          "tier": "primary-bull",
+          "premarket": {
+            "validates": "Price holds above ORB H 240.85 at 8:45 and 4H gap continues widening",
+            "invalidates": "Price drops below ORB H 240.85 premarket — skip, bear day"
+          },
+          "notes": "1H rolled hard from OB to bear in AH (rejection wick = noRejectionWick false). 4H Day 1 gap 11.42 widening. Entry on AHL sweep — if Monday opens above LWORBL 244.73, skip the wait and take first 2m bull cross at open."
+        }
+      ]
+    },
+    {
+      "name": "GOOGL",
+      "status": "active",
+      "open": 0,
+      "high": 369.47,
+      "low": 0,
+      "close": 368.03,
+      "ahPrice": 366.30,
+      "swing": false,
+      "swingNote": "Strongest DTF of session (both lines positive, gap 12.11). Weekly bear widening at 13.07 caps upside.",
+      "smi": [
+        { "tf": "15m", "blue": -33.13, "orange": -43.38, "cross": "bull", "location": "mid",       "dir": "up" },
+        { "tf": "1H",  "blue": 42.16,  "orange": 51.64,  "cross": "bear", "location": "overbought", "dir": "down" },
+        {
+          "tf": "4H", "blue": -14.79, "orange": -22.59, "cross": "bull", "location": "mid", "dir": "up",
+          "crossBehavior": {
+            "firedDate": "2026-06-18",
+            "day": 1,
+            "tested": true,
+            "testResponse": "held",
+            "verdict": "strength",
+            "strength": "confirmed"
+          }
+        },
+        { "tf": "DTF", "blue": 32.89, "orange": 20.78, "cross": "bull", "location": "mid", "dir": "up" },
+        { "tf": "WTF", "blue": 31.04, "orange": 44.11, "cross": "bear", "location": "mid", "dir": "down",
+          "weeklyCandle": { "direction": "red", "size": "medium", "note": "Sustained bear cross, gap 13.07 widening each week." }
+        }
+      ],
+      "levels": {
+        "pdh": 369.47, "pdl": 0,
+        "orbH": 367.66, "orbL": 359.40,
+        "ahh": 368.16,  "ahl": 365.03,
+        "pmh": 0,       "pml": 0,
+        "worbh": null,  "worbl": null,
+        "lworbh": 372.99, "lworbl": 366.55,
+        "fvg1": null, "fvg2": null
+      },
+      "manipulation4H": {
+        "risk": "low",
+        "variant": "B",
+        "sweepDirection": "down",
+        "sweepTarget": 365.03,
+        "sweepNote": "1H peaked OB at 70.73 then rolled hard. AH now $0.25 below LWORBL. Monday dip to AHL 365.03 resets 1H before 4H Day 2 drives the call.",
+        "entryTrigger": "2m bull cross after AHL 365.03 sweep exhausts",
+        "realMove": "CALL to ORB H 367.66 → AHH 368.16 → PDH 369.47"
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "bull-continuation",
+          "sequence": null,
+          "entryZone": { "low": 364.50, "high": 365.03 },
+          "trigger": 365.50,
+          "invalidation": { "preEntry": 363.50, "postEntry": 364.50 },
+          "targets": [367.66, 368.16, 369.47],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 3,
+          "suggestedSize": 1500,
+          "slot": 2,
+          "tier": "primary-bull",
+          "premarket": {
+            "validates": "Price holds above 364.50 at 8:45 and 4H gap continues widening",
+            "invalidates": "Price drops below 363.50 premarket — sweep too deep, bear day"
+          },
+          "notes": "Strongest DTF of session — both lines positive (32.89/20.78). 1H rejection from OB gives noRejectionWick false. Weekly bear gap widening 13.07 — take bulk off at AHH 368.16, only push to PDH if volume confirms break above."
+        }
+      ]
+    },
+    {
+      "name": "META",
+      "status": "active",
+      "open": 0,
+      "high": 0,
+      "low": 0,
+      "close": 0,
+      "ahPrice": 574.90,
+      "swing": false,
+      "swingNote": "Heaviest weekly bear of session — both lines negative, gap 16.15. Strongest put candidate if 4H flips back to bear Monday.",
+      "smi": [
+        { "tf": "15m", "blue": -27.87, "orange": -27.94, "cross": "bull", "location": "mid",       "dir": "up" },
+        { "tf": "1H",  "blue": 42.36,  "orange": 51.18,  "cross": "bear", "location": "overbought", "dir": "down" },
+        {
+          "tf": "4H", "blue": -41.21, "orange": -41.33, "cross": "bull", "location": "oversold", "dir": "up",
+          "crossBehavior": {
+            "firedDate": "2026-06-18",
+            "day": 1,
+            "tested": false,
+            "testResponse": "N/A",
+            "verdict": "untested",
+            "strength": "building"
+          }
+        },
+        { "tf": "DTF", "blue": -38.58, "orange": -43.19, "cross": "bull", "location": "mid", "dir": "up" },
+        { "tf": "WTF", "blue": -38.27, "orange": -22.12, "cross": "bear", "location": "oversold", "dir": "down",
+          "weeklyCandle": { "direction": "red", "size": "large", "note": "Both lines negative — strongest weekly bear of all 8 names. Blue below orange and both below zero." }
+        }
+      ],
+      "levels": {
+        "pdh": 580.20, "pdl": 563.59,
+        "orbH": 576.60, "orbL": 563.59,
+        "ahh": 0,       "ahl": 574.50,
+        "pmh": 0,       "pml": 0,
+        "worbh": null,  "worbl": null,
+        "lworbh": 601.27, "lworbl": 579.30,
+        "fvg1": null, "fvg2": null
+      },
+      "manipulation4H": {
+        "risk": "high",
+        "variant": "B",
+        "sweepDirection": "down",
+        "sweepTarget": 574.50,
+        "sweepNote": "4H gap 0.12 — razor thin. Monday 8AM bar determines direction. If bull holds: fake sweep to AHL 574.50 then real call. If bear resumes: ORB H 576.60 rejection then put to 563.59.",
+        "entryTrigger": "2m bull cross after AHL 574.50 sweep IF 4H confirmed bull at 8AM — OR 2m bear cross after ORB H 576.60 rejection IF 4H confirmed bear at 8AM",
+        "realMove": "CALL to LWORBL 579.30 → PDH 580.20 if 4H bull confirmed — OR PUT to ORB L/PDL 563.59 if 4H flips bear"
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "bull-continuation",
+          "sequence": "Conditional. If 4H bear resumes at 8AM, discard this leg and trade PUT leg only.",
+          "entryZone": { "low": 574.50, "high": 576.60 },
+          "trigger": 577.00,
+          "invalidation": { "preEntry": 574.50, "postEntry": 575.80 },
+          "targets": [579.30, 580.20],
+          "qualityGates": {
+            "smiAlignment": false,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 2,
+          "suggestedSize": 1000,
+          "slot": 3,
+          "tier": "off-list",
+          "premarket": {
+            "validates": "4H gap widens at 8AM bar AND ORB H 576.60 reclaimed in premarket",
+            "invalidates": "4H flips back to bear cross at 8AM bar — switch to PUT leg"
+          },
+          "notes": "BIFURCATED. 4H gap 0.12 — do not enter anything until 8AM bar verdict. Weekly both lines negative — call is against medium-term structure. Max target PDH 580.20 on calls."
+        },
+        {
+          "leg": 2,
+          "direction": "put",
+          "setupType": "bear-continuation",
+          "sequence": "Activate ONLY if 4H flips back to bear cross on Monday 8AM bar. Discard call leg.",
+          "entryZone": { "low": 575.50, "high": 576.60 },
+          "trigger": 575.40,
+          "invalidation": { "preEntry": 577.00, "postEntry": 576.80 },
+          "targets": [574.50, 570.00, 563.59],
+          "qualityGates": {
+            "smiAlignment": false,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 2,
+          "suggestedSize": 1000,
+          "slot": 3,
+          "tier": "primary-bear-only",
+          "premarket": {
+            "validates": "4H flips bear at 8AM AND price fails to reclaim ORB H 576.60",
+            "invalidates": "4H holds bull or ORB H 576.60 reclaimed with volume"
+          },
+          "notes": "Put leg is actually the higher-conviction trade given weekly structure (both lines negative, gap 16.15). Room to ORB L 563.59 = $12.91. If bear leg activates, this is strongest put candidate in session."
+        }
+      ]
+    },
+    {
+      "name": "MSFT",
+      "status": "active",
+      "open": 0,
+      "high": 382.54,
+      "low": 373.27,
+      "close": 379.40,
+      "ahPrice": 379.05,
+      "swing": false,
+      "swingNote": "DTF bear cross oscillating in deep OS. Weekly blue went negative for first time. Structurally weakest name. Off-list for calls.",
+      "smi": [
+        { "tf": "15m", "blue": -41.80, "orange": -42.17, "cross": "bull", "location": "oversold", "dir": "up" },
+        { "tf": "1H",  "blue": 34.84,  "orange": 33.82,  "cross": "bull", "location": "mid",      "dir": "down" },
+        {
+          "tf": "4H", "blue": -60.37, "orange": -64.25, "cross": "bull", "location": "oversold", "dir": "up",
+          "crossBehavior": {
+            "firedDate": "2026-06-18",
+            "day": 1,
+            "tested": false,
+            "testResponse": "N/A",
+            "verdict": "untested",
+            "strength": "building"
+          }
+        },
+        { "tf": "DTF", "blue": -72.58, "orange": -71.78, "cross": "bear", "location": "oversold", "dir": "flat" },
+        { "tf": "WTF", "blue": -15.16, "orange": 10.67, "cross": "bear", "location": "mid", "dir": "down",
+          "weeklyCandle": { "direction": "red", "size": "large", "note": "Blue went negative this week. Heaviest weekly bear structure in terms of DTF/WTF alignment." }
+        }
+      ],
+      "levels": {
+        "pdh": 382.54, "pdl": 373.27,
+        "orbH": 379.37, "orbL": 373.27,
+        "ahh": 0,       "ahl": 378.44,
+        "pmh": 0,       "pml": 0,
+        "worbh": null,  "worbl": null,
+        "lworbh": 401.75, "lworbl": 392.85,
+        "fvg1": null, "fvg2": null
+      },
+      "manipulation4H": {
+        "risk": "high",
+        "variant": "B",
+        "sweepDirection": "up",
+        "sweepTarget": 379.37,
+        "sweepNote": "4H barely crossed bull at -60 threshold. If treated as put setup (preferred): fake bounce to ORB H 379.37 then real put fires. DTF bear overrides 4H bull thesis for calls.",
+        "entryTrigger": "2m bear cross after ORB H 379.37 rejection — for put setup",
+        "realMove": "PUT to ORB L/PDL 373.27 — calls are low-conviction given DTF bear + weekly blue negative"
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "put",
+          "setupType": "bear-continuation",
+          "sequence": null,
+          "entryZone": { "low": 378.44, "high": 379.37 },
+          "trigger": 378.40,
+          "invalidation": { "preEntry": 379.40, "postEntry": 379.80 },
+          "targets": [373.27],
+          "qualityGates": {
+            "smiAlignment": false,
+            "levelIntegrity": true,
+            "roomAvailable": false,
+            "noRejectionWick": false
+          },
+          "qualityScore": 1,
+          "suggestedSize": 0,
+          "slot": null,
+          "tier": "primary-bear-only",
+          "premarket": {
+            "validates": "DTF stays bear cross at 8AM and 4H gap fails to widen from 3.88",
+            "invalidates": "ORB H 379.37 reclaimed clearly with 4H gap widening — stand aside"
+          },
+          "notes": "No trade unless SPY is clearly BEAR day. DTF bear cross at -72.58 oscillating — most dangerous name for false moves. 1H gap only 1.02 — will flip to bear on first weak hour Monday. Room from AHL to ORB L = $4.93 but smiAlignment false (4H bull vs DTF bear). Score 1/4 = no trade first candle. Reaction trade only on SPY bear day."
+        }
+      ]
+    },
+    {
+      "name": "NVDA",
+      "status": "active",
+      "open": 0,
+      "high": 212.71,
+      "low": 0,
+      "close": 210.69,
+      "ahPrice": 210.29,
+      "swing": false,
+      "swingNote": "Mildest weekly bear (both lines positive). Cleanest call setup Monday. Priority name.",
+      "smi": [
+        { "tf": "15m", "blue": -39.75, "orange": -43.20, "cross": "bull", "location": "mid",       "dir": "up" },
+        { "tf": "1H",  "blue": 49.09,  "orange": 51.11,  "cross": "bear", "location": "overbought", "dir": "down" },
+        {
+          "tf": "4H", "blue": 29.67, "orange": 9.57, "cross": "bull", "location": "mid", "dir": "up",
+          "crossBehavior": {
+            "firedDate": "2026-06-18",
+            "day": 2,
+            "tested": true,
+            "testResponse": "held",
+            "verdict": "strength",
+            "strength": "accelerating"
+          }
+        },
+        { "tf": "DTF", "blue": -18.59, "orange": -31.40, "cross": "bull", "location": "mid", "dir": "up" },
+        { "tf": "WTF", "blue": 7.15,   "orange": 19.77,  "cross": "bear", "location": "mid", "dir": "down",
+          "weeklyCandle": { "direction": "red", "size": "small", "note": "Both lines still positive — mildest weekly bear of all 8 names." }
+        }
+      ],
+      "levels": {
+        "pdh": 211.38, "pdl": 0,
+        "orbH": 207.99, "orbL": 206.50,
+        "ahh": 210.65,  "ahl": 210.09,
+        "pmh": 0,       "pml": 0,
+        "worbh": null,  "worbl": null,
+        "lworbh": 212.71, "lworbl": 208.34,
+        "fvg1": null, "fvg2": null
+      },
+      "manipulation4H": {
+        "risk": "low",
+        "variant": "B",
+        "sweepDirection": "down",
+        "sweepTarget": 210.37,
+        "sweepNote": "AH sitting $0.08 below DTF 21 EMA 210.37. The opening test of that level IS the sweep — shallow by design given 20-point 4H gap. Max sweep depth LWORBL 208.34 if extended.",
+        "entryTrigger": "2m bull cross after DTF 21 EMA 210.37 / AHL 210.09 sweep exhausts. If opens above DTF 21, take first 2m bull cross at open.",
+        "realMove": "CALL to PDH 211.38 → LWORBH 212.71"
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "bull-continuation",
+          "sequence": null,
+          "entryZone": { "low": 209.90, "high": 210.37 },
+          "trigger": 210.40,
+          "invalidation": { "preEntry": 208.34, "postEntry": 207.99 },
+          "targets": [211.38, 212.71],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 4,
+          "suggestedSize": 1750,
+          "slot": 1,
+          "tier": "primary-bull",
+          "premarket": {
+            "validates": "Price holds above LWORBL 208.34 at 8:45 and 4H gap continues widening (check 8AM bar)",
+            "invalidates": "Price drops below LWORBL 208.34 premarket — sweep too deep, cancel call"
+          },
+          "notes": "MONDAY PRIORITY. 4H Day 2 widening gap 20.10 with blue positive at +29.67 — strongest 4H read of session. DTF blue rose 19 pts in single session June 18. AH at 210.29 = DTF 21 EMA 210.37 resting point. Weekly bear both lines positive = sell at LWORBH 212.71. Do not hold for new highs without weekly cross flipping bull."
+        }
+      ]
+    },
+    {
+      "name": "TSLA",
+      "status": "active",
+      "open": 398.10,
+      "high": 402.52,
+      "low": 384.70,
+      "close": 400.49,
+      "ahPrice": 398.70,
+      "swing": false,
+      "swingNote": "4H Day 1 gap 15.15. 1H unique — only name holding bull cross in AH. DTF gap narrowing (caution). Second priority behind NVDA.",
+      "smi": [
+        { "tf": "15m", "blue": -27.89, "orange": -33.78, "cross": "bull", "location": "mid", "dir": "up" },
+        { "tf": "1H",  "blue": 55.09,  "orange": 52.49,  "cross": "bull", "location": "overbought", "dir": "down" },
+        {
+          "tf": "4H", "blue": -10.52, "orange": -25.67, "cross": "bull", "location": "mid", "dir": "up",
+          "crossBehavior": {
+            "firedDate": "2026-06-18",
+            "day": 1,
+            "tested": true,
+            "testResponse": "held",
+            "verdict": "strength",
+            "strength": "confirmed"
+          }
+        },
+        { "tf": "DTF", "blue": -9.12, "orange": -14.11, "cross": "bull", "location": "mid", "dir": "up" },
+        { "tf": "WTF", "blue": 16.24, "orange": 25.62, "cross": "bear", "location": "mid", "dir": "down",
+          "weeklyCandle": { "direction": "red", "size": "large", "note": "H416 to C400.49 — violent intraweek swing to L384.70. Both weekly lines positive but declining. Gap 9.38 widening." }
+        }
+      ],
+      "levels": {
+        "pdh": 402.52, "pdl": 384.70,
+        "orbH": 399.00, "orbL": 388.13,
+        "ahh": 401.00,  "ahl": 397.56,
+        "pmh": 400.00,  "pml": 397.25,
+        "worbh": null,  "worbl": null,
+        "lworbh": 416.00, "lworbl": 407.10,
+        "fvg1": null, "fvg2": null
+      },
+      "manipulation4H": {
+        "risk": "low",
+        "variant": "B",
+        "sweepDirection": "down",
+        "sweepTarget": 397.56,
+        "sweepNote": "Thursday's intraday flush to 384.70 WAS the sweep for the 4H bull cross. Monday's fake move is smaller — 1H gap 2.60 just needs to reset. Dip to AHL 397.56 resets 1H, then real call fires.",
+        "entryTrigger": "2m bull cross after AHL 397.56 dip. If opens above ORB H 399.00, take first 2m bull cross immediately.",
+        "realMove": "CALL to AHH 401.00 → PDH 402.52. LWORBL 407.10 is multi-day stretch only."
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "bull-continuation",
+          "sequence": null,
+          "entryZone": { "low": 397.01, "high": 397.56 },
+          "trigger": 398.00,
+          "invalidation": { "preEntry": 395.00, "postEntry": 397.00 },
+          "targets": [401.00, 402.52],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 4,
+          "suggestedSize": 1750,
+          "slot": 1,
+          "tier": "primary-bull",
+          "premarket": {
+            "validates": "Price holds 397+ range at 8:45 and DTF gap holds (not collapsing further toward zero)",
+            "invalidates": "Price breaks below 395.00 premarket or DTF blue crosses below orange"
+          },
+          "notes": "Second Monday priority. 4H Day 1 gap 15.15 widened in AH — strong Day 1. 1H unique: only name holding bull cross in AH (55.09/52.49). DTF gap narrowing (12→6→5) is the watch item — if gap approaches zero Monday AM, reduce conviction. Thursday's 384.70 intraday low was the sweep — that work is already done. AH right below ORB H 399.00. LWORBL 407.10 needs DTF gap to re-widen before targeting."
+        }
+      ]
+    }
+  ]
+}
