@@ -210,7 +210,8 @@ function renderDash(){
   const toneMap={bull:'b-bull',bear:'b-bear','mixed-bullish':'b-caut','mixed-bearish':'b-caut',caut:'b-caut',chop:'b-chop'};
   const toneLbl={bull:'Risk On',bear:'Risk Off','mixed-bullish':'Mixed','mixed-bearish':'Mixed',caut:'Mixed',chop:'Chop'};
   list.innerHTML=SESSIONS.map(s=>{
-    const active=(s.names||[]).filter(n=>n.status!=='skip');
+    const namesArr=Array.isArray(s.names)?s.names:Object.values(s.names||{});
+    const active=namesArr.filter(n=>n.status!=='skip');
     const swings=active.filter(n=>n.swing);
     // Sort by rankings array if present, else keep original order
     const sortedActive=s.rankings&&s.rankings.length?[...active].sort((a,b)=>{
