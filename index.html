@@ -456,7 +456,8 @@ function jumpToName(sessionId,name){
 function renderRankings(s){
   if(!s.rankings||!s.rankings.length) return '';
   const nameMap={};
-  (s.names||[]).forEach(n=>{ nameMap[n.name]=n; });
+  const rankNamesArr=Array.isArray(s.names)?s.names:Object.values(s.names||{});
+  rankNamesArr.forEach(n=>{ nameMap[n.name]=n; });
   const colMap={bull:'var(--bull)',bear:'var(--bear)',caut:'var(--caut)',chop:'var(--text3)',twoway:'var(--accent)'};
   const bgMap={bull:'var(--bull-bg)',bear:'var(--bear-bg)',caut:'var(--caut-bg)',chop:'rgba(90,96,120,0.08)',twoway:'rgba(108,142,245,0.08)'};
   const bdMap={bull:'var(--bull-bd)',bear:'var(--bear-bd)',caut:'var(--caut-bd)',chop:'var(--border)',twoway:'rgba(108,142,245,0.25)'};
@@ -494,7 +495,8 @@ function renderDetail(id){
   const s=SESSIONS.find(x=>x.id===id);
   if(!s)return;
   const el=document.getElementById('detail-content');
-  const active=(s.names||[]).filter(n=>n.status!=='skip');
+  const namesArr2=Array.isArray(s.names)?s.names:Object.values(s.names||{});
+  const active=namesArr2.filter(n=>n.status!=='skip');
   const swings=active.filter(n=>n.swing);
 
   const swingSummary=swings.length?`
