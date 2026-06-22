@@ -214,13 +214,14 @@ function renderDash(){
     const active=namesArr.filter(n=>n.status!=='skip');
     const swings=active.filter(n=>n.swing);
     // Sort by rankings array if present, else keep original order
-    const sortedActive=s.rankings&&s.rankings.length?[...active].sort((a,b)=>{
-      const ai=s.rankings.indexOf(a.name); const bi=s.rankings.indexOf(b.name);
+    const rankList=Array.isArray(s.rankings)?s.rankings:[];
+    const sortedActive=rankList.length?[...active].sort((a,b)=>{
+      const ai=rankList.indexOf(a.name); const bi=rankList.indexOf(b.name);
       return(ai===-1?999:ai)-(bi===-1?999:bi);
     }):active;
     const chips=sortedActive.map(n=>{
       const cs=getChipStyle(n);
-      const rank=s.rankings?s.rankings.indexOf(n.name)+1:0;
+      const rank=rankList.length?rankList.indexOf(n.name)+1:0;
       const rankTag=rank>0?`<span style="font-size:9px;opacity:0.5;margin-right:2px;font-family:var(--mono)">#${rank}</span>`:'';
       return`<div class="name-chip chip-${cs}"><span class="chip-dot"></span>${rankTag}${n.name}</div>`;
     }).join('');
@@ -454,7 +455,7 @@ function jumpToName(sessionId,name){
 
 // ─── Rankings block ──────────────────────────────────────────────
 function renderRankings(s){
-  if(!s.rankings||!s.rankings.length) return '';
+  if(!Array.isArray(s.rankings)||!s.rankings.length) return '';
   const nameMap={};
   const rankNamesArr=Array.isArray(s.names)?s.names:Object.values(s.names||{});
   rankNamesArr.forEach(n=>{ nameMap[n.name]=n; });
