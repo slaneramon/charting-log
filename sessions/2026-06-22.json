@@ -1,0 +1,716 @@
+{
+  "id": "2026-06-22",
+  "date": "2026-06-22",
+  "title": "Week of June 22 — Bear sweep, TSLA only green",
+  "spyClose": 744.39,
+  "marketTone": "mixed-bearish",
+  "macro": {
+    "iran": "",
+    "bonds": "",
+    "oil": "",
+    "fed": "",
+    "catalyst": "Prime Day June 23-26 (AMZN). SPY 4H bear Day 1. TSLA only green name (+1.14%) — relative strength divergence."
+  },
+  "worb": {
+    "note": "Set from Monday June 22 full session. Locked all week.",
+    "spy":  { "high": 750.18, "low": 743.13 },
+    "aapl": { "high": 302.42, "low": 296.76 },
+    "amzn": { "high": 242.00, "low": 232.24 },
+    "googl": { "high": 358.92, "low": 341.72 },
+    "meta": { "high": 575.81, "low": 559.81 },
+    "msft": { "high": 381.63, "low": 367.07 },
+    "nvda": { "high": 213.99, "low": 207.72 },
+    "tsla": { "high": 414.75, "low": 394.40 }
+  },
+  "macroFilter": {
+    "rule": "Direction locked at 9:20 AM, not 8:45 AM",
+    "bullThreshold": 747.46,
+    "bearThreshold": 743.13,
+    "bullScenario": "SPY above $747.46 at 9:20 = BULL lean. TSLA call primary. NVDA reactive bounce call.",
+    "mixedScenario": "SPY between $743.13 and $747.46 = MIXED. TSLA call only if 4H gap holds. AMZN/GOOGL puts smaller size, best setup only.",
+    "bearScenario": "SPY below $743.13 = BEAR confirmed. AMZN/GOOGL puts priority. TSLA call off table — macro conflict too high."
+  },
+  "sizing": {
+    "baseEntry": 1750,
+    "maxTrades": 3,
+    "dailyLossLimit": 700,
+    "walkAwayTarget": 800,
+    "maxSimultaneousPositions": 1,
+    "notes": "Position 2 only if P1 profitable + $3+ room + 2m above +40 + separate setup"
+  },
+  "rankings": ["TSLA", "AMZN", "GOOGL", "AAPL", "NVDA", "META", "MSFT", "SPY"],
+  "names": [
+    {
+      "name": "TSLA",
+      "status": "active",
+      "open": 394.85,
+      "high": 414.75,
+      "low": 394.40,
+      "close": 405.05,
+      "ahPrice": 403.41,
+      "swing": false,
+      "swingNote": "WTF bear gap 9.20 STALLING (first narrowing bar). DTF bull fresh cross — condition 2 fails. Not a swing setup.",
+      "smi": [
+        { "tf": "1H", "blue": -16.97, "orange": -3.83, "cross": "bear", "location": "mid", "dir": "down" },
+        {
+          "tf": "4H", "blue": 29.54, "orange": 22.77, "cross": "bull", "location": "mid", "dir": "down",
+          "crossBehavior": {
+            "firedDate": "2026-06-18", "day": 3, "tested": true, "testResponse": "held",
+            "verdict": "strength", "strength": "confirmed"
+          }
+        },
+        { "tf": "DTF", "blue": 0.62, "orange": -6.74, "cross": "bull", "location": "mid", "dir": "up" }
+      ],
+      "levels": {
+        "pdh": 414.74,
+        "pdl": 394.40,
+        "orbH": 403.13,
+        "orbL": 394.41,
+        "ahh": 405.11,
+        "ahl": null,
+        "pmh": 397.33,
+        "pml": 392.64,
+        "worbh": 414.75,
+        "worbl": 394.40,
+        "lworbh": 415.96,
+        "lworbl": 407.08,
+        "fvg1": 375.06,
+        "fvg2": null
+      },
+      "manipulation4H": {
+        "risk": "high",
+        "variant": "none",
+        "sweepDirection": "down",
+        "sweepTarget": 403.13,
+        "sweepNote": "4H bull Day 3 + 1H bear gap 13.14 widening = fake DOWN early. ORB H $403.13 / weekly 21 $404.45 is the sweep zone. Watch for 1H to exhaust before entry.",
+        "entryTrigger": "2m bull cross after 1H bear exhausts at/above $403 weekly 21 zone",
+        "realMove": "CALL to AHH $405.11 → DTF 21 $407.79 → PDH $414.74 → LWORBH $415.96"
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "bull-continuation",
+          "sequence": "1H bear drives early weakness (fake DOWN). Wait for 1H to exhaust near ORB H $403.13 / weekly 21 $404.45. Entry on 2m bull cross. If CALL runs to PDH $414.74 and rejects with 2m bear cross, set up Leg 2 PUT.",
+          "entryZone": { "low": 403.00, "high": 405.11 },
+          "trigger": 405.11,
+          "invalidation": {
+            "preEntry": 400.00,
+            "postEntry": 401.00
+          },
+          "targets": [407.79, 414.74, 415.96],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 4,
+          "suggestedSize": 1750,
+          "slot": 1,
+          "tier": "primary-bull",
+          "premarket": {
+            "validates": "TSLA above weekly 21 $404.45 at 8:45 + SPY not in freefall",
+            "invalidates": "TSLA below $400 pre-open OR 4H gap collapses below 3 OR SPY below $743.13 at 9:20"
+          },
+          "notes": "AH close $403.41 — just below weekly 21 $404.45. Watch open vs $404.45. 4H gap 6.77 narrowing — if it holds and 1H exhausts, CALL is real. SPY macro is the core tension: TSLA CALL vs SPY bear Day 1. Only take if SPY is mixed or bull at 9:20."
+        },
+        {
+          "leg": 2,
+          "direction": "put",
+          "setupType": "bear-reversal",
+          "sequence": "Leg 2 only activates if Leg 1 CALL runs to PDH $414.74 / LWORBH $415.96 and shows rejection. Exit Leg 1 at $414.74 sets up Leg 2 entry.",
+          "entryZone": { "low": 414.74, "high": 415.96 },
+          "trigger": 414.74,
+          "invalidation": {
+            "preEntry": 417.00,
+            "postEntry": 416.50
+          },
+          "targets": [407.79, 405.11, 403.13],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 4,
+          "suggestedSize": 1750,
+          "slot": 1,
+          "tier": "primary-bear",
+          "premarket": {
+            "validates": "Leg 1 CALL first reached $414.74+ before considering Leg 2",
+            "invalidates": "TSLA never reaches $414 — Leg 2 not applicable"
+          },
+          "notes": "Leg 2 is conditional on Leg 1 success. Do not force Leg 2 if TSLA stalls below PDH."
+        }
+      ]
+    },
+    {
+      "name": "AMZN",
+      "status": "active",
+      "open": 240.08,
+      "high": 242.00,
+      "low": 232.24,
+      "close": 232.79,
+      "ahPrice": null,
+      "swing": true,
+      "swingNote": "WTF bear confirmed: Blue -22.45 / Orange 2.72, gap 25.17 widening. Strongest WTF bear of all 8 names. Blue crossed zero. All 4 swing conditions met. Weekly 21 $241.35 = resistance (price $8.56 below it). Prime Day June 23-26 is active — potential volatility catalyst.",
+      "smi": [
+        { "tf": "1H", "blue": -73.42, "orange": -75.69, "cross": "bull", "location": "oversold", "dir": "up" },
+        {
+          "tf": "4H", "blue": -60.16, "orange": -43.15, "cross": "bear", "location": "oversold", "dir": "down",
+          "crossBehavior": {
+            "firedDate": "2026-06-22", "day": 1, "tested": false, "testResponse": null,
+            "verdict": "untested", "strength": "accelerating"
+          }
+        },
+        { "tf": "DTF", "blue": -37.65, "orange": -37.01, "cross": "bear", "location": "oversold", "dir": "down" }
+      ],
+      "levels": {
+        "pdh": 242.00,
+        "pdl": 232.70,
+        "orbH": 241.99,
+        "orbL": null,
+        "ahh": 234.20,
+        "ahl": null,
+        "pmh": 244.08,
+        "pml": 239.31,
+        "worbh": 242.00,
+        "worbl": 232.24,
+        "lworbh": 249.42,
+        "lworbl": null,
+        "fvg1": 236.85,
+        "fvg2": 237.97
+      },
+      "manipulation4H": {
+        "risk": "high",
+        "variant": "B",
+        "sweepDirection": "up",
+        "sweepTarget": 237.97,
+        "sweepNote": "4H bear Day 1 fresh cross. FVG $236.85-$237.97 is $4-5 above close. Fake UP to FVG zone is the standard Day 1 bear sweep.",
+        "entryTrigger": "2m bear cross after price stalls at/below FVG $236.85-$237.97",
+        "realMove": "PUT through WORBL $232.24 → $229.50 area"
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "put",
+          "setupType": "bear-continuation",
+          "sequence": null,
+          "entryZone": { "low": 234.20, "high": 237.97 },
+          "trigger": 236.85,
+          "invalidation": {
+            "preEntry": 240.98,
+            "postEntry": 239.00
+          },
+          "targets": [232.24, 229.50, 227.00],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 4,
+          "suggestedSize": 1750,
+          "slot": 1,
+          "tier": "primary-bear",
+          "premarket": {
+            "validates": "AMZN below $239 pre-open + 1H OS bull cross still counter-trend only",
+            "invalidates": "AMZN opens above $240.98 (FVG1) = above entry zone, setup invalid"
+          },
+          "notes": "Cleanest bear setup of the session. 4H bear Day 1 accelerating (gap 17.01). DTF zero-gap bear — one more session flips it decisively. Swing flag active: weekly 21 $241.35 is the bigger swing gate if price bounces further. 1H OS bull cross is counter-trend only — use it to time entry on fake UP exhaust, not as a CALL signal."
+        }
+      ]
+    },
+    {
+      "name": "GOOGL",
+      "status": "active",
+      "open": 357.95,
+      "high": 358.92,
+      "low": 341.72,
+      "close": 349.68,
+      "ahPrice": null,
+      "swing": true,
+      "swingNote": "WTF bear confirmed: Blue 7.07 / Orange 25.59, gap 18.52 widening. All 4 swing conditions met. Weekly 21 $344.86 — price $349.68 is $4.82 ABOVE it. Bounced ON weekly 21 today (wick to $341.72 below $344.86, closed above). Weekly 21 now acting as support, not resistance. Do not short at open tomorrow. Wait for daily close below $344.86 to trigger swing PUT.",
+      "smi": [
+        { "tf": "1H", "blue": -25.82, "orange": -32.72, "cross": "bull", "location": "oversold", "dir": "up" },
+        {
+          "tf": "4H", "blue": -54.95, "orange": -48.12, "cross": "bear", "location": "oversold", "dir": "down",
+          "crossBehavior": {
+            "firedDate": "2026-06-22", "day": 1, "tested": false, "testResponse": null,
+            "verdict": "untested", "strength": "accelerating"
+          }
+        },
+        { "tf": "DTF", "blue": 10.45, "orange": 15.62, "cross": "bear", "location": "mid", "dir": "down" }
+      ],
+      "levels": {
+        "pdh": 358.92,
+        "pdl": 341.73,
+        "orbH": 358.77,
+        "orbL": 354.03,
+        "ahh": 350.00,
+        "ahl": null,
+        "pmh": 365.47,
+        "pml": null,
+        "worbh": 358.92,
+        "worbl": 341.72,
+        "lworbh": 378.53,
+        "lworbl": null,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "manipulation4H": {
+        "risk": "high",
+        "variant": "none",
+        "sweepDirection": "up",
+        "sweepTarget": 354.03,
+        "sweepNote": "4H bear Day 1. 1H bull cross widening (gap 6.90) drives opening bounce. ORB L $354.03 is primary fake UP target. 4H extreme OS (Blue -54.95) adds risk of deeper bounce.",
+        "entryTrigger": "2m bear cross after rejection at ORB L $354.03 or AHH $350.00",
+        "realMove": "PUT through WORBL $341.72 → $338 area"
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "put",
+          "setupType": "bear-continuation",
+          "sequence": null,
+          "entryZone": { "low": 348.73, "high": 354.03 },
+          "trigger": 354.03,
+          "invalidation": {
+            "preEntry": 358.77,
+            "postEntry": 355.50
+          },
+          "targets": [341.72, 338.00],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 4,
+          "suggestedSize": 1750,
+          "slot": 1,
+          "tier": "primary-bear",
+          "premarket": {
+            "validates": "GOOGL below $358.77 (ORB H) pre-open + 1H bull cross still counter-trend",
+            "invalidates": "GOOGL opens above $358.77 = above ORB H, setup resets"
+          },
+          "notes": "Wait for bounce to exhaust — do NOT enter at open. 4H at -54.95 extreme OS with gap narrowing = violent bounce risk. The 1H bull gap (6.90 widening) tells you the bounce has momentum. Let it run to ORB L $354.03, confirm rejection, then PUT. Swing gate: weekly 21 $344.86 was bounced ON today — it is support. Swing PUT only triggers if daily closes below $344.86."
+        }
+      ]
+    },
+    {
+      "name": "AAPL",
+      "status": "active",
+      "open": 297.31,
+      "high": 302.42,
+      "low": 296.76,
+      "close": 297.01,
+      "ahPrice": null,
+      "swing": false,
+      "swingNote": "WTF bear (Blue 42.43 / Orange 52.76, gap 10.33 widening) but DTF still BULL (gap 7.75) — condition 2 fails. Weekly 21 (blue EMA) at $282.40 — price $14.61 above it. Not near swing gate.",
+      "smi": [
+        { "tf": "1H", "blue": -69.72, "orange": -53.21, "cross": "bear", "location": "oversold", "dir": "down" },
+        {
+          "tf": "4H", "blue": -22.78, "orange": -16.62, "cross": "bear", "location": "mid", "dir": "down",
+          "crossBehavior": {
+            "firedDate": "2026-06-22", "day": 1, "tested": false, "testResponse": null,
+            "verdict": "untested", "strength": "building"
+          }
+        },
+        { "tf": "DTF", "blue": -28.06, "orange": -35.81, "cross": "bull", "location": "oversold", "dir": "down" }
+      ],
+      "levels": {
+        "pdh": 302.42,
+        "pdl": 296.76,
+        "orbH": 301.98,
+        "orbL": 297.31,
+        "ahh": null,
+        "ahl": 295.21,
+        "pmh": null,
+        "pml": null,
+        "worbh": 302.42,
+        "worbl": 296.76,
+        "lworbh": 297.78,
+        "lworbl": 291.70,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "manipulation4H": {
+        "risk": "high",
+        "variant": "B",
+        "sweepDirection": "up",
+        "sweepTarget": 298.44,
+        "sweepNote": "4H bear Day 1 fresh. DTF 21 $298.44 is $1.43 above close — within Variant B zone. Fake UP to DTF 21 before real DOWN.",
+        "entryTrigger": "2m bear cross after rejection at DTF 21 $298.44",
+        "realMove": "PUT to PDL $296.76 → AHL $295.21 → LWORBL $291.70"
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "put",
+          "setupType": "bear-continuation",
+          "sequence": null,
+          "entryZone": { "low": 297.01, "high": 298.44 },
+          "trigger": 298.44,
+          "invalidation": {
+            "preEntry": 301.98,
+            "postEntry": 299.50
+          },
+          "targets": [296.76, 295.21, 291.70],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": false
+          },
+          "qualityScore": 3,
+          "suggestedSize": 1500,
+          "slot": 2,
+          "tier": "primary-bear",
+          "premarket": {
+            "validates": "AAPL below ORB L $297.31 pre-open + SPY leaning bear",
+            "invalidates": "AAPL opens above $301.98 (ORB H) = bull breakout, skip"
+          },
+          "notes": "PUT watch only — DTF bull gap 7.75 is structural floor. noRejectionWick false: daily candle closed near PDL but the 4H oscillated. 3/4 score = Slot 2. Skip if SPY is bull at 9:20. WTF bear but gate ($282.40) is too far for swing consideration near-term."
+        }
+      ]
+    },
+    {
+      "name": "NVDA",
+      "status": "active",
+      "open": 211.44,
+      "high": 213.99,
+      "low": 207.72,
+      "close": 208.65,
+      "ahPrice": null,
+      "swing": false,
+      "swingNote": "WTF bear stalling: Blue -5.03 / Orange 7.37, gap 12.40 — first narrowing bar. DTF bull gap 14.22 — condition 2 fails. Not a swing setup.",
+      "smi": [
+        { "tf": "1H", "blue": -90.45, "orange": -87.53, "cross": "bear", "location": "oversold", "dir": "up" },
+        {
+          "tf": "4H", "blue": 10.95, "orange": 20.86, "cross": "bear", "location": "mid", "dir": "down",
+          "crossBehavior": {
+            "firedDate": "2026-06-22", "day": 1, "tested": false, "testResponse": null,
+            "verdict": "untested", "strength": "building"
+          }
+        },
+        { "tf": "DTF", "blue": -2.96, "orange": -17.18, "cross": "bull", "location": "mid", "dir": "up" }
+      ],
+      "levels": {
+        "pdh": 213.99,
+        "pdl": 207.72,
+        "orbH": 213.99,
+        "orbL": 210.78,
+        "ahh": 208.95,
+        "ahl": 207.55,
+        "pmh": 211.47,
+        "pml": 208.91,
+        "worbh": 213.99,
+        "worbl": 207.72,
+        "lworbh": 212.71,
+        "lworbl": null,
+        "fvg1": 213.77,
+        "fvg2": null
+      },
+      "manipulation4H": {
+        "risk": "high",
+        "variant": "none",
+        "sweepDirection": "up",
+        "sweepTarget": 210.37,
+        "sweepNote": "4H bear Day 1. 1H at -90.45 absolute floor OS — bull flip at open near-certain. Bounce CALL to DTF 21 $210.37 is the fake UP before real DOWN.",
+        "entryTrigger": "2m bear cross after rejection at DTF 21 $210.37 / ORB L $210.78 for PUT — OR — enter CALL at open on 1H flip only if confirmed below $210",
+        "realMove": "PUT: AHH $208.95 → AHL $207.55 → WORBL $207.72 after bounce fails"
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "call",
+          "setupType": "bull-reversal",
+          "sequence": "Reactive CALL only on 1H OS flip from near $207.72-$208.95. If CALL reaches DTF 21 $210.37 and stalls, Leg 2 PUT activates.",
+          "entryZone": { "low": 207.72, "high": 208.95 },
+          "trigger": 208.95,
+          "invalidation": {
+            "preEntry": 207.00,
+            "postEntry": 207.50
+          },
+          "targets": [210.37, 211.47],
+          "qualityGates": {
+            "smiAlignment": false,
+            "levelIntegrity": true,
+            "roomAvailable": false,
+            "noRejectionWick": true
+          },
+          "qualityScore": 2,
+          "suggestedSize": 1000,
+          "slot": 3,
+          "tier": "off-list",
+          "premarket": {
+            "validates": "NVDA near $207-$209 pre-open + 1H approaching bull flip",
+            "invalidates": "NVDA above $210.78 at open = bounce already done, skip CALL"
+          },
+          "notes": "Reactive only. 1H at -90.45 will flip bull — that is the bounce setup. Target DTF 21 $210.37 only. Do not hold expecting full bull continuation — 4H bear Day 1 is structural. If 1H flip fails immediately, no trade."
+        },
+        {
+          "leg": 2,
+          "direction": "put",
+          "setupType": "bear-continuation",
+          "sequence": "Leg 2 PUT activates after Leg 1 CALL reaches DTF 21 $210.37 and shows 2m bear cross rejection.",
+          "entryZone": { "low": 209.50, "high": 210.78 },
+          "trigger": 210.37,
+          "invalidation": {
+            "preEntry": 212.00,
+            "postEntry": 211.50
+          },
+          "targets": [208.95, 207.72],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": false,
+            "noRejectionWick": true
+          },
+          "qualityScore": 3,
+          "suggestedSize": 1000,
+          "slot": 3,
+          "tier": "off-list",
+          "premarket": {
+            "validates": "Leg 1 CALL first reached $210.37",
+            "invalidates": "NVDA never reaches $210.37 — Leg 2 not applicable"
+          },
+          "notes": "Range is tight ($207.72-$210.78 = $3.06). Both legs are small. Do not force if room is insufficient."
+        }
+      ]
+    },
+    {
+      "name": "META",
+      "status": "off-list",
+      "open": 572.02,
+      "high": 575.81,
+      "low": 559.81,
+      "close": 563.85,
+      "ahPrice": null,
+      "swing": true,
+      "swingNote": "WTF bear confirmed: Blue -54.74 / Orange -38.43, gap 16.31 widening. Both lines negative. All 4 swing conditions met. Weekly 21 at $613.98 — price $50.13 below it. Skip tomorrow: 4H extreme OS Day 1 (Blue -60.98), DTF zero-gap, WTF approaching weekly extreme. Multi-day bounce needed before PUT entry.",
+      "smi": [
+        { "tf": "1H", "blue": -53.31, "orange": -55.05, "cross": "bull", "location": "oversold", "dir": "up" },
+        {
+          "tf": "4H", "blue": -60.98, "orange": -56.39, "cross": "bear", "location": "oversold", "dir": "down",
+          "crossBehavior": {
+            "firedDate": "2026-06-22", "day": 1, "tested": false, "testResponse": null,
+            "verdict": "untested", "strength": "building"
+          }
+        },
+        { "tf": "DTF", "blue": -43.79, "orange": -43.49, "cross": "bear", "location": "oversold", "dir": "down" }
+      ],
+      "levels": {
+        "pdh": 575.78,
+        "pdl": 559.82,
+        "orbH": 573.71,
+        "orbL": 567.39,
+        "ahh": 564.25,
+        "ahl": 562.74,
+        "pmh": 577.22,
+        "pml": null,
+        "worbh": 575.81,
+        "worbl": 559.81,
+        "lworbh": null,
+        "lworbl": null,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "manipulation4H": {
+        "risk": "high",
+        "variant": "none",
+        "sweepDirection": "up",
+        "sweepTarget": 567.39,
+        "sweepNote": "4H extreme OS Day 1. Violent bounce risk. Fake UP to ORB L $567.39 or AHH $564.25.",
+        "entryTrigger": "Skip tomorrow — no trade",
+        "realMove": "If taken: PUT through WORBL $559.81 after bounce exhaust. Wait for multi-day bounce to play out first."
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "put",
+          "setupType": "no-trade-first-candle",
+          "sequence": null,
+          "entryZone": { "low": 562.74, "high": 567.39 },
+          "trigger": 567.39,
+          "invalidation": {
+            "preEntry": 573.71,
+            "postEntry": 570.00
+          },
+          "targets": [559.81, 555.00],
+          "qualityGates": {
+            "smiAlignment": false,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 2,
+          "suggestedSize": 0,
+          "slot": null,
+          "tier": "off-list",
+          "premarket": {
+            "validates": "N/A — skip tomorrow",
+            "invalidates": "N/A — skip tomorrow"
+          },
+          "notes": "SKIP. 4H extreme OS Day 1 + DTF zero-gap + WTF approaching weekly extreme (-54.74) = multi-timeframe OS stack. Too much bounce risk. Swing flag TRUE for coming weeks. Wait for bounce to run out, then reassess PUT entry."
+        }
+      ]
+    },
+    {
+      "name": "MSFT",
+      "status": "off-list",
+      "open": 375.74,
+      "high": 381.63,
+      "low": 367.07,
+      "close": 367.34,
+      "ahPrice": null,
+      "swing": true,
+      "swingNote": "WTF bear strongest gap: Blue -45.68 / Orange -17.50, gap 28.18 widening. Both lines negative. All 4 conditions met. Highest-conviction swing PUT of the week. Weekly 21 at $411.69 — price $44.35 below it. Skip tomorrow: 4H Variant A (both < -60), DTF extreme OS (-78/-75). Violent bounce incoming (PM already $381 = $13.69 bounce). Entry after bounce exhausts.",
+      "smi": [
+        { "tf": "1H", "blue": -78.65, "orange": -80.89, "cross": "bull", "location": "oversold", "dir": "up" },
+        {
+          "tf": "4H", "blue": -81.17, "orange": -75.90, "cross": "bear", "location": "oversold", "dir": "down",
+          "crossBehavior": {
+            "firedDate": "2026-06-22", "day": 1, "tested": false, "testResponse": null,
+            "verdict": "untested", "strength": "building"
+          }
+        },
+        { "tf": "DTF", "blue": -78.75, "orange": -75.26, "cross": "bear", "location": "oversold", "dir": "down" }
+      ],
+      "levels": {
+        "pdh": 381.60,
+        "pdl": 367.07,
+        "orbH": 379.53,
+        "orbL": 374.34,
+        "ahh": 369.17,
+        "ahl": 367.09,
+        "pmh": 381.03,
+        "pml": 375.43,
+        "worbh": 381.63,
+        "worbl": 367.07,
+        "lworbh": null,
+        "lworbl": null,
+        "fvg1": 386.82,
+        "fvg2": null
+      },
+      "manipulation4H": {
+        "risk": "high",
+        "variant": "A",
+        "sweepDirection": "up",
+        "sweepTarget": 374.34,
+        "sweepNote": "Variant A: Both 4H lines < -60 (Blue -81.17, Orange -75.90). Violent bounce already started (PM $381.03 = $13.69 off close). Bounce targets: $372 cluster → ORB L $374.34 → PDH $381.60 → FVG $386.82 → 50w EMA $387.10 → weekly 9 EMA $398.56. Swing PUT gate: weekly 21 $411.69.",
+        "entryTrigger": "2m bear cross after bounce exhausts — watch $374.34 / $381 / $387.10 levels",
+        "realMove": "PUT through WORBL $367.07 → $362 → $357.50 area"
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "put",
+          "setupType": "no-trade-first-candle",
+          "sequence": null,
+          "entryZone": { "low": 369.17, "high": 381.60 },
+          "trigger": 381.60,
+          "invalidation": {
+            "preEntry": 387.00,
+            "postEntry": 385.00
+          },
+          "targets": [374.34, 367.07, 362.00],
+          "qualityGates": {
+            "smiAlignment": false,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 2,
+          "suggestedSize": 0,
+          "slot": null,
+          "tier": "off-list",
+          "premarket": {
+            "validates": "N/A — skip first candle. Monitor bounce level",
+            "invalidates": "N/A — skip first candle"
+          },
+          "notes": "SKIP tomorrow open. Variant A bounce is violent and underway. Watch bounce exhaust level during session. Highest-conviction swing PUT of the week — but timing is the week, not tomorrow morning. Bounce zone: $372-$387. Swing PUT entry: rejection at bounce ceiling + 2m bear cross."
+        }
+      ]
+    },
+    {
+      "name": "SPY",
+      "status": "context",
+      "open": 747.70,
+      "high": 750.18,
+      "low": 743.13,
+      "close": 744.39,
+      "ahPrice": null,
+      "swing": false,
+      "swingNote": "",
+      "smi": [
+        { "tf": "1H", "blue": -67.89, "orange": -64.03, "cross": "bear", "location": "oversold", "dir": "up" },
+        {
+          "tf": "4H", "blue": -13.96, "orange": -10.21, "cross": "bear", "location": "mid", "dir": "down",
+          "crossBehavior": {
+            "firedDate": "2026-06-22", "day": 1, "tested": false, "testResponse": null,
+            "verdict": "untested", "strength": "building"
+          }
+        },
+        { "tf": "DTF", "blue": 29.52, "orange": 25.18, "cross": "bull", "location": "mid", "dir": "down" }
+      ],
+      "levels": {
+        "pdh": 750.18,
+        "pdl": 743.13,
+        "orbH": 749.91,
+        "orbL": 747.46,
+        "ahh": 745.12,
+        "ahl": 745.31,
+        "pmh": null,
+        "pml": null,
+        "worbh": 750.18,
+        "worbl": 743.13,
+        "lworbh": null,
+        "lworbl": 743.13,
+        "fvg1": null,
+        "fvg2": null
+      },
+      "manipulation4H": {
+        "risk": "high",
+        "variant": "none",
+        "sweepDirection": "up",
+        "sweepTarget": 747.46,
+        "sweepNote": "4H bear Day 1. Fake UP to ORB L $747.46 → AHH $745.12. 1H extreme OS bull cross incoming — drives morning bounce. DTF narrowing (gap 4.34) — flip to bear would remove last structural support.",
+        "entryTrigger": "Context only — not traded",
+        "realMove": "BEAR: below WORBL $743.13 = DTF 21 = LWORBL (triple confluence)"
+      },
+      "plans": [
+        {
+          "leg": 1,
+          "direction": "put",
+          "setupType": "macro-context",
+          "sequence": null,
+          "entryZone": { "low": 743.13, "high": 747.46 },
+          "trigger": 747.46,
+          "invalidation": {
+            "preEntry": 749.91,
+            "postEntry": 748.00
+          },
+          "targets": [743.13, 740.00],
+          "qualityGates": {
+            "smiAlignment": true,
+            "levelIntegrity": true,
+            "roomAvailable": true,
+            "noRejectionWick": true
+          },
+          "qualityScore": 4,
+          "suggestedSize": 0,
+          "slot": null,
+          "tier": "context-only",
+          "premarket": {
+            "validates": "SPY below $747.46 at 9:20 = bear day lean. Below $743.13 = bear confirmed.",
+            "invalidates": "SPY above $749.91 at 9:20 = bull day, TSLA call primary"
+          },
+          "notes": "Context only. 4H bear Day 1. DTF bull gap 4.34 approaching flip — watch closely. Triple confluence at $743.13 (WORBL = DTF 21 = LWORBL) = major support floor. Core tension for Tuesday: SPY bear vs TSLA call."
+        }
+      ]
+    }
+  ]
+}
