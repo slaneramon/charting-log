@@ -1,0 +1,96 @@
+{
+  "date": "2026-06-24",
+  "macroFilter": {
+    "instrument": "SPY",
+    "WORB_H": 750.18,
+    "WORB_L": 743.13,
+    "close": 733.58,
+    "bias": "FULL_BEAR",
+    "SMI": { "1D": { "blue": 12.58, "orange": 18.88, "cross": "bear", "gap": -6.30 }, "4H": { "blue": -64.68, "orange": -55.24, "cross": "bear", "note": "VariantA building" }, "15m": { "blue": -1.73, "orange": -12.56, "cross": "bull" } },
+    "ORB": { "H": 735.39, "L": 732.305 },
+    "note": "Daily bear cross confirmed. Price $9.55 below WORB_L. Bounce to $735.39 = names bounce. Opens down = full bear continuation."
+  },
+  "rankings": {
+    "dayTrade": [
+      { "rank": 1, "name": "TSLA", "play": "PUT", "entry": "$387.99-$392.87 + 15m bear cross", "target": "$379.07", "invalidation": "15m bull cross above $392.87", "note": "Wait for 1H VariantA exhaust — do not short open" },
+      { "rank": 2, "name": "MSFT", "play": "CALL", "entry": "15m holds above AHH $374.20", "targets": ["$377.20", "$381.63", "$386.07"], "invalidation": "15m bear cross below $373.13" },
+      { "rank": 3, "name": "GOOGL", "play": "PUT", "entry": "$347.64-$351.99 + 15m bear cross", "targets": ["$342.95", "$341.72"], "invalidation": "15m bull cross above $351.99" },
+      { "rank": 4, "name": "AMZN", "play": "PUT", "entry": "$235.15-$236.85 + 15m bear cross", "target": "$232.24", "invalidation": "15m bull cross above $236.85" },
+      { "rank": 5, "name": "NVDA", "play": "BINARY", "callCondition": "$200 holds + 15m bull cross", "callTargets": ["$201.15", "$202.51", "$203.78"], "putCondition": "Break below $200.04", "key": "$200 is the line" },
+      { "rank": 6, "name": "AAPL", "play": "PUT_conditional", "entry": "$296.76-$297.95 + 15m bear cross", "targets": ["$293.45", "$291.70", "$287.82"], "invalidation": "15m bull cross above $297.95" },
+      { "rank": 7, "name": "META", "play": "WATCH", "callEntry": "15m bull cross above $561.03", "callTarget": "$563.31 -> $569.96", "putEntry": "Bounce fails $563.31 + 15m bear cross", "putTarget": "$559.81" },
+      { "rank": 8, "name": "SPY", "play": "MACRO_FILTER", "bounceLevel": 735.39, "bearLevel": 732.305 }
+    ],
+    "swing": [
+      { "rank": 1, "name": "TSLA", "status": "TRUE_upgraded", "entry": "$387.99-$392.87", "targets": ["$379.07", "$374.00"], "invalidation": "Daily close above $404.99", "note": "Freshest cross, highest R:R. Failed daily bull cross." },
+      { "rank": 2, "name": "GOOGL", "status": "TRUE_ACTIVE", "position": "PUT_30day", "mgmt": { "earlyWarning": 351.99, "actionLevel": 359.85, "invalidation": 365.83 }, "targets": ["$342.95", "$341.72", "$338.00"] },
+      { "rank": 3, "name": "AMZN", "status": "TRUE_ACTIVE", "position": "PUT_30day", "mgmt": { "earlyWarning": 236.85, "actionLevel": 240.52, "invalidation": 247.18 }, "targets": ["$232.24", "$232.00", "$229.24", "$227.67"] },
+      { "rank": 4, "name": "META", "status": "SKIP", "note": "4H VariantA active — wait for neutral" },
+      { "rank": 5, "name": "MSFT", "status": "SKIP", "note": "Daily -77 extreme OS — most dangerous to short" }
+    ]
+  },
+  "names": {
+    "SPY": {
+      "close": 733.58, "WORB": { "H": 750.18, "L": 743.13 }, "ORB": { "H": 735.39, "L": 732.305 },
+      "SMI": { "1D": { "blue": 12.58, "orange": 18.88, "cross": "bear", "gap": -6.30 }, "1H": { "blue": -39.92, "orange": -39.16, "cross": "bear", "gap": -0.76 }, "4H": { "blue": -64.68, "orange": -55.24, "cross": "bear", "note": "VariantA building" }, "15m": { "blue": -1.73, "orange": -12.56, "cross": "bull", "gap": 10.83 } }
+    },
+    "AAPL": {
+      "close": 294.30, "WORB": { "H": 302.42, "L": 296.76 }, "ORB": { "H": 300.57, "L": 295.22 },
+      "DTF21": 297.95, "daily21EMA": 297.02,
+      "keyLevels": { "PDH": 301.64, "AHH": 294.82, "AHL": 293.45, "LWORBL": 291.70, "fib382": 287.82 },
+      "SMI": { "1D": { "blue": -21.07, "orange": -28.44, "cross": "bull", "gap": 7.37, "note": "recovering" }, "1H": { "blue": -65.79, "orange": -56.66, "cross": "bear", "gap": -9.13, "note": "pre-VariantA" }, "4H": { "blue": -59.84, "orange": -50.91, "cross": "bear", "gap": -8.93, "note": "pre-VariantA building" }, "15m": { "blue": 10.76, "orange": -6.97, "cross": "bull", "gap": 17.73 } },
+      "swing": "FALSE_3of4",
+      "dayTrade": { "bias": "PUT_conditional", "entryZone": "$296.76-$297.95", "targets": ["$293.45", "$291.70", "$287.82"] }
+    },
+    "AMZN": {
+      "close": 234.11, "WORB": { "H": 242.00, "L": 232.24 }, "ORB": { "H": 235.15, "L": 232.00 },
+      "FVG": 236.85, "EMA": { "nine": 240.52, "twentyOne": 247.18 },
+      "SMI": { "1D": { "blue": -49.27, "orange": -43.14, "cross": "bear", "gap": -6.13 }, "1H": { "blue": -12.15, "orange": -0.35, "cross": "bear", "gap": -11.80 }, "4H": { "blue": -49.53, "orange": -53.08, "cross": "bull", "gap": 3.55, "note": "VariantA resolving" }, "15m": { "blue": -12.84, "orange": -28.63, "cross": "bull", "gap": 15.79 } },
+      "swing": "TRUE_ACTIVE", "position": "PUT_30day",
+      "mgmt": { "earlyWarning": 236.85, "actionLevel": 240.52, "invalidation": 247.18 },
+      "targets": [232.24, 232.00, 229.24, 227.67],
+      "dayTrade": { "bias": "PUT", "entryZone": "$235.15-$236.85", "trigger": "15m bear cross", "target": "$232.24" }
+    },
+    "GOOGL": {
+      "close": 346.13, "WORB": { "H": 358.92, "L": 341.72 }, "ORB": { "H": 347.64, "L": 340.36 },
+      "EMA": { "nine": 359.85, "twentyOne": 365.83 },
+      "keyLevels": { "AHH": 351.99, "PDL": 342.95, "PMlow": 338.00 },
+      "SMI": { "1D": { "blue": -16.13, "orange": -0.26, "cross": "bear", "gap": -15.87, "note": "sharpest gap all names" }, "1H": { "blue": 28.87, "orange": 38.30, "cross": "bull_declining", "gap": -9.43, "note": "losing momentum" }, "4H": { "blue": -48.39, "orange": -51.61, "cross": "bull", "gap": 3.22, "note": "VariantA resolving" }, "15m": { "blue": -46.57, "orange": -45.78, "cross": "bear", "gap": -0.79 } },
+      "swing": "TRUE_ACTIVE", "position": "PUT_30day",
+      "mgmt": { "earlyWarning": 351.99, "actionLevel": 359.85, "invalidation": 365.83 },
+      "targets": [342.95, 341.72, 338.00],
+      "dayTrade": { "bias": "PUT", "entryZone": "$347.64-$351.99", "trigger": "15m bear cross", "targets": ["$342.95", "$341.72"] }
+    },
+    "META": {
+      "close": 562.20, "WORB": { "H": 575.81, "L": 559.81 }, "ORB": { "H": 569.96, "L": 561.03 },
+      "keyLevels": { "PDH": 572.19, "AHH": 563.31, "AHL": 561.03, "PMlow": 557.60, "daily9EMA": 576.37, "DTF21": 589.50 },
+      "SMI": { "1D": { "blue": -52.72, "orange": -48.10, "cross": "bear", "gap": -4.62 }, "1H": { "blue": -44.39, "orange": -36.47, "cross": "bear", "gap": -7.92 }, "4H": { "blue": -59.05, "orange": -60.39, "cross": "bull", "gap": 1.34, "note": "VariantA confirmed" }, "15m": { "blue": -28.93, "orange": -42.34, "cross": "bull", "gap": 13.41 } },
+      "swing": "SKIP_VariantA",
+      "dayTrade": { "bias": "WATCH", "callEntry": "15m bull cross above $561.03", "callTarget": "$563.31 -> $569.96", "putEntry": "Bounce fails $563.31 + 15m bear cross", "putTarget": "$559.81" }
+    },
+    "MSFT": {
+      "close": 373.94, "WORB": { "H": 381.63, "L": 367.07 }, "ORB": { "H": 375.90, "L": 370.67 },
+      "keyLevels": { "PDH": 377.20, "AHH": 374.20, "AHL": 373.13, "daily9EMA": 386.07, "DTF21": 399.38 },
+      "SMI": { "1D": { "blue": -77.53, "orange": -76.40, "cross": "bear", "gap": -1.13, "note": "most extreme OS all names" }, "1H": { "blue": -9.65, "orange": -5.68, "cross": "bear", "gap": -3.97, "note": "shallow near zero" }, "4H": { "blue": -24.87, "orange": -38.11, "cross": "bull", "gap": 13.24, "note": "VariantA resolving fast" }, "15m": { "blue": 15.31, "orange": -2.38, "cross": "bull", "gap": 17.69 } },
+      "swing": "SKIP_VariantA",
+      "dayTrade": { "bias": "CALL", "entry": "15m holds above AHH $374.20", "targets": ["$377.20", "$381.63", "$386.07"], "invalidation": "15m bear cross below $373.13" }
+    },
+    "NVDA": {
+      "close": 200.04, "WORB": { "H": 213.99, "L": 207.72 }, "ORB": { "H": 202.51, "L": 200.04 },
+      "keyLevels": { "PMhigh": 204.97, "PDH": 203.78, "AHH": 201.15, "daily9EMA": 206.88, "DTF21": 209.30 },
+      "SMI": { "1D": { "blue": -17.79, "orange": -17.48, "cross": "bear", "gap": -0.31, "note": "marginal — failed bull cross" }, "1H": { "blue": -59.31, "orange": -60.37, "cross": "bull", "gap": 1.06, "note": "VariantA just triggered" }, "4H": { "blue": -72.70, "orange": -55.94, "cross": "bear", "gap": -16.76, "note": "accelerating down" }, "15m": { "blue": -15.03, "orange": -20.27, "cross": "bull", "gap": 5.24 } },
+      "swing": "BORDERLINE_reassess",
+      "dayTrade": { "bias": "BINARY", "callCondition": "$200 holds + 15m bull cross", "callTargets": ["$201.15", "$202.51", "$203.78"], "putCondition": "Break below $200.04", "key": "$200 is the line" }
+    },
+    "TSLA": {
+      "close": 381.61, "WORB": { "H": 414.75, "L": 394.40 }, "ORB": { "H": 392.87, "L": 387.99 },
+      "keyLevels": { "DTF200": 417.53, "LWORB_H": 415.96, "LWORB_L": 407.08, "DTF21": 404.99, "daily9EMA": 399.26, "PMhigh": 397.99, "AHH": 383.01, "AHL": 382.16, "PDL": 379.07 },
+      "SMI": { "1D": { "blue": -16.14, "orange": -11.44, "cross": "bear", "gap": -4.70, "note": "failed bull cross reversal" }, "1H": { "blue": -55.12, "orange": -62.82, "cross": "bull", "gap": 7.70, "note": "VariantA from -78/-79" }, "4H": { "blue": -60.08, "orange": -40.72, "cross": "bear", "gap": -19.36, "note": "fresh, accelerating" }, "15m": { "blue": -24.00, "orange": -17.55, "cross": "bear", "gap": -6.45 } },
+      "swing": "TRUE_upgraded",
+      "swingEntry": "$387.99-$392.87",
+      "swingTargets": ["$379.07", "$374.00"],
+      "swingInvalidation": "Daily close above DTF21 $404.99",
+      "dayTrade": { "bias": "PUT", "note": "Wait for 1H VariantA exhaust", "entry": "$387.99-$392.87 + 15m bear cross", "target": "$379.07", "callScalp": "15m bull cross above $382.16 -> $387.99" }
+    }
+  }
+}
